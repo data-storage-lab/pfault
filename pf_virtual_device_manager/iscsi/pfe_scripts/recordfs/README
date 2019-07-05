@@ -1,0 +1,64 @@
+###### scripts for recording fs IO on a single node
+
+cp -r XXX/scsi-tool/pfe_scripts/recordfs ~/recordfs
+cd ~/recordfs
+mkdir img
+mkdir log
+mkdir node1-mnt
+
+### generate backing store image
+cd img
+
+dd if=/dev/zero of=img.128M.empty bs=1M count=128
+cp img.128M.empty img.128M.empty.ext4
+mkfs -t ext4 -F img.128M.empty.ext4
+cp img.128M.empty.ext4 img.128M.empty.ext4.node1
+
+cd .. 
+
+### set varilables/paths 
+#set the correct path in variable.sh
+#change all "/home/mzheng/..." to yours
+
+### run tgtd in foreground
+./target-run-tgtd.sh
+(note: keep the terminal open; open another terminal for the following steps)
+
+
+### setup target (in ~/recordfs)
+./target-setup.sh
+
+### setup initiator
+./initiator-setup-deb.sh
+
+### mount virtual devices (assume /dev/sdc)
+sudo mount /dev/sdc ./node1-mnt
+
+sudo chmod -R 777 ./node1-mnt
+
+### apply workloads
+./node1-wkld.sh
+
+### umount
+sudo umount ./node1-mnt 
+
+### cleanup
+./target-kill.sh
+
+### od log to ./log/od.txt
+./od-log.sh
+
+#IO log (./log/od.txt) format by default:
+#64 bytes per row;
+#8 collumns, 8 bytes per collumn;
+#first row first collumn: total number of IOs
+#starting from 2nd row:
+#| IO id | timestamp | disk offset | length in bytes | datalog offest | cmd type | data dir | target id |
+
+#tgtd log:
+grep  scsi_cmd_perform ./log/log.tgtd
+#e.g.:
+#...
+#PTE:PTE: int scsi_cmd_perform(int host_no, struct scsi_cmd *cmd): *cmd= 0x1adee70, cmd->scb[0]= 2a
+#...
+#the last field "2a" is the cmd type.

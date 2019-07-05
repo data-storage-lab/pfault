@@ -1,0 +1,68 @@
+scripts for testing multiple iscsi target(s) and initiator(s);
+
+cp XXX/scsi-tool/pfe_scripts/multinodes ~/multinodes
+cd ~/multinodes
+
+mkdir img
+mkdir log
+mkdir node1-mnt
+mkdir node2-mnt
+
+########### target side 
+### generate two backing store images
+cd ~/multinodes/img
+
+dd if=/dev/zero of=img.128M.empty bs=1M count=128
+
+cp img.128M.empty img.128M.empty.ext4
+mkfs -t ext4 -F img.128M.empty.ext4
+
+cp img.128M.empty.ext4 img.128M.empty.ext4.node1
+cp img.128M.empty.ext4 img.128M.empty.ext4.node2
+
+
+### set varilables/paths 
+#(set in variable.sh; change all "/home/mzheng/..." to yours)
+
+### run tgtd
+./target-run-tgtd.sh
+
+### set targets
+./target-setup.sh
+
+
+########### initiator side 
+### set initiators
+./initiator-setup-deb.sh
+
+### mount virtual devices (assume /dev/sdc and /dev/sdd)
+sudo mount /dev/sdc ./node1-mnt
+sudo mount /dev/sdd ./node2-mnt
+
+sudo chmod -R 777 ./node1-mnt
+sudo chmod -R 777 ./node2-mnt
+
+### apply workloads
+./node1-wkld.sh
+./node2-wkld.sh
+
+### cleanup
+sudo umount ./node1-mnt 
+sudo umount ./node2-mnt 
+
+
+########### target side 
+### cleanup
+./target-kill.sh
+
+### od log to ./log/od.txt
+./od-log.sh
+
+#od log format by default:
+#64 bytes per row;
+#8 collumns, 8 bytes per collumn;
+#first row first collumn: total number of IOs
+#starting from 2nd row:
+#| IO id | timestamp | disk offset | length in bytes | datalog offest | cmd type | data dir | target id |
+
+

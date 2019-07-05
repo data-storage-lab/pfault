@@ -1,0 +1,29 @@
+#Install & setup Tokyo Cabinet 
+
+$ cd ~/Downloads  #can be any dir
+
+$ wget http://fallabs.com/tokyocabinet/tokyocabinet-1.4.48.tar.gz
+
+$ tar -xzvf tokyocabinet-1.4.48.tar.gz
+
+$ cd tokyocabinet-1.4.48/
+
+$ ./configure 
+(If zlib.h/bzlib.h is missing, install the following:
+ $ sudo apt-get install libbz2-1.0 libbz2-dev libbz2-ocaml libbz2-ocaml-dev zlib1g-dev
+and then ./configure again;expected output: 
+...
+#===============
+# Ready to make.
+#===============
+)
+
+$ make && make check && sudo make install
+(Expected output:
+...
+#================================
+# Thanks for using Tokyo Cabinet.
+#================================
+)
+
+
