@@ -1,0 +1,154 @@
+00000100:00000400:0.0F:1579382591.748604:0:3280:0:(client.c:2116:ptlrpc_expire_one_request()) @@@ Request sent has timed out for slow reply: [sent 1579382584/real 1579382584]  req@ffff9955d67d8600 x1656004725947168/t0(0) o400->MGC10.24.84.84@tcp@10.24.84.84@tcp:26/25 lens 224/224 e 0 to 1 dl 1579382591 ref 1 fl Rpc:XN/0/ffffffff rc 0/-1
+00000100:02020000:0.0:1579382591.748667:0:3280:0:(import.c:186:ptlrpc_set_import_discon()) 166-1: MGC10.24.84.84@tcp: Connection to MGS (at 10.24.84.84@tcp) was lost; in progress operations using this service will fail
+00000100:00080000:0.0:1579382591.748679:0:3280:0:(import.c:188:ptlrpc_set_import_discon()) ffff995604b3a800 MGS: changing import state from FULL to DISCONN
+10000000:01000000:0.0:1579382591.748685:0:3280:0:(mgc_request.c:1367:mgc_import_event()) import event 0x808001
+00000100:00080000:0.0:1579382591.748688:0:3280:0:(pinger.c:178:ptlrpc_pinger_ir_down()) IR down
+00000100:00080000:0.0:1579382591.748689:0:3280:0:(import.c:441:ptlrpc_fail_import()) import MGS@MGC10.24.84.84@tcp_0 for MGC10.24.84.84@tcp not replayable, auto-deactivating
+00000100:00080000:0.0:1579382591.748692:0:3280:0:(import.c:215:ptlrpc_deactivate_and_unlock_import()) setting import MGS INVALID
+10000000:01000000:0.0:1579382591.748695:0:3280:0:(mgc_request.c:1367:mgc_import_event()) import event 0x808002
+00000100:00080000:0.0:1579382591.748697:0:3280:0:(import.c:418:ptlrpc_pinger_force()) MGS: waking up pinger s:DISCONN
+00000100:00080000:0.0:1579382591.748727:0:3282:0:(pinger.c:217:ptlrpc_pinger_process_import()) 5c565410-e636-85ec-3253-5c0de6bcfa2e->MGS: level DISCONN/3 force 1 force_next 0 deactive 0 pingable 1 suppress 0
+00000100:00080000:0.0:1579382591.748733:0:3282:0:(recover.c:58:ptlrpc_initiate_recovery()) MGS: starting recovery
+00000100:00080000:0.0:1579382591.748736:0:3282:0:(import.c:681:ptlrpc_connect_import()) ffff995604b3a800 MGS: changing import state from DISCONN to CONNECTING
+00000100:00080000:0.0:1579382591.748741:0:3282:0:(import.c:524:import_select_connection()) MGC10.24.84.84@tcp: connect to NID 10.24.84.84@tcp last attempt 4297057604
+00000100:00080000:0.0:1579382591.748749:0:3282:0:(import.c:602:import_select_connection()) MGC10.24.84.84@tcp: import ffff995604b3a800 using connection MGC10.24.84.84@tcp_0/10.24.84.84@tcp
+00000100:00080000:0.0:1579382591.752989:0:3279:0:(import.c:1035:ptlrpc_connect_interpret()) MGC10.24.84.84@tcp: connect to target with instance 0
+10000000:01000000:0.0:1579382591.753102:0:3279:0:(mgc_request.c:1367:mgc_import_event()) import event 0x808005
+00000100:02000400:0.0:1579382591.753105:0:3279:0:(import.c:1191:ptlrpc_connect_interpret()) Evicted from MGS (at MGC10.24.84.84@tcp_0) after server handle changed from 0x67d4ed8ee00aa68e to 0x67d4ed8ee00aa8f6
+00000100:00080000:0.0:1579382591.753119:0:3279:0:(import.c:1199:ptlrpc_connect_interpret()) ffff995604b3a800 MGS: changing import state from CONNECTING to EVICTED
+00000100:00080000:0.0:1579382591.753124:0:3279:0:(import.c:1474:ptlrpc_import_recovery_state_machine()) evicted from MGS@MGC10.24.84.84@tcp_0; invalidating
+00000100:00080000:0.0:1579382591.753200:0:20819:0:(import.c:1416:ptlrpc_invalidate_import_thread()) thread invalidate import MGC10.24.84.84@tcp to MGS@MGC10.24.84.84@tcp_0
+10000000:01000000:0.0:1579382591.753205:0:20819:0:(mgc_request.c:1367:mgc_import_event()) import event 0x808003
+10000000:01000000:0.0:1579382591.753215:0:20819:0:(mgc_request.c:1025:mgc_blocking_ast()) Lock res [0x65727473756c:0x5:0x0].0x0 (lustre)
+10000000:01000000:0.0:1579382591.753231:0:20819:0:(mgc_request.c:1025:mgc_blocking_ast()) Lock res [0x70616d65646f6e:0x4:0x0].0x0 (nodemap)
+10000000:01000000:0.0:1579382591.753238:0:20819:0:(mgc_request.c:1025:mgc_blocking_ast()) Lock res [0x736d61726170:0x3:0x0].0x0 (params)
+10000000:01000000:0.0:1579382591.753245:0:20819:0:(mgc_request.c:1025:mgc_blocking_ast()) Lock res [0x65727473756c:0x0:0x0].0x0 (lustre)
+10000000:01000000:0.0:1579382591.753250:0:20819:0:(mgc_request.c:1025:mgc_blocking_ast()) Lock res [0x65727473756c:0x0:0x0].0x0 (lustre)
+10000000:01000000:0.0:1579382591.753254:0:20819:0:(mgc_request.c:1025:mgc_blocking_ast()) Lock res [0x65727473756c:0x0:0x0].0x0 (lustre)
+10000000:01000000:0.0:1579382591.753260:0:20819:0:(mgc_request.c:1025:mgc_blocking_ast()) Lock res [0x65727473756c:0x2:0x0].0x0 (lustre)
+00000100:00080000:0.0:1579382591.753268:0:20819:0:(import.c:1425:ptlrpc_invalidate_import_thread()) ffff995604b3a800 MGS: changing import state from EVICTED to RECOVER
+00000100:00080000:0.0:1579382591.753274:0:20819:0:(import.c:1535:ptlrpc_import_recovery_state_machine()) ffff995604b3a800 MGS: changing import state from RECOVER to FULL
+10000000:01000000:0.0:1579382591.753277:0:20819:0:(mgc_request.c:1367:mgc_import_event()) import event 0x808004
+00000100:00080000:0.0:1579382591.753280:0:20819:0:(pinger.c:171:ptlrpc_pinger_ir_up()) IR up
+00000100:02000000:0.0:1579382591.753284:0:20819:0:(import.c:1541:ptlrpc_import_recovery_state_machine()) MGC10.24.84.84@tcp: Connection restored to MGC10.24.84.84@tcp_0 (at 10.24.84.84@tcp)
+10000000:01000000:0.0:1579382596.752539:0:4036:0:(mgc_request.c:600:do_requeue()) updating log lustre-client
+10000000:01000000:0.0:1579382596.752544:0:4036:0:(mgc_request.c:2076:mgc_process_log()) Process log lustre-client:ffff9955d57a1800 from 45
+10000000:01000000:0.0:1579382596.752549:0:4036:0:(mgc_request.c:1133:mgc_enqueue()) Enqueue for lustre-client (res 0x65727473756c)
+00000020:01000000:0.0:1579382596.760203:0:4036:0:(obd_config.c:1723:class_config_parse_llog()) Processed log lustre-client gen 45-44 (rc=0)
+10000000:01000000:0.0:1579382596.760218:0:4036:0:(mgc_request.c:2151:mgc_process_log()) MGC10.24.84.84@tcp: configuration from log 'lustre-client' succeeded (0).
+10000000:01000000:0.0:1579382596.760228:0:4036:0:(mgc_request.c:600:do_requeue()) updating log lustre-mdtir
+10000000:01000000:0.0:1579382596.760230:0:4036:0:(mgc_request.c:2076:mgc_process_log()) Process log lustre-mdtir:ffff9955d57a1800 from 7
+10000000:01000000:0.0:1579382596.760234:0:4036:0:(mgc_request.c:1133:mgc_enqueue()) Enqueue for lustre-mdtir (res 0x65727473756c)
+10000000:01000000:0.0:1579382596.765792:0:4036:0:(mgc_request.c:2151:mgc_process_log()) MGC10.24.84.84@tcp: configuration from log 'lustre-mdtir' succeeded (0).
+10000000:01000000:0.0:1579382596.765801:0:4036:0:(mgc_request.c:600:do_requeue()) updating log lustre-MDT0000
+10000000:01000000:0.0:1579382596.765803:0:4036:0:(mgc_request.c:2076:mgc_process_log()) Process log lustre-MDT0000:          (null) from 39
+10000000:01000000:0.0:1579382596.765807:0:4036:0:(mgc_request.c:1133:mgc_enqueue()) Enqueue for lustre-MDT0000 (res 0x65727473756c)
+00000020:01000000:0.0:1579382596.772868:0:4036:0:(obd_config.c:1723:class_config_parse_llog()) Processed log lustre-MDT0000 gen 39-38 (rc=0)
+10000000:01000000:0.0:1579382596.772882:0:4036:0:(mgc_request.c:2151:mgc_process_log()) MGC10.24.84.84@tcp: configuration from log 'lustre-MDT0000' succeeded (0).
+10000000:01000000:0.0:1579382596.772891:0:4036:0:(mgc_request.c:600:do_requeue()) updating log lustre-barrier
+10000000:01000000:0.0:1579382596.772893:0:4036:0:(mgc_request.c:2076:mgc_process_log()) Process log lustre-barrier:ffff9955d57a1800 from 1
+10000000:01000000:0.0:1579382596.772897:0:4036:0:(mgc_request.c:1133:mgc_enqueue()) Enqueue for lustre-barrier (res 0x65727473756c)
+10000000:01000000:0.0:1579382596.774794:0:4036:0:(mgc_request.c:2151:mgc_process_log()) MGC10.24.84.84@tcp: configuration from log 'lustre-barrier' succeeded (0).
+10000000:01000000:0.0:1579382596.774802:0:4036:0:(mgc_request.c:600:do_requeue()) updating log params
+10000000:01000000:0.0:1579382596.774804:0:4036:0:(mgc_request.c:2076:mgc_process_log()) Process log params:ffff9955d57a1800 from 1
+10000000:01000000:0.0:1579382596.774807:0:4036:0:(mgc_request.c:1133:mgc_enqueue()) Enqueue for params (res 0x736d61726170)
+00000020:01000000:0.0:1579382596.781472:0:4036:0:(obd_config.c:1723:class_config_parse_llog()) Processed log params gen 1-0 (rc=0)
+10000000:01000000:0.0:1579382596.781484:0:4036:0:(mgc_request.c:2151:mgc_process_log()) MGC10.24.84.84@tcp: configuration from log 'params' succeeded (0).
+10000000:01000000:0.0:1579382596.781492:0:4036:0:(mgc_request.c:600:do_requeue()) updating log nodemap
+10000000:01000000:0.0:1579382596.781494:0:4036:0:(mgc_request.c:2076:mgc_process_log()) Process log nodemap:ffff99563ab68f78 from 1
+10000000:01000000:0.0:1579382596.781497:0:4036:0:(mgc_request.c:1133:mgc_enqueue()) Enqueue for nodemap (res 0x70616d65646f6e)
+10000000:01000000:0.0:1579382596.788975:0:4036:0:(mgc_request.c:2151:mgc_process_log()) MGC10.24.84.84@tcp: configuration from log 'nodemap' succeeded (0).
+10000000:01000000:0.0:1579382596.788986:0:4036:0:(mgc_request.c:600:do_requeue()) updating log lustre-sptlrpc
+10000000:01000000:0.0:1579382596.788991:0:4036:0:(mgc_request.c:2076:mgc_process_log()) Process log lustre-sptlrpc:          (null) from 1
+10000000:01000000:0.0:1579382596.788994:0:4036:0:(mgc_request.c:1133:mgc_enqueue()) Enqueue for lustre-sptlrpc (res 0x65727473756c)
+10000000:01000000:0.0:1579382596.792583:0:4036:0:(mgc_request.c:2151:mgc_process_log()) MGC10.24.84.84@tcp: configuration from log 'lustre-sptlrpc' failed (-2).
+00000020:00000080:0.0:1579382660.106412:0:20831:0:(class_obd.c:232:class_handle_ioctl()) cmd = c00866e6
+00000004:00000080:0.0:1579382660.106426:0:20831:0:(mdt_handler.c:6135:mdt_iocontrol()) handling ioctl cmd 0xc00866e6
+00100000:10000000:0.0:1579382660.106555:0:20833:0:(osd_scrub.c:669:osd_scrub_prep()) sdb: OI scrub prep, flags = 0x46
+00100000:10000000:0.0:1579382660.106583:0:20833:0:(osd_scrub.c:279:osd_scrub_file_reset()) sdb: reset OI scrub file, old flags = 0x0, add flags = 0x0
+00100000:10000000:0.0:1579382660.106743:0:20832:0:(lfsck_layout.c:4964:lfsck_layout_reset()) lustre-MDT0000-osd: layout LFSCK reset: rc = 0
+00100000:10000000:0.0:1579382660.106785:0:20834:0:(lfsck_engine.c:1581:lfsck_assistant_engine()) lustre-MDT0000-osd: lfsck_layout LFSCK assistant thread start
+00100000:10000000:0.0:1579382660.110362:0:4038:0:(lfsck_layout.c:6270:lfsck_layout_master_in_notify()) lustre-MDT0000-osd: layout LFSCK master handles notify 3 from OST 0, status 1, flags 2, flags2 1
+00100000:10000000:0.0:1579382660.110760:0:20832:0:(lfsck_layout.c:5190:lfsck_layout_master_prep()) lustre-MDT0000-osd: layout LFSCK master prep done, start pos [1]
+00100000:10000000:0.0:1579382660.111324:0:20832:0:(lfsck_namespace.c:3964:lfsck_namespace_reset()) lustre-MDT0000-osd: namespace LFSCK reset: rc = 0
+00100000:10000000:0.0:1579382660.111463:0:4037:0:(lfsck_layout.c:6270:lfsck_layout_master_in_notify()) lustre-MDT0000-osd: layout LFSCK master handles notify 3 from OST 2, status 1, flags 2, flags2 1
+00100000:10000000:0.0:1579382660.111978:0:4037:0:(lfsck_layout.c:6270:lfsck_layout_master_in_notify()) lustre-MDT0000-osd: layout LFSCK master handles notify 3 from OST 1, status 1, flags 2, flags2 1
+00100000:10000000:0.0:1579382660.112136:0:20835:0:(lfsck_engine.c:1581:lfsck_assistant_engine()) lustre-MDT0000-osd: lfsck_namespace LFSCK assistant thread start
+00100000:10000000:0.0:1579382660.112146:0:20832:0:(lfsck_namespace.c:4215:lfsck_namespace_prep()) lustre-MDT0000-osd: namespace LFSCK prep done, start pos [1, [0x0:0x0:0x0], 0x0]: rc = 0
+00100000:10000000:0.0:1579382660.112161:0:20833:0:(osd_scrub.c:1541:osd_scrub_main()) sdb: OI scrub start, flags = 0x46, pos = 12
+00100000:10000000:0.0:1579382660.114916:0:20832:0:(lfsck_layout.c:5013:lfsck_layout_master_checkpoint()) lustre-MDT0000-osd: layout LFSCK master checkpoint at the pos [12], status = 1: rc = 0
+00100000:10000000:0.0:1579382660.114937:0:20832:0:(lfsck_namespace.c:4114:lfsck_namespace_checkpoint()) lustre-MDT0000-osd: namespace LFSCK checkpoint at the pos [12, [0x0:0x0:0x0], 0x0], status = 1: rc = 0
+00100000:10000000:0.0:1579382660.114944:0:20832:0:(lfsck_engine.c:1060:lfsck_master_engine()) LFSCK entry: oit_flags = 0x40000, dir_flags = 0x8006, oit_cookie = 12, dir_cookie = 0x0, parent = [0x0:0x0:0x0], pid = 20832
+00100000:10000000:0.0:1579382660.135846:0:20833:0:(osd_scrub.c:767:osd_scrub_post()) sdb: OI scrub post, result = 1
+00100000:10000000:0.0:1579382660.135857:0:20833:0:(osd_scrub.c:1551:osd_scrub_main()) sdb: OI scrub: stop, pos = 81913: rc = 1
+00100000:10000000:0.0:1579382660.135897:0:20832:0:(lfsck_engine.c:1092:lfsck_master_engine()) LFSCK exit: oit_flags = 0x40000, dir_flags = 0x8006, oit_cookie = 54653, dir_cookie = 0x0, parent = [0x0:0x0:0x0], pid = 20832, rc = 1
+00100000:10000000:0.0:1579382660.135902:0:20832:0:(lfsck_lib.c:2578:lfsck_post_generic()) lustre-MDT0000-osd: waiting for assistant to do lfsck_layout post, rc = 1
+00100000:10000000:0.0:1579382660.135905:0:20832:0:(lfsck_lib.c:2590:lfsck_post_generic()) lustre-MDT0000-osd: the assistant has done lfsck_layout post, rc = 1
+00100000:10000000:0.0:1579382660.135917:0:20832:0:(lfsck_layout.c:5749:lfsck_layout_master_post()) lustre-MDT0000-osd: layout LFSCK master post done: rc = 0
+00100000:10000000:0.0:1579382660.135919:0:20832:0:(lfsck_lib.c:2578:lfsck_post_generic()) lustre-MDT0000-osd: waiting for assistant to do lfsck_namespace post, rc = 1
+00100000:10000000:0.0:1579382660.135923:0:20832:0:(lfsck_lib.c:2590:lfsck_post_generic()) lustre-MDT0000-osd: the assistant has done lfsck_namespace post, rc = 1
+00100000:10000000:0.0:1579382660.135934:0:20832:0:(lfsck_namespace.c:4420:lfsck_namespace_post()) lustre-MDT0000-osd: namespace LFSCK post done: rc = 0
+00100000:10000000:0.0:1579382660.135937:0:20832:0:(lfsck_lib.c:2608:lfsck_double_scan_generic()) lustre-MDT0000-osd: waiting for assistant to do lfsck_layout double_scan, status 2
+00100000:10000000:0.0:1579382660.135940:0:20834:0:(lfsck_engine.c:1650:lfsck_assistant_engine()) lustre-MDT0000-osd: lfsck_layout LFSCK assistant thread post
+00100000:10000000:0.0:1579382660.135946:0:20834:0:(lfsck_engine.c:1669:lfsck_assistant_engine()) lustre-MDT0000-osd: LFSCK assistant notified others for lfsck_layout post: rc = 0
+00100000:10000000:0.0:1579382660.135947:0:20834:0:(lfsck_engine.c:1687:lfsck_assistant_engine()) lustre-MDT0000-osd: LFSCK assistant sync before the second-stage scaning
+00000004:00080000:0.0:1579382660.136026:0:20834:0:(osp_sync.c:1578:osp_sync_add_commit_cb()) lustre-OST0000-osc-MDT0000: add commit cb at 4388696675, next at 4388346280, rc = 0
+00080000:00080000:0.0:1579382660.136030:0:20834:0:(osd_handler.c:2173:osd_commit_async()) lustre-MDT0000: async commit OSD
+00000004:00080000:0.0:1579382660.136039:0:20834:0:(osp_sync.c:1578:osp_sync_add_commit_cb()) lustre-OST0001-osc-MDT0000: add commit cb at 4388696675, next at 4388349752, rc = 0
+00080000:00080000:0.0:1579382660.136042:0:20834:0:(osd_handler.c:2173:osd_commit_async()) lustre-MDT0000: async commit OSD
+00000004:00080000:0.0:1579382660.136044:0:20834:0:(osp_sync.c:1578:osp_sync_add_commit_cb()) lustre-OST0002-osc-MDT0000: add commit cb at 4388696675, next at 4388346792, rc = 0
+00080000:00080000:0.0:1579382660.136046:0:20834:0:(osd_handler.c:2173:osd_commit_async()) lustre-MDT0000: async commit OSD
+00100000:10000000:0.0:1579382660.136946:0:20835:0:(lfsck_engine.c:1650:lfsck_assistant_engine()) lustre-MDT0000-osd: lfsck_namespace LFSCK assistant thread post
+00100000:10000000:0.0:1579382660.136951:0:20835:0:(lfsck_engine.c:1669:lfsck_assistant_engine()) lustre-MDT0000-osd: LFSCK assistant notified others for lfsck_namespace post: rc = 0
+00100000:10000000:0.0:1579382660.136954:0:20832:0:(lfsck_lib.c:2618:lfsck_double_scan_generic()) lustre-MDT0000-osd: the assistant has done lfsck_layout double_scan, status 0
+00100000:10000000:0.0:1579382660.136956:0:20832:0:(lfsck_lib.c:2608:lfsck_double_scan_generic()) lustre-MDT0000-osd: waiting for assistant to do lfsck_namespace double_scan, status 2
+00100000:10000000:0.0:1579382660.136959:0:20835:0:(lfsck_engine.c:1687:lfsck_assistant_engine()) lustre-MDT0000-osd: LFSCK assistant sync before the second-stage scaning
+00000004:00080000:0.0:1579382660.136965:0:20835:0:(osp_sync.c:1578:osp_sync_add_commit_cb()) lustre-OST0000-osc-MDT0000: add commit cb at 4388696676, next at 4388346280, rc = 0
+00080000:00080000:0.0:1579382660.136968:0:20835:0:(osd_handler.c:2173:osd_commit_async()) lustre-MDT0000: async commit OSD
+00000004:00080000:0.0:1579382660.136972:0:20835:0:(osp_sync.c:1578:osp_sync_add_commit_cb()) lustre-OST0001-osc-MDT0000: add commit cb at 4388696676, next at 4388349752, rc = 0
+00080000:00080000:0.0:1579382660.136973:0:20835:0:(osd_handler.c:2173:osd_commit_async()) lustre-MDT0000: async commit OSD
+00000004:00080000:0.0:1579382660.136975:0:20835:0:(osp_sync.c:1578:osp_sync_add_commit_cb()) lustre-OST0002-osc-MDT0000: add commit cb at 4388696676, next at 4388346792, rc = 0
+00080000:00080000:0.0:1579382660.136977:0:20835:0:(osd_handler.c:2173:osd_commit_async()) lustre-MDT0000: async commit OSD
+00100000:10000000:0.0:1579382660.136980:0:20832:0:(lfsck_lib.c:2618:lfsck_double_scan_generic()) lustre-MDT0000-osd: the assistant has done lfsck_namespace double_scan, status 0
+00000004:00080000:0.0:1579382660.156463:0:4024:0:(osp_sync.c:1543:osp_sync_local_commit_cb()) lustre-OST0002-osc-MDT0000: 112 committed
+00000004:00080000:0.0:1579382660.156467:0:4024:0:(osp_sync.c:1543:osp_sync_local_commit_cb()) lustre-OST0001-osc-MDT0000: 109 committed
+00000004:00080000:0.0:1579382660.156468:0:4024:0:(osp_sync.c:1543:osp_sync_local_commit_cb()) lustre-OST0000-osc-MDT0000: 114 committed
+00100000:10000000:0.0:1579382660.156495:0:20834:0:(lfsck_engine.c:1694:lfsck_assistant_engine()) lustre-MDT0000-osd: LFSCK assistant phase2 scan start, synced: rc = 0
+00100000:10000000:0.0:1579382660.156499:0:20834:0:(lfsck_layout.c:4391:lfsck_layout_assistant_handler_p2()) lustre-MDT0000-osd: layout LFSCK phase2 scan start
+00100000:10000000:0.0:1579382660.156500:0:20834:0:(lfsck_layout.c:4442:lfsck_layout_assistant_handler_p2()) lustre-MDT0000-osd: layout LFSCK phase2 scan stop: rc = 1
+00100000:10000000:0.0:1579382660.160588:0:20834:0:(lfsck_engine.c:1809:lfsck_assistant_engine()) lustre-MDT0000-osd: LFSCK assistant sync before exit
+00000004:00080000:0.0:1579382660.160597:0:20834:0:(osp_sync.c:1578:osp_sync_add_commit_cb()) lustre-OST0000-osc-MDT0000: add commit cb at 4388696700, next at 4388346280, rc = 0
+00080000:00080000:0.0:1579382660.160601:0:20834:0:(osd_handler.c:2173:osd_commit_async()) lustre-MDT0000: async commit OSD
+00000004:00080000:0.0:1579382660.160605:0:20834:0:(osp_sync.c:1578:osp_sync_add_commit_cb()) lustre-OST0001-osc-MDT0000: add commit cb at 4388696700, next at 4388349752, rc = 0
+00080000:00080000:0.0:1579382660.160606:0:20834:0:(osd_handler.c:2173:osd_commit_async()) lustre-MDT0000: async commit OSD
+00000004:00080000:0.0:1579382660.160607:0:20834:0:(osp_sync.c:1578:osp_sync_add_commit_cb()) lustre-OST0002-osc-MDT0000: add commit cb at 4388696700, next at 4388346792, rc = 0
+00080000:00080000:0.0:1579382660.160607:0:20834:0:(osd_handler.c:2173:osd_commit_async()) lustre-MDT0000: async commit OSD
+00000004:00080000:0.0:1579382660.163562:0:4024:0:(osp_sync.c:1543:osp_sync_local_commit_cb()) lustre-OST0002-osc-MDT0000: 113 committed
+00000004:00080000:0.0:1579382660.163566:0:4024:0:(osp_sync.c:1543:osp_sync_local_commit_cb()) lustre-OST0001-osc-MDT0000: 110 committed
+00000004:00080000:0.0:1579382660.163567:0:4024:0:(osp_sync.c:1543:osp_sync_local_commit_cb()) lustre-OST0000-osc-MDT0000: 115 committed
+00100000:10000000:0.0:1579382660.163593:0:20835:0:(lfsck_engine.c:1694:lfsck_assistant_engine()) lustre-MDT0000-osd: LFSCK assistant phase2 scan start, synced: rc = 0
+00100000:10000000:0.0:1579382660.163597:0:20835:0:(lfsck_namespace.c:6252:lfsck_namespace_assistant_handler_p2()) lustre-MDT0000-osd: namespace LFSCK phase2 scan start
+00100000:10000000:0.0:1579382660.163600:0:20835:0:(lfsck_namespace.c:5859:lfsck_namespace_scan_local_lpf()) lustre-MDT0000-osd: start to scan backend /lost+found
+00100000:10000000:0.0:1579382660.163609:0:20835:0:(lfsck_namespace.c:5967:lfsck_namespace_scan_local_lpf()) lustre-MDT0000-osd: stop to scan backend /lost+found: rc = 1
+00100000:10000000:0.0:1579382660.163646:0:20835:0:(lfsck_namespace.c:6270:lfsck_namespace_assistant_handler_p2()) lustre-MDT0000-osd: namespace LFSCK phase2 scan stop at the No. 16 trace file: rc = 1
+00100000:10000000:0.0:1579382660.163647:0:20835:0:(lfsck_engine.c:1809:lfsck_assistant_engine()) lustre-MDT0000-osd: LFSCK assistant sync before exit
+00000004:00080000:0.0:1579382660.163652:0:20835:0:(osp_sync.c:1578:osp_sync_add_commit_cb()) lustre-OST0000-osc-MDT0000: add commit cb at 4388696703, next at 4388346280, rc = 0
+00080000:00080000:0.0:1579382660.163654:0:20835:0:(osd_handler.c:2173:osd_commit_async()) lustre-MDT0000: async commit OSD
+00000004:00080000:0.0:1579382660.163656:0:20835:0:(osp_sync.c:1578:osp_sync_add_commit_cb()) lustre-OST0001-osc-MDT0000: add commit cb at 4388696703, next at 4388349752, rc = 0
+00080000:00080000:0.0:1579382660.163657:0:20835:0:(osd_handler.c:2173:osd_commit_async()) lustre-MDT0000: async commit OSD
+00000004:00080000:0.0:1579382660.163658:0:20835:0:(osp_sync.c:1578:osp_sync_add_commit_cb()) lustre-OST0002-osc-MDT0000: add commit cb at 4388696703, next at 4388346792, rc = 0
+00080000:00080000:0.0:1579382660.163658:0:20835:0:(osd_handler.c:2173:osd_commit_async()) lustre-MDT0000: async commit OSD
+00000004:00080000:0.0:1579382660.169429:0:4024:0:(osp_sync.c:1543:osp_sync_local_commit_cb()) lustre-OST0002-osc-MDT0000: 114 committed
+00000004:00080000:0.0:1579382660.169431:0:4024:0:(osp_sync.c:1543:osp_sync_local_commit_cb()) lustre-OST0001-osc-MDT0000: 111 committed
+00000004:00080000:0.0:1579382660.169432:0:4024:0:(osp_sync.c:1543:osp_sync_local_commit_cb()) lustre-OST0000-osc-MDT0000: 116 committed
+00100000:10000000:0.0:1579382660.169452:0:20834:0:(lfsck_engine.c:1815:lfsck_assistant_engine()) lustre-MDT0000-osd: LFSCK assistant synced before exit: rc = 0
+00100000:10000000:0.0:1579382660.169454:0:20834:0:(lfsck_layout.c:1445:lfsck_layout_double_scan_result()) lustre-MDT0000-osd: layout LFSCK double scan: rc = 1
+00100000:10000000:0.0:1579382660.169463:0:20834:0:(lfsck_layout.c:1486:lfsck_layout_double_scan_result()) lustre-MDT0000-osd: layout LFSCK double scan result 3: rc = 0
+00100000:10000000:0.0:1579382660.169463:0:20834:0:(lfsck_engine.c:1826:lfsck_assistant_engine()) lustre-MDT0000-osd: LFSCK assistant phase2 scan finished: rc = 1
+00100000:10000000:0.0:1579382660.169465:0:20834:0:(lfsck_engine.c:1842:lfsck_assistant_engine()) lustre-MDT0000-osd: lfsck_layout LFSCK assistant thread exit: rc = 1
+00000004:00080000:0.0:1579382660.176197:0:4024:0:(osp_sync.c:1543:osp_sync_local_commit_cb()) lustre-OST0002-osc-MDT0000: 115 committed
+00000004:00080000:0.0:1579382660.176201:0:4024:0:(osp_sync.c:1543:osp_sync_local_commit_cb()) lustre-OST0001-osc-MDT0000: 112 committed
+00000004:00080000:0.0:1579382660.176202:0:4024:0:(osp_sync.c:1543:osp_sync_local_commit_cb()) lustre-OST0000-osc-MDT0000: 117 committed
+00100000:10000000:0.0:1579382660.176209:0:20835:0:(lfsck_engine.c:1815:lfsck_assistant_engine()) lustre-MDT0000-osd: LFSCK assistant synced before exit: rc = 0
+00100000:10000000:0.0:1579382660.176223:0:20835:0:(lfsck_engine.c:1826:lfsck_assistant_engine()) lustre-MDT0000-osd: LFSCK assistant phase2 scan finished: rc = 1
+00100000:10000000:0.0:1579382660.176225:0:20835:0:(lfsck_engine.c:1842:lfsck_assistant_engine()) lustre-MDT0000-osd: lfsck_namespace LFSCK assistant thread exit: rc = 1

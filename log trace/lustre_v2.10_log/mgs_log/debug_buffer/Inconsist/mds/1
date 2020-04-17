@@ -1,0 +1,198 @@
+00000020:00000080:0.0F:1574446479.383554:0:3609:0:(genops.c:1463:class_disconnect()) disconnect: cookie 0x3c645e66def57e85
+00000100:00080000:0.0:1574446479.383559:0:3609:0:(import.c:1650:ptlrpc_cleanup_imp()) ffff9eba81c11800 : changing import state from FULL to CLOSED
+00000020:00000080:0.0:1574446479.383591:0:3602:0:(genops.c:987:class_export_put()) final put ffff9ebaba978000/0c6814d0-633d-035d-8ca2-da4c0de5cb57
+00000020:00000080:0.0:1574446479.383594:0:3570:0:(genops.c:937:class_export_destroy()) destroying export ffff9ebaba978000/0c6814d0-633d-035d-8ca2-da4c0de5cb57 for MGS
+00000020:00000080:0.0:1574446479.383598:0:3570:0:(genops.c:1177:class_import_destroy()) destroying import ffff9eba81c11800 for MGS
+00010000:00080000:0.0:1574446557.631183:0:3609:0:(ldlm_lib.c:1231:target_handle_connect()) MGS: connection from 416a5d34-1fe0-5dbc-60d2-e4b1e7bf24ca@10.24.85.134@tcp t0 exp           (null) cur 1574446557 last 0
+00000020:00000080:0.0:1574446557.631216:0:3609:0:(genops.c:1379:class_connect()) connect: client 416a5d34-1fe0-5dbc-60d2-e4b1e7bf24ca, cookie 0x3c645e66def580b5
+00000020:01000000:0.0:1574446557.631224:0:3609:0:(lprocfs_status_server.c:342:lprocfs_exp_setup()) using hash ffff9ebab7864900
+00000100:00080000:0.0:1574446557.631240:0:3609:0:(import.c:105:ptlrpc_import_enter_resend()) ffff9eba5e7b0800 : changing import state from NEW to RECOVER
+00000100:00080000:0.0:1574446557.631248:0:3609:0:(import.c:1535:ptlrpc_import_recovery_state_machine()) ffff9eba5e7b0800 : changing import state from RECOVER to FULL
+00000100:02000000:0.0:1574446557.631254:0:3609:0:(import.c:1541:ptlrpc_import_recovery_state_machine()) MGS: Connection restored to 0c6814d0-633d-035d-8ca2-da4c0de5cb57 (at 10.24.85.134@tcp)
+20000000:01000000:0.0:1574446557.660821:0:3609:0:(mgs_handler.c:414:mgs_target_reg()) fs: lustre index: 0 is registered to MGS.
+20000000:01000000:0.0:1574446557.660830:0:3609:0:(mgs_handler.c:445:mgs_target_reg()) Server lustre-MDT0000 is running on 10.24.85.134@tcp
+20000000:01000000:0.0:1574446557.660836:0:3609:0:(mgs_handler.c:568:mgs_target_reg()) replying with lustre-MDT0000, index=0, rc=0
+20000000:01000000:0.0:1574446557.847667:0:3609:0:(mgs_nids.c:633:mgs_get_ir_logs()) Reading IR log lustre-mdtir bufsize 1048576.
+20000000:01000000:0.0:1574446557.847673:0:3609:0:(mgs_nids.c:192:mgs_nidtbl_read()) fsname lustre, entry size 32, pages 4064/1/256/255.
+20000000:01000000:0.0:1574446557.847674:0:3609:0:(mgs_nids.c:192:mgs_nidtbl_read()) fsname lustre, entry size 32, pages 4032/1/256/255.
+20000000:01000000:0.0:1574446557.847676:0:3609:0:(mgs_nids.c:192:mgs_nidtbl_read()) fsname lustre, entry size 32, pages 4000/1/256/255.
+20000000:01000000:0.0:1574446557.847677:0:3609:0:(mgs_nids.c:192:mgs_nidtbl_read()) fsname lustre, entry size 32, pages 3968/1/256/255.
+20000000:01000000:0.0:1574446557.847677:0:3609:0:(mgs_nids.c:204:mgs_nidtbl_read()) Read IR logs lustre return with 128, version 6
+00000040:00080000:0.0:1574446557.849630:0:3609:0:(llog_osd.c:231:llog_osd_read_header()) not reading header from 0-byte log
+20000000:01000000:0.0:1574446557.859414:0:3609:0:(mgs_handler.c:388:mgs_target_reg()) fs: lustre index: 0 is ready to reconnect.
+20000000:01000000:0.0:1574446557.879884:0:3609:0:(mgs_nids.c:544:mgs_ir_update()) Try to revoke recover lock of lustre
+20000000:01000000:0.0:1574446557.879893:0:3609:0:(mgs_handler.c:568:mgs_target_reg()) replying with lustre-MDT0000, index=0, rc=0
+20000000:01000000:0.0:1574446557.879961:0:3629:0:(mgs_nids.c:441:mgs_ir_notify()) mgs_lustre_notify woken up, phase is 1
+10000000:01000000:0.0:1574446557.879966:0:3629:0:(mgc_request.c:90:mgc_name2resid()) log lustre to resid 0x65727473756c/0x2 (lustre)
+20000000:01000000:0.0:1574446557.882774:0:3599:0:(mgs_nids.c:415:mgs_ir_notify_complete()) Revoke recover lock of lustre completed after 0.003992656s
+20000000:01000000:0.0:1574446563.617953:0:3609:0:(mgs_nids.c:633:mgs_get_ir_logs()) Reading IR log lustre-mdtir bufsize 16384.
+20000000:01000000:0.0:1574446563.617966:0:3609:0:(mgs_nids.c:192:mgs_nidtbl_read()) fsname lustre, entry size 32, pages 4064/1/4/3.
+20000000:01000000:0.0:1574446563.617970:0:3609:0:(mgs_nids.c:204:mgs_nidtbl_read()) Read IR logs lustre return with 32, version 7
+20000000:01000000:0.0:1574446567.042011:0:3609:0:(mgs_nids.c:633:mgs_get_ir_logs()) Reading IR log lustre-cliir bufsize 16384.
+20000000:01000000:0.0:1574446567.042025:0:3609:0:(mgs_nids.c:192:mgs_nidtbl_read()) fsname lustre, entry size 32, pages 4064/1/4/3.
+20000000:01000000:0.0:1574446567.042030:0:3609:0:(mgs_nids.c:204:mgs_nidtbl_read()) Read IR logs lustre return with 32, version 7
+00000020:00000080:0.0:1574446576.705597:0:3609:0:(genops.c:1463:class_disconnect()) disconnect: cookie 0x3c645e66def580b5
+00000100:00080000:0.0:1574446576.705600:0:3609:0:(import.c:1650:ptlrpc_cleanup_imp()) ffff9eba5e7b0800 : changing import state from FULL to CLOSED
+00000020:00000080:0.0:1574446576.705633:0:3603:0:(genops.c:987:class_export_put()) final put ffff9eba5e7e3000/416a5d34-1fe0-5dbc-60d2-e4b1e7bf24ca
+00000020:00000080:0.0:1574446576.705637:0:3570:0:(genops.c:937:class_export_destroy()) destroying export ffff9eba5e7e3000/416a5d34-1fe0-5dbc-60d2-e4b1e7bf24ca for MGS
+00000020:00000080:0.0:1574446576.705641:0:3570:0:(genops.c:1177:class_import_destroy()) destroying import ffff9eba5e7b0800 for MGS
+00010000:00080000:0.0:1574447868.330876:0:3609:0:(ldlm_lib.c:1231:target_handle_connect()) MGS: connection from a780b165-039c-b514-8680-2f4a9d3de485@10.24.85.134@tcp t0 exp           (null) cur 1574447868 last 0
+00000020:00000080:0.0:1574447868.330911:0:3609:0:(genops.c:1379:class_connect()) connect: client a780b165-039c-b514-8680-2f4a9d3de485, cookie 0x3c645e66def58109
+00000020:01000000:0.0:1574447868.330919:0:3609:0:(lprocfs_status_server.c:342:lprocfs_exp_setup()) using hash ffff9ebab7864900
+00000100:00080000:0.0:1574447868.330940:0:3609:0:(import.c:105:ptlrpc_import_enter_resend()) ffff9ebab9437000 : changing import state from NEW to RECOVER
+00000100:00080000:0.0:1574447868.330949:0:3609:0:(import.c:1535:ptlrpc_import_recovery_state_machine()) ffff9ebab9437000 : changing import state from RECOVER to FULL
+00000100:02000000:0.0:1574447868.330955:0:3609:0:(import.c:1541:ptlrpc_import_recovery_state_machine()) MGS: Connection restored to 0c6814d0-633d-035d-8ca2-da4c0de5cb57 (at 10.24.85.134@tcp)
+20000000:01000000:0.0:1574447868.347273:0:3609:0:(mgs_handler.c:414:mgs_target_reg()) fs: lustre index: 0 is registered to MGS.
+20000000:01000000:0.0:1574447868.347277:0:3609:0:(mgs_handler.c:445:mgs_target_reg()) Server lustre-MDT0000 is running on 10.24.85.134@tcp
+20000000:01000000:0.0:1574447868.347279:0:3609:0:(mgs_handler.c:568:mgs_target_reg()) replying with lustre-MDT0000, index=0, rc=0
+20000000:01000000:0.0:1574447868.453061:0:3609:0:(mgs_nids.c:633:mgs_get_ir_logs()) Reading IR log lustre-mdtir bufsize 1048576.
+20000000:01000000:0.0:1574447868.453067:0:3609:0:(mgs_nids.c:192:mgs_nidtbl_read()) fsname lustre, entry size 32, pages 4064/1/256/255.
+20000000:01000000:0.0:1574447868.453068:0:3609:0:(mgs_nids.c:192:mgs_nidtbl_read()) fsname lustre, entry size 32, pages 4032/1/256/255.
+20000000:01000000:0.0:1574447868.453069:0:3609:0:(mgs_nids.c:192:mgs_nidtbl_read()) fsname lustre, entry size 32, pages 4000/1/256/255.
+20000000:01000000:0.0:1574447868.453070:0:3609:0:(mgs_nids.c:192:mgs_nidtbl_read()) fsname lustre, entry size 32, pages 3968/1/256/255.
+20000000:01000000:0.0:1574447868.453071:0:3609:0:(mgs_nids.c:204:mgs_nidtbl_read()) Read IR logs lustre return with 128, version 7
+00000040:00080000:0.0:1574447868.454382:0:3609:0:(llog_osd.c:231:llog_osd_read_header()) not reading header from 0-byte log
+20000000:01000000:0.0:1574447868.463787:0:3609:0:(mgs_handler.c:388:mgs_target_reg()) fs: lustre index: 0 is ready to reconnect.
+20000000:01000000:0.0:1574447868.484245:0:3609:0:(mgs_nids.c:544:mgs_ir_update()) Try to revoke recover lock of lustre
+20000000:01000000:0.0:1574447868.484250:0:3609:0:(mgs_handler.c:568:mgs_target_reg()) replying with lustre-MDT0000, index=0, rc=0
+20000000:01000000:0.0:1574447868.484288:0:3629:0:(mgs_nids.c:441:mgs_ir_notify()) mgs_lustre_notify woken up, phase is 1
+10000000:01000000:0.0:1574447868.484290:0:3629:0:(mgc_request.c:90:mgc_name2resid()) log lustre to resid 0x65727473756c/0x2 (lustre)
+20000000:01000000:0.0:1574447868.485038:0:3599:0:(mgs_nids.c:415:mgs_ir_notify_complete()) Revoke recover lock of lustre completed after 0.003992656s
+20000000:01000000:0.0:1574447874.216170:0:3609:0:(mgs_nids.c:633:mgs_get_ir_logs()) Reading IR log lustre-cliir bufsize 16384.
+20000000:01000000:0.0:1574447874.216184:0:3609:0:(mgs_nids.c:192:mgs_nidtbl_read()) fsname lustre, entry size 32, pages 4064/1/4/3.
+20000000:01000000:0.0:1574447874.216188:0:3609:0:(mgs_nids.c:204:mgs_nidtbl_read()) Read IR logs lustre return with 32, version 8
+20000000:01000000:0.0:1574447878.098219:0:3609:0:(mgs_nids.c:633:mgs_get_ir_logs()) Reading IR log lustre-mdtir bufsize 16384.
+20000000:01000000:0.0:1574447878.098225:0:3609:0:(mgs_nids.c:192:mgs_nidtbl_read()) fsname lustre, entry size 32, pages 4064/1/4/3.
+20000000:01000000:0.0:1574447878.098226:0:3609:0:(mgs_nids.c:204:mgs_nidtbl_read()) Read IR logs lustre return with 32, version 8
+00000020:00000080:0.0:1574447933.686473:0:3609:0:(genops.c:1463:class_disconnect()) disconnect: cookie 0x3c645e66def58109
+00000100:00080000:0.0:1574447933.686475:0:3609:0:(import.c:1650:ptlrpc_cleanup_imp()) ffff9ebab9437000 : changing import state from FULL to CLOSED
+00000020:00000080:0.0:1574447933.686505:0:3602:0:(genops.c:987:class_export_put()) final put ffff9eba5cd5d000/a780b165-039c-b514-8680-2f4a9d3de485
+00000020:00000080:0.0:1574447933.686508:0:3570:0:(genops.c:937:class_export_destroy()) destroying export ffff9eba5cd5d000/a780b165-039c-b514-8680-2f4a9d3de485 for MGS
+00000020:00000080:0.0:1574447933.686513:0:3570:0:(genops.c:1177:class_import_destroy()) destroying import ffff9ebab9437000 for MGS
+00010000:00080000:0.0:1574447941.413575:0:3609:0:(ldlm_lib.c:1231:target_handle_connect()) MGS: connection from d59ee900-4b51-3949-b52b-e725e1504a0b@10.24.85.134@tcp t0 exp           (null) cur 1574447941 last 0
+00000020:00000080:0.0:1574447941.413588:0:3609:0:(genops.c:1379:class_connect()) connect: client d59ee900-4b51-3949-b52b-e725e1504a0b, cookie 0x3c645e66def5815d
+00000020:01000000:0.0:1574447941.413592:0:3609:0:(lprocfs_status_server.c:342:lprocfs_exp_setup()) using hash ffff9ebab7864900
+00000100:00080000:0.0:1574447941.413599:0:3609:0:(import.c:105:ptlrpc_import_enter_resend()) ffff9ebab9437000 : changing import state from NEW to RECOVER
+00000100:00080000:0.0:1574447941.413603:0:3609:0:(import.c:1535:ptlrpc_import_recovery_state_machine()) ffff9ebab9437000 : changing import state from RECOVER to FULL
+00000100:02000000:0.0:1574447941.413605:0:3609:0:(import.c:1541:ptlrpc_import_recovery_state_machine()) MGS: Connection restored to 0c6814d0-633d-035d-8ca2-da4c0de5cb57 (at 10.24.85.134@tcp)
+20000000:01000000:0.0:1574447941.418842:0:3609:0:(mgs_handler.c:414:mgs_target_reg()) fs: lustre index: 0 is registered to MGS.
+20000000:01000000:0.0:1574447941.418846:0:3609:0:(mgs_handler.c:445:mgs_target_reg()) Server lustre-MDT0000 is running on 10.24.85.134@tcp
+20000000:01000000:0.0:1574447941.418848:0:3609:0:(mgs_handler.c:568:mgs_target_reg()) replying with lustre-MDT0000, index=0, rc=0
+20000000:01000000:0.0:1574447941.458852:0:3609:0:(mgs_nids.c:633:mgs_get_ir_logs()) Reading IR log lustre-mdtir bufsize 1048576.
+20000000:01000000:0.0:1574447941.458857:0:3609:0:(mgs_nids.c:192:mgs_nidtbl_read()) fsname lustre, entry size 32, pages 4064/1/256/255.
+20000000:01000000:0.0:1574447941.458858:0:3609:0:(mgs_nids.c:192:mgs_nidtbl_read()) fsname lustre, entry size 32, pages 4032/1/256/255.
+20000000:01000000:0.0:1574447941.458859:0:3609:0:(mgs_nids.c:192:mgs_nidtbl_read()) fsname lustre, entry size 32, pages 4000/1/256/255.
+20000000:01000000:0.0:1574447941.458859:0:3609:0:(mgs_nids.c:192:mgs_nidtbl_read()) fsname lustre, entry size 32, pages 3968/1/256/255.
+20000000:01000000:0.0:1574447941.458860:0:3609:0:(mgs_nids.c:204:mgs_nidtbl_read()) Read IR logs lustre return with 128, version 8
+00000040:00080000:0.0:1574447941.460081:0:3609:0:(llog_osd.c:231:llog_osd_read_header()) not reading header from 0-byte log
+20000000:01000000:0.0:1574447941.463343:0:3609:0:(mgs_handler.c:388:mgs_target_reg()) fs: lustre index: 0 is ready to reconnect.
+20000000:01000000:0.0:1574447941.479620:0:3609:0:(mgs_nids.c:544:mgs_ir_update()) Try to revoke recover lock of lustre
+20000000:01000000:0.0:1574447941.479624:0:3609:0:(mgs_handler.c:568:mgs_target_reg()) replying with lustre-MDT0000, index=0, rc=0
+20000000:01000000:0.0:1574447941.479651:0:3629:0:(mgs_nids.c:441:mgs_ir_notify()) mgs_lustre_notify woken up, phase is 1
+10000000:01000000:0.0:1574447941.479652:0:3629:0:(mgc_request.c:90:mgc_name2resid()) log lustre to resid 0x65727473756c/0x2 (lustre)
+20000000:01000000:0.0:1574447941.480272:0:3599:0:(mgs_nids.c:415:mgs_ir_notify_complete()) Revoke recover lock of lustre completed after 0.003992656s
+20000000:01000000:0.0:1574447949.263613:0:3609:0:(mgs_nids.c:633:mgs_get_ir_logs()) Reading IR log lustre-mdtir bufsize 16384.
+20000000:01000000:0.0:1574447949.263626:0:3609:0:(mgs_nids.c:192:mgs_nidtbl_read()) fsname lustre, entry size 32, pages 4064/1/4/3.
+20000000:01000000:0.0:1574447949.263631:0:3609:0:(mgs_nids.c:204:mgs_nidtbl_read()) Read IR logs lustre return with 32, version 9
+20000000:01000000:0.0:1574447950.243264:0:3609:0:(mgs_nids.c:633:mgs_get_ir_logs()) Reading IR log lustre-cliir bufsize 16384.
+20000000:01000000:0.0:1574447950.243275:0:3609:0:(mgs_nids.c:192:mgs_nidtbl_read()) fsname lustre, entry size 32, pages 4064/1/4/3.
+20000000:01000000:0.0:1574447950.243278:0:3609:0:(mgs_nids.c:204:mgs_nidtbl_read()) Read IR logs lustre return with 32, version 9
+00000020:00000080:0.0:1574448007.943529:0:3609:0:(genops.c:1463:class_disconnect()) disconnect: cookie 0x3c645e66def5815d
+00000100:00080000:0.0:1574448007.943532:0:3609:0:(import.c:1650:ptlrpc_cleanup_imp()) ffff9ebab9437000 : changing import state from FULL to CLOSED
+00000020:00000080:0.0:1574448007.943564:0:3603:0:(genops.c:987:class_export_put()) final put ffff9eba68a40c00/d59ee900-4b51-3949-b52b-e725e1504a0b
+00000020:00000080:0.0:1574448007.943567:0:3570:0:(genops.c:937:class_export_destroy()) destroying export ffff9eba68a40c00/d59ee900-4b51-3949-b52b-e725e1504a0b for MGS
+00000020:00000080:0.0:1574448007.943572:0:3570:0:(genops.c:1177:class_import_destroy()) destroying import ffff9ebab9437000 for MGS
+00010000:00080000:0.0:1574448012.520226:0:3609:0:(ldlm_lib.c:1231:target_handle_connect()) MGS: connection from 6de2ded7-7362-3a2a-359c-5781b687b1f6@10.24.85.134@tcp t0 exp           (null) cur 1574448012 last 0
+00000020:00000080:0.0:1574448012.520237:0:3609:0:(genops.c:1379:class_connect()) connect: client 6de2ded7-7362-3a2a-359c-5781b687b1f6, cookie 0x3c645e66def581b1
+00000020:01000000:0.0:1574448012.520239:0:3609:0:(lprocfs_status_server.c:342:lprocfs_exp_setup()) using hash ffff9ebab7864900
+00000100:00080000:0.0:1574448012.520245:0:3609:0:(import.c:105:ptlrpc_import_enter_resend()) ffff9ebab9437000 : changing import state from NEW to RECOVER
+00000100:00080000:0.0:1574448012.520248:0:3609:0:(import.c:1535:ptlrpc_import_recovery_state_machine()) ffff9ebab9437000 : changing import state from RECOVER to FULL
+00000100:02000000:0.0:1574448012.520250:0:3609:0:(import.c:1541:ptlrpc_import_recovery_state_machine()) MGS: Connection restored to 0c6814d0-633d-035d-8ca2-da4c0de5cb57 (at 10.24.85.134@tcp)
+20000000:01000000:0.0:1574448012.520710:0:3609:0:(mgs_handler.c:414:mgs_target_reg()) fs: lustre index: 0 is registered to MGS.
+20000000:01000000:0.0:1574448012.520713:0:3609:0:(mgs_handler.c:445:mgs_target_reg()) Server lustre-MDT0000 is running on 10.24.85.134@tcp
+20000000:01000000:0.0:1574448012.520714:0:3609:0:(mgs_handler.c:568:mgs_target_reg()) replying with lustre-MDT0000, index=0, rc=0
+20000000:01000000:0.0:1574448012.563499:0:3609:0:(mgs_nids.c:633:mgs_get_ir_logs()) Reading IR log lustre-mdtir bufsize 1048576.
+20000000:01000000:0.0:1574448012.563504:0:3609:0:(mgs_nids.c:192:mgs_nidtbl_read()) fsname lustre, entry size 32, pages 4064/1/256/255.
+20000000:01000000:0.0:1574448012.563505:0:3609:0:(mgs_nids.c:192:mgs_nidtbl_read()) fsname lustre, entry size 32, pages 4032/1/256/255.
+20000000:01000000:0.0:1574448012.563506:0:3609:0:(mgs_nids.c:192:mgs_nidtbl_read()) fsname lustre, entry size 32, pages 4000/1/256/255.
+20000000:01000000:0.0:1574448012.563507:0:3609:0:(mgs_nids.c:192:mgs_nidtbl_read()) fsname lustre, entry size 32, pages 3968/1/256/255.
+20000000:01000000:0.0:1574448012.563508:0:3609:0:(mgs_nids.c:204:mgs_nidtbl_read()) Read IR logs lustre return with 128, version 9
+00000040:00080000:0.0:1574448012.564713:0:3609:0:(llog_osd.c:231:llog_osd_read_header()) not reading header from 0-byte log
+20000000:01000000:0.0:1574448012.567784:0:3609:0:(mgs_handler.c:388:mgs_target_reg()) fs: lustre index: 0 is ready to reconnect.
+20000000:01000000:0.0:1574448012.587398:0:3609:0:(mgs_nids.c:544:mgs_ir_update()) Try to revoke recover lock of lustre
+20000000:01000000:0.0:1574448012.587403:0:3609:0:(mgs_handler.c:568:mgs_target_reg()) replying with lustre-MDT0000, index=0, rc=0
+20000000:01000000:0.0:1574448012.587431:0:3629:0:(mgs_nids.c:441:mgs_ir_notify()) mgs_lustre_notify woken up, phase is 1
+10000000:01000000:0.0:1574448012.587433:0:3629:0:(mgc_request.c:90:mgc_name2resid()) log lustre to resid 0x65727473756c/0x2 (lustre)
+20000000:01000000:0.0:1574448012.587928:0:3599:0:(mgs_nids.c:415:mgs_ir_notify_complete()) Revoke recover lock of lustre completed after 0.003992656s
+20000000:01000000:0.0:1574448022.259113:0:3609:0:(mgs_nids.c:633:mgs_get_ir_logs()) Reading IR log lustre-cliir bufsize 16384.
+20000000:01000000:0.0:1574448022.259125:0:3609:0:(mgs_nids.c:192:mgs_nidtbl_read()) fsname lustre, entry size 32, pages 4064/1/4/3.
+20000000:01000000:0.0:1574448022.259130:0:3609:0:(mgs_nids.c:204:mgs_nidtbl_read()) Read IR logs lustre return with 32, version 10
+20000000:01000000:0.0:1574448022.463556:0:3609:0:(mgs_nids.c:633:mgs_get_ir_logs()) Reading IR log lustre-mdtir bufsize 16384.
+20000000:01000000:0.0:1574448022.463569:0:3609:0:(mgs_nids.c:192:mgs_nidtbl_read()) fsname lustre, entry size 32, pages 4064/1/4/3.
+20000000:01000000:0.0:1574448022.463574:0:3609:0:(mgs_nids.c:204:mgs_nidtbl_read()) Read IR logs lustre return with 32, version 10
+00000020:00000080:0.0:1574455216.381004:0:3609:0:(genops.c:1463:class_disconnect()) disconnect: cookie 0x3c645e66def581b1
+00000100:00080000:0.0:1574455216.381006:0:3609:0:(import.c:1650:ptlrpc_cleanup_imp()) ffff9ebab9437000 : changing import state from FULL to CLOSED
+00000020:00000080:0.0:1574455216.381039:0:3602:0:(genops.c:987:class_export_put()) final put ffff9eba5e576400/6de2ded7-7362-3a2a-359c-5781b687b1f6
+00000020:00000080:0.0:1574455216.381042:0:3570:0:(genops.c:937:class_export_destroy()) destroying export ffff9eba5e576400/6de2ded7-7362-3a2a-359c-5781b687b1f6 for MGS
+00000020:00000080:0.0:1574455216.381047:0:3570:0:(genops.c:1177:class_import_destroy()) destroying import ffff9ebab9437000 for MGS
+00010000:00080000:0.0:1574455231.325531:0:3609:0:(ldlm_lib.c:1231:target_handle_connect()) MGS: connection from d7b22d81-1bde-854f-f5ad-620a3de7eb99@10.24.85.134@tcp t0 exp           (null) cur 1574455231 last 0
+00000020:00000080:0.0:1574455231.325559:0:3609:0:(genops.c:1379:class_connect()) connect: client d7b22d81-1bde-854f-f5ad-620a3de7eb99, cookie 0x3c645e66def58205
+00000020:01000000:0.0:1574455231.325567:0:3609:0:(lprocfs_status_server.c:342:lprocfs_exp_setup()) using hash ffff9ebab7864900
+00000100:00080000:0.0:1574455231.325581:0:3609:0:(import.c:105:ptlrpc_import_enter_resend()) ffff9ebaba27c800 : changing import state from NEW to RECOVER
+00000100:00080000:0.0:1574455231.325589:0:3609:0:(import.c:1535:ptlrpc_import_recovery_state_machine()) ffff9ebaba27c800 : changing import state from RECOVER to FULL
+00000100:02000000:0.0:1574455231.325615:0:3609:0:(import.c:1541:ptlrpc_import_recovery_state_machine()) MGS: Connection restored to 0c6814d0-633d-035d-8ca2-da4c0de5cb57 (at 10.24.85.134@tcp)
+20000000:01000000:0.0:1574455231.344470:0:3609:0:(mgs_handler.c:414:mgs_target_reg()) fs: lustre index: 0 is registered to MGS.
+20000000:01000000:0.0:1574455231.344475:0:3609:0:(mgs_handler.c:445:mgs_target_reg()) Server lustre-MDT0000 is running on 10.24.85.134@tcp
+20000000:01000000:0.0:1574455231.344477:0:3609:0:(mgs_handler.c:568:mgs_target_reg()) replying with lustre-MDT0000, index=0, rc=0
+20000000:01000000:0.0:1574455231.447904:0:3609:0:(mgs_nids.c:633:mgs_get_ir_logs()) Reading IR log lustre-mdtir bufsize 1048576.
+20000000:01000000:0.0:1574455231.447909:0:3609:0:(mgs_nids.c:192:mgs_nidtbl_read()) fsname lustre, entry size 32, pages 4064/1/256/255.
+20000000:01000000:0.0:1574455231.447911:0:3609:0:(mgs_nids.c:192:mgs_nidtbl_read()) fsname lustre, entry size 32, pages 4032/1/256/255.
+20000000:01000000:0.0:1574455231.447912:0:3609:0:(mgs_nids.c:192:mgs_nidtbl_read()) fsname lustre, entry size 32, pages 4000/1/256/255.
+20000000:01000000:0.0:1574455231.447912:0:3609:0:(mgs_nids.c:192:mgs_nidtbl_read()) fsname lustre, entry size 32, pages 3968/1/256/255.
+20000000:01000000:0.0:1574455231.447913:0:3609:0:(mgs_nids.c:204:mgs_nidtbl_read()) Read IR logs lustre return with 128, version 10
+00000040:00080000:0.0:1574455231.449107:0:3609:0:(llog_osd.c:231:llog_osd_read_header()) not reading header from 0-byte log
+20000000:01000000:0.0:1574455231.459332:0:3609:0:(mgs_handler.c:388:mgs_target_reg()) fs: lustre index: 0 is ready to reconnect.
+20000000:01000000:0.0:1574455231.478982:0:3609:0:(mgs_nids.c:544:mgs_ir_update()) Try to revoke recover lock of lustre
+20000000:01000000:0.0:1574455231.478987:0:3609:0:(mgs_handler.c:568:mgs_target_reg()) replying with lustre-MDT0000, index=0, rc=0
+20000000:01000000:0.0:1574455231.479025:0:3629:0:(mgs_nids.c:441:mgs_ir_notify()) mgs_lustre_notify woken up, phase is 1
+10000000:01000000:0.0:1574455231.479027:0:3629:0:(mgc_request.c:90:mgc_name2resid()) log lustre to resid 0x65727473756c/0x2 (lustre)
+20000000:01000000:0.0:1574455231.479813:0:3599:0:(mgs_nids.c:415:mgs_ir_notify_complete()) Revoke recover lock of lustre completed after 0.003992656s
+20000000:01000000:0.0:1574455238.304531:0:3609:0:(mgs_nids.c:633:mgs_get_ir_logs()) Reading IR log lustre-cliir bufsize 16384.
+20000000:01000000:0.0:1574455238.304537:0:3609:0:(mgs_nids.c:192:mgs_nidtbl_read()) fsname lustre, entry size 32, pages 4064/1/4/3.
+20000000:01000000:0.0:1574455238.304538:0:3609:0:(mgs_nids.c:204:mgs_nidtbl_read()) Read IR logs lustre return with 32, version 11
+20000000:01000000:0.0:1574455239.663012:0:3609:0:(mgs_nids.c:633:mgs_get_ir_logs()) Reading IR log lustre-mdtir bufsize 16384.
+20000000:01000000:0.0:1574455239.663025:0:3609:0:(mgs_nids.c:192:mgs_nidtbl_read()) fsname lustre, entry size 32, pages 4064/1/4/3.
+20000000:01000000:0.0:1574455239.663030:0:3609:0:(mgs_nids.c:204:mgs_nidtbl_read()) Read IR logs lustre return with 32, version 11
+00000020:00000080:0.0:1574455246.741091:0:3609:0:(genops.c:1463:class_disconnect()) disconnect: cookie 0x3c645e66def58205
+00000100:00080000:0.0:1574455246.741094:0:3609:0:(import.c:1650:ptlrpc_cleanup_imp()) ffff9ebaba27c800 : changing import state from FULL to CLOSED
+00000020:00000080:0.0:1574455246.741124:0:3603:0:(genops.c:987:class_export_put()) final put ffff9eba5e577c00/d7b22d81-1bde-854f-f5ad-620a3de7eb99
+00000020:00000080:0.0:1574455246.741127:0:3570:0:(genops.c:937:class_export_destroy()) destroying export ffff9eba5e577c00/d7b22d81-1bde-854f-f5ad-620a3de7eb99 for MGS
+00000020:00000080:0.0:1574455246.741132:0:3570:0:(genops.c:1177:class_import_destroy()) destroying import ffff9ebaba27c800 for MGS
+00010000:00080000:0.0:1574455325.742558:0:3609:0:(ldlm_lib.c:1231:target_handle_connect()) MGS: connection from 6cf9e971-cd0b-f015-d06c-cf16bd31d9d5@10.24.85.134@tcp t0 exp           (null) cur 1574455325 last 0
+00000020:00000080:0.0:1574455325.742578:0:3609:0:(genops.c:1379:class_connect()) connect: client 6cf9e971-cd0b-f015-d06c-cf16bd31d9d5, cookie 0x3c645e66def58259
+00000020:01000000:0.0:1574455325.742583:0:3609:0:(lprocfs_status_server.c:342:lprocfs_exp_setup()) using hash ffff9ebab7864900
+00000100:00080000:0.0:1574455325.742594:0:3609:0:(import.c:105:ptlrpc_import_enter_resend()) ffff9ebaba27e000 : changing import state from NEW to RECOVER
+00000100:00080000:0.0:1574455325.742599:0:3609:0:(import.c:1535:ptlrpc_import_recovery_state_machine()) ffff9ebaba27e000 : changing import state from RECOVER to FULL
+00000100:02000000:0.0:1574455325.742602:0:3609:0:(import.c:1541:ptlrpc_import_recovery_state_machine()) MGS: Connection restored to 0c6814d0-633d-035d-8ca2-da4c0de5cb57 (at 10.24.85.134@tcp)
+20000000:01000000:0.0:1574455325.760252:0:3609:0:(mgs_handler.c:414:mgs_target_reg()) fs: lustre index: 0 is registered to MGS.
+20000000:01000000:0.0:1574455325.760258:0:3609:0:(mgs_handler.c:445:mgs_target_reg()) Server lustre-MDT0000 is running on 10.24.85.134@tcp
+20000000:01000000:0.0:1574455325.760261:0:3609:0:(mgs_handler.c:568:mgs_target_reg()) replying with lustre-MDT0000, index=0, rc=0
+20000000:01000000:0.0:1574455325.888710:0:3609:0:(mgs_nids.c:633:mgs_get_ir_logs()) Reading IR log lustre-mdtir bufsize 1048576.
+20000000:01000000:0.0:1574455325.888723:0:3609:0:(mgs_nids.c:192:mgs_nidtbl_read()) fsname lustre, entry size 32, pages 4064/1/256/255.
+20000000:01000000:0.0:1574455325.888728:0:3609:0:(mgs_nids.c:192:mgs_nidtbl_read()) fsname lustre, entry size 32, pages 4032/1/256/255.
+20000000:01000000:0.0:1574455325.888731:0:3609:0:(mgs_nids.c:192:mgs_nidtbl_read()) fsname lustre, entry size 32, pages 4000/1/256/255.
+20000000:01000000:0.0:1574455325.888736:0:3609:0:(mgs_nids.c:192:mgs_nidtbl_read()) fsname lustre, entry size 32, pages 3968/1/256/255.
+20000000:01000000:0.0:1574455325.888739:0:3609:0:(mgs_nids.c:204:mgs_nidtbl_read()) Read IR logs lustre return with 128, version 11
+00000040:00080000:0.0:1574455325.893286:0:3609:0:(llog_osd.c:231:llog_osd_read_header()) not reading header from 0-byte log
+20000000:01000000:0.0:1574455325.914710:0:3609:0:(mgs_handler.c:388:mgs_target_reg()) fs: lustre index: 0 is ready to reconnect.
+20000000:01000000:0.0:1574455325.938460:0:3609:0:(mgs_nids.c:544:mgs_ir_update()) Try to revoke recover lock of lustre
+20000000:01000000:0.0:1574455325.938468:0:3609:0:(mgs_handler.c:568:mgs_target_reg()) replying with lustre-MDT0000, index=0, rc=0
+20000000:01000000:0.0:1574455325.938529:0:3629:0:(mgs_nids.c:441:mgs_ir_notify()) mgs_lustre_notify woken up, phase is 1
+10000000:01000000:0.0:1574455325.938534:0:3629:0:(mgc_request.c:90:mgc_name2resid()) log lustre to resid 0x65727473756c/0x2 (lustre)
+20000000:01000000:0.0:1574455325.940682:0:3599:0:(mgs_nids.c:415:mgs_ir_notify_complete()) Revoke recover lock of lustre completed after 0.003992656s
+20000000:01000000:0.0:1574455332.982495:0:3609:0:(mgs_nids.c:633:mgs_get_ir_logs()) Reading IR log lustre-cliir bufsize 16384.
+20000000:01000000:0.0:1574455332.982507:0:3609:0:(mgs_nids.c:192:mgs_nidtbl_read()) fsname lustre, entry size 32, pages 4064/1/4/3.
+20000000:01000000:0.0:1574455332.982511:0:3609:0:(mgs_nids.c:204:mgs_nidtbl_read()) Read IR logs lustre return with 32, version 12
+20000000:01000000:0.0:1574455334.611274:0:3609:0:(mgs_nids.c:633:mgs_get_ir_logs()) Reading IR log lustre-mdtir bufsize 16384.
+20000000:01000000:0.0:1574455334.611288:0:3609:0:(mgs_nids.c:192:mgs_nidtbl_read()) fsname lustre, entry size 32, pages 4064/1/4/3.
+20000000:01000000:0.0:1574455334.611292:0:3609:0:(mgs_nids.c:204:mgs_nidtbl_read()) Read IR logs lustre return with 32, version 12

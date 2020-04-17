@@ -1,0 +1,82 @@
+00000020:00000080:0.0F:1574196744.806713:0:22104:0:(class_obd.c:232:class_handle_ioctl()) cmd = 400866e7
+00000004:00000080:0.0:1574196744.806719:0:22104:0:(mdt_handler.c:6135:mdt_iocontrol()) handling ioctl cmd 0x400866e7
+00000004:00020000:0.0:1574196744.806745:0:21948:0:(osp_object.c:582:osp_attr_get()) lustre-OST0000-osc-MDT0000:osp_attr_get update error [0x100000000:0x317:0x0]: rc = -4
+00100000:10000000:0.0:1574196744.806753:0:21948:0:(lfsck_layout.c:1433:lfsck_layout_record_failure()) lustre-MDT0000-osd: layout LFSCK hit first non-repaired inconsistency at the pos [54653]
+00100000:10000000:0.0:1574196744.806759:0:21948:0:(lfsck_engine.c:1809:lfsck_assistant_engine()) lustre-MDT0000-osd: LFSCK assistant sync before exit
+00080000:00080000:0.0:1574196744.806790:0:21948:0:(osd_handler.c:2173:osd_commit_async()) lustre-MDT0000: async commit OSD
+00080000:00080000:0.0:1574196744.806793:0:21948:0:(osd_handler.c:2173:osd_commit_async()) lustre-MDT0000: async commit OSD
+00080000:00080000:0.0:1574196744.806793:0:21948:0:(osd_handler.c:2173:osd_commit_async()) lustre-MDT0000: async commit OSD
+00100000:10000000:0.0:1574196744.806794:0:21948:0:(lfsck_engine.c:1815:lfsck_assistant_engine()) lustre-MDT0000-osd: LFSCK assistant synced before exit: rc = 0
+00100000:10000000:0.0:1574196744.806795:0:21948:0:(lfsck_engine.c:1842:lfsck_assistant_engine()) lustre-MDT0000-osd: lfsck_layout LFSCK assistant thread exit: rc = 1
+00100000:10000000:0.0:1574196744.806820:0:21946:0:(lfsck_lib.c:2590:lfsck_post_generic()) lustre-MDT0000-osd: the assistant has done lfsck_layout post, rc = 1
+00100000:10000000:0.0:1574196744.806824:0:21946:0:(lfsck_layout.c:1054:lfsck_layout_store()) lustre-MDT0000-osd: fail to store lfsck_layout: rc = -30
+00100000:10000000:0.0:1574196744.806825:0:21946:0:(lfsck_layout.c:5749:lfsck_layout_master_post()) lustre-MDT0000-osd: layout LFSCK master post done: rc = -30
+00100000:10000000:0.0:1574196744.806825:0:21946:0:(lfsck_engine.c:608:lfsck_post()) lustre-MDT0000-osd: lfsck_post at the component 1: rc = -30
+00100000:10000000:0.0:1574196744.806826:0:21946:0:(lfsck_lib.c:2578:lfsck_post_generic()) lustre-MDT0000-osd: waiting for assistant to do lfsck_namespace post, rc = 1
+00100000:10000000:0.0:1574196744.806828:0:21946:0:(lfsck_lib.c:2590:lfsck_post_generic()) lustre-MDT0000-osd: the assistant has done lfsck_namespace post, rc = 1
+00100000:10000000:0.0:1574196744.806830:0:21946:0:(lfsck_namespace.c:439:lfsck_namespace_store()) lustre-MDT0000-osd: fail to store lfsck_namespace: rc = -30
+00100000:10000000:0.0:1574196744.806830:0:21946:0:(lfsck_namespace.c:4420:lfsck_namespace_post()) lustre-MDT0000-osd: namespace LFSCK post done: rc = -30
+00100000:10000000:0.0:1574196744.806831:0:21946:0:(lfsck_engine.c:608:lfsck_post()) lustre-MDT0000-osd: lfsck_post at the component 4: rc = -30
+00100000:10000000:0.0:1574196744.806832:0:21946:0:(lfsck_lib.c:2608:lfsck_double_scan_generic()) lustre-MDT0000-osd: waiting for assistant to do lfsck_layout double_scan, status 2
+00100000:10000000:0.0:1574196744.806833:0:21946:0:(lfsck_lib.c:2618:lfsck_double_scan_generic()) lustre-MDT0000-osd: the assistant has done lfsck_layout double_scan, status 1
+00100000:10000000:0.0:1574196744.806833:0:21946:0:(lfsck_lib.c:2608:lfsck_double_scan_generic()) lustre-MDT0000-osd: waiting for assistant to do lfsck_namespace double_scan, status 2
+00100000:10000000:0.0:1574196744.806838:0:21949:0:(lfsck_engine.c:1650:lfsck_assistant_engine()) lustre-MDT0000-osd: lfsck_namespace LFSCK assistant thread post
+00100000:10000000:0.0:1574196744.806840:0:21949:0:(lfsck_engine.c:1669:lfsck_assistant_engine()) lustre-MDT0000-osd: LFSCK assistant notified others for lfsck_namespace post: rc = 0
+00100000:10000000:0.0:1574196744.806841:0:21949:0:(lfsck_engine.c:1687:lfsck_assistant_engine()) lustre-MDT0000-osd: LFSCK assistant sync before the second-stage scaning
+00080000:00080000:0.0:1574196744.806842:0:21949:0:(osd_handler.c:2173:osd_commit_async()) lustre-MDT0000: async commit OSD
+00080000:00080000:0.0:1574196744.806843:0:21949:0:(osd_handler.c:2173:osd_commit_async()) lustre-MDT0000: async commit OSD
+00080000:00080000:0.0:1574196744.806844:0:21949:0:(osd_handler.c:2173:osd_commit_async()) lustre-MDT0000: async commit OSD
+00100000:10000000:0.0:1574196744.806845:0:21949:0:(lfsck_engine.c:1694:lfsck_assistant_engine()) lustre-MDT0000-osd: LFSCK assistant phase2 scan start, synced: rc = 0
+00100000:10000000:0.0:1574196744.806846:0:21949:0:(lfsck_namespace.c:6252:lfsck_namespace_assistant_handler_p2()) lustre-MDT0000-osd: namespace LFSCK phase2 scan start
+00100000:10000000:0.0:1574196744.806849:0:21949:0:(lfsck_namespace.c:5859:lfsck_namespace_scan_local_lpf()) lustre-MDT0000-osd: start to scan backend /lost+found
+00100000:10000000:0.0:1574196744.806858:0:21949:0:(lfsck_namespace.c:5967:lfsck_namespace_scan_local_lpf()) lustre-MDT0000-osd: stop to scan backend /lost+found: rc = 0
+00100000:10000000:0.0:1574196744.806867:0:21949:0:(lfsck_namespace.c:6270:lfsck_namespace_assistant_handler_p2()) lustre-MDT0000-osd: namespace LFSCK phase2 scan stop at the No. 1 trace file: rc = 0
+00100000:10000000:0.0:1574196744.806869:0:21949:0:(lfsck_engine.c:1809:lfsck_assistant_engine()) lustre-MDT0000-osd: LFSCK assistant sync before exit
+00080000:00080000:0.0:1574196744.806869:0:21949:0:(osd_handler.c:2173:osd_commit_async()) lustre-MDT0000: async commit OSD
+00080000:00080000:0.0:1574196744.806870:0:21949:0:(osd_handler.c:2173:osd_commit_async()) lustre-MDT0000: async commit OSD
+00080000:00080000:0.0:1574196744.806870:0:21949:0:(osd_handler.c:2173:osd_commit_async()) lustre-MDT0000: async commit OSD
+00100000:10000000:0.0:1574196744.806871:0:21949:0:(lfsck_engine.c:1815:lfsck_assistant_engine()) lustre-MDT0000-osd: LFSCK assistant synced before exit: rc = 0
+00100000:10000000:0.0:1574196744.806872:0:21949:0:(lfsck_namespace.c:439:lfsck_namespace_store()) lustre-MDT0000-osd: fail to store lfsck_namespace: rc = -30
+00100000:10000000:0.0:1574196744.806872:0:21949:0:(lfsck_engine.c:1826:lfsck_assistant_engine()) lustre-MDT0000-osd: LFSCK assistant phase2 scan finished: rc = -30
+00100000:10000000:0.0:1574196744.806873:0:21949:0:(lfsck_engine.c:1842:lfsck_assistant_engine()) lustre-MDT0000-osd: lfsck_namespace LFSCK assistant thread exit: rc = -30
+00100000:10000000:0.0:1574196744.807874:0:21946:0:(lfsck_lib.c:2618:lfsck_double_scan_generic()) lustre-MDT0000-osd: the assistant has done lfsck_namespace double_scan, status -30
+00000100:00080000:0.0:1574196747.004492:0:2255:0:(pinger.c:217:ptlrpc_pinger_process_import()) 211a631d-5c8e-2a8b-bf41-14dd735dbc1d->MGS: level DISCONN/3 force 0 force_next 0 deactive 0 pingable 1 suppress 0
+00000100:00080000:0.0:1574196747.004502:0:2255:0:(recover.c:58:ptlrpc_initiate_recovery()) MGS: starting recovery
+00000100:00080000:0.0:1574196747.004505:0:2255:0:(import.c:681:ptlrpc_connect_import()) ffff9203b8a04000 MGS: changing import state from DISCONN to CONNECTING
+00000100:00080000:0.0:1574196747.004514:0:2255:0:(import.c:524:import_select_connection()) MGC10.24.85.218@tcp: connect to NID 10.24.85.218@tcp last attempt 4547651904
+00000100:00080000:0.0:1574196747.004518:0:2255:0:(import.c:568:import_select_connection()) MGC10.24.85.218@tcp: tried all connections, increasing latency to 50s
+00000100:00080000:0.0:1574196747.004525:0:2255:0:(import.c:602:import_select_connection()) MGC10.24.85.218@tcp: import ffff9203b8a04000 using connection MGC10.24.85.218@tcp_0/10.24.85.218@tcp
+00000100:00080000:0.0:1574196747.004553:0:2255:0:(pinger.c:217:ptlrpc_pinger_process_import()) lustre-MDT0000-mdtlov_UUID->lustre-OST0000_UUID: level DISCONN/3 force 0 force_next 0 deactive 0 pingable 1 suppress 0
+00000100:00080000:0.0:1574196747.004559:0:2255:0:(recover.c:58:ptlrpc_initiate_recovery()) lustre-OST0000_UUID: starting recovery
+00000100:00080000:0.0:1574196747.004560:0:2255:0:(import.c:681:ptlrpc_connect_import()) ffff9203bbbe2800 lustre-OST0000_UUID: changing import state from DISCONN to CONNECTING
+00000100:00080000:0.0:1574196747.004567:0:2255:0:(import.c:524:import_select_connection()) lustre-OST0000-osc-MDT0000: connect to NID 10.29.160.122@tcp last attempt 4547651904
+00000100:00080000:0.0:1574196747.004569:0:2255:0:(import.c:568:import_select_connection()) lustre-OST0000-osc-MDT0000: tried all connections, increasing latency to 50s
+00000100:00080000:0.0:1574196747.004574:0:2255:0:(import.c:602:import_select_connection()) lustre-OST0000-osc-MDT0000: import ffff9203bbbe2800 using connection 10.29.160.122@tcp/10.29.160.122@tcp
+00000100:00080000:0.0:1574196747.004584:0:2255:0:(pinger.c:217:ptlrpc_pinger_process_import()) lustre-MDT0000-mdtlov_UUID->lustre-OST0001_UUID: level DISCONN/3 force 0 force_next 0 deactive 0 pingable 1 suppress 0
+00000100:00080000:0.0:1574196747.004594:0:2255:0:(recover.c:58:ptlrpc_initiate_recovery()) lustre-OST0001_UUID: starting recovery
+00000100:00080000:0.0:1574196747.004595:0:2255:0:(import.c:681:ptlrpc_connect_import()) ffff92038d8be800 lustre-OST0001_UUID: changing import state from DISCONN to CONNECTING
+00000100:00080000:0.0:1574196747.004600:0:2255:0:(import.c:524:import_select_connection()) lustre-OST0001-osc-MDT0000: connect to NID 10.29.163.83@tcp last attempt 4547651904
+00000100:00080000:0.0:1574196747.004602:0:2255:0:(import.c:568:import_select_connection()) lustre-OST0001-osc-MDT0000: tried all connections, increasing latency to 50s
+00000100:00080000:0.0:1574196747.004606:0:2255:0:(import.c:602:import_select_connection()) lustre-OST0001-osc-MDT0000: import ffff92038d8be800 using connection 10.29.163.83@tcp/10.29.163.83@tcp
+00000100:00080000:0.0:1574196747.004613:0:2255:0:(pinger.c:217:ptlrpc_pinger_process_import()) lustre-MDT0000-mdtlov_UUID->lustre-OST0002_UUID: level DISCONN/3 force 0 force_next 0 deactive 0 pingable 1 suppress 0
+00000100:00080000:0.0:1574196747.004617:0:2255:0:(recover.c:58:ptlrpc_initiate_recovery()) lustre-OST0002_UUID: starting recovery
+00000100:00080000:0.0:1574196747.004618:0:2255:0:(import.c:681:ptlrpc_connect_import()) ffff92038badb800 lustre-OST0002_UUID: changing import state from DISCONN to CONNECTING
+00000100:00080000:0.0:1574196747.004623:0:2255:0:(import.c:524:import_select_connection()) lustre-OST0002-osc-MDT0000: connect to NID 10.29.161.60@tcp last attempt 4547651904
+00000100:00080000:0.0:1574196747.004625:0:2255:0:(import.c:568:import_select_connection()) lustre-OST0002-osc-MDT0000: tried all connections, increasing latency to 50s
+00000100:00080000:0.0:1574196747.004629:0:2255:0:(import.c:602:import_select_connection()) lustre-OST0002-osc-MDT0000: import ffff92038badb800 using connection 10.29.161.60@tcp/10.29.161.60@tcp
+00000800:00000100:0.0:1574196747.004689:0:2252:0:(socklnd_cb.c:921:ksocknal_launch_packet()) No usable routes to 12345-10.24.85.218@tcp
+00000100:00000400:0.0:1574196747.004718:0:2252:0:(client.c:2116:ptlrpc_expire_one_request()) @@@ Request sent has failed due to network error: [sent 1574196747/real 1574196747]  req@ffff9203b7e08f00 x1650399733482592/t0(0) o250->MGC10.24.85.218@tcp@10.24.85.218@tcp:26/25 lens 520/544 e 0 to 1 dl 1574196802 ref 1 fl Rpc:eXN/0/ffffffff rc 0/-1
+00000100:00080000:0.0:1574196747.004740:0:2252:0:(import.c:1284:ptlrpc_connect_interpret()) ffff9203b8a04000 MGS: changing import state from CONNECTING to DISCONN
+00000100:00080000:0.0:1574196747.004743:0:2252:0:(import.c:1330:ptlrpc_connect_interpret()) recovery of MGS on MGC10.24.85.218@tcp_0 failed (-110)
+00000800:00000100:0.0:1574196747.004759:0:2252:0:(socklnd_cb.c:921:ksocknal_launch_packet()) No usable routes to 12345-10.29.160.122@tcp
+00000100:00000400:0.0:1574196747.004764:0:2252:0:(client.c:2116:ptlrpc_expire_one_request()) @@@ Request sent has failed due to network error: [sent 1574196747/real 1574196747]  req@ffff9203b7e08900 x1650399733482608/t0(0) o8->lustre-OST0000-osc-MDT0000@10.29.160.122@tcp:28/4 lens 520/544 e 0 to 1 dl 1574196802 ref 1 fl Rpc:eXN/0/ffffffff rc 0/-1
+00000100:00080000:0.0:1574196747.004780:0:2252:0:(import.c:1284:ptlrpc_connect_interpret()) ffff9203bbbe2800 lustre-OST0000_UUID: changing import state from CONNECTING to DISCONN
+00000100:00080000:0.0:1574196747.004782:0:2252:0:(import.c:1330:ptlrpc_connect_interpret()) recovery of lustre-OST0000_UUID on 10.29.160.122@tcp failed (-110)
+00000800:00000100:0.0:1574196747.004796:0:2252:0:(socklnd_cb.c:921:ksocknal_launch_packet()) No usable routes to 12345-10.29.163.83@tcp
+00000100:00000400:0.0:1574196747.004800:0:2252:0:(client.c:2116:ptlrpc_expire_one_request()) @@@ Request sent has failed due to network error: [sent 1574196747/real 1574196747]  req@ffff9203b7e08600 x1650399733482624/t0(0) o8->lustre-OST0001-osc-MDT0000@10.29.163.83@tcp:28/4 lens 520/544 e 0 to 1 dl 1574196802 ref 1 fl Rpc:eXN/0/ffffffff rc 0/-1
+00000100:00080000:0.0:1574196747.004815:0:2252:0:(import.c:1284:ptlrpc_connect_interpret()) ffff92038d8be800 lustre-OST0001_UUID: changing import state from CONNECTING to DISCONN
+00000100:00080000:0.0:1574196747.004819:0:2252:0:(import.c:1330:ptlrpc_connect_interpret()) recovery of lustre-OST0001_UUID on 10.29.163.83@tcp failed (-110)
+00000800:00000100:0.0:1574196747.004830:0:2252:0:(socklnd_cb.c:921:ksocknal_launch_packet()) No usable routes to 12345-10.29.161.60@tcp
+00000100:00000400:0.0:1574196747.004834:0:2252:0:(client.c:2116:ptlrpc_expire_one_request()) @@@ Request sent has failed due to network error: [sent 1574196747/real 1574196747]  req@ffff9203b7e08300 x1650399733482640/t0(0) o8->lustre-OST0002-osc-MDT0000@10.29.161.60@tcp:28/4 lens 520/544 e 0 to 1 dl 1574196802 ref 1 fl Rpc:eXN/0/ffffffff rc 0/-1
+00000100:00080000:0.0:1574196747.004847:0:2252:0:(import.c:1284:ptlrpc_connect_interpret()) ffff92038badb800 lustre-OST0002_UUID: changing import state from CONNECTING to DISCONN
+00000100:00080000:0.0:1574196747.004849:0:2252:0:(import.c:1330:ptlrpc_connect_interpret()) recovery of lustre-OST0002_UUID on 10.29.161.60@tcp failed (-110)

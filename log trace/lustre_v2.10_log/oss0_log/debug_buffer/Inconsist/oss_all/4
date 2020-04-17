@@ -1,0 +1,29 @@
+00000001:00080000:0.0F:1574702270.602680:0:3381:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294970982 is committed
+00000001:00080000:0.0:1574702276.570998:0:3381:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294970983 is committed
+00000001:00080000:0.0:1574702282.565553:0:3381:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294970984 is committed
+00100000:10000000:0.0:1574702285.413045:0:3398:0:(lfsck_layout.c:4964:lfsck_layout_reset()) lustre-OST0000-osd: layout LFSCK reset: rc = 0
+00100000:10000000:0.0:1574702285.429702:0:17942:0:(osd_scrub.c:669:osd_scrub_prep()) sdb: OI scrub prep, flags = 0x46
+00100000:10000000:0.0:1574702285.429704:0:17942:0:(osd_scrub.c:279:osd_scrub_file_reset()) sdb: reset OI scrub file, old flags = 0x0, add flags = 0x0
+00100000:10000000:0.0:1574702285.440379:0:17941:0:(lfsck_layout.c:5156:lfsck_layout_slave_prep()) lustre-OST0000-osd: layout LFSCK slave prep done, start pos [1]
+00100000:10000000:0.0:1574702285.440383:0:17942:0:(osd_scrub.c:1541:osd_scrub_main()) sdb: OI scrub start, flags = 0x46, pos = 12
+00100000:10000000:0.0:1574702285.476855:0:17941:0:(lfsck_layout.c:5047:lfsck_layout_slave_checkpoint()) lustre-OST0000-osd: layout LFSCK slave checkpoint at the pos [12], status = 1: rc = 0
+00100000:10000000:0.0:1574702285.476858:0:17941:0:(lfsck_engine.c:1060:lfsck_master_engine()) LFSCK entry: oit_flags = 0x60003, dir_flags = 0x8006, oit_cookie = 12, dir_cookie = 0x0, parent = [0x0:0x0:0x0], pid = 17941
+00100000:10000000:0.0:1574702285.480301:0:17942:0:(osd_scrub.c:767:osd_scrub_post()) sdb: OI scrub post, result = 1
+00100000:10000000:0.0:1574702285.480305:0:17942:0:(osd_scrub.c:1551:osd_scrub_main()) sdb: OI scrub: stop, pos = 128001: rc = 1
+00100000:10000000:0.0:1574702285.480337:0:17941:0:(lfsck_engine.c:1092:lfsck_master_engine()) LFSCK exit: oit_flags = 0x60003, dir_flags = 0x8006, oit_cookie = 64038, dir_cookie = 0x0, parent = [0x0:0x0:0x0], pid = 17941, rc = 1
+00100000:10000000:0.0:1574702285.480346:0:17941:0:(lfsck_layout.c:4657:lfsck_layout_slave_notify_master()) lustre-OST0000-osd: layout LFSCK slave notifies master
+00000020:01000004:0.0:1574702285.480349:0:17941:0:(obd_mount_server.c:170:server_get_mount()) get mount ffff965ab8f54000 from lustre-OST0000, refs=3
+00000020:01000004:0.0:1574702285.480351:0:17941:0:(obd_mount_server.c:204:server_put_mount()) put mount ffff965ab8f54000 from lustre-OST0000, refs=3
+00000020:01000004:0.0:1574702285.480352:0:17941:0:(obd_mount.c:662:lustre_put_lsi()) put ffff965ab8f54000 3
+00100000:10000000:0.0:1574702285.501229:0:17941:0:(lfsck_layout.c:5819:lfsck_layout_slave_post()) lustre-OST0000-osd: layout LFSCK slave post done: rc = 0
+00100000:10000000:0.0:1574702285.501233:0:17941:0:(lfsck_layout.c:6043:lfsck_layout_slave_double_scan()) lustre-OST0000-osd: layout LFSCK slave phase2 scan start
+00000020:01000004:0.0:1574702285.501237:0:17941:0:(obd_mount_server.c:170:server_get_mount()) get mount ffff965ab8f54000 from lustre-OST0000, refs=3
+00000020:01000004:0.0:1574702285.501240:0:17941:0:(obd_mount_server.c:204:server_put_mount()) put mount ffff965ab8f54000 from lustre-OST0000, refs=3
+00000020:01000004:0.0:1574702285.501241:0:17941:0:(obd_mount.c:662:lustre_put_lsi()) put ffff965ab8f54000 3
+00100000:10000000:0.0:1574702285.523193:0:17941:0:(lfsck_layout.c:4636:lfsck_layout_slave_query_master()) lustre-OST0000-osd: layout LFSCK slave queries master: rc = 0
+00100000:10000000:0.0:1574702285.820273:0:3398:0:(lfsck_layout.c:6446:lfsck_layout_slave_in_notify()) lustre-OST0000-osd: layout LFSCK slave handle notify 4 from MDT 0, status 1
+00100000:10000000:0.0:1574702285.820331:0:17941:0:(lfsck_layout.c:1445:lfsck_layout_double_scan_result()) lustre-OST0000-osd: layout LFSCK double scan: rc = 1
+00100000:10000000:0.0:1574702285.820363:0:17941:0:(lfsck_layout.c:1486:lfsck_layout_double_scan_result()) lustre-OST0000-osd: layout LFSCK double scan result 3: rc = 0
+00100000:10000000:0.0:1574702285.820366:0:17941:0:(lfsck_layout.c:4657:lfsck_layout_slave_notify_master()) lustre-OST0000-osd: layout LFSCK slave notifies master
+00100000:10000000:0.0:1574702285.820375:0:17941:0:(lfsck_layout.c:680:lfsck_rbtree_cleanup()) lustre-OST0000-osd: layout LFSCK fini OST-objects accessing bitmap
+00100000:10000000:0.0:1574702285.820376:0:17941:0:(lfsck_layout.c:6100:lfsck_layout_slave_double_scan()) lustre-OST0000-osd: layout LFSCK slave phase2 scan finished, status 3: rc = 0

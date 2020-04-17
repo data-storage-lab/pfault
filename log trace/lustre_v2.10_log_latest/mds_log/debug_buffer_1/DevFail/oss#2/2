@@ -1,0 +1,113 @@
+00000040:00080000:0.0F:1579552371.495584:0:18085:0:(llog_osd.c:231:llog_osd_read_header()) not reading header from 0-byte log
+00000004:00000080:0.0:1579552381.021597:0:18085:0:(mdt_handler.c:6135:mdt_iocontrol()) handling ioctl cmd 0x424066b3
+00000004:00000080:0.0:1579552381.021685:0:18085:0:(mdd_device.c:1546:mdd_changelog_clear()) lustre-MDD0000: Purge request: id=1, endrec=0
+00000004:00000400:0.0:1579552381.022220:0:18085:0:(mdd_device.c:1591:mdd_changelog_clear()) lustre-MDD0000: No entry for user 1
+00000020:00000080:0.0:1579552491.278572:0:18247:0:(class_obd.c:232:class_handle_ioctl()) cmd = c008667f
+00000020:00000080:0.0:1579552491.278580:0:18247:0:(class_obd.c:201:class_resolve_dev_name()) device name lustre-MDT0000
+00000020:00000080:0.0:1579552491.278585:0:18247:0:(class_obd.c:208:class_resolve_dev_name()) device name lustre-MDT0000, dev 4
+00000020:00000080:0.0:1579552491.278641:0:18247:0:(class_obd.c:232:class_handle_ioctl()) cmd = 424066b1
+00000004:00000080:0.0:1579552491.278648:0:18247:0:(mdt_handler.c:6135:mdt_iocontrol()) handling ioctl cmd 0x424066b1
+00000004:02000000:0.0:1579552491.278681:0:18247:0:(mdd_device.c:282:mdd_changelog_on()) lustre-MDD0000: changelog on
+00000040:00080000:0.0:1579552491.278868:0:18247:0:(llog_osd.c:231:llog_osd_read_header()) not reading header from 0-byte log
+00000040:00080000:0.0:1579552491.278987:0:18247:0:(llog_osd.c:698:llog_osd_write_rec()) added record [0xa:0x6:0x0].1, 64 off8256
+00000040:00080000:0.0:1579552491.279039:0:18247:0:(llog_osd.c:698:llog_osd_write_rec()) added record [0x1:0xb:0x0].1, 40 off8232
+00000004:00000080:0.0:1579552491.279046:0:18247:0:(mdd_device.c:1347:mdd_changelog_user_register()) Registered changelog user 1
+00000040:00080000:0.0:1579552498.079804:0:18085:0:(llog_osd.c:231:llog_osd_read_header()) not reading header from 0-byte log
+00000004:00000080:0.0:1579552500.430593:0:18085:0:(mdt_handler.c:6135:mdt_iocontrol()) handling ioctl cmd 0x424066b3
+00000004:00000080:0.0:1579552500.430620:0:18085:0:(mdd_device.c:1546:mdd_changelog_clear()) lustre-MDD0000: Purge request: id=1, endrec=0
+00000040:00080000:0.0:1579552500.430640:0:18085:0:(llog_cat.c:817:llog_cat_process_cb()) processing log [0xb:0x1:0x0]:0 at index 1 of catalog [0x6:0xa:0x0]
+00000004:00000080:0.0:1579552500.430651:0:18085:0:(mdd_device.c:1519:mdd_changelog_clear_cb()) Rewriting changelog user 1 endrec to 0
+00000004:00000080:0.0:1579552500.430680:0:18085:0:(mdd_device.c:1584:mdd_changelog_clear()) lustre-MDD0000: Purging changelog entries up to 18446744073709551615
+00000020:00000080:0.0:1579552513.037028:0:18248:0:(class_obd.c:232:class_handle_ioctl()) cmd = c00866e6
+00000004:00000080:0.0:1579552513.037043:0:18248:0:(mdt_handler.c:6135:mdt_iocontrol()) handling ioctl cmd 0xc00866e6
+00100000:10000000:0.0:1579552513.037169:0:18250:0:(osd_scrub.c:669:osd_scrub_prep()) sdb: OI scrub prep, flags = 0x0
+00100000:10000000:0.0:1579552513.037522:0:18251:0:(lfsck_engine.c:1581:lfsck_assistant_engine()) lustre-MDT0000-osd: lfsck_layout LFSCK assistant thread start
+00100000:10000000:0.0:1579552513.039179:0:18251:0:(lfsck_lib.c:2049:lfsck_async_interpret_common()) lustre-MDT0000-osd: fail to notify OST 0 for lfsck_layout start: rc = -5
+00100000:10000000:0.0:1579552513.039187:0:18251:0:(lfsck_internal.h:1443:lfsck_lad_set_bitmap()) lustre-MDT0000-osd: lfsck_layout LFSCK set bitmap (ffff97647e107240/64) for idx 0
+00100000:10000000:0.0:1579552513.040488:0:18249:0:(lfsck_layout.c:5190:lfsck_layout_master_prep()) lustre-MDT0000-osd: layout LFSCK master prep done, start pos [1]
+00100000:10000000:0.0:1579552513.040587:0:18252:0:(lfsck_engine.c:1581:lfsck_assistant_engine()) lustre-MDT0000-osd: lfsck_namespace LFSCK assistant thread start
+00100000:10000000:0.0:1579552513.040596:0:18249:0:(lfsck_namespace.c:4215:lfsck_namespace_prep()) lustre-MDT0000-osd: namespace LFSCK prep done, start pos [1, [0x0:0x0:0x0], 0x0]: rc = 0
+00100000:10000000:0.0:1579552513.040611:0:18250:0:(osd_scrub.c:1541:osd_scrub_main()) sdb: OI scrub start, flags = 0x0, pos = 12
+00100000:10000000:0.0:1579552513.041368:0:18249:0:(lfsck_layout.c:5013:lfsck_layout_master_checkpoint()) lustre-MDT0000-osd: layout LFSCK master checkpoint at the pos [12], status = 1: rc = 0
+00100000:10000000:0.0:1579552513.041389:0:18249:0:(lfsck_namespace.c:4114:lfsck_namespace_checkpoint()) lustre-MDT0000-osd: namespace LFSCK checkpoint at the pos [12, [0x0:0x0:0x0], 0x0], status = 1: rc = 0
+00100000:10000000:0.0:1579552513.041396:0:18249:0:(lfsck_engine.c:1060:lfsck_master_engine()) LFSCK entry: oit_flags = 0x40000, dir_flags = 0x8006, oit_cookie = 12, dir_cookie = 0x0, parent = [0x0:0x0:0x0], pid = 18249
+00100000:10000000:0.0:1579552513.041715:0:18085:0:(lfsck_layout.c:6270:lfsck_layout_master_in_notify()) lustre-MDT0000-osd: layout LFSCK master handles notify 3 from OST 2, status 1, flags 2, flags2 1
+00100000:10000000:0.0:1579552513.041757:0:18085:0:(lfsck_layout.c:6270:lfsck_layout_master_in_notify()) lustre-MDT0000-osd: layout LFSCK master handles notify 3 from OST 1, status 1, flags 2, flags2 1
+00100000:10000000:0.0:1579552513.063026:0:18250:0:(osd_scrub.c:767:osd_scrub_post()) sdb: OI scrub post, result = 1
+00100000:10000000:0.0:1579552513.063042:0:18250:0:(osd_scrub.c:1551:osd_scrub_main()) sdb: OI scrub: stop, pos = 81913: rc = 1
+00100000:10000000:0.0:1579552513.064758:0:18249:0:(lfsck_engine.c:1092:lfsck_master_engine()) LFSCK exit: oit_flags = 0x40000, dir_flags = 0x8006, oit_cookie = 54653, dir_cookie = 0x0, parent = [0x0:0x0:0x0], pid = 18249, rc = 1
+00100000:10000000:0.0:1579552513.064768:0:18249:0:(lfsck_lib.c:2578:lfsck_post_generic()) lustre-MDT0000-osd: waiting for assistant to do lfsck_layout post, rc = 1
+00100000:10000000:0.0:1579552513.103129:0:18251:0:(lfsck_layout.c:1433:lfsck_layout_record_failure()) lustre-MDT0000-osd: layout LFSCK hit first non-repaired inconsistency at the pos [54653]
+00100000:10000000:0.0:1579552513.141654:0:18251:0:(lfsck_engine.c:1650:lfsck_assistant_engine()) lustre-MDT0000-osd: lfsck_layout LFSCK assistant thread post
+00100000:10000000:0.0:1579552513.141663:0:18249:0:(lfsck_lib.c:2590:lfsck_post_generic()) lustre-MDT0000-osd: the assistant has done lfsck_layout post, rc = 1
+00100000:10000000:0.0:1579552513.141676:0:18249:0:(lfsck_layout.c:5749:lfsck_layout_master_post()) lustre-MDT0000-osd: layout LFSCK master post done: rc = 0
+00100000:10000000:0.0:1579552513.141678:0:18249:0:(lfsck_lib.c:2578:lfsck_post_generic()) lustre-MDT0000-osd: waiting for assistant to do lfsck_namespace post, rc = 1
+00100000:10000000:0.0:1579552513.141679:0:18249:0:(lfsck_lib.c:2590:lfsck_post_generic()) lustre-MDT0000-osd: the assistant has done lfsck_namespace post, rc = 1
+00100000:10000000:0.0:1579552513.141688:0:18249:0:(lfsck_namespace.c:4420:lfsck_namespace_post()) lustre-MDT0000-osd: namespace LFSCK post done: rc = 0
+00100000:10000000:0.0:1579552513.141689:0:18249:0:(lfsck_lib.c:2608:lfsck_double_scan_generic()) lustre-MDT0000-osd: waiting for assistant to do lfsck_layout double_scan, status 2
+00100000:10000000:0.0:1579552513.141691:0:18252:0:(lfsck_engine.c:1650:lfsck_assistant_engine()) lustre-MDT0000-osd: lfsck_namespace LFSCK assistant thread post
+00100000:10000000:0.0:1579552513.141693:0:18252:0:(lfsck_engine.c:1669:lfsck_assistant_engine()) lustre-MDT0000-osd: LFSCK assistant notified others for lfsck_namespace post: rc = 0
+00100000:10000000:0.0:1579552513.141827:0:18251:0:(lfsck_engine.c:1669:lfsck_assistant_engine()) lustre-MDT0000-osd: LFSCK assistant notified others for lfsck_layout post: rc = 0
+00100000:10000000:0.0:1579552513.141828:0:18251:0:(lfsck_engine.c:1687:lfsck_assistant_engine()) lustre-MDT0000-osd: LFSCK assistant sync before the second-stage scaning
+00000004:00080000:0.0:1579552513.141831:0:18251:0:(osp_sync.c:1578:osp_sync_add_commit_cb()) lustre-OST0000-osc-MDT0000: add commit cb at 4372473650, next at 4372195420, rc = 0
+00080000:00080000:0.0:1579552513.141833:0:18251:0:(osd_handler.c:2173:osd_commit_async()) lustre-MDT0000: async commit OSD
+00000004:00080000:0.0:1579552513.141837:0:18251:0:(osp_sync.c:1578:osp_sync_add_commit_cb()) lustre-OST0001-osc-MDT0000: add commit cb at 4372473650, next at 4372195789, rc = 0
+00080000:00080000:0.0:1579552513.141837:0:18251:0:(osd_handler.c:2173:osd_commit_async()) lustre-MDT0000: async commit OSD
+00000004:00080000:0.0:1579552513.141839:0:18251:0:(osp_sync.c:1578:osp_sync_add_commit_cb()) lustre-OST0002-osc-MDT0000: add commit cb at 4372473650, next at 4372195420, rc = 0
+00080000:00080000:0.0:1579552513.141839:0:18251:0:(osd_handler.c:2173:osd_commit_async()) lustre-MDT0000: async commit OSD
+00100000:10000000:0.0:1579552513.141841:0:18249:0:(lfsck_lib.c:2618:lfsck_double_scan_generic()) lustre-MDT0000-osd: the assistant has done lfsck_layout double_scan, status 0
+00100000:10000000:0.0:1579552513.141841:0:18249:0:(lfsck_lib.c:2608:lfsck_double_scan_generic()) lustre-MDT0000-osd: waiting for assistant to do lfsck_namespace double_scan, status 2
+00100000:10000000:0.0:1579552513.141883:0:18252:0:(lfsck_engine.c:1687:lfsck_assistant_engine()) lustre-MDT0000-osd: LFSCK assistant sync before the second-stage scaning
+00000004:00080000:0.0:1579552513.141885:0:18252:0:(osp_sync.c:1578:osp_sync_add_commit_cb()) lustre-OST0000-osc-MDT0000: add commit cb at 4372473650, next at 4372195420, rc = 0
+00080000:00080000:0.0:1579552513.141885:0:18252:0:(osd_handler.c:2173:osd_commit_async()) lustre-MDT0000: async commit OSD
+00000004:00080000:0.0:1579552513.141886:0:18252:0:(osp_sync.c:1578:osp_sync_add_commit_cb()) lustre-OST0001-osc-MDT0000: add commit cb at 4372473650, next at 4372195789, rc = 0
+00080000:00080000:0.0:1579552513.141887:0:18252:0:(osd_handler.c:2173:osd_commit_async()) lustre-MDT0000: async commit OSD
+00000004:00080000:0.0:1579552513.141888:0:18252:0:(osp_sync.c:1578:osp_sync_add_commit_cb()) lustre-OST0002-osc-MDT0000: add commit cb at 4372473650, next at 4372195420, rc = 0
+00080000:00080000:0.0:1579552513.141889:0:18252:0:(osd_handler.c:2173:osd_commit_async()) lustre-MDT0000: async commit OSD
+00100000:10000000:0.0:1579552513.142923:0:18249:0:(lfsck_lib.c:2618:lfsck_double_scan_generic()) lustre-MDT0000-osd: the assistant has done lfsck_namespace double_scan, status 0
+00000004:00080000:0.0:1579552513.161905:0:18070:0:(osp_sync.c:1543:osp_sync_local_commit_cb()) lustre-OST0002-osc-MDT0000: 26 committed
+00000004:00080000:0.0:1579552513.161915:0:18070:0:(osp_sync.c:1543:osp_sync_local_commit_cb()) lustre-OST0001-osc-MDT0000: 26 committed
+00000004:00080000:0.0:1579552513.161918:0:18070:0:(osp_sync.c:1543:osp_sync_local_commit_cb()) lustre-OST0000-osc-MDT0000: 26 committed
+00100000:10000000:0.0:1579552513.161986:0:18251:0:(lfsck_engine.c:1694:lfsck_assistant_engine()) lustre-MDT0000-osd: LFSCK assistant phase2 scan start, synced: rc = 0
+00100000:10000000:0.0:1579552513.161998:0:18251:0:(lfsck_layout.c:4391:lfsck_layout_assistant_handler_p2()) lustre-MDT0000-osd: layout LFSCK phase2 scan start
+00100000:10000000:0.0:1579552513.162002:0:18251:0:(lfsck_layout.c:4442:lfsck_layout_assistant_handler_p2()) lustre-MDT0000-osd: layout LFSCK phase2 scan stop: rc = 1
+00100000:10000000:0.0:1579552513.164999:0:18251:0:(lfsck_engine.c:1809:lfsck_assistant_engine()) lustre-MDT0000-osd: LFSCK assistant sync before exit
+00000004:00080000:0.0:1579552513.165020:0:18251:0:(osp_sync.c:1578:osp_sync_add_commit_cb()) lustre-OST0000-osc-MDT0000: add commit cb at 4372473673, next at 4372195420, rc = 0
+00080000:00080000:0.0:1579552513.165029:0:18251:0:(osd_handler.c:2173:osd_commit_async()) lustre-MDT0000: async commit OSD
+00000004:00080000:0.0:1579552513.165039:0:18251:0:(osp_sync.c:1578:osp_sync_add_commit_cb()) lustre-OST0001-osc-MDT0000: add commit cb at 4372473673, next at 4372195789, rc = 0
+00080000:00080000:0.0:1579552513.165043:0:18251:0:(osd_handler.c:2173:osd_commit_async()) lustre-MDT0000: async commit OSD
+00000004:00080000:0.0:1579552513.165046:0:18251:0:(osp_sync.c:1578:osp_sync_add_commit_cb()) lustre-OST0002-osc-MDT0000: add commit cb at 4372473673, next at 4372195420, rc = 0
+00080000:00080000:0.0:1579552513.165050:0:18251:0:(osd_handler.c:2173:osd_commit_async()) lustre-MDT0000: async commit OSD
+00000004:00080000:0.0:1579552513.171014:0:18070:0:(osp_sync.c:1543:osp_sync_local_commit_cb()) lustre-OST0002-osc-MDT0000: 27 committed
+00000004:00080000:0.0:1579552513.171022:0:18070:0:(osp_sync.c:1543:osp_sync_local_commit_cb()) lustre-OST0001-osc-MDT0000: 27 committed
+00000004:00080000:0.0:1579552513.171025:0:18070:0:(osp_sync.c:1543:osp_sync_local_commit_cb()) lustre-OST0000-osc-MDT0000: 27 committed
+00100000:10000000:0.0:1579552513.171090:0:18252:0:(lfsck_engine.c:1694:lfsck_assistant_engine()) lustre-MDT0000-osd: LFSCK assistant phase2 scan start, synced: rc = 0
+00100000:10000000:0.0:1579552513.171100:0:18252:0:(lfsck_namespace.c:6252:lfsck_namespace_assistant_handler_p2()) lustre-MDT0000-osd: namespace LFSCK phase2 scan start
+00100000:10000000:0.0:1579552513.171157:0:18252:0:(lfsck_namespace.c:5859:lfsck_namespace_scan_local_lpf()) lustre-MDT0000-osd: start to scan backend /lost+found
+00100000:10000000:0.0:1579552513.171177:0:18252:0:(lfsck_namespace.c:5967:lfsck_namespace_scan_local_lpf()) lustre-MDT0000-osd: stop to scan backend /lost+found: rc = 1
+00100000:10000000:0.0:1579552513.171272:0:18252:0:(lfsck_namespace.c:6270:lfsck_namespace_assistant_handler_p2()) lustre-MDT0000-osd: namespace LFSCK phase2 scan stop at the No. 16 trace file: rc = 1
+00100000:10000000:0.0:1579552513.171280:0:18252:0:(lfsck_engine.c:1809:lfsck_assistant_engine()) lustre-MDT0000-osd: LFSCK assistant sync before exit
+00000004:00080000:0.0:1579552513.171290:0:18252:0:(osp_sync.c:1578:osp_sync_add_commit_cb()) lustre-OST0000-osc-MDT0000: add commit cb at 4372473679, next at 4372195420, rc = 0
+00080000:00080000:0.0:1579552513.171297:0:18252:0:(osd_handler.c:2173:osd_commit_async()) lustre-MDT0000: async commit OSD
+00000004:00080000:0.0:1579552513.171304:0:18252:0:(osp_sync.c:1578:osp_sync_add_commit_cb()) lustre-OST0001-osc-MDT0000: add commit cb at 4372473679, next at 4372195789, rc = 0
+00080000:00080000:0.0:1579552513.171308:0:18252:0:(osd_handler.c:2173:osd_commit_async()) lustre-MDT0000: async commit OSD
+00000004:00080000:0.0:1579552513.171312:0:18252:0:(osp_sync.c:1578:osp_sync_add_commit_cb()) lustre-OST0002-osc-MDT0000: add commit cb at 4372473679, next at 4372195420, rc = 0
+00080000:00080000:0.0:1579552513.171315:0:18252:0:(osd_handler.c:2173:osd_commit_async()) lustre-MDT0000: async commit OSD
+00000004:00080000:0.0:1579552513.180919:0:18070:0:(osp_sync.c:1543:osp_sync_local_commit_cb()) lustre-OST0002-osc-MDT0000: 28 committed
+00000004:00080000:0.0:1579552513.180927:0:18070:0:(osp_sync.c:1543:osp_sync_local_commit_cb()) lustre-OST0001-osc-MDT0000: 28 committed
+00000004:00080000:0.0:1579552513.180929:0:18070:0:(osp_sync.c:1543:osp_sync_local_commit_cb()) lustre-OST0000-osc-MDT0000: 28 committed
+00100000:10000000:0.0:1579552513.180988:0:18251:0:(lfsck_engine.c:1815:lfsck_assistant_engine()) lustre-MDT0000-osd: LFSCK assistant synced before exit: rc = 0
+00100000:10000000:0.0:1579552513.180993:0:18251:0:(lfsck_layout.c:1445:lfsck_layout_double_scan_result()) lustre-MDT0000-osd: layout LFSCK double scan: rc = 1
+00100000:10000000:0.0:1579552513.181020:0:18251:0:(lfsck_layout.c:1486:lfsck_layout_double_scan_result()) lustre-MDT0000-osd: layout LFSCK double scan result 8: rc = 0
+00100000:10000000:0.0:1579552513.181023:0:18251:0:(lfsck_engine.c:1826:lfsck_assistant_engine()) lustre-MDT0000-osd: LFSCK assistant phase2 scan finished: rc = 1
+00100000:10000000:0.0:1579552513.181028:0:18251:0:(lfsck_engine.c:1842:lfsck_assistant_engine()) lustre-MDT0000-osd: lfsck_layout LFSCK assistant thread exit: rc = 1
+00000004:00080000:0.0:1579552513.191146:0:18070:0:(osp_sync.c:1543:osp_sync_local_commit_cb()) lustre-OST0002-osc-MDT0000: 29 committed
+00000004:00080000:0.0:1579552513.191158:0:18070:0:(osp_sync.c:1543:osp_sync_local_commit_cb()) lustre-OST0001-osc-MDT0000: 29 committed
+00000004:00080000:0.0:1579552513.191163:0:18070:0:(osp_sync.c:1543:osp_sync_local_commit_cb()) lustre-OST0000-osc-MDT0000: 29 committed
+00100000:10000000:0.0:1579552513.191181:0:18252:0:(lfsck_engine.c:1815:lfsck_assistant_engine()) lustre-MDT0000-osd: LFSCK assistant synced before exit: rc = 0
+00100000:10000000:0.0:1579552513.191222:0:18252:0:(lfsck_engine.c:1826:lfsck_assistant_engine()) lustre-MDT0000-osd: LFSCK assistant phase2 scan finished: rc = 1
+00100000:10000000:0.0:1579552513.191226:0:18252:0:(lfsck_engine.c:1842:lfsck_assistant_engine()) lustre-MDT0000-osd: lfsck_namespace LFSCK assistant thread exit: rc = 1
+00000020:00000080:0.0:1579552522.988915:0:18253:0:(class_obd.c:232:class_handle_ioctl()) cmd = 824066e8
+00000004:00000080:0.0:1579552522.988931:0:18253:0:(mdt_handler.c:6135:mdt_iocontrol()) handling ioctl cmd 0x824066e8
+00000020:00000080:0.0:1579552615.611996:0:18270:0:(class_obd.c:232:class_handle_ioctl()) cmd = 824066e8
+00000004:00000080:0.0:1579552615.612011:0:18270:0:(mdt_handler.c:6135:mdt_iocontrol()) handling ioctl cmd 0x824066e8

@@ -1,0 +1,64 @@
+00000020:00000080:0.0F:1579562832.400014:0:2686:0:(genops.c:1463:class_disconnect()) disconnect: cookie 0x858386a4d313f9b1
+00000100:00080000:0.0:1579562832.400019:0:2686:0:(import.c:1650:ptlrpc_cleanup_imp()) ffff9d99f5405000 : changing import state from FULL to CLOSED
+00000020:00000080:0.0:1579562832.400049:0:2680:0:(genops.c:987:class_export_put()) final put ffff9d99b3f0e800/f176e9d0-a514-1d25-d1a5-cab6c1c79d48
+00000020:00000080:0.0:1579562832.400052:0:2473:0:(genops.c:937:class_export_destroy()) destroying export ffff9d99b3f0e800/f176e9d0-a514-1d25-d1a5-cab6c1c79d48 for MGS
+00000020:00000080:0.0:1579562832.400057:0:2473:0:(genops.c:1177:class_import_destroy()) destroying import ffff9d99f5405000 for MGS
+00000800:00000100:0.0:1579563201.556769:0:2486:0:(socklnd_cb.c:2274:ksocknal_find_timed_out_conn()) A connection with 12345-10.29.161.11@tcp (10.29.161.11:1022) was reset; it may have rebooted.
+00000100:00080000:0.0:1579563324.654441:0:2686:0:(service.c:1104:ptlrpc_update_export_timer()) MGS: Think about evicting 10.29.161.11@tcp from 1579563171
+00010000:00080000:0.0:1579563343.047492:0:2686:0:(ldlm_lib.c:1231:target_handle_connect()) MGS: connection from 32da11b6-3934-17c1-564b-77139aa496a4@10.29.161.11@tcp t0 exp           (null) cur 1579563343 last 0
+00000020:00000080:0.0:1579563343.047500:0:2686:0:(genops.c:1379:class_connect()) connect: client 32da11b6-3934-17c1-564b-77139aa496a4, cookie 0x858386a4d313fa36
+00000020:01000000:0.0:1579563343.047502:0:2686:0:(lprocfs_status_server.c:342:lprocfs_exp_setup()) using hash ffff9d99f79c4600
+00000100:00080000:0.0:1579563343.047507:0:2686:0:(import.c:105:ptlrpc_import_enter_resend()) ffff9d99f78f5800 : changing import state from NEW to RECOVER
+00000100:00080000:0.0:1579563343.047510:0:2686:0:(import.c:1535:ptlrpc_import_recovery_state_machine()) ffff9d99f78f5800 : changing import state from RECOVER to FULL
+00000100:02000000:0.0:1579563343.047511:0:2686:0:(import.c:1541:ptlrpc_import_recovery_state_machine()) MGS: Connection restored to b6071207-0ae2-97bb-15f4-52109bdc13c3 (at 10.29.161.11@tcp)
+20000000:01000000:0.0:1579563343.089300:0:2686:0:(mgs_handler.c:414:mgs_target_reg()) fs: lustre index: 0 is registered to MGS.
+20000000:01000000:0.0:1579563343.089303:0:2686:0:(mgs_handler.c:445:mgs_target_reg()) Server lustre-MDT0000 is running on 10.29.161.11@tcp
+20000000:01000000:0.0:1579563343.089304:0:2686:0:(mgs_handler.c:568:mgs_target_reg()) replying with lustre-MDT0000, index=0, rc=0
+20000000:01000000:0.0:1579563343.204402:0:2686:0:(mgs_nids.c:633:mgs_get_ir_logs()) Reading IR log lustre-mdtir bufsize 1048576.
+20000000:01000000:0.0:1579563343.204423:0:2686:0:(mgs_nids.c:192:mgs_nidtbl_read()) fsname lustre, entry size 32, pages 4064/1/256/255.
+20000000:01000000:0.0:1579563343.204425:0:2686:0:(mgs_nids.c:192:mgs_nidtbl_read()) fsname lustre, entry size 32, pages 4032/1/256/255.
+20000000:01000000:0.0:1579563343.204425:0:2686:0:(mgs_nids.c:192:mgs_nidtbl_read()) fsname lustre, entry size 32, pages 4000/1/256/255.
+20000000:01000000:0.0:1579563343.204426:0:2686:0:(mgs_nids.c:192:mgs_nidtbl_read()) fsname lustre, entry size 32, pages 3968/1/256/255.
+20000000:01000000:0.0:1579563343.204427:0:2686:0:(mgs_nids.c:204:mgs_nidtbl_read()) Read IR logs lustre return with 128, version 13
+00000040:00080000:0.0:1579563343.209369:0:2686:0:(llog_osd.c:231:llog_osd_read_header()) not reading header from 0-byte log
+20000000:01000000:0.0:1579563343.220329:0:2686:0:(mgs_handler.c:388:mgs_target_reg()) fs: lustre index: 0 is ready to reconnect.
+20000000:01000000:0.0:1579563343.248376:0:2686:0:(mgs_nids.c:544:mgs_ir_update()) Try to revoke recover lock of lustre
+20000000:01000000:0.0:1579563343.248380:0:2686:0:(mgs_handler.c:568:mgs_target_reg()) replying with lustre-MDT0000, index=0, rc=0
+20000000:01000000:0.0:1579563343.248407:0:2702:0:(mgs_nids.c:441:mgs_ir_notify()) mgs_lustre_notify woken up, phase is 1
+10000000:01000000:0.0:1579563343.248409:0:2702:0:(mgc_request.c:90:mgc_name2resid()) log lustre to resid 0x65727473756c/0x2 (lustre)
+00010000:00020000:0.0:1579563343.250497:0:2702:0:(ldlm_lockd.c:697:ldlm_handle_ast_error()) ### client (nid 10.29.161.11@tcp) returned error from blocking AST (req@ffff9d99f5612000 x1656284518552832 status -107 rc -107), evict it ns: MGS lock: ffff9d99b3fe4200/0x858386a4d313fa28 lrc: 3/0,0 mode: CR/CR res: [0x65727473756c:0x2:0x0].0x0 rrc: 3 type: PLN flags: 0x40000400000020 nid: 10.29.161.11@tcp remote: 0xef18046f9a5e3e83 expref: 11 pid: 2686 timeout: 0 lvb_type: 0
+00010000:02020000:0.0:1579563343.250513:0:2702:0:(ldlm_lockd.c:633:ldlm_failed_ast()) 138-a: MGS: A client on nid 10.29.161.11@tcp was evicted due to a lock blocking callback time out: rc -107
+00000020:00080000:0.0:1579563343.250522:0:2681:0:(genops.c:1625:class_fail_export()) disconnecting export ffff9d99f5f9e800/646365d5-7f0b-08b6-0f3d-58ffad0324a8
+00000020:00000080:0.0:1579563343.250526:0:2681:0:(genops.c:1463:class_disconnect()) disconnect: cookie 0x858386a4d313f9e2
+00000100:00080000:0.0:1579563343.250528:0:2681:0:(import.c:1650:ptlrpc_cleanup_imp()) ffff9d99fa181000 : changing import state from FULL to CLOSED
+00000020:00080000:0.0:1579563343.250530:0:2681:0:(genops.c:1642:class_fail_export()) disconnected export ffff9d99f5f9e800/646365d5-7f0b-08b6-0f3d-58ffad0324a8
+20000000:01000000:0.0:1579563343.250542:0:2679:0:(mgs_nids.c:415:mgs_ir_notify_complete()) Revoke recover lock of lustre completed after 0.004658652s
+00000020:00000080:0.0:1579563343.250551:0:2679:0:(genops.c:987:class_export_put()) final put ffff9d99f5f9e800/646365d5-7f0b-08b6-0f3d-58ffad0324a8
+00000020:00000080:0.0:1579563343.250555:0:2473:0:(genops.c:937:class_export_destroy()) destroying export ffff9d99f5f9e800/646365d5-7f0b-08b6-0f3d-58ffad0324a8 for MGS
+00000020:00000080:0.0:1579563343.250559:0:2473:0:(genops.c:1177:class_import_destroy()) destroying import ffff9d99fa181000 for MGS
+20000000:01000000:0.0:1579563349.713679:0:2686:0:(mgs_nids.c:633:mgs_get_ir_logs()) Reading IR log lustre-mdtir bufsize 16384.
+20000000:01000000:0.0:1579563349.713693:0:2686:0:(mgs_nids.c:192:mgs_nidtbl_read()) fsname lustre, entry size 32, pages 4064/1/4/3.
+20000000:01000000:0.0:1579563349.713698:0:2686:0:(mgs_nids.c:204:mgs_nidtbl_read()) Read IR logs lustre return with 32, version 14
+20000000:01000000:0.0:1579563350.200175:0:2686:0:(mgs_nids.c:633:mgs_get_ir_logs()) Reading IR log lustre-cliir bufsize 16384.
+20000000:01000000:0.0:1579563350.200188:0:2686:0:(mgs_nids.c:192:mgs_nidtbl_read()) fsname lustre, entry size 32, pages 4064/1/4/3.
+20000000:01000000:0.0:1579563350.200192:0:2686:0:(mgs_nids.c:204:mgs_nidtbl_read()) Read IR logs lustre return with 32, version 14
+00010000:00080000:0.0:1579563382.409825:0:2686:0:(ldlm_lib.c:1231:target_handle_connect()) MGS: connection from 86a65faa-1734-bff6-89d3-5a369adc5791@10.24.85.194@tcp t0 exp           (null) cur 1579563382 last 0
+00000020:00000080:0.0:1579563382.409857:0:2686:0:(genops.c:1379:class_connect()) connect: client 86a65faa-1734-bff6-89d3-5a369adc5791, cookie 0x858386a4d313fa8a
+00000020:01000000:0.0:1579563382.409865:0:2686:0:(lprocfs_status_server.c:342:lprocfs_exp_setup()) using hash ffff9d99f79c4600
+00000100:00080000:0.0:1579563382.409883:0:2686:0:(import.c:105:ptlrpc_import_enter_resend()) ffff9d99f78f4800 : changing import state from NEW to RECOVER
+00000100:00080000:0.0:1579563382.409892:0:2686:0:(import.c:1535:ptlrpc_import_recovery_state_machine()) ffff9d99f78f4800 : changing import state from RECOVER to FULL
+00000100:02000000:0.0:1579563382.409898:0:2686:0:(import.c:1541:ptlrpc_import_recovery_state_machine()) MGS: Connection restored to 0689375e-a3d4-a8d2-af28-b3280a4eec7e (at 10.24.85.194@tcp)
+20000000:01000000:0.0:1579563382.439529:0:2686:0:(mgs_handler.c:414:mgs_target_reg()) fs: lustre index: 1 is registered to MGS.
+20000000:01000000:0.0:1579563382.439533:0:2686:0:(mgs_handler.c:445:mgs_target_reg()) Server lustre-OST0001 is running on 10.24.85.194@tcp
+20000000:01000000:0.0:1579563382.439534:0:2686:0:(mgs_handler.c:568:mgs_target_reg()) replying with lustre-OST0001, index=1, rc=0
+00000020:00000080:0.0:1579563382.511319:0:2686:0:(genops.c:1463:class_disconnect()) disconnect: cookie 0x858386a4d313fa8a
+00000100:00080000:0.0:1579563382.511323:0:2686:0:(import.c:1650:ptlrpc_cleanup_imp()) ffff9d99f78f4800 : changing import state from FULL to CLOSED
+00000020:00000080:0.0:1579563382.511359:0:2680:0:(genops.c:987:class_export_put()) final put ffff9d99b3f0e000/86a65faa-1734-bff6-89d3-5a369adc5791
+00000020:00000080:0.0:1579563382.511364:0:2473:0:(genops.c:937:class_export_destroy()) destroying export ffff9d99b3f0e000/86a65faa-1734-bff6-89d3-5a369adc5791 for MGS
+00000020:00000080:0.0:1579563382.511371:0:2473:0:(genops.c:1177:class_import_destroy()) destroying import ffff9d99f78f4800 for MGS
+00000100:00080000:0.0:1579563407.388742:0:2687:0:(pinger.c:632:ping_evictor_main()) evicting all exports of obd MGS older than 1579563257
+00000020:00000080:0.0:1579563624.090763:0:2686:0:(genops.c:1463:class_disconnect()) disconnect: cookie 0x858386a4d313f6e0
+00000100:00080000:0.0:1579563624.090766:0:2686:0:(import.c:1650:ptlrpc_cleanup_imp()) ffff9d99f5b18000 : changing import state from FULL to CLOSED
+00000020:00000080:0.0:1579563624.090794:0:2679:0:(genops.c:987:class_export_put()) final put ffff9d99b5b16800/5c95857b-3ca2-7624-3b65-096ae82e9f85
+00000020:00000080:0.0:1579563624.090796:0:2473:0:(genops.c:937:class_export_destroy()) destroying export ffff9d99b5b16800/5c95857b-3ca2-7624-3b65-096ae82e9f85 for MGS
+00000020:00000080:0.0:1579563624.090801:0:2473:0:(genops.c:1177:class_import_destroy()) destroying import ffff9d99f5b18000 for MGS

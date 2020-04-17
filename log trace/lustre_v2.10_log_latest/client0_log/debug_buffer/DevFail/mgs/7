@@ -1,0 +1,75 @@
+00000100:00000400:0.0F:1573931842.452197:0:4833:0:(client.c:2116:ptlrpc_expire_one_request()) @@@ Request sent has timed out for slow reply: [sent 1573931835/real 1573931835]  req@ffff960041dd4900 x1650385113885312/t0(0) o400->MGC10.24.85.218@tcp@10.24.85.218@tcp:26/25 lens 224/224 e 0 to 1 dl 1573931842 ref 1 fl Rpc:XN/0/ffffffff rc 0/-1
+00000100:02020000:0.0:1573931842.452249:0:4833:0:(import.c:186:ptlrpc_set_import_discon()) 166-1: MGC10.24.85.218@tcp: Connection to MGS (at 10.24.85.218@tcp) was lost; in progress operations using this service will fail
+00000100:00080000:0.0:1573931842.452260:0:4833:0:(import.c:188:ptlrpc_set_import_discon()) ffff960063df9800 MGS: changing import state from FULL to DISCONN
+10000000:01000000:0.0:1573931842.452265:0:4833:0:(mgc_request.c:1367:mgc_import_event()) import event 0x808001
+00000100:00080000:0.0:1573931842.452268:0:4833:0:(pinger.c:178:ptlrpc_pinger_ir_down()) IR down
+00000100:00080000:0.0:1573931842.452270:0:4833:0:(import.c:441:ptlrpc_fail_import()) import MGS@MGC10.24.85.218@tcp_0 for MGC10.24.85.218@tcp not replayable, auto-deactivating
+00000100:00080000:0.0:1573931842.452272:0:4833:0:(import.c:215:ptlrpc_deactivate_and_unlock_import()) setting import MGS INVALID
+10000000:01000000:0.0:1573931842.452275:0:4833:0:(mgc_request.c:1367:mgc_import_event()) import event 0x808002
+00000100:00080000:0.0:1573931842.452277:0:4833:0:(import.c:418:ptlrpc_pinger_force()) MGS: waking up pinger s:DISCONN
+00000100:00080000:0.0:1573931842.452302:0:4835:0:(pinger.c:217:ptlrpc_pinger_process_import()) ab879342-991d-77fc-a456-7d499a91003b->MGS: level DISCONN/3 force 1 force_next 0 deactive 0 pingable 1 suppress 0
+00000100:00080000:0.0:1573931842.452309:0:4835:0:(recover.c:58:ptlrpc_initiate_recovery()) MGS: starting recovery
+00000100:00080000:0.0:1573931842.452311:0:4835:0:(import.c:681:ptlrpc_connect_import()) ffff960063df9800 MGS: changing import state from DISCONN to CONNECTING
+00000100:00080000:0.0:1573931842.452317:0:4835:0:(import.c:524:import_select_connection()) MGC10.24.85.218@tcp: connect to NID 10.24.85.218@tcp last attempt 4297056174
+00000100:00080000:0.0:1573931842.452325:0:4835:0:(import.c:602:import_select_connection()) MGC10.24.85.218@tcp: import ffff960063df9800 using connection MGC10.24.85.218@tcp_0/10.24.85.218@tcp
+00000100:00000400:0.0:1573931848.451797:0:4832:0:(client.c:2116:ptlrpc_expire_one_request()) @@@ Request sent has timed out for slow reply: [sent 1573931842/real 1573931842]  req@ffff960041dd4900 x1650385113885392/t0(0) o250->MGC10.24.85.218@tcp@10.24.85.218@tcp:26/25 lens 520/544 e 0 to 1 dl 1573931848 ref 1 fl Rpc:XN/0/ffffffff rc 0/-1
+00000100:00080000:0.0:1573931848.451846:0:4832:0:(import.c:1284:ptlrpc_connect_interpret()) ffff960063df9800 MGS: changing import state from CONNECTING to DISCONN
+00000100:00080000:0.0:1573931848.451851:0:4832:0:(import.c:1330:ptlrpc_connect_interpret()) recovery of MGS on MGC10.24.85.218@tcp_0 failed (-110)
+00000100:00080000:0.0:1573931867.451638:0:4835:0:(pinger.c:217:ptlrpc_pinger_process_import()) ab879342-991d-77fc-a456-7d499a91003b->MGS: level DISCONN/3 force 0 force_next 0 deactive 0 pingable 1 suppress 0
+00000100:00080000:0.0:1573931867.451642:0:4835:0:(recover.c:58:ptlrpc_initiate_recovery()) MGS: starting recovery
+00000100:00080000:0.0:1573931867.451642:0:4835:0:(import.c:681:ptlrpc_connect_import()) ffff960063df9800 MGS: changing import state from DISCONN to CONNECTING
+00000100:00080000:0.0:1573931867.451645:0:4835:0:(import.c:524:import_select_connection()) MGC10.24.85.218@tcp: connect to NID 10.24.85.218@tcp last attempt 4298538369
+00000100:00080000:0.0:1573931867.451646:0:4835:0:(import.c:568:import_select_connection()) MGC10.24.85.218@tcp: tried all connections, increasing latency to 6s
+00000100:00080000:0.0:1573931867.451649:0:4835:0:(import.c:602:import_select_connection()) MGC10.24.85.218@tcp: import ffff960063df9800 using connection MGC10.24.85.218@tcp_0/10.24.85.218@tcp
+00000100:00000400:0.0:1573931878.458214:0:4832:0:(client.c:2116:ptlrpc_expire_one_request()) @@@ Request sent has timed out for slow reply: [sent 1573931867/real 1573931867]  req@ffff960041dd4900 x1650385113885408/t0(0) o250->MGC10.24.85.218@tcp@10.24.85.218@tcp:26/25 lens 520/544 e 0 to 1 dl 1573931878 ref 1 fl Rpc:XN/0/ffffffff rc 0/-1
+00000100:00080000:0.0:1573931878.458230:0:4832:0:(import.c:1284:ptlrpc_connect_interpret()) ffff960063df9800 MGS: changing import state from CONNECTING to DISCONN
+00000100:00080000:0.0:1573931878.458234:0:4832:0:(import.c:1330:ptlrpc_connect_interpret()) recovery of MGS on MGC10.24.85.218@tcp_0 failed (-110)
+00000800:00000100:0.0:1573931889.255100:0:4828:0:(socklnd_cb.c:2274:ksocknal_find_timed_out_conn()) A connection with 12345-10.24.85.218@tcp (10.24.85.218:988) was reset; it may have rebooted.
+00000100:00080000:0.0:1573931892.451504:0:4835:0:(pinger.c:217:ptlrpc_pinger_process_import()) ab879342-991d-77fc-a456-7d499a91003b->MGS: level DISCONN/3 force 0 force_next 0 deactive 0 pingable 1 suppress 0
+00000100:00080000:0.0:1573931892.451507:0:4835:0:(recover.c:58:ptlrpc_initiate_recovery()) MGS: starting recovery
+00000100:00080000:0.0:1573931892.451508:0:4835:0:(import.c:681:ptlrpc_connect_import()) ffff960063df9800 MGS: changing import state from DISCONN to CONNECTING
+00000100:00080000:0.0:1573931892.451511:0:4835:0:(import.c:524:import_select_connection()) MGC10.24.85.218@tcp: connect to NID 10.24.85.218@tcp last attempt 4298563369
+00000100:00080000:0.0:1573931892.451512:0:4835:0:(import.c:568:import_select_connection()) MGC10.24.85.218@tcp: tried all connections, increasing latency to 11s
+00000100:00080000:0.0:1573931892.451515:0:4835:0:(import.c:602:import_select_connection()) MGC10.24.85.218@tcp: import ffff960063df9800 using connection MGC10.24.85.218@tcp_0/10.24.85.218@tcp
+00000400:00000100:0.0:1573931892.452061:0:4827:0:(lib-socket.c:645:lnet_sock_connect()) Error -111 connecting 10.24.86.108/1023 -> 10.24.85.218/988
+00000400:00000100:0.0:1573931892.452068:0:4827:0:(acceptor.c:105:lnet_connect_console_error()) Connection to 10.24.85.218@tcp at host 10.24.85.218 on port 988 was refused: check that Lustre is running on that node.
+00000800:00000100:0.0:1573931892.452071:0:4827:0:(socklnd_cb.c:425:ksocknal_txlist_done()) Deleting packet type 1 len 520 10.24.86.108@tcp->10.24.85.218@tcp
+00000100:00000400:0.0:1573931892.452075:0:4832:0:(client.c:2116:ptlrpc_expire_one_request()) @@@ Request sent has failed due to network error: [sent 1573931892/real 1573931892]  req@ffff960041dd4900 x1650385113885488/t0(0) o250->MGC10.24.85.218@tcp@10.24.85.218@tcp:26/25 lens 520/544 e 0 to 1 dl 1573931908 ref 1 fl Rpc:eXN/0/ffffffff rc 0/-1
+00000100:00080000:0.0:1573931892.452085:0:4832:0:(import.c:1284:ptlrpc_connect_interpret()) ffff960063df9800 MGS: changing import state from CONNECTING to DISCONN
+00000100:00080000:0.0:1573931892.452086:0:4832:0:(import.c:1330:ptlrpc_connect_interpret()) recovery of MGS on MGC10.24.85.218@tcp_0 failed (-110)
+00000100:00080000:0.0:1573931917.451816:0:4835:0:(pinger.c:217:ptlrpc_pinger_process_import()) ab879342-991d-77fc-a456-7d499a91003b->MGS: level DISCONN/3 force 0 force_next 0 deactive 0 pingable 1 suppress 0
+00000100:00080000:0.0:1573931917.451827:0:4835:0:(recover.c:58:ptlrpc_initiate_recovery()) MGS: starting recovery
+00000100:00080000:0.0:1573931917.451830:0:4835:0:(import.c:681:ptlrpc_connect_import()) ffff960063df9800 MGS: changing import state from DISCONN to CONNECTING
+00000100:00080000:0.0:1573931917.451839:0:4835:0:(import.c:524:import_select_connection()) MGC10.24.85.218@tcp: connect to NID 10.24.85.218@tcp last attempt 4298588369
+00000100:00080000:0.0:1573931917.451843:0:4835:0:(import.c:568:import_select_connection()) MGC10.24.85.218@tcp: tried all connections, increasing latency to 16s
+00000100:00080000:0.0:1573931917.451851:0:4835:0:(import.c:602:import_select_connection()) MGC10.24.85.218@tcp: import ffff960063df9800 using connection MGC10.24.85.218@tcp_0/10.24.85.218@tcp
+00000400:00000100:0.0:1573931917.453111:0:4824:0:(lib-socket.c:645:lnet_sock_connect()) Error -111 connecting 10.24.86.108/1023 -> 10.24.85.218/988
+00000400:00000100:0.0:1573931917.453136:0:4824:0:(acceptor.c:105:lnet_connect_console_error()) Connection to 10.24.85.218@tcp at host 10.24.85.218 on port 988 was refused: check that Lustre is running on that node.
+00000800:00000100:0.0:1573931917.453146:0:4824:0:(socklnd_cb.c:425:ksocknal_txlist_done()) Deleting packet type 1 len 520 10.24.86.108@tcp->10.24.85.218@tcp
+00000100:00000400:0.0:1573931917.453159:0:4832:0:(client.c:2116:ptlrpc_expire_one_request()) @@@ Request sent has failed due to network error: [sent 1573931917/real 1573931917]  req@ffff960041dd5200 x1650385113885568/t0(0) o250->MGC10.24.85.218@tcp@10.24.85.218@tcp:26/25 lens 520/544 e 0 to 1 dl 1573931938 ref 1 fl Rpc:eXN/0/ffffffff rc 0/-1
+00000100:00080000:0.0:1573931917.453201:0:4832:0:(import.c:1284:ptlrpc_connect_interpret()) ffff960063df9800 MGS: changing import state from CONNECTING to DISCONN
+00000100:00080000:0.0:1573931917.453205:0:4832:0:(import.c:1330:ptlrpc_connect_interpret()) recovery of MGS on MGC10.24.85.218@tcp_0 failed (-110)
+00000100:00080000:0.0:1573931942.451587:0:4835:0:(pinger.c:217:ptlrpc_pinger_process_import()) ab879342-991d-77fc-a456-7d499a91003b->MGS: level DISCONN/3 force 0 force_next 0 deactive 0 pingable 1 suppress 0
+00000100:00080000:0.0:1573931942.451591:0:4835:0:(recover.c:58:ptlrpc_initiate_recovery()) MGS: starting recovery
+00000100:00080000:0.0:1573931942.451592:0:4835:0:(import.c:681:ptlrpc_connect_import()) ffff960063df9800 MGS: changing import state from DISCONN to CONNECTING
+00000100:00080000:0.0:1573931942.451596:0:4835:0:(import.c:524:import_select_connection()) MGC10.24.85.218@tcp: connect to NID 10.24.85.218@tcp last attempt 4298613369
+00000100:00080000:0.0:1573931942.451598:0:4835:0:(import.c:568:import_select_connection()) MGC10.24.85.218@tcp: tried all connections, increasing latency to 21s
+00000100:00080000:0.0:1573931942.451601:0:4835:0:(import.c:602:import_select_connection()) MGC10.24.85.218@tcp: import ffff960063df9800 using connection MGC10.24.85.218@tcp_0/10.24.85.218@tcp
+00000400:00000100:0.0:1573931942.452452:0:4825:0:(lib-socket.c:645:lnet_sock_connect()) Error -111 connecting 10.24.86.108/1023 -> 10.24.85.218/988
+00000400:00000100:0.0:1573931942.452464:0:4825:0:(acceptor.c:105:lnet_connect_console_error()) Connection to 10.24.85.218@tcp at host 10.24.85.218 on port 988 was refused: check that Lustre is running on that node.
+00000800:00000100:0.0:1573931942.452470:0:4825:0:(socklnd_cb.c:425:ksocknal_txlist_done()) Deleting packet type 1 len 520 10.24.86.108@tcp->10.24.85.218@tcp
+00000100:00000400:0.0:1573931942.452479:0:4832:0:(client.c:2116:ptlrpc_expire_one_request()) @@@ Request sent has failed due to network error: [sent 1573931942/real 1573931942]  req@ffff960041dd4900 x1650385113885648/t0(0) o250->MGC10.24.85.218@tcp@10.24.85.218@tcp:26/25 lens 520/544 e 0 to 1 dl 1573931968 ref 1 fl Rpc:eXN/0/ffffffff rc 0/-1
+00000100:00080000:0.0:1573931942.452494:0:4832:0:(import.c:1284:ptlrpc_connect_interpret()) ffff960063df9800 MGS: changing import state from CONNECTING to DISCONN
+00000100:00080000:0.0:1573931942.452495:0:4832:0:(import.c:1330:ptlrpc_connect_interpret()) recovery of MGS on MGC10.24.85.218@tcp_0 failed (-110)
+00000100:00080000:0.0:1573931967.452700:0:4835:0:(pinger.c:217:ptlrpc_pinger_process_import()) ab879342-991d-77fc-a456-7d499a91003b->MGS: level DISCONN/3 force 0 force_next 0 deactive 0 pingable 1 suppress 0
+00000100:00080000:0.0:1573931967.452704:0:4835:0:(recover.c:58:ptlrpc_initiate_recovery()) MGS: starting recovery
+00000100:00080000:0.0:1573931967.452705:0:4835:0:(import.c:681:ptlrpc_connect_import()) ffff960063df9800 MGS: changing import state from DISCONN to CONNECTING
+00000100:00080000:0.0:1573931967.452708:0:4835:0:(import.c:524:import_select_connection()) MGC10.24.85.218@tcp: connect to NID 10.24.85.218@tcp last attempt 4298638369
+00000100:00080000:0.0:1573931967.452709:0:4835:0:(import.c:568:import_select_connection()) MGC10.24.85.218@tcp: tried all connections, increasing latency to 26s
+00000100:00080000:0.0:1573931967.452712:0:4835:0:(import.c:602:import_select_connection()) MGC10.24.85.218@tcp: import ffff960063df9800 using connection MGC10.24.85.218@tcp_0/10.24.85.218@tcp
+00000400:00000100:0.0:1573931967.466427:0:4826:0:(lib-socket.c:645:lnet_sock_connect()) Error -111 connecting 10.24.86.108/1023 -> 10.24.85.218/988
+00000400:00000100:0.0:1573931967.466439:0:4826:0:(acceptor.c:105:lnet_connect_console_error()) Connection to 10.24.85.218@tcp at host 10.24.85.218 on port 988 was refused: check that Lustre is running on that node.
+00000800:00000100:0.0:1573931967.466442:0:4826:0:(socklnd_cb.c:425:ksocknal_txlist_done()) Deleting packet type 1 len 520 10.24.86.108@tcp->10.24.85.218@tcp
+00000100:00000400:0.0:1573931967.466465:0:4832:0:(client.c:2116:ptlrpc_expire_one_request()) @@@ Request sent has failed due to network error: [sent 1573931967/real 1573931967]  req@ffff960041dd4c00 x1650385113885728/t0(0) o250->MGC10.24.85.218@tcp@10.24.85.218@tcp:26/25 lens 520/544 e 0 to 1 dl 1573931998 ref 1 fl Rpc:eXN/0/ffffffff rc 0/-1
+00000100:00080000:0.0:1573931967.466475:0:4832:0:(import.c:1284:ptlrpc_connect_interpret()) ffff960063df9800 MGS: changing import state from CONNECTING to DISCONN
+00000100:00080000:0.0:1573931967.466476:0:4832:0:(import.c:1330:ptlrpc_connect_interpret()) recovery of MGS on MGC10.24.85.218@tcp_0 failed (-110)

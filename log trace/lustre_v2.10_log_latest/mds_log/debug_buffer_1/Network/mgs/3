@@ -1,0 +1,164 @@
+00000100:00080000:0.0F:1579384755.444752:0:3282:0:(pinger.c:217:ptlrpc_pinger_process_import()) 5c565410-e636-85ec-3253-5c0de6bcfa2e->MGS: level CONNECTING/4 force 0 force_next 0 deactive 0 pingable 1 suppress 0
+00000100:00080000:0.0:1579384755.444767:0:3282:0:(pinger.c:230:ptlrpc_pinger_process_import()) 5c565410-e636-85ec-3253-5c0de6bcfa2e->MGS: not pinging (in recovery or recovery disabled: CONNECTING)
+00000400:00000100:0.0:1579384757.703144:0:3272:0:(lib-socket.c:645:lnet_sock_connect()) Error -110 connecting 10.29.161.11/1022 -> 10.24.84.84/988
+00000400:00000100:0.0:1579384757.703176:0:3272:0:(acceptor.c:118:lnet_connect_console_error()) Connection to 10.24.84.84@tcp at host 10.24.84.84 on port 988 took too long: that node may be hung or experiencing high load.
+00000800:00000100:0.0:1579384757.703193:0:3272:0:(socklnd_cb.c:425:ksocknal_txlist_done()) Deleting packet type 1 len 520 10.29.161.11@tcp->10.24.84.84@tcp
+00000100:00080000:0.0:1579384757.703224:0:3279:0:(import.c:1284:ptlrpc_connect_interpret()) ffff995604b3a800 MGS: changing import state from CONNECTING to DISCONN
+00000100:00080000:0.0:1579384757.703229:0:3279:0:(import.c:1330:ptlrpc_connect_interpret()) recovery of MGS on MGC10.24.84.84@tcp_0 failed (-110)
+00000100:00080000:0.0:1579384780.444597:0:3282:0:(pinger.c:217:ptlrpc_pinger_process_import()) 5c565410-e636-85ec-3253-5c0de6bcfa2e->MGS: level DISCONN/3 force 0 force_next 0 deactive 0 pingable 1 suppress 0
+00000100:00080000:0.0:1579384780.444607:0:3282:0:(recover.c:58:ptlrpc_initiate_recovery()) MGS: starting recovery
+00000100:00080000:0.0:1579384780.444610:0:3282:0:(import.c:681:ptlrpc_connect_import()) ffff995604b3a800 MGS: changing import state from DISCONN to CONNECTING
+00000100:00080000:0.0:1579384780.444619:0:3282:0:(import.c:524:import_select_connection()) MGC10.24.84.84@tcp: connect to NID 10.24.84.84@tcp last attempt 4390741984
+00000100:00080000:0.0:1579384780.444623:0:3282:0:(import.c:568:import_select_connection()) MGC10.24.84.84@tcp: tried all connections, increasing latency to 16s
+00000100:00080000:0.0:1579384780.444631:0:3282:0:(import.c:602:import_select_connection()) MGC10.24.84.84@tcp: import ffff995604b3a800 using connection MGC10.24.84.84@tcp_0/10.24.84.84@tcp
+00000100:00000400:0.0:1579384801.447536:0:3279:0:(client.c:2116:ptlrpc_expire_one_request()) @@@ Request sent has timed out for sent delay: [sent 1579384780/real 0]  req@ffff99560ce13200 x1656004725991328/t0(0) o250->MGC10.24.84.84@tcp@10.24.84.84@tcp:26/25 lens 520/544 e 0 to 1 dl 1579384801 ref 2 fl Rpc:XN/0/ffffffff rc 0/-1
+00000100:00080000:0.0:1579384805.444830:0:3282:0:(pinger.c:217:ptlrpc_pinger_process_import()) 5c565410-e636-85ec-3253-5c0de6bcfa2e->MGS: level CONNECTING/4 force 0 force_next 0 deactive 0 pingable 1 suppress 0
+00000100:00080000:0.0:1579384805.444839:0:3282:0:(pinger.c:230:ptlrpc_pinger_process_import()) 5c565410-e636-85ec-3253-5c0de6bcfa2e->MGS: not pinging (in recovery or recovery disabled: CONNECTING)
+00000100:00080000:0.0:1579384830.444589:0:3282:0:(pinger.c:217:ptlrpc_pinger_process_import()) 5c565410-e636-85ec-3253-5c0de6bcfa2e->MGS: level CONNECTING/4 force 0 force_next 0 deactive 0 pingable 1 suppress 0
+00000100:00080000:0.0:1579384830.444599:0:3282:0:(pinger.c:230:ptlrpc_pinger_process_import()) 5c565410-e636-85ec-3253-5c0de6bcfa2e->MGS: not pinging (in recovery or recovery disabled: CONNECTING)
+00000800:00000100:0.0:1579384835.682725:0:3275:0:(socklnd_cb.c:425:ksocknal_txlist_done()) Deleting packet type 1 len 520 10.29.161.11@tcp->10.24.84.84@tcp
+00000100:00080000:0.0:1579384835.682759:0:3279:0:(import.c:1284:ptlrpc_connect_interpret()) ffff995604b3a800 MGS: changing import state from CONNECTING to DISCONN
+00000100:00080000:0.0:1579384835.682764:0:3279:0:(import.c:1330:ptlrpc_connect_interpret()) recovery of MGS on MGC10.24.84.84@tcp_0 failed (-110)
+00000100:00080000:0.0:1579384855.444615:0:3282:0:(pinger.c:217:ptlrpc_pinger_process_import()) 5c565410-e636-85ec-3253-5c0de6bcfa2e->MGS: level DISCONN/3 force 0 force_next 0 deactive 0 pingable 1 suppress 0
+00000100:00080000:0.0:1579384855.444626:0:3282:0:(recover.c:58:ptlrpc_initiate_recovery()) MGS: starting recovery
+00000100:00080000:0.0:1579384855.444628:0:3282:0:(import.c:681:ptlrpc_connect_import()) ffff995604b3a800 MGS: changing import state from DISCONN to CONNECTING
+00000100:00080000:0.0:1579384855.444641:0:3282:0:(import.c:524:import_select_connection()) MGC10.24.84.84@tcp: connect to NID 10.24.84.84@tcp last attempt 4390816984
+00000100:00080000:0.0:1579384855.444645:0:3282:0:(import.c:568:import_select_connection()) MGC10.24.84.84@tcp: tried all connections, increasing latency to 21s
+00000100:00080000:0.0:1579384855.444653:0:3282:0:(import.c:602:import_select_connection()) MGC10.24.84.84@tcp: import ffff995604b3a800 using connection MGC10.24.84.84@tcp_0/10.24.84.84@tcp
+00000100:00080000:0.0:1579384880.444672:0:3282:0:(pinger.c:217:ptlrpc_pinger_process_import()) 5c565410-e636-85ec-3253-5c0de6bcfa2e->MGS: level CONNECTING/4 force 0 force_next 0 deactive 0 pingable 1 suppress 0
+00000100:00080000:0.0:1579384880.444681:0:3282:0:(pinger.c:230:ptlrpc_pinger_process_import()) 5c565410-e636-85ec-3253-5c0de6bcfa2e->MGS: not pinging (in recovery or recovery disabled: CONNECTING)
+00000100:00000400:0.0:1579384881.449534:0:3279:0:(client.c:2116:ptlrpc_expire_one_request()) @@@ Request sent has timed out for sent delay: [sent 1579384855/real 0]  req@ffff9955db522300 x1656004725992112/t0(0) o250->MGC10.24.84.84@tcp@10.24.84.84@tcp:26/25 lens 520/544 e 0 to 1 dl 1579384881 ref 2 fl Rpc:XN/0/ffffffff rc 0/-1
+00000100:00080000:0.0:1579384905.444631:0:3282:0:(pinger.c:217:ptlrpc_pinger_process_import()) 5c565410-e636-85ec-3253-5c0de6bcfa2e->MGS: level CONNECTING/4 force 0 force_next 0 deactive 0 pingable 1 suppress 0
+00000100:00080000:0.0:1579384905.444641:0:3282:0:(pinger.c:230:ptlrpc_pinger_process_import()) 5c565410-e636-85ec-3253-5c0de6bcfa2e->MGS: not pinging (in recovery or recovery disabled: CONNECTING)
+00000400:00000100:0.0:1579384907.716684:0:3273:0:(lib-socket.c:645:lnet_sock_connect()) Error -110 connecting 10.29.161.11/1023 -> 10.24.84.84/988
+00000400:00000100:0.0:1579384907.716715:0:3273:0:(acceptor.c:118:lnet_connect_console_error()) Connection to 10.24.84.84@tcp at host 10.24.84.84 on port 988 took too long: that node may be hung or experiencing high load.
+00000800:00000100:0.0:1579384907.716731:0:3273:0:(socklnd_cb.c:425:ksocknal_txlist_done()) Deleting packet type 1 len 520 10.29.161.11@tcp->10.24.84.84@tcp
+00000100:00080000:0.0:1579384907.716759:0:3279:0:(import.c:1284:ptlrpc_connect_interpret()) ffff995604b3a800 MGS: changing import state from CONNECTING to DISCONN
+00000100:00080000:0.0:1579384907.716764:0:3279:0:(import.c:1330:ptlrpc_connect_interpret()) recovery of MGS on MGC10.24.84.84@tcp_0 failed (-110)
+00000040:00080000:0.0:1579384917.736807:0:4041:0:(llog_osd.c:698:llog_osd_write_rec()) added record [0x1:0xc:0x0].1719, 88 off192616
+00000001:00080000:0.0:1579384922.499560:0:4024:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-MDT0000: transno 4294980632 is committed
+00000100:00080000:0.0:1579384930.444984:0:3282:0:(pinger.c:217:ptlrpc_pinger_process_import()) 5c565410-e636-85ec-3253-5c0de6bcfa2e->MGS: level DISCONN/3 force 0 force_next 0 deactive 0 pingable 1 suppress 0
+00000100:00080000:0.0:1579384930.444994:0:3282:0:(recover.c:58:ptlrpc_initiate_recovery()) MGS: starting recovery
+00000100:00080000:0.0:1579384930.444997:0:3282:0:(import.c:681:ptlrpc_connect_import()) ffff995604b3a800 MGS: changing import state from DISCONN to CONNECTING
+00000100:00080000:0.0:1579384930.445005:0:3282:0:(import.c:524:import_select_connection()) MGC10.24.84.84@tcp: connect to NID 10.24.84.84@tcp last attempt 4390891984
+00000100:00080000:0.0:1579384930.445009:0:3282:0:(import.c:568:import_select_connection()) MGC10.24.84.84@tcp: tried all connections, increasing latency to 26s
+00000100:00080000:0.0:1579384930.445017:0:3282:0:(import.c:602:import_select_connection()) MGC10.24.84.84@tcp: import ffff995604b3a800 using connection MGC10.24.84.84@tcp_0/10.24.84.84@tcp
+00000004:00080000:0.0:1579384951.326597:0:4039:0:(osp_object.c:1517:osp_create()) lustre-OST0000-osc-MDT0000: Wrote last used FID: [0x100000000:0x2a5:0x0], index 0: 0
+00000004:00080000:0.0:1579384951.326608:0:4039:0:(osp_object.c:1517:osp_create()) lustre-OST0002-osc-MDT0000: Wrote last used FID: [0x100020000:0x2a5:0x0], index 2: 0
+00000004:00080000:0.0:1579384951.326614:0:4039:0:(osp_object.c:1517:osp_create()) lustre-OST0001-osc-MDT0000: Wrote last used FID: [0x100010000:0x2a5:0x0], index 1: 0
+00000040:00080000:0.0:1579384951.326670:0:4039:0:(llog_osd.c:698:llog_osd_write_rec()) added record [0x1:0xc:0x0].1720, 96 off192712
+00000100:00080000:0.0:1579384955.444511:0:3282:0:(pinger.c:217:ptlrpc_pinger_process_import()) 5c565410-e636-85ec-3253-5c0de6bcfa2e->MGS: level CONNECTING/4 force 0 force_next 0 deactive 0 pingable 1 suppress 0
+00000100:00080000:0.0:1579384955.444514:0:3282:0:(pinger.c:230:ptlrpc_pinger_process_import()) 5c565410-e636-85ec-3253-5c0de6bcfa2e->MGS: not pinging (in recovery or recovery disabled: CONNECTING)
+00000001:00080000:0.0:1579384956.485267:0:4024:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-MDT0000: transno 4294980633 is committed
+00000100:00000400:0.0:1579384961.451722:0:3279:0:(client.c:2116:ptlrpc_expire_one_request()) @@@ Request sent has timed out for sent delay: [sent 1579384930/real 0]  req@ffff995609062600 x1656004725992896/t0(0) o250->MGC10.24.84.84@tcp@10.24.84.84@tcp:26/25 lens 520/544 e 0 to 1 dl 1579384961 ref 2 fl Rpc:XN/0/ffffffff rc 0/-1
+00000040:00080000:0.0:1579384970.981467:0:4041:0:(llog_osd.c:698:llog_osd_write_rec()) added record [0x1:0xc:0x0].1721, 88 off192800
+00000001:00080000:0.0:1579384976.486936:0:4024:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-MDT0000: transno 4294980634 is committed
+00000004:00080000:0.0:1579384977.073599:0:4039:0:(osp_object.c:1517:osp_create()) lustre-OST0000-osc-MDT0000: Wrote last used FID: [0x100000000:0x2a6:0x0], index 0: 0
+00000004:00080000:0.0:1579384977.073609:0:4039:0:(osp_object.c:1517:osp_create()) lustre-OST0002-osc-MDT0000: Wrote last used FID: [0x100020000:0x2a6:0x0], index 2: 0
+00000004:00080000:0.0:1579384977.073615:0:4039:0:(osp_object.c:1517:osp_create()) lustre-OST0001-osc-MDT0000: Wrote last used FID: [0x100010000:0x2a6:0x0], index 1: 0
+00000040:00080000:0.0:1579384977.073669:0:4039:0:(llog_osd.c:698:llog_osd_write_rec()) added record [0x1:0xc:0x0].1722, 96 off192896
+00000001:00080000:0.0:1579384977.130229:0:4024:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-MDT0000: transno 4294980635 is committed
+00000100:00080000:0.0:1579384980.444593:0:3282:0:(pinger.c:217:ptlrpc_pinger_process_import()) 5c565410-e636-85ec-3253-5c0de6bcfa2e->MGS: level CONNECTING/4 force 0 force_next 0 deactive 0 pingable 1 suppress 0
+00000100:00080000:0.0:1579384980.444603:0:3282:0:(pinger.c:230:ptlrpc_pinger_process_import()) 5c565410-e636-85ec-3253-5c0de6bcfa2e->MGS: not pinging (in recovery or recovery disabled: CONNECTING)
+00000800:00000100:0.0:1579384987.682525:0:3275:0:(socklnd_cb.c:425:ksocknal_txlist_done()) Deleting packet type 1 len 520 10.29.161.11@tcp->10.24.84.84@tcp
+00000100:00080000:0.0:1579384987.682556:0:3279:0:(import.c:1284:ptlrpc_connect_interpret()) ffff995604b3a800 MGS: changing import state from CONNECTING to DISCONN
+00000100:00080000:0.0:1579384987.682561:0:3279:0:(import.c:1330:ptlrpc_connect_interpret()) recovery of MGS on MGC10.24.84.84@tcp_0 failed (-110)
+00000100:00080000:0.0:1579385005.444608:0:3282:0:(pinger.c:217:ptlrpc_pinger_process_import()) 5c565410-e636-85ec-3253-5c0de6bcfa2e->MGS: level DISCONN/3 force 0 force_next 0 deactive 0 pingable 1 suppress 0
+00000100:00080000:0.0:1579385005.444619:0:3282:0:(recover.c:58:ptlrpc_initiate_recovery()) MGS: starting recovery
+00000100:00080000:0.0:1579385005.444622:0:3282:0:(import.c:681:ptlrpc_connect_import()) ffff995604b3a800 MGS: changing import state from DISCONN to CONNECTING
+00000100:00080000:0.0:1579385005.444630:0:3282:0:(import.c:524:import_select_connection()) MGC10.24.84.84@tcp: connect to NID 10.24.84.84@tcp last attempt 4390966984
+00000100:00080000:0.0:1579385005.444634:0:3282:0:(import.c:568:import_select_connection()) MGC10.24.84.84@tcp: tried all connections, increasing latency to 31s
+00000100:00080000:0.0:1579385005.444641:0:3282:0:(import.c:602:import_select_connection()) MGC10.24.84.84@tcp: import ffff995604b3a800 using connection MGC10.24.84.84@tcp_0/10.24.84.84@tcp
+00000100:00080000:0.0:1579385030.444536:0:3282:0:(pinger.c:217:ptlrpc_pinger_process_import()) 5c565410-e636-85ec-3253-5c0de6bcfa2e->MGS: level CONNECTING/4 force 0 force_next 0 deactive 0 pingable 1 suppress 0
+00000100:00080000:0.0:1579385030.444546:0:3282:0:(pinger.c:230:ptlrpc_pinger_process_import()) 5c565410-e636-85ec-3253-5c0de6bcfa2e->MGS: not pinging (in recovery or recovery disabled: CONNECTING)
+00000100:00000400:0.0:1579385041.444576:0:3279:0:(client.c:2116:ptlrpc_expire_one_request()) @@@ Request sent has timed out for sent delay: [sent 1579385005/real 0]  req@ffff9955df26b800 x1656004725993680/t0(0) o250->MGC10.24.84.84@tcp@10.24.84.84@tcp:26/25 lens 520/544 e 0 to 1 dl 1579385041 ref 2 fl Rpc:XN/0/ffffffff rc 0/-1
+00000100:00080000:0.0:1579385055.444548:0:3282:0:(pinger.c:217:ptlrpc_pinger_process_import()) 5c565410-e636-85ec-3253-5c0de6bcfa2e->MGS: level CONNECTING/4 force 0 force_next 0 deactive 0 pingable 1 suppress 0
+00000100:00080000:0.0:1579385055.444557:0:3282:0:(pinger.c:230:ptlrpc_pinger_process_import()) 5c565410-e636-85ec-3253-5c0de6bcfa2e->MGS: not pinging (in recovery or recovery disabled: CONNECTING)
+00000400:00000100:0.0:1579385057.732619:0:3274:0:(lib-socket.c:645:lnet_sock_connect()) Error -110 connecting 10.29.161.11/1023 -> 10.24.84.84/988
+00000400:00000100:0.0:1579385057.732649:0:3274:0:(acceptor.c:118:lnet_connect_console_error()) Connection to 10.24.84.84@tcp at host 10.24.84.84 on port 988 took too long: that node may be hung or experiencing high load.
+00000800:00000100:0.0:1579385057.732663:0:3274:0:(socklnd_cb.c:425:ksocknal_txlist_done()) Deleting packet type 1 len 520 10.29.161.11@tcp->10.24.84.84@tcp
+00000100:00080000:0.0:1579385057.732688:0:3279:0:(import.c:1284:ptlrpc_connect_interpret()) ffff995604b3a800 MGS: changing import state from CONNECTING to DISCONN
+00000100:00080000:0.0:1579385057.732693:0:3279:0:(import.c:1330:ptlrpc_connect_interpret()) recovery of MGS on MGC10.24.84.84@tcp_0 failed (-110)
+00000100:00080000:0.0:1579385080.444536:0:3282:0:(pinger.c:217:ptlrpc_pinger_process_import()) 5c565410-e636-85ec-3253-5c0de6bcfa2e->MGS: level DISCONN/3 force 0 force_next 0 deactive 0 pingable 1 suppress 0
+00000100:00080000:0.0:1579385080.444546:0:3282:0:(recover.c:58:ptlrpc_initiate_recovery()) MGS: starting recovery
+00000100:00080000:0.0:1579385080.444548:0:3282:0:(import.c:681:ptlrpc_connect_import()) ffff995604b3a800 MGS: changing import state from DISCONN to CONNECTING
+00000100:00080000:0.0:1579385080.444557:0:3282:0:(import.c:524:import_select_connection()) MGC10.24.84.84@tcp: connect to NID 10.24.84.84@tcp last attempt 4391041984
+00000100:00080000:0.0:1579385080.444561:0:3282:0:(import.c:568:import_select_connection()) MGC10.24.84.84@tcp: tried all connections, increasing latency to 36s
+00000100:00080000:0.0:1579385080.444569:0:3282:0:(import.c:602:import_select_connection()) MGC10.24.84.84@tcp: import ffff995604b3a800 using connection MGC10.24.84.84@tcp_0/10.24.84.84@tcp
+00000100:00080000:0.0:1579385105.444582:0:3282:0:(pinger.c:217:ptlrpc_pinger_process_import()) 5c565410-e636-85ec-3253-5c0de6bcfa2e->MGS: level CONNECTING/4 force 0 force_next 0 deactive 0 pingable 1 suppress 0
+00000100:00080000:0.0:1579385105.444592:0:3282:0:(pinger.c:230:ptlrpc_pinger_process_import()) 5c565410-e636-85ec-3253-5c0de6bcfa2e->MGS: not pinging (in recovery or recovery disabled: CONNECTING)
+00000100:00000400:0.0:1579385121.454553:0:3279:0:(client.c:2116:ptlrpc_expire_one_request()) @@@ Request sent has timed out for sent delay: [sent 1579385080/real 0]  req@ffff9955df26a900 x1656004725994464/t0(0) o250->MGC10.24.84.84@tcp@10.24.84.84@tcp:26/25 lens 520/544 e 0 to 1 dl 1579385121 ref 2 fl Rpc:XN/0/ffffffff rc 0/-1
+00000100:00080000:0.0:1579385130.444499:0:3282:0:(pinger.c:217:ptlrpc_pinger_process_import()) 5c565410-e636-85ec-3253-5c0de6bcfa2e->MGS: level CONNECTING/4 force 0 force_next 0 deactive 0 pingable 1 suppress 0
+00000100:00080000:0.0:1579385130.444508:0:3282:0:(pinger.c:230:ptlrpc_pinger_process_import()) 5c565410-e636-85ec-3253-5c0de6bcfa2e->MGS: not pinging (in recovery or recovery disabled: CONNECTING)
+00000800:00000100:0.0:1579385138.682502:0:3275:0:(socklnd_cb.c:425:ksocknal_txlist_done()) Deleting packet type 1 len 520 10.29.161.11@tcp->10.24.84.84@tcp
+00000100:00080000:0.0:1579385138.682534:0:3279:0:(import.c:1284:ptlrpc_connect_interpret()) ffff995604b3a800 MGS: changing import state from CONNECTING to DISCONN
+00000100:00080000:0.0:1579385138.682539:0:3279:0:(import.c:1330:ptlrpc_connect_interpret()) recovery of MGS on MGC10.24.84.84@tcp_0 failed (-110)
+00000100:00080000:0.0:1579385155.444549:0:3282:0:(pinger.c:217:ptlrpc_pinger_process_import()) 5c565410-e636-85ec-3253-5c0de6bcfa2e->MGS: level DISCONN/3 force 0 force_next 0 deactive 0 pingable 1 suppress 0
+00000100:00080000:0.0:1579385155.444559:0:3282:0:(recover.c:58:ptlrpc_initiate_recovery()) MGS: starting recovery
+00000100:00080000:0.0:1579385155.444561:0:3282:0:(import.c:681:ptlrpc_connect_import()) ffff995604b3a800 MGS: changing import state from DISCONN to CONNECTING
+00000100:00080000:0.0:1579385155.444569:0:3282:0:(import.c:524:import_select_connection()) MGC10.24.84.84@tcp: connect to NID 10.24.84.84@tcp last attempt 4391116984
+00000100:00080000:0.0:1579385155.444573:0:3282:0:(import.c:568:import_select_connection()) MGC10.24.84.84@tcp: tried all connections, increasing latency to 41s
+00000100:00080000:0.0:1579385155.444580:0:3282:0:(import.c:602:import_select_connection()) MGC10.24.84.84@tcp: import ffff995604b3a800 using connection MGC10.24.84.84@tcp_0/10.24.84.84@tcp
+00000100:00080000:0.0:1579385180.444476:0:3282:0:(pinger.c:217:ptlrpc_pinger_process_import()) 5c565410-e636-85ec-3253-5c0de6bcfa2e->MGS: level CONNECTING/4 force 0 force_next 0 deactive 0 pingable 1 suppress 0
+00000100:00080000:0.0:1579385180.444485:0:3282:0:(pinger.c:230:ptlrpc_pinger_process_import()) 5c565410-e636-85ec-3253-5c0de6bcfa2e->MGS: not pinging (in recovery or recovery disabled: CONNECTING)
+00000100:00000400:0.0:1579385201.451511:0:3279:0:(client.c:2116:ptlrpc_expire_one_request()) @@@ Request sent has timed out for sent delay: [sent 1579385155/real 0]  req@ffff995609062600 x1656004725995248/t0(0) o250->MGC10.24.84.84@tcp@10.24.84.84@tcp:26/25 lens 520/544 e 0 to 1 dl 1579385201 ref 2 fl Rpc:XN/0/ffffffff rc 0/-1
+00000100:00080000:0.0:1579385205.444584:0:3282:0:(pinger.c:217:ptlrpc_pinger_process_import()) 5c565410-e636-85ec-3253-5c0de6bcfa2e->MGS: level CONNECTING/4 force 0 force_next 0 deactive 0 pingable 1 suppress 0
+00000100:00080000:0.0:1579385205.444594:0:3282:0:(pinger.c:230:ptlrpc_pinger_process_import()) 5c565410-e636-85ec-3253-5c0de6bcfa2e->MGS: not pinging (in recovery or recovery disabled: CONNECTING)
+00000400:00000100:0.0:1579385207.748576:0:3271:0:(lib-socket.c:645:lnet_sock_connect()) Error -110 connecting 10.29.161.11/1023 -> 10.24.84.84/988
+00000400:00000100:0.0:1579385207.748607:0:3271:0:(acceptor.c:118:lnet_connect_console_error()) Connection to 10.24.84.84@tcp at host 10.24.84.84 on port 988 took too long: that node may be hung or experiencing high load.
+00000800:00000100:0.0:1579385207.748623:0:3271:0:(socklnd_cb.c:425:ksocknal_txlist_done()) Deleting packet type 1 len 520 10.29.161.11@tcp->10.24.84.84@tcp
+00000100:00080000:0.0:1579385207.748650:0:3279:0:(import.c:1284:ptlrpc_connect_interpret()) ffff995604b3a800 MGS: changing import state from CONNECTING to DISCONN
+00000100:00080000:0.0:1579385207.748655:0:3279:0:(import.c:1330:ptlrpc_connect_interpret()) recovery of MGS on MGC10.24.84.84@tcp_0 failed (-110)
+00000040:00080000:0.0:1579385216.389213:0:4041:0:(llog_osd.c:698:llog_osd_write_rec()) added record [0x1:0xc:0x0].1723, 88 off192984
+00000001:00080000:0.0:1579385221.501327:0:4024:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-MDT0000: transno 4294980636 is committed
+00000100:00080000:0.0:1579385230.444448:0:3282:0:(pinger.c:217:ptlrpc_pinger_process_import()) 5c565410-e636-85ec-3253-5c0de6bcfa2e->MGS: level DISCONN/3 force 0 force_next 0 deactive 0 pingable 1 suppress 0
+00000100:00080000:0.0:1579385230.444459:0:3282:0:(recover.c:58:ptlrpc_initiate_recovery()) MGS: starting recovery
+00000100:00080000:0.0:1579385230.444462:0:3282:0:(import.c:681:ptlrpc_connect_import()) ffff995604b3a800 MGS: changing import state from DISCONN to CONNECTING
+00000100:00080000:0.0:1579385230.444471:0:3282:0:(import.c:524:import_select_connection()) MGC10.24.84.84@tcp: connect to NID 10.24.84.84@tcp last attempt 4391191984
+00000100:00080000:0.0:1579385230.444474:0:3282:0:(import.c:568:import_select_connection()) MGC10.24.84.84@tcp: tried all connections, increasing latency to 46s
+00000100:00080000:0.0:1579385230.444482:0:3282:0:(import.c:602:import_select_connection()) MGC10.24.84.84@tcp: import ffff995604b3a800 using connection MGC10.24.84.84@tcp_0/10.24.84.84@tcp
+00000100:00080000:0.0:1579385255.444806:0:3282:0:(pinger.c:217:ptlrpc_pinger_process_import()) 5c565410-e636-85ec-3253-5c0de6bcfa2e->MGS: level CONNECTING/4 force 0 force_next 0 deactive 0 pingable 1 suppress 0
+00000100:00080000:0.0:1579385255.444816:0:3282:0:(pinger.c:230:ptlrpc_pinger_process_import()) 5c565410-e636-85ec-3253-5c0de6bcfa2e->MGS: not pinging (in recovery or recovery disabled: CONNECTING)
+00000100:00080000:0.0:1579385280.444589:0:3282:0:(pinger.c:217:ptlrpc_pinger_process_import()) 5c565410-e636-85ec-3253-5c0de6bcfa2e->MGS: level CONNECTING/4 force 0 force_next 0 deactive 0 pingable 1 suppress 0
+00000100:00080000:0.0:1579385280.444598:0:3282:0:(pinger.c:230:ptlrpc_pinger_process_import()) 5c565410-e636-85ec-3253-5c0de6bcfa2e->MGS: not pinging (in recovery or recovery disabled: CONNECTING)
+00000100:00000400:0.0:1579385281.451551:0:3279:0:(client.c:2116:ptlrpc_expire_one_request()) @@@ Request sent has timed out for sent delay: [sent 1579385230/real 0]  req@ffff9955d67d8000 x1656004725996032/t0(0) o250->MGC10.24.84.84@tcp@10.24.84.84@tcp:26/25 lens 520/544 e 0 to 1 dl 1579385281 ref 2 fl Rpc:XN/0/ffffffff rc 0/-1
+00000800:00000100:0.0:1579385290.682789:0:3275:0:(socklnd_cb.c:425:ksocknal_txlist_done()) Deleting packet type 1 len 520 10.29.161.11@tcp->10.24.84.84@tcp
+00000100:00080000:0.0:1579385290.682820:0:3279:0:(import.c:1284:ptlrpc_connect_interpret()) ffff995604b3a800 MGS: changing import state from CONNECTING to DISCONN
+00000100:00080000:0.0:1579385290.682826:0:3279:0:(import.c:1330:ptlrpc_connect_interpret()) recovery of MGS on MGC10.24.84.84@tcp_0 failed (-110)
+00000100:00080000:0.0:1579385305.444627:0:3282:0:(pinger.c:217:ptlrpc_pinger_process_import()) 5c565410-e636-85ec-3253-5c0de6bcfa2e->MGS: level DISCONN/3 force 0 force_next 0 deactive 0 pingable 1 suppress 0
+00000100:00080000:0.0:1579385305.444637:0:3282:0:(recover.c:58:ptlrpc_initiate_recovery()) MGS: starting recovery
+00000100:00080000:0.0:1579385305.444640:0:3282:0:(import.c:681:ptlrpc_connect_import()) ffff995604b3a800 MGS: changing import state from DISCONN to CONNECTING
+00000100:00080000:0.0:1579385305.444649:0:3282:0:(import.c:524:import_select_connection()) MGC10.24.84.84@tcp: connect to NID 10.24.84.84@tcp last attempt 4391266984
+00000100:00080000:0.0:1579385305.444653:0:3282:0:(import.c:568:import_select_connection()) MGC10.24.84.84@tcp: tried all connections, increasing latency to 50s
+00000100:00080000:0.0:1579385305.444660:0:3282:0:(import.c:602:import_select_connection()) MGC10.24.84.84@tcp: import ffff995604b3a800 using connection MGC10.24.84.84@tcp_0/10.24.84.84@tcp
+00000100:00080000:0.0:1579385330.444613:0:3282:0:(pinger.c:217:ptlrpc_pinger_process_import()) 5c565410-e636-85ec-3253-5c0de6bcfa2e->MGS: level CONNECTING/4 force 0 force_next 0 deactive 0 pingable 1 suppress 0
+00000100:00080000:0.0:1579385330.444624:0:3282:0:(pinger.c:230:ptlrpc_pinger_process_import()) 5c565410-e636-85ec-3253-5c0de6bcfa2e->MGS: not pinging (in recovery or recovery disabled: CONNECTING)
+00000004:00000080:0.0:1579385349.027828:0:4039:0:(mdt_handler.c:6135:mdt_iocontrol()) handling ioctl cmd 0x424066b3
+00000004:00000080:0.0:1579385349.027863:0:4039:0:(mdd_device.c:1546:mdd_changelog_clear()) lustre-MDD0000: Purge request: id=1, endrec=0
+00000040:00080000:0.0:1579385349.027886:0:4039:0:(llog_cat.c:817:llog_cat_process_cb()) processing log [0xb:0x1:0x0]:0 at index 1 of catalog [0x6:0xa:0x0]
+00000004:00000080:0.0:1579385349.027898:0:4039:0:(mdd_device.c:1519:mdd_changelog_clear_cb()) Rewriting changelog user 1 endrec to 1701
+00000004:00000080:0.0:1579385349.027933:0:4039:0:(mdd_device.c:1584:mdd_changelog_clear()) lustre-MDD0000: Purging changelog entries up to 18446744073709551615
+00000040:00080000:0.0:1579385349.027941:0:4039:0:(llog_cat.c:817:llog_cat_process_cb()) processing log [0xc:0x1:0x0]:0 at index 1 of catalog [0x5:0xa:0x0]
+00000100:00080000:0.0:1579385355.444491:0:3282:0:(pinger.c:217:ptlrpc_pinger_process_import()) 5c565410-e636-85ec-3253-5c0de6bcfa2e->MGS: level CONNECTING/4 force 0 force_next 0 deactive 0 pingable 1 suppress 0
+00000100:00080000:0.0:1579385355.444501:0:3282:0:(pinger.c:230:ptlrpc_pinger_process_import()) 5c565410-e636-85ec-3253-5c0de6bcfa2e->MGS: not pinging (in recovery or recovery disabled: CONNECTING)
+00000400:00000100:0.0:1579385357.764625:0:3272:0:(lib-socket.c:645:lnet_sock_connect()) Error -110 connecting 10.29.161.11/1023 -> 10.24.84.84/988
+00000400:00000100:0.0:1579385357.764652:0:3272:0:(acceptor.c:118:lnet_connect_console_error()) Connection to 10.24.84.84@tcp at host 10.24.84.84 on port 988 took too long: that node may be hung or experiencing high load.
+00000800:00000100:0.0:1579385357.764666:0:3272:0:(socklnd_cb.c:425:ksocknal_txlist_done()) Deleting packet type 1 len 520 10.29.161.11@tcp->10.24.84.84@tcp
+00000100:00000400:0.0:1579385357.764692:0:3279:0:(client.c:2116:ptlrpc_expire_one_request()) @@@ Request sent has failed due to network error: [sent 1579385305/real 1579385357]  req@ffff99560ce13200 x1656004725996816/t0(0) o250->MGC10.24.84.84@tcp@10.24.84.84@tcp:26/25 lens 520/544 e 0 to 1 dl 1579385360 ref 1 fl Rpc:eXN/0/ffffffff rc 0/-1
+00000100:00080000:0.0:1579385357.764716:0:3279:0:(import.c:1284:ptlrpc_connect_interpret()) ffff995604b3a800 MGS: changing import state from CONNECTING to DISCONN
+00000100:00080000:0.0:1579385357.764720:0:3279:0:(import.c:1330:ptlrpc_connect_interpret()) recovery of MGS on MGC10.24.84.84@tcp_0 failed (-110)
+00000100:00080000:0.0:1579385380.444560:0:3282:0:(pinger.c:217:ptlrpc_pinger_process_import()) 5c565410-e636-85ec-3253-5c0de6bcfa2e->MGS: level DISCONN/3 force 0 force_next 0 deactive 0 pingable 1 suppress 0
+00000100:00080000:0.0:1579385380.444570:0:3282:0:(recover.c:58:ptlrpc_initiate_recovery()) MGS: starting recovery
+00000100:00080000:0.0:1579385380.444573:0:3282:0:(import.c:681:ptlrpc_connect_import()) ffff995604b3a800 MGS: changing import state from DISCONN to CONNECTING
+00000100:00080000:0.0:1579385380.444581:0:3282:0:(import.c:524:import_select_connection()) MGC10.24.84.84@tcp: connect to NID 10.24.84.84@tcp last attempt 4391341984
+00000100:00080000:0.0:1579385380.444585:0:3282:0:(import.c:568:import_select_connection()) MGC10.24.84.84@tcp: tried all connections, increasing latency to 50s
+00000100:00080000:0.0:1579385380.444593:0:3282:0:(import.c:602:import_select_connection()) MGC10.24.84.84@tcp: import ffff995604b3a800 using connection MGC10.24.84.84@tcp_0/10.24.84.84@tcp
+00000100:00080000:0.0:1579385405.444668:0:3282:0:(pinger.c:217:ptlrpc_pinger_process_import()) 5c565410-e636-85ec-3253-5c0de6bcfa2e->MGS: level CONNECTING/4 force 0 force_next 0 deactive 0 pingable 1 suppress 0
+00000100:00080000:0.0:1579385405.444674:0:3282:0:(pinger.c:230:ptlrpc_pinger_process_import()) 5c565410-e636-85ec-3253-5c0de6bcfa2e->MGS: not pinging (in recovery or recovery disabled: CONNECTING)
+00000100:00080000:0.0:1579385430.446862:0:3282:0:(pinger.c:217:ptlrpc_pinger_process_import()) 5c565410-e636-85ec-3253-5c0de6bcfa2e->MGS: level CONNECTING/4 force 0 force_next 0 deactive 0 pingable 1 suppress 0
+00000100:00080000:0.0:1579385430.446872:0:3282:0:(pinger.c:230:ptlrpc_pinger_process_import()) 5c565410-e636-85ec-3253-5c0de6bcfa2e->MGS: not pinging (in recovery or recovery disabled: CONNECTING)
+00000100:00000400:0.0:1579385435.454663:0:3279:0:(client.c:2116:ptlrpc_expire_one_request()) @@@ Request sent has timed out for sent delay: [sent 1579385380/real 0]  req@ffff99560ce16c00 x1656004725997600/t0(0) o250->MGC10.24.84.84@tcp@10.24.84.84@tcp:26/25 lens 520/544 e 0 to 1 dl 1579385435 ref 2 fl Rpc:XN/0/ffffffff rc 0/-1
+00000800:00000100:0.0:1579385441.682457:0:3275:0:(socklnd_cb.c:425:ksocknal_txlist_done()) Deleting packet type 1 len 520 10.29.161.11@tcp->10.24.84.84@tcp
+00000100:00080000:0.0:1579385441.682489:0:3279:0:(import.c:1284:ptlrpc_connect_interpret()) ffff995604b3a800 MGS: changing import state from CONNECTING to DISCONN
+00000100:00080000:0.0:1579385441.682495:0:3279:0:(import.c:1330:ptlrpc_connect_interpret()) recovery of MGS on MGC10.24.84.84@tcp_0 failed (-110)
+00000400:00000100:0.0:1579385443.593380:0:3273:0:(acceptor.c:118:lnet_connect_console_error()) Connection to 10.24.84.84@tcp at host 10.24.84.84 on port 988 took too long: that node may be hung or experiencing high load.

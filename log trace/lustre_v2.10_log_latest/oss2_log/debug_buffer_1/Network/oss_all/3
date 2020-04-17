@@ -1,0 +1,321 @@
+00000100:00080000:0.0F:1579560842.602783:0:2277:0:(pinger.c:217:ptlrpc_pinger_process_import()) 4a7323ef-81e5-6eda-cc43-5ddc222b17a7->MGS: level DISCONN/3 force 0 force_next 0 deactive 0 pingable 1 suppress 0
+00000100:00080000:0.0:1579560842.602797:0:2277:0:(recover.c:58:ptlrpc_initiate_recovery()) MGS: starting recovery
+00000100:00080000:0.0:1579560842.602800:0:2277:0:(import.c:681:ptlrpc_connect_import()) ffff9e8333c93000 MGS: changing import state from DISCONN to CONNECTING
+00000100:00080000:0.0:1579560842.602809:0:2277:0:(import.c:524:import_select_connection()) MGC10.24.84.84@tcp: connect to NID 10.24.84.84@tcp last attempt 4296200423
+00000100:00080000:0.0:1579560842.602812:0:2277:0:(import.c:568:import_select_connection()) MGC10.24.84.84@tcp: tried all connections, increasing latency to 50s
+00000100:00080000:0.0:1579560842.602819:0:2277:0:(import.c:602:import_select_connection()) MGC10.24.84.84@tcp: import ffff9e8333c93000 using connection MGC10.24.84.84@tcp_0/10.24.84.84@tcp
+00000100:00080000:0.0:1579560842.602844:0:2277:0:(pinger.c:217:ptlrpc_pinger_process_import()) lustre-MDT0000-lwp-OST0002_UUID->lustre-MDT0000_UUID: level DISCONN/3 force 0 force_next 0 deactive 0 pingable 1 suppress 0
+00000100:00080000:0.0:1579560842.602849:0:2277:0:(recover.c:58:ptlrpc_initiate_recovery()) lustre-MDT0000_UUID: starting recovery
+00000100:00080000:0.0:1579560842.602851:0:2277:0:(import.c:681:ptlrpc_connect_import()) ffff9e834ef48000 lustre-MDT0000_UUID: changing import state from DISCONN to CONNECTING
+00000100:00080000:0.0:1579560842.602856:0:2277:0:(import.c:524:import_select_connection()) lustre-MDT0000-lwp-OST0002: connect to NID 10.29.161.11@tcp last attempt 4296200423
+00000100:00080000:0.0:1579560842.602859:0:2277:0:(import.c:568:import_select_connection()) lustre-MDT0000-lwp-OST0002: tried all connections, increasing latency to 50s
+00000100:00080000:0.0:1579560842.602863:0:2277:0:(import.c:602:import_select_connection()) lustre-MDT0000-lwp-OST0002: import ffff9e834ef48000 using connection 10.29.161.11@tcp/10.29.161.11@tcp
+00000800:00000100:0.0:1579560842.602910:0:2274:0:(socklnd_cb.c:921:ksocknal_launch_packet()) No usable routes to 12345-10.24.84.84@tcp
+00000100:00000400:0.0:1579560842.602920:0:2274:0:(client.c:2116:ptlrpc_expire_one_request()) @@@ Request sent has failed due to network error: [sent 1579560842/real 1579560842]  req@ffff9e8345727200 x1656288114120400/t0(0) o250->MGC10.24.84.84@tcp@10.24.84.84@tcp:26/25 lens 520/544 e 0 to 1 dl 1579560897 ref 1 fl Rpc:eXN/0/ffffffff rc 0/-1
+00000100:00080000:0.0:1579560842.602965:0:2274:0:(import.c:1284:ptlrpc_connect_interpret()) ffff9e8333c93000 MGS: changing import state from CONNECTING to DISCONN
+00000100:00080000:0.0:1579560842.602969:0:2274:0:(import.c:1330:ptlrpc_connect_interpret()) recovery of MGS on MGC10.24.84.84@tcp_0 failed (-110)
+00000800:00000100:0.0:1579560842.602985:0:2274:0:(socklnd_cb.c:921:ksocknal_launch_packet()) No usable routes to 12345-10.29.161.11@tcp
+00000100:00000400:0.0:1579560842.602990:0:2274:0:(client.c:2116:ptlrpc_expire_one_request()) @@@ Request sent has failed due to network error: [sent 1579560842/real 1579560842]  req@ffff9e8345726000 x1656288114120416/t0(0) o38->lustre-MDT0000-lwp-OST0002@10.29.161.11@tcp:12/10 lens 520/544 e 0 to 1 dl 1579560897 ref 1 fl Rpc:eXN/0/ffffffff rc 0/-1
+00000100:00080000:0.0:1579560842.603006:0:2274:0:(import.c:1284:ptlrpc_connect_interpret()) ffff9e834ef48000 lustre-MDT0000_UUID: changing import state from CONNECTING to DISCONN
+00000100:00080000:0.0:1579560842.603009:0:2274:0:(import.c:1330:ptlrpc_connect_interpret()) recovery of lustre-MDT0000_UUID on 10.29.161.11@tcp failed (-110)
+00000100:00080000:0.0:1579560867.608830:0:2277:0:(pinger.c:217:ptlrpc_pinger_process_import()) 4a7323ef-81e5-6eda-cc43-5ddc222b17a7->MGS: level DISCONN/3 force 0 force_next 0 deactive 0 pingable 1 suppress 0
+00000100:00080000:0.0:1579560867.608841:0:2277:0:(recover.c:58:ptlrpc_initiate_recovery()) MGS: starting recovery
+00000100:00080000:0.0:1579560867.608844:0:2277:0:(import.c:681:ptlrpc_connect_import()) ffff9e8333c93000 MGS: changing import state from DISCONN to CONNECTING
+00000100:00080000:0.0:1579560867.608853:0:2277:0:(import.c:524:import_select_connection()) MGC10.24.84.84@tcp: connect to NID 10.24.84.84@tcp last attempt 4296225423
+00000100:00080000:0.0:1579560867.608863:0:2277:0:(import.c:568:import_select_connection()) MGC10.24.84.84@tcp: tried all connections, increasing latency to 50s
+00000100:00080000:0.0:1579560867.608870:0:2277:0:(import.c:602:import_select_connection()) MGC10.24.84.84@tcp: import ffff9e8333c93000 using connection MGC10.24.84.84@tcp_0/10.24.84.84@tcp
+00000100:00080000:0.0:1579560867.608898:0:2277:0:(pinger.c:217:ptlrpc_pinger_process_import()) lustre-MDT0000-lwp-OST0002_UUID->lustre-MDT0000_UUID: level DISCONN/3 force 0 force_next 0 deactive 0 pingable 1 suppress 0
+00000100:00080000:0.0:1579560867.608904:0:2277:0:(recover.c:58:ptlrpc_initiate_recovery()) lustre-MDT0000_UUID: starting recovery
+00000100:00080000:0.0:1579560867.608905:0:2277:0:(import.c:681:ptlrpc_connect_import()) ffff9e834ef48000 lustre-MDT0000_UUID: changing import state from DISCONN to CONNECTING
+00000100:00080000:0.0:1579560867.608911:0:2277:0:(import.c:524:import_select_connection()) lustre-MDT0000-lwp-OST0002: connect to NID 10.29.161.11@tcp last attempt 4296225423
+00000100:00080000:0.0:1579560867.608913:0:2277:0:(import.c:568:import_select_connection()) lustre-MDT0000-lwp-OST0002: tried all connections, increasing latency to 50s
+00000100:00080000:0.0:1579560867.608918:0:2277:0:(import.c:602:import_select_connection()) lustre-MDT0000-lwp-OST0002: import ffff9e834ef48000 using connection 10.29.161.11@tcp/10.29.161.11@tcp
+00000400:00020000:0.0:1579560867.609022:0:2266:0:(lib-socket.c:455:lnet_sock_create()) Error trying to bind to port 1023: -99
+00000400:02020000:0.0:1579560867.609043:0:2266:0:(acceptor.c:145:lnet_connect_console_error()) 11e-e: Unexpected error -99 connecting to 10.24.84.84@tcp at host 10.24.84.84 on port 988
+00000800:00000100:0.0:1579560867.609056:0:2266:0:(socklnd_cb.c:425:ksocknal_txlist_done()) Deleting packet type 1 len 520 10.29.162.26@tcp->10.24.84.84@tcp
+00000400:00020000:0.0:1579560867.609069:0:2266:0:(lib-socket.c:455:lnet_sock_create()) Error trying to bind to port 1023: -99
+00000400:02020000:0.0:1579560867.609077:0:2266:0:(acceptor.c:145:lnet_connect_console_error()) 11e-e: Unexpected error -99 connecting to 10.29.161.11@tcp at host 10.29.161.11 on port 988
+00000800:00000100:0.0:1579560867.609085:0:2266:0:(socklnd_cb.c:425:ksocknal_txlist_done()) Deleting packet type 1 len 520 10.29.162.26@tcp->10.29.161.11@tcp
+00000100:00000400:0.0:1579560867.609098:0:2274:0:(client.c:2116:ptlrpc_expire_one_request()) @@@ Request sent has failed due to network error: [sent 1579560867/real 1579560867]  req@ffff9e8345726000 x1656288114120432/t0(0) o250->MGC10.24.84.84@tcp@10.24.84.84@tcp:26/25 lens 520/544 e 0 to 1 dl 1579560922 ref 1 fl Rpc:eXN/0/ffffffff rc 0/-1
+00000100:00080000:0.0:1579560867.609120:0:2274:0:(import.c:1284:ptlrpc_connect_interpret()) ffff9e8333c93000 MGS: changing import state from CONNECTING to DISCONN
+00000100:00080000:0.0:1579560867.609123:0:2274:0:(import.c:1330:ptlrpc_connect_interpret()) recovery of MGS on MGC10.24.84.84@tcp_0 failed (-110)
+00000100:00000400:0.0:1579560867.609129:0:2274:0:(client.c:2116:ptlrpc_expire_one_request()) @@@ Request sent has failed due to network error: [sent 1579560867/real 1579560867]  req@ffff9e8345727200 x1656288114120448/t0(0) o38->lustre-MDT0000-lwp-OST0002@10.29.161.11@tcp:12/10 lens 520/544 e 0 to 1 dl 1579560922 ref 1 fl Rpc:eXN/0/ffffffff rc 0/-1
+00000100:00080000:0.0:1579560867.609144:0:2274:0:(import.c:1284:ptlrpc_connect_interpret()) ffff9e834ef48000 lustre-MDT0000_UUID: changing import state from CONNECTING to DISCONN
+00000100:00080000:0.0:1579560867.609147:0:2274:0:(import.c:1330:ptlrpc_connect_interpret()) recovery of lustre-MDT0000_UUID on 10.29.161.11@tcp failed (-110)
+00000100:00080000:0.0:1579560892.608856:0:2277:0:(pinger.c:217:ptlrpc_pinger_process_import()) 4a7323ef-81e5-6eda-cc43-5ddc222b17a7->MGS: level DISCONN/3 force 0 force_next 0 deactive 0 pingable 1 suppress 0
+00000100:00080000:0.0:1579560892.608867:0:2277:0:(recover.c:58:ptlrpc_initiate_recovery()) MGS: starting recovery
+00000100:00080000:0.0:1579560892.608869:0:2277:0:(import.c:681:ptlrpc_connect_import()) ffff9e8333c93000 MGS: changing import state from DISCONN to CONNECTING
+00000100:00080000:0.0:1579560892.608883:0:2277:0:(import.c:524:import_select_connection()) MGC10.24.84.84@tcp: connect to NID 10.24.84.84@tcp last attempt 4296250429
+00000100:00080000:0.0:1579560892.608886:0:2277:0:(import.c:568:import_select_connection()) MGC10.24.84.84@tcp: tried all connections, increasing latency to 50s
+00000100:00080000:0.0:1579560892.608895:0:2277:0:(import.c:602:import_select_connection()) MGC10.24.84.84@tcp: import ffff9e8333c93000 using connection MGC10.24.84.84@tcp_0/10.24.84.84@tcp
+00000100:00080000:0.0:1579560892.608921:0:2277:0:(pinger.c:217:ptlrpc_pinger_process_import()) lustre-MDT0000-lwp-OST0002_UUID->lustre-MDT0000_UUID: level DISCONN/3 force 0 force_next 0 deactive 0 pingable 1 suppress 0
+00000100:00080000:0.0:1579560892.608927:0:2277:0:(recover.c:58:ptlrpc_initiate_recovery()) lustre-MDT0000_UUID: starting recovery
+00000100:00080000:0.0:1579560892.608928:0:2277:0:(import.c:681:ptlrpc_connect_import()) ffff9e834ef48000 lustre-MDT0000_UUID: changing import state from DISCONN to CONNECTING
+00000100:00080000:0.0:1579560892.608934:0:2277:0:(import.c:524:import_select_connection()) lustre-MDT0000-lwp-OST0002: connect to NID 10.29.161.11@tcp last attempt 4296250429
+00000100:00080000:0.0:1579560892.608937:0:2277:0:(import.c:568:import_select_connection()) lustre-MDT0000-lwp-OST0002: tried all connections, increasing latency to 50s
+00000100:00080000:0.0:1579560892.608941:0:2277:0:(import.c:602:import_select_connection()) lustre-MDT0000-lwp-OST0002: import ffff9e834ef48000 using connection 10.29.161.11@tcp/10.29.161.11@tcp
+00000800:00000100:0.0:1579560892.608994:0:2274:0:(socklnd_cb.c:921:ksocknal_launch_packet()) No usable routes to 12345-10.24.84.84@tcp
+00000100:00000400:0.0:1579560892.609005:0:2274:0:(client.c:2116:ptlrpc_expire_one_request()) @@@ Request sent has failed due to network error: [sent 1579560892/real 1579560892]  req@ffff9e8345727200 x1656288114120464/t0(0) o250->MGC10.24.84.84@tcp@10.24.84.84@tcp:26/25 lens 520/544 e 0 to 1 dl 1579560947 ref 1 fl Rpc:eXN/0/ffffffff rc 0/-1
+00000100:00080000:0.0:1579560892.609026:0:2274:0:(import.c:1284:ptlrpc_connect_interpret()) ffff9e8333c93000 MGS: changing import state from CONNECTING to DISCONN
+00000100:00080000:0.0:1579560892.609029:0:2274:0:(import.c:1330:ptlrpc_connect_interpret()) recovery of MGS on MGC10.24.84.84@tcp_0 failed (-110)
+00000800:00000100:0.0:1579560892.609044:0:2274:0:(socklnd_cb.c:921:ksocknal_launch_packet()) No usable routes to 12345-10.29.161.11@tcp
+00000100:00000400:0.0:1579560892.609049:0:2274:0:(client.c:2116:ptlrpc_expire_one_request()) @@@ Request sent has failed due to network error: [sent 1579560892/real 1579560892]  req@ffff9e8345726000 x1656288114120480/t0(0) o38->lustre-MDT0000-lwp-OST0002@10.29.161.11@tcp:12/10 lens 520/544 e 0 to 1 dl 1579560947 ref 1 fl Rpc:eXN/0/ffffffff rc 0/-1
+00000100:00080000:0.0:1579560892.609065:0:2274:0:(import.c:1284:ptlrpc_connect_interpret()) ffff9e834ef48000 lustre-MDT0000_UUID: changing import state from CONNECTING to DISCONN
+00000100:00080000:0.0:1579560892.609068:0:2274:0:(import.c:1330:ptlrpc_connect_interpret()) recovery of lustre-MDT0000_UUID on 10.29.161.11@tcp failed (-110)
+00000100:00080000:0.0:1579560917.611237:0:2277:0:(pinger.c:217:ptlrpc_pinger_process_import()) 4a7323ef-81e5-6eda-cc43-5ddc222b17a7->MGS: level DISCONN/3 force 0 force_next 0 deactive 0 pingable 1 suppress 0
+00000100:00080000:0.0:1579560917.611247:0:2277:0:(recover.c:58:ptlrpc_initiate_recovery()) MGS: starting recovery
+00000100:00080000:0.0:1579560917.611249:0:2277:0:(import.c:681:ptlrpc_connect_import()) ffff9e8333c93000 MGS: changing import state from DISCONN to CONNECTING
+00000100:00080000:0.0:1579560917.611259:0:2277:0:(import.c:524:import_select_connection()) MGC10.24.84.84@tcp: connect to NID 10.24.84.84@tcp last attempt 4296275429
+00000100:00080000:0.0:1579560917.611262:0:2277:0:(import.c:568:import_select_connection()) MGC10.24.84.84@tcp: tried all connections, increasing latency to 50s
+00000100:00080000:0.0:1579560917.611270:0:2277:0:(import.c:602:import_select_connection()) MGC10.24.84.84@tcp: import ffff9e8333c93000 using connection MGC10.24.84.84@tcp_0/10.24.84.84@tcp
+00000100:00080000:0.0:1579560917.611303:0:2277:0:(pinger.c:217:ptlrpc_pinger_process_import()) lustre-MDT0000-lwp-OST0002_UUID->lustre-MDT0000_UUID: level DISCONN/3 force 0 force_next 0 deactive 0 pingable 1 suppress 0
+00000100:00080000:0.0:1579560917.611309:0:2277:0:(recover.c:58:ptlrpc_initiate_recovery()) lustre-MDT0000_UUID: starting recovery
+00000100:00080000:0.0:1579560917.611311:0:2277:0:(import.c:681:ptlrpc_connect_import()) ffff9e834ef48000 lustre-MDT0000_UUID: changing import state from DISCONN to CONNECTING
+00000100:00080000:0.0:1579560917.611316:0:2277:0:(import.c:524:import_select_connection()) lustre-MDT0000-lwp-OST0002: connect to NID 10.29.161.11@tcp last attempt 4296275429
+00000100:00080000:0.0:1579560917.611319:0:2277:0:(import.c:568:import_select_connection()) lustre-MDT0000-lwp-OST0002: tried all connections, increasing latency to 50s
+00000100:00080000:0.0:1579560917.611323:0:2277:0:(import.c:602:import_select_connection()) lustre-MDT0000-lwp-OST0002: import ffff9e834ef48000 using connection 10.29.161.11@tcp/10.29.161.11@tcp
+00000800:00000100:0.0:1579560917.611375:0:2274:0:(socklnd_cb.c:921:ksocknal_launch_packet()) No usable routes to 12345-10.24.84.84@tcp
+00000100:00000400:0.0:1579560917.611386:0:2274:0:(client.c:2116:ptlrpc_expire_one_request()) @@@ Request sent has failed due to network error: [sent 1579560917/real 1579560917]  req@ffff9e8345726000 x1656288114120496/t0(0) o250->MGC10.24.84.84@tcp@10.24.84.84@tcp:26/25 lens 520/544 e 0 to 1 dl 1579560972 ref 1 fl Rpc:eXN/0/ffffffff rc 0/-1
+00000100:00080000:0.0:1579560917.611407:0:2274:0:(import.c:1284:ptlrpc_connect_interpret()) ffff9e8333c93000 MGS: changing import state from CONNECTING to DISCONN
+00000100:00080000:0.0:1579560917.611411:0:2274:0:(import.c:1330:ptlrpc_connect_interpret()) recovery of MGS on MGC10.24.84.84@tcp_0 failed (-110)
+00000800:00000100:0.0:1579560917.611426:0:2274:0:(socklnd_cb.c:921:ksocknal_launch_packet()) No usable routes to 12345-10.29.161.11@tcp
+00000100:00000400:0.0:1579560917.611431:0:2274:0:(client.c:2116:ptlrpc_expire_one_request()) @@@ Request sent has failed due to network error: [sent 1579560917/real 1579560917]  req@ffff9e8345727200 x1656288114120512/t0(0) o38->lustre-MDT0000-lwp-OST0002@10.29.161.11@tcp:12/10 lens 520/544 e 0 to 1 dl 1579560972 ref 1 fl Rpc:eXN/0/ffffffff rc 0/-1
+00000100:00080000:0.0:1579560917.611446:0:2274:0:(import.c:1284:ptlrpc_connect_interpret()) ffff9e834ef48000 lustre-MDT0000_UUID: changing import state from CONNECTING to DISCONN
+00000100:00080000:0.0:1579560917.611449:0:2274:0:(import.c:1330:ptlrpc_connect_interpret()) recovery of lustre-MDT0000_UUID on 10.29.161.11@tcp failed (-110)
+00000100:00080000:0.0:1579560942.611704:0:2277:0:(pinger.c:217:ptlrpc_pinger_process_import()) 4a7323ef-81e5-6eda-cc43-5ddc222b17a7->MGS: level DISCONN/3 force 0 force_next 0 deactive 0 pingable 1 suppress 0
+00000100:00080000:0.0:1579560942.611715:0:2277:0:(recover.c:58:ptlrpc_initiate_recovery()) MGS: starting recovery
+00000100:00080000:0.0:1579560942.611717:0:2277:0:(import.c:681:ptlrpc_connect_import()) ffff9e8333c93000 MGS: changing import state from DISCONN to CONNECTING
+00000100:00080000:0.0:1579560942.611726:0:2277:0:(import.c:524:import_select_connection()) MGC10.24.84.84@tcp: connect to NID 10.24.84.84@tcp last attempt 4296300432
+00000100:00080000:0.0:1579560942.611730:0:2277:0:(import.c:568:import_select_connection()) MGC10.24.84.84@tcp: tried all connections, increasing latency to 50s
+00000100:00080000:0.0:1579560942.611738:0:2277:0:(import.c:602:import_select_connection()) MGC10.24.84.84@tcp: import ffff9e8333c93000 using connection MGC10.24.84.84@tcp_0/10.24.84.84@tcp
+00000100:00080000:0.0:1579560942.611766:0:2277:0:(pinger.c:217:ptlrpc_pinger_process_import()) lustre-MDT0000-lwp-OST0002_UUID->lustre-MDT0000_UUID: level DISCONN/3 force 0 force_next 0 deactive 0 pingable 1 suppress 0
+00000100:00080000:0.0:1579560942.611772:0:2277:0:(recover.c:58:ptlrpc_initiate_recovery()) lustre-MDT0000_UUID: starting recovery
+00000100:00080000:0.0:1579560942.611773:0:2277:0:(import.c:681:ptlrpc_connect_import()) ffff9e834ef48000 lustre-MDT0000_UUID: changing import state from DISCONN to CONNECTING
+00000100:00080000:0.0:1579560942.611784:0:2277:0:(import.c:524:import_select_connection()) lustre-MDT0000-lwp-OST0002: connect to NID 10.29.161.11@tcp last attempt 4296300432
+00000100:00080000:0.0:1579560942.611787:0:2277:0:(import.c:568:import_select_connection()) lustre-MDT0000-lwp-OST0002: tried all connections, increasing latency to 50s
+00000100:00080000:0.0:1579560942.611791:0:2277:0:(import.c:602:import_select_connection()) lustre-MDT0000-lwp-OST0002: import ffff9e834ef48000 using connection 10.29.161.11@tcp/10.29.161.11@tcp
+00000400:00020000:0.0:1579560942.611893:0:2267:0:(lib-socket.c:455:lnet_sock_create()) Error trying to bind to port 1023: -99
+00000400:02020000:0.0:1579560942.611938:0:2267:0:(acceptor.c:145:lnet_connect_console_error()) 11e-e: Unexpected error -99 connecting to 10.24.84.84@tcp at host 10.24.84.84 on port 988
+00000800:00000100:0.0:1579560942.611961:0:2267:0:(socklnd_cb.c:425:ksocknal_txlist_done()) Deleting packet type 1 len 520 10.29.162.26@tcp->10.24.84.84@tcp
+00000400:00020000:0.0:1579560942.611975:0:2267:0:(lib-socket.c:455:lnet_sock_create()) Error trying to bind to port 1023: -99
+00000400:02020000:0.0:1579560942.611983:0:2267:0:(acceptor.c:145:lnet_connect_console_error()) 11e-e: Unexpected error -99 connecting to 10.29.161.11@tcp at host 10.29.161.11 on port 988
+00000800:00000100:0.0:1579560942.611992:0:2267:0:(socklnd_cb.c:425:ksocknal_txlist_done()) Deleting packet type 1 len 520 10.29.162.26@tcp->10.29.161.11@tcp
+00000100:00000400:0.0:1579560942.612005:0:2274:0:(client.c:2116:ptlrpc_expire_one_request()) @@@ Request sent has failed due to network error: [sent 1579560942/real 1579560942]  req@ffff9e8345727200 x1656288114120528/t0(0) o250->MGC10.24.84.84@tcp@10.24.84.84@tcp:26/25 lens 520/544 e 0 to 1 dl 1579560997 ref 1 fl Rpc:eXN/0/ffffffff rc 0/-1
+00000100:00080000:0.0:1579560942.612027:0:2274:0:(import.c:1284:ptlrpc_connect_interpret()) ffff9e8333c93000 MGS: changing import state from CONNECTING to DISCONN
+00000100:00080000:0.0:1579560942.612031:0:2274:0:(import.c:1330:ptlrpc_connect_interpret()) recovery of MGS on MGC10.24.84.84@tcp_0 failed (-110)
+00000100:00000400:0.0:1579560942.612036:0:2274:0:(client.c:2116:ptlrpc_expire_one_request()) @@@ Request sent has failed due to network error: [sent 1579560942/real 1579560942]  req@ffff9e8345726000 x1656288114120544/t0(0) o38->lustre-MDT0000-lwp-OST0002@10.29.161.11@tcp:12/10 lens 520/544 e 0 to 1 dl 1579560997 ref 1 fl Rpc:eXN/0/ffffffff rc 0/-1
+00000100:00080000:0.0:1579560942.612052:0:2274:0:(import.c:1284:ptlrpc_connect_interpret()) ffff9e834ef48000 lustre-MDT0000_UUID: changing import state from CONNECTING to DISCONN
+00000100:00080000:0.0:1579560942.612055:0:2274:0:(import.c:1330:ptlrpc_connect_interpret()) recovery of lustre-MDT0000_UUID on 10.29.161.11@tcp failed (-110)
+00000100:00080000:0.0:1579560967.613394:0:2277:0:(pinger.c:217:ptlrpc_pinger_process_import()) 4a7323ef-81e5-6eda-cc43-5ddc222b17a7->MGS: level DISCONN/3 force 0 force_next 0 deactive 0 pingable 1 suppress 0
+00000100:00080000:0.0:1579560967.613405:0:2277:0:(recover.c:58:ptlrpc_initiate_recovery()) MGS: starting recovery
+00000100:00080000:0.0:1579560967.613408:0:2277:0:(import.c:681:ptlrpc_connect_import()) ffff9e8333c93000 MGS: changing import state from DISCONN to CONNECTING
+00000100:00080000:0.0:1579560967.613417:0:2277:0:(import.c:524:import_select_connection()) MGC10.24.84.84@tcp: connect to NID 10.24.84.84@tcp last attempt 4296325432
+00000100:00080000:0.0:1579560967.613420:0:2277:0:(import.c:568:import_select_connection()) MGC10.24.84.84@tcp: tried all connections, increasing latency to 50s
+00000100:00080000:0.0:1579560967.613428:0:2277:0:(import.c:602:import_select_connection()) MGC10.24.84.84@tcp: import ffff9e8333c93000 using connection MGC10.24.84.84@tcp_0/10.24.84.84@tcp
+00000100:00080000:0.0:1579560967.613457:0:2277:0:(pinger.c:217:ptlrpc_pinger_process_import()) lustre-MDT0000-lwp-OST0002_UUID->lustre-MDT0000_UUID: level DISCONN/3 force 0 force_next 0 deactive 0 pingable 1 suppress 0
+00000100:00080000:0.0:1579560967.613463:0:2277:0:(recover.c:58:ptlrpc_initiate_recovery()) lustre-MDT0000_UUID: starting recovery
+00000100:00080000:0.0:1579560967.613469:0:2277:0:(import.c:681:ptlrpc_connect_import()) ffff9e834ef48000 lustre-MDT0000_UUID: changing import state from DISCONN to CONNECTING
+00000100:00080000:0.0:1579560967.613475:0:2277:0:(import.c:524:import_select_connection()) lustre-MDT0000-lwp-OST0002: connect to NID 10.29.161.11@tcp last attempt 4296325432
+00000100:00080000:0.0:1579560967.613478:0:2277:0:(import.c:568:import_select_connection()) lustre-MDT0000-lwp-OST0002: tried all connections, increasing latency to 50s
+00000100:00080000:0.0:1579560967.613483:0:2277:0:(import.c:602:import_select_connection()) lustre-MDT0000-lwp-OST0002: import ffff9e834ef48000 using connection 10.29.161.11@tcp/10.29.161.11@tcp
+00000800:00000100:0.0:1579560967.613536:0:2274:0:(socklnd_cb.c:921:ksocknal_launch_packet()) No usable routes to 12345-10.24.84.84@tcp
+00000100:00000400:0.0:1579560967.613547:0:2274:0:(client.c:2116:ptlrpc_expire_one_request()) @@@ Request sent has failed due to network error: [sent 1579560967/real 1579560967]  req@ffff9e8345726000 x1656288114120560/t0(0) o250->MGC10.24.84.84@tcp@10.24.84.84@tcp:26/25 lens 520/544 e 0 to 1 dl 1579561022 ref 1 fl Rpc:eXN/0/ffffffff rc 0/-1
+00000100:00080000:0.0:1579560967.613569:0:2274:0:(import.c:1284:ptlrpc_connect_interpret()) ffff9e8333c93000 MGS: changing import state from CONNECTING to DISCONN
+00000100:00080000:0.0:1579560967.613572:0:2274:0:(import.c:1330:ptlrpc_connect_interpret()) recovery of MGS on MGC10.24.84.84@tcp_0 failed (-110)
+00000800:00000100:0.0:1579560967.613586:0:2274:0:(socklnd_cb.c:921:ksocknal_launch_packet()) No usable routes to 12345-10.29.161.11@tcp
+00000100:00000400:0.0:1579560967.613591:0:2274:0:(client.c:2116:ptlrpc_expire_one_request()) @@@ Request sent has failed due to network error: [sent 1579560967/real 1579560967]  req@ffff9e8345727200 x1656288114120576/t0(0) o38->lustre-MDT0000-lwp-OST0002@10.29.161.11@tcp:12/10 lens 520/544 e 0 to 1 dl 1579561022 ref 1 fl Rpc:eXN/0/ffffffff rc 0/-1
+00000100:00080000:0.0:1579560967.613607:0:2274:0:(import.c:1284:ptlrpc_connect_interpret()) ffff9e834ef48000 lustre-MDT0000_UUID: changing import state from CONNECTING to DISCONN
+00000100:00080000:0.0:1579560967.613609:0:2274:0:(import.c:1330:ptlrpc_connect_interpret()) recovery of lustre-MDT0000_UUID on 10.29.161.11@tcp failed (-110)
+00000100:00080000:0.0:1579560992.614046:0:2277:0:(pinger.c:217:ptlrpc_pinger_process_import()) 4a7323ef-81e5-6eda-cc43-5ddc222b17a7->MGS: level DISCONN/3 force 0 force_next 0 deactive 0 pingable 1 suppress 0
+00000100:00080000:0.0:1579560992.614056:0:2277:0:(recover.c:58:ptlrpc_initiate_recovery()) MGS: starting recovery
+00000100:00080000:0.0:1579560992.614058:0:2277:0:(import.c:681:ptlrpc_connect_import()) ffff9e8333c93000 MGS: changing import state from DISCONN to CONNECTING
+00000100:00080000:0.0:1579560992.614067:0:2277:0:(import.c:524:import_select_connection()) MGC10.24.84.84@tcp: connect to NID 10.24.84.84@tcp last attempt 4296350434
+00000100:00080000:0.0:1579560992.614070:0:2277:0:(import.c:568:import_select_connection()) MGC10.24.84.84@tcp: tried all connections, increasing latency to 50s
+00000100:00080000:0.0:1579560992.614077:0:2277:0:(import.c:602:import_select_connection()) MGC10.24.84.84@tcp: import ffff9e8333c93000 using connection MGC10.24.84.84@tcp_0/10.24.84.84@tcp
+00000100:00080000:0.0:1579560992.614101:0:2277:0:(pinger.c:217:ptlrpc_pinger_process_import()) lustre-MDT0000-lwp-OST0002_UUID->lustre-MDT0000_UUID: level DISCONN/3 force 0 force_next 0 deactive 0 pingable 1 suppress 0
+00000100:00080000:0.0:1579560992.614106:0:2277:0:(recover.c:58:ptlrpc_initiate_recovery()) lustre-MDT0000_UUID: starting recovery
+00000100:00080000:0.0:1579560992.614108:0:2277:0:(import.c:681:ptlrpc_connect_import()) ffff9e834ef48000 lustre-MDT0000_UUID: changing import state from DISCONN to CONNECTING
+00000100:00080000:0.0:1579560992.614114:0:2277:0:(import.c:524:import_select_connection()) lustre-MDT0000-lwp-OST0002: connect to NID 10.29.161.11@tcp last attempt 4296350434
+00000100:00080000:0.0:1579560992.614116:0:2277:0:(import.c:568:import_select_connection()) lustre-MDT0000-lwp-OST0002: tried all connections, increasing latency to 50s
+00000100:00080000:0.0:1579560992.614125:0:2277:0:(import.c:602:import_select_connection()) lustre-MDT0000-lwp-OST0002: import ffff9e834ef48000 using connection 10.29.161.11@tcp/10.29.161.11@tcp
+00000800:00000100:0.0:1579560992.614170:0:2274:0:(socklnd_cb.c:921:ksocknal_launch_packet()) No usable routes to 12345-10.24.84.84@tcp
+00000100:00000400:0.0:1579560992.614179:0:2274:0:(client.c:2116:ptlrpc_expire_one_request()) @@@ Request sent has failed due to network error: [sent 1579560992/real 1579560992]  req@ffff9e8345727200 x1656288114120592/t0(0) o250->MGC10.24.84.84@tcp@10.24.84.84@tcp:26/25 lens 520/544 e 0 to 1 dl 1579561047 ref 1 fl Rpc:eXN/0/ffffffff rc 0/-1
+00000100:00080000:0.0:1579560992.614201:0:2274:0:(import.c:1284:ptlrpc_connect_interpret()) ffff9e8333c93000 MGS: changing import state from CONNECTING to DISCONN
+00000100:00080000:0.0:1579560992.614204:0:2274:0:(import.c:1330:ptlrpc_connect_interpret()) recovery of MGS on MGC10.24.84.84@tcp_0 failed (-110)
+00000800:00000100:0.0:1579560992.614218:0:2274:0:(socklnd_cb.c:921:ksocknal_launch_packet()) No usable routes to 12345-10.29.161.11@tcp
+00000100:00000400:0.0:1579560992.614222:0:2274:0:(client.c:2116:ptlrpc_expire_one_request()) @@@ Request sent has failed due to network error: [sent 1579560992/real 1579560992]  req@ffff9e8345726000 x1656288114120608/t0(0) o38->lustre-MDT0000-lwp-OST0002@10.29.161.11@tcp:12/10 lens 520/544 e 0 to 1 dl 1579561047 ref 1 fl Rpc:eXN/0/ffffffff rc 0/-1
+00000100:00080000:0.0:1579560992.614238:0:2274:0:(import.c:1284:ptlrpc_connect_interpret()) ffff9e834ef48000 lustre-MDT0000_UUID: changing import state from CONNECTING to DISCONN
+00000100:00080000:0.0:1579560992.614241:0:2274:0:(import.c:1330:ptlrpc_connect_interpret()) recovery of lustre-MDT0000_UUID on 10.29.161.11@tcp failed (-110)
+00000100:00080000:0.0:1579561017.614246:0:2277:0:(pinger.c:217:ptlrpc_pinger_process_import()) 4a7323ef-81e5-6eda-cc43-5ddc222b17a7->MGS: level DISCONN/3 force 0 force_next 0 deactive 0 pingable 1 suppress 0
+00000100:00080000:0.0:1579561017.614256:0:2277:0:(recover.c:58:ptlrpc_initiate_recovery()) MGS: starting recovery
+00000100:00080000:0.0:1579561017.614259:0:2277:0:(import.c:681:ptlrpc_connect_import()) ffff9e8333c93000 MGS: changing import state from DISCONN to CONNECTING
+00000100:00080000:0.0:1579561017.614268:0:2277:0:(import.c:524:import_select_connection()) MGC10.24.84.84@tcp: connect to NID 10.24.84.84@tcp last attempt 4296375434
+00000100:00080000:0.0:1579561017.614271:0:2277:0:(import.c:568:import_select_connection()) MGC10.24.84.84@tcp: tried all connections, increasing latency to 50s
+00000100:00080000:0.0:1579561017.614279:0:2277:0:(import.c:602:import_select_connection()) MGC10.24.84.84@tcp: import ffff9e8333c93000 using connection MGC10.24.84.84@tcp_0/10.24.84.84@tcp
+00000100:00080000:0.0:1579561017.614308:0:2277:0:(pinger.c:217:ptlrpc_pinger_process_import()) lustre-MDT0000-lwp-OST0002_UUID->lustre-MDT0000_UUID: level DISCONN/3 force 0 force_next 0 deactive 0 pingable 1 suppress 0
+00000100:00080000:0.0:1579561017.614313:0:2277:0:(recover.c:58:ptlrpc_initiate_recovery()) lustre-MDT0000_UUID: starting recovery
+00000100:00080000:0.0:1579561017.614314:0:2277:0:(import.c:681:ptlrpc_connect_import()) ffff9e834ef48000 lustre-MDT0000_UUID: changing import state from DISCONN to CONNECTING
+00000100:00080000:0.0:1579561017.614320:0:2277:0:(import.c:524:import_select_connection()) lustre-MDT0000-lwp-OST0002: connect to NID 10.29.161.11@tcp last attempt 4296375434
+00000100:00080000:0.0:1579561017.614322:0:2277:0:(import.c:568:import_select_connection()) lustre-MDT0000-lwp-OST0002: tried all connections, increasing latency to 50s
+00000100:00080000:0.0:1579561017.614327:0:2277:0:(import.c:602:import_select_connection()) lustre-MDT0000-lwp-OST0002: import ffff9e834ef48000 using connection 10.29.161.11@tcp/10.29.161.11@tcp
+00000400:00020000:0.0:1579561017.614432:0:2266:0:(lib-socket.c:455:lnet_sock_create()) Error trying to bind to port 1023: -99
+00000400:02020000:0.0:1579561017.614453:0:2266:0:(acceptor.c:145:lnet_connect_console_error()) 11e-e: Unexpected error -99 connecting to 10.24.84.84@tcp at host 10.24.84.84 on port 988
+00000800:00000100:0.0:1579561017.614470:0:2266:0:(socklnd_cb.c:425:ksocknal_txlist_done()) Deleting packet type 1 len 520 10.29.162.26@tcp->10.24.84.84@tcp
+00000400:00020000:0.0:1579561017.614484:0:2266:0:(lib-socket.c:455:lnet_sock_create()) Error trying to bind to port 1023: -99
+00000400:02020000:0.0:1579561017.614492:0:2266:0:(acceptor.c:145:lnet_connect_console_error()) 11e-e: Unexpected error -99 connecting to 10.29.161.11@tcp at host 10.29.161.11 on port 988
+00000800:00000100:0.0:1579561017.614500:0:2266:0:(socklnd_cb.c:425:ksocknal_txlist_done()) Deleting packet type 1 len 520 10.29.162.26@tcp->10.29.161.11@tcp
+00000100:00000400:0.0:1579561017.614514:0:2274:0:(client.c:2116:ptlrpc_expire_one_request()) @@@ Request sent has failed due to network error: [sent 1579561017/real 1579561017]  req@ffff9e8345726000 x1656288114120624/t0(0) o250->MGC10.24.84.84@tcp@10.24.84.84@tcp:26/25 lens 520/544 e 0 to 1 dl 1579561072 ref 1 fl Rpc:eXN/0/ffffffff rc 0/-1
+00000100:00080000:0.0:1579561017.614536:0:2274:0:(import.c:1284:ptlrpc_connect_interpret()) ffff9e8333c93000 MGS: changing import state from CONNECTING to DISCONN
+00000100:00080000:0.0:1579561017.614539:0:2274:0:(import.c:1330:ptlrpc_connect_interpret()) recovery of MGS on MGC10.24.84.84@tcp_0 failed (-110)
+00000100:00000400:0.0:1579561017.614545:0:2274:0:(client.c:2116:ptlrpc_expire_one_request()) @@@ Request sent has failed due to network error: [sent 1579561017/real 1579561017]  req@ffff9e8345727200 x1656288114120640/t0(0) o38->lustre-MDT0000-lwp-OST0002@10.29.161.11@tcp:12/10 lens 520/544 e 0 to 1 dl 1579561072 ref 1 fl Rpc:eXN/0/ffffffff rc 0/-1
+00000100:00080000:0.0:1579561017.614560:0:2274:0:(import.c:1284:ptlrpc_connect_interpret()) ffff9e834ef48000 lustre-MDT0000_UUID: changing import state from CONNECTING to DISCONN
+00000100:00080000:0.0:1579561017.614563:0:2274:0:(import.c:1330:ptlrpc_connect_interpret()) recovery of lustre-MDT0000_UUID on 10.29.161.11@tcp failed (-110)
+00000100:00080000:0.0:1579561042.614318:0:2277:0:(pinger.c:217:ptlrpc_pinger_process_import()) 4a7323ef-81e5-6eda-cc43-5ddc222b17a7->MGS: level DISCONN/3 force 0 force_next 0 deactive 0 pingable 1 suppress 0
+00000100:00080000:0.0:1579561042.614322:0:2277:0:(recover.c:58:ptlrpc_initiate_recovery()) MGS: starting recovery
+00000100:00080000:0.0:1579561042.614323:0:2277:0:(import.c:681:ptlrpc_connect_import()) ffff9e8333c93000 MGS: changing import state from DISCONN to CONNECTING
+00000100:00080000:0.0:1579561042.614327:0:2277:0:(import.c:524:import_select_connection()) MGC10.24.84.84@tcp: connect to NID 10.24.84.84@tcp last attempt 4296400435
+00000100:00080000:0.0:1579561042.614328:0:2277:0:(import.c:568:import_select_connection()) MGC10.24.84.84@tcp: tried all connections, increasing latency to 50s
+00000100:00080000:0.0:1579561042.614331:0:2277:0:(import.c:602:import_select_connection()) MGC10.24.84.84@tcp: import ffff9e8333c93000 using connection MGC10.24.84.84@tcp_0/10.24.84.84@tcp
+00000100:00080000:0.0:1579561042.614344:0:2277:0:(pinger.c:217:ptlrpc_pinger_process_import()) lustre-MDT0000-lwp-OST0002_UUID->lustre-MDT0000_UUID: level DISCONN/3 force 0 force_next 0 deactive 0 pingable 1 suppress 0
+00000100:00080000:0.0:1579561042.614346:0:2277:0:(recover.c:58:ptlrpc_initiate_recovery()) lustre-MDT0000_UUID: starting recovery
+00000100:00080000:0.0:1579561042.614347:0:2277:0:(import.c:681:ptlrpc_connect_import()) ffff9e834ef48000 lustre-MDT0000_UUID: changing import state from DISCONN to CONNECTING
+00000100:00080000:0.0:1579561042.614348:0:2277:0:(import.c:524:import_select_connection()) lustre-MDT0000-lwp-OST0002: connect to NID 10.29.161.11@tcp last attempt 4296400435
+00000100:00080000:0.0:1579561042.614349:0:2277:0:(import.c:568:import_select_connection()) lustre-MDT0000-lwp-OST0002: tried all connections, increasing latency to 50s
+00000100:00080000:0.0:1579561042.614351:0:2277:0:(import.c:602:import_select_connection()) lustre-MDT0000-lwp-OST0002: import ffff9e834ef48000 using connection 10.29.161.11@tcp/10.29.161.11@tcp
+00000800:00000100:0.0:1579561042.614377:0:2274:0:(socklnd_cb.c:921:ksocknal_launch_packet()) No usable routes to 12345-10.24.84.84@tcp
+00000100:00000400:0.0:1579561042.614383:0:2274:0:(client.c:2116:ptlrpc_expire_one_request()) @@@ Request sent has failed due to network error: [sent 1579561042/real 1579561042]  req@ffff9e8345727200 x1656288114120656/t0(0) o250->MGC10.24.84.84@tcp@10.24.84.84@tcp:26/25 lens 520/544 e 0 to 1 dl 1579561097 ref 1 fl Rpc:eXN/0/ffffffff rc 0/-1
+00000100:00080000:0.0:1579561042.614390:0:2274:0:(import.c:1284:ptlrpc_connect_interpret()) ffff9e8333c93000 MGS: changing import state from CONNECTING to DISCONN
+00000100:00080000:0.0:1579561042.614391:0:2274:0:(import.c:1330:ptlrpc_connect_interpret()) recovery of MGS on MGC10.24.84.84@tcp_0 failed (-110)
+00000800:00000100:0.0:1579561042.614398:0:2274:0:(socklnd_cb.c:921:ksocknal_launch_packet()) No usable routes to 12345-10.29.161.11@tcp
+00000100:00000400:0.0:1579561042.614399:0:2274:0:(client.c:2116:ptlrpc_expire_one_request()) @@@ Request sent has failed due to network error: [sent 1579561042/real 1579561042]  req@ffff9e8345726000 x1656288114120672/t0(0) o38->lustre-MDT0000-lwp-OST0002@10.29.161.11@tcp:12/10 lens 520/544 e 0 to 1 dl 1579561097 ref 1 fl Rpc:eXN/0/ffffffff rc 0/-1
+00000100:00080000:0.0:1579561042.614404:0:2274:0:(import.c:1284:ptlrpc_connect_interpret()) ffff9e834ef48000 lustre-MDT0000_UUID: changing import state from CONNECTING to DISCONN
+00000100:00080000:0.0:1579561042.614405:0:2274:0:(import.c:1330:ptlrpc_connect_interpret()) recovery of lustre-MDT0000_UUID on 10.29.161.11@tcp failed (-110)
+00000100:00080000:0.0:1579561067.616484:0:2277:0:(pinger.c:217:ptlrpc_pinger_process_import()) 4a7323ef-81e5-6eda-cc43-5ddc222b17a7->MGS: level DISCONN/3 force 0 force_next 0 deactive 0 pingable 1 suppress 0
+00000100:00080000:0.0:1579561067.616494:0:2277:0:(recover.c:58:ptlrpc_initiate_recovery()) MGS: starting recovery
+00000100:00080000:0.0:1579561067.616496:0:2277:0:(import.c:681:ptlrpc_connect_import()) ffff9e8333c93000 MGS: changing import state from DISCONN to CONNECTING
+00000100:00080000:0.0:1579561067.616505:0:2277:0:(import.c:524:import_select_connection()) MGC10.24.84.84@tcp: connect to NID 10.24.84.84@tcp last attempt 4296425435
+00000100:00080000:0.0:1579561067.616508:0:2277:0:(import.c:568:import_select_connection()) MGC10.24.84.84@tcp: tried all connections, increasing latency to 50s
+00000100:00080000:0.0:1579561067.616517:0:2277:0:(import.c:602:import_select_connection()) MGC10.24.84.84@tcp: import ffff9e8333c93000 using connection MGC10.24.84.84@tcp_0/10.24.84.84@tcp
+00000100:00080000:0.0:1579561067.616545:0:2277:0:(pinger.c:217:ptlrpc_pinger_process_import()) lustre-MDT0000-lwp-OST0002_UUID->lustre-MDT0000_UUID: level DISCONN/3 force 0 force_next 0 deactive 0 pingable 1 suppress 0
+00000100:00080000:0.0:1579561067.616550:0:2277:0:(recover.c:58:ptlrpc_initiate_recovery()) lustre-MDT0000_UUID: starting recovery
+00000100:00080000:0.0:1579561067.616552:0:2277:0:(import.c:681:ptlrpc_connect_import()) ffff9e834ef48000 lustre-MDT0000_UUID: changing import state from DISCONN to CONNECTING
+00000100:00080000:0.0:1579561067.616558:0:2277:0:(import.c:524:import_select_connection()) lustre-MDT0000-lwp-OST0002: connect to NID 10.29.161.11@tcp last attempt 4296425435
+00000100:00080000:0.0:1579561067.616560:0:2277:0:(import.c:568:import_select_connection()) lustre-MDT0000-lwp-OST0002: tried all connections, increasing latency to 50s
+00000100:00080000:0.0:1579561067.616565:0:2277:0:(import.c:602:import_select_connection()) lustre-MDT0000-lwp-OST0002: import ffff9e834ef48000 using connection 10.29.161.11@tcp/10.29.161.11@tcp
+00000800:00000100:0.0:1579561067.616617:0:2274:0:(socklnd_cb.c:921:ksocknal_launch_packet()) No usable routes to 12345-10.24.84.84@tcp
+00000100:00000400:0.0:1579561067.616628:0:2274:0:(client.c:2116:ptlrpc_expire_one_request()) @@@ Request sent has failed due to network error: [sent 1579561067/real 1579561067]  req@ffff9e8345726000 x1656288114120688/t0(0) o250->MGC10.24.84.84@tcp@10.24.84.84@tcp:26/25 lens 520/544 e 0 to 1 dl 1579561122 ref 1 fl Rpc:eXN/0/ffffffff rc 0/-1
+00000100:00080000:0.0:1579561067.616651:0:2274:0:(import.c:1284:ptlrpc_connect_interpret()) ffff9e8333c93000 MGS: changing import state from CONNECTING to DISCONN
+00000100:00080000:0.0:1579561067.616658:0:2274:0:(import.c:1330:ptlrpc_connect_interpret()) recovery of MGS on MGC10.24.84.84@tcp_0 failed (-110)
+00000800:00000100:0.0:1579561067.616676:0:2274:0:(socklnd_cb.c:921:ksocknal_launch_packet()) No usable routes to 12345-10.29.161.11@tcp
+00000100:00000400:0.0:1579561067.616681:0:2274:0:(client.c:2116:ptlrpc_expire_one_request()) @@@ Request sent has failed due to network error: [sent 1579561067/real 1579561067]  req@ffff9e8345727200 x1656288114120704/t0(0) o38->lustre-MDT0000-lwp-OST0002@10.29.161.11@tcp:12/10 lens 520/544 e 0 to 1 dl 1579561122 ref 1 fl Rpc:eXN/0/ffffffff rc 0/-1
+00000100:00080000:0.0:1579561067.616696:0:2274:0:(import.c:1284:ptlrpc_connect_interpret()) ffff9e834ef48000 lustre-MDT0000_UUID: changing import state from CONNECTING to DISCONN
+00000100:00080000:0.0:1579561067.616699:0:2274:0:(import.c:1330:ptlrpc_connect_interpret()) recovery of lustre-MDT0000_UUID on 10.29.161.11@tcp failed (-110)
+00000100:00080000:0.0:1579561078.047725:0:2448:0:(service.c:1104:ptlrpc_update_export_timer()) lustre-OST0002: Think about evicting 10.29.161.11@tcp from 1579560416
+00010000:02000400:0.0:1579561078.047769:0:2448:0:(ldlm_lib.c:779:target_handle_reconnect()) lustre-OST0002: Client 0564d988-f86a-5ec5-49f9-7acaeea8870e (at 10.24.85.117@tcp) reconnecting
+00010000:00080000:0.0:1579561078.047786:0:2448:0:(ldlm_lib.c:1231:target_handle_connect()) lustre-OST0002: connection from 0564d988-f86a-5ec5-49f9-7acaeea8870e@10.24.85.117@tcp t0 exp ffff9e834ef69c00 cur 1579561078 last 1579561078
+00000100:00080000:0.0:1579561078.047815:0:2448:0:(import.c:105:ptlrpc_import_enter_resend()) ffff9e834ef49800 X3bzƒžÿÿX3bzƒžÿÿ: changing import state from FULL to RECOVER
+00000100:00080000:0.0:1579561078.047822:0:2448:0:(import.c:1535:ptlrpc_import_recovery_state_machine()) ffff9e834ef49800 X3bzƒžÿÿX3bzƒžÿÿ: changing import state from RECOVER to FULL
+00000100:02000000:0.0:1579561078.047827:0:2448:0:(import.c:1541:ptlrpc_import_recovery_state_machine()) lustre-OST0002: Connection restored to 0564d988-f86a-5ec5-49f9-7acaeea8870e (at 10.24.85.117@tcp)
+00000100:00080000:0.0:1579561092.621359:0:2277:0:(pinger.c:217:ptlrpc_pinger_process_import()) 4a7323ef-81e5-6eda-cc43-5ddc222b17a7->MGS: level DISCONN/3 force 0 force_next 0 deactive 0 pingable 1 suppress 0
+00000100:00080000:0.0:1579561092.621362:0:2277:0:(recover.c:58:ptlrpc_initiate_recovery()) MGS: starting recovery
+00000100:00080000:0.0:1579561092.621363:0:2277:0:(import.c:681:ptlrpc_connect_import()) ffff9e8333c93000 MGS: changing import state from DISCONN to CONNECTING
+00000100:00080000:0.0:1579561092.621367:0:2277:0:(import.c:524:import_select_connection()) MGC10.24.84.84@tcp: connect to NID 10.24.84.84@tcp last attempt 4296450437
+00000100:00080000:0.0:1579561092.621368:0:2277:0:(import.c:568:import_select_connection()) MGC10.24.84.84@tcp: tried all connections, increasing latency to 50s
+00000100:00080000:0.0:1579561092.621371:0:2277:0:(import.c:602:import_select_connection()) MGC10.24.84.84@tcp: import ffff9e8333c93000 using connection MGC10.24.84.84@tcp_0/10.24.84.84@tcp
+00000100:00080000:0.0:1579561092.621382:0:2277:0:(pinger.c:217:ptlrpc_pinger_process_import()) lustre-MDT0000-lwp-OST0002_UUID->lustre-MDT0000_UUID: level DISCONN/3 force 0 force_next 0 deactive 0 pingable 1 suppress 0
+00000100:00080000:0.0:1579561092.621384:0:2277:0:(recover.c:58:ptlrpc_initiate_recovery()) lustre-MDT0000_UUID: starting recovery
+00000100:00080000:0.0:1579561092.621384:0:2277:0:(import.c:681:ptlrpc_connect_import()) ffff9e834ef48000 lustre-MDT0000_UUID: changing import state from DISCONN to CONNECTING
+00000100:00080000:0.0:1579561092.621386:0:2277:0:(import.c:524:import_select_connection()) lustre-MDT0000-lwp-OST0002: connect to NID 10.29.161.11@tcp last attempt 4296450437
+00000100:00080000:0.0:1579561092.621386:0:2277:0:(import.c:568:import_select_connection()) lustre-MDT0000-lwp-OST0002: tried all connections, increasing latency to 50s
+00000100:00080000:0.0:1579561092.621388:0:2277:0:(import.c:602:import_select_connection()) lustre-MDT0000-lwp-OST0002: import ffff9e834ef48000 using connection 10.29.161.11@tcp/10.29.161.11@tcp
+00000100:00080000:0.0:1579561092.661059:0:2274:0:(import.c:1035:ptlrpc_connect_interpret()) MGC10.24.84.84@tcp: connect to target with instance 0
+10000000:01000000:0.0:1579561092.661063:0:2274:0:(mgc_request.c:1367:mgc_import_event()) import event 0x808005
+00000100:02000400:0.0:1579561092.661064:0:2274:0:(import.c:1191:ptlrpc_connect_interpret()) Evicted from MGS (at MGC10.24.84.84@tcp_0) after server handle changed from 0x858386a4d313f909 to 0x858386a4d313f980
+00000100:00080000:0.0:1579561092.661068:0:2274:0:(import.c:1199:ptlrpc_connect_interpret()) ffff9e8333c93000 MGS: changing import state from CONNECTING to EVICTED
+00000100:00080000:0.0:1579561092.661070:0:2274:0:(import.c:1474:ptlrpc_import_recovery_state_machine()) evicted from MGS@MGC10.24.84.84@tcp_0; invalidating
+00000100:00080000:0.0:1579561092.661914:0:3712:0:(import.c:1416:ptlrpc_invalidate_import_thread()) thread invalidate import MGC10.24.84.84@tcp to MGS@MGC10.24.84.84@tcp_0
+10000000:01000000:0.0:1579561092.661917:0:3712:0:(mgc_request.c:1367:mgc_import_event()) import event 0x808003
+10000000:01000000:0.0:1579561092.661921:0:3712:0:(mgc_request.c:1025:mgc_blocking_ast()) Lock res [0x70616d65646f6e:0x4:0x0].0x0 (nodemap)
+10000000:01000000:0.0:1579561092.661926:0:3712:0:(mgc_request.c:1025:mgc_blocking_ast()) Lock res [0x736d61726170:0x3:0x0].0x0 (params)
+10000000:01000000:0.0:1579561092.661989:0:3712:0:(mgc_request.c:1025:mgc_blocking_ast()) Lock res [0x65727473756c:0x0:0x0].0x0 (lustre)
+10000000:01000000:0.0:1579561092.661991:0:3712:0:(mgc_request.c:1025:mgc_blocking_ast()) Lock res [0x65727473756c:0x0:0x0].0x0 (lustre)
+10000000:01000000:0.0:1579561092.661993:0:3712:0:(mgc_request.c:1025:mgc_blocking_ast()) Lock res [0x65727473756c:0x0:0x0].0x0 (lustre)
+00000100:00080000:0.0:1579561092.661995:0:3712:0:(import.c:1425:ptlrpc_invalidate_import_thread()) ffff9e8333c93000 MGS: changing import state from EVICTED to RECOVER
+00000100:00080000:0.0:1579561092.661996:0:3712:0:(import.c:1535:ptlrpc_import_recovery_state_machine()) ffff9e8333c93000 MGS: changing import state from RECOVER to FULL
+10000000:01000000:0.0:1579561092.661997:0:3712:0:(mgc_request.c:1367:mgc_import_event()) import event 0x808004
+00000100:00080000:0.0:1579561092.661998:0:3712:0:(pinger.c:171:ptlrpc_pinger_ir_up()) IR up
+00000100:02000000:0.0:1579561092.661999:0:3712:0:(import.c:1541:ptlrpc_import_recovery_state_machine()) MGC10.24.84.84@tcp: Connection restored to MGC10.24.84.84@tcp_0 (at 10.24.84.84@tcp)
+00000100:00080000:0.0:1579561092.662454:0:2274:0:(import.c:1035:ptlrpc_connect_interpret()) lustre-MDT0000-lwp-OST0002: connect to target with instance 1
+00000100:00080000:0.0:1579561092.662458:0:2274:0:(import.c:1235:ptlrpc_connect_interpret()) @@@ lustre-MDT0000-lwp-OST0002: evicting (reconnect/recover flags not set: 4)  req@ffff9e8345726000 x1656288114120736/t0(0) o38->lustre-MDT0000-lwp-OST0002@10.29.161.11@tcp:12/10 lens 520/384 e 0 to 0 dl 1579561147 ref 1 fl Interpret:RN/0/0 rc 0/0
+00000100:00080000:0.0:1579561092.662462:0:2274:0:(import.c:1238:ptlrpc_connect_interpret()) ffff9e834ef48000 lustre-MDT0000_UUID: changing import state from CONNECTING to EVICTED
+00000100:02020000:0.0:1579561092.662463:0:2274:0:(import.c:1470:ptlrpc_import_recovery_state_machine()) 167-0: lustre-MDT0000-lwp-OST0002: This client was evicted by lustre-MDT0000; in progress operations using this service will fail.
+00000100:00080000:0.0:1579561092.662466:0:2274:0:(import.c:1474:ptlrpc_import_recovery_state_machine()) evicted from lustre-MDT0000_UUID@10.29.161.11@tcp; invalidating
+00000100:00080000:0.0:1579561092.664001:0:3713:0:(import.c:1416:ptlrpc_invalidate_import_thread()) thread invalidate import lustre-MDT0000-lwp-OST0002 to lustre-MDT0000_UUID@10.29.161.11@tcp
+00000100:00080000:0.0:1579561092.664002:0:3713:0:(import.c:215:ptlrpc_deactivate_and_unlock_import()) setting import lustre-MDT0000_UUID INVALID
+00000100:00080000:0.0:1579561092.665742:0:3713:0:(import.c:1425:ptlrpc_invalidate_import_thread()) ffff9e834ef48000 lustre-MDT0000_UUID: changing import state from EVICTED to RECOVER
+00000100:00080000:0.0:1579561092.665743:0:3713:0:(import.c:1535:ptlrpc_import_recovery_state_machine()) ffff9e834ef48000 lustre-MDT0000_UUID: changing import state from RECOVER to FULL
+00000100:02000000:0.0:1579561092.665746:0:3713:0:(import.c:1541:ptlrpc_import_recovery_state_machine()) lustre-MDT0000-lwp-OST0002: Connection restored to 10.29.161.11@tcp (at 10.29.161.11@tcp)
+10000000:01000000:0.0:1579561098.822783:0:2293:0:(mgc_request.c:600:do_requeue()) updating log lustre-client
+10000000:01000000:0.0:1579561098.822788:0:2293:0:(mgc_request.c:2076:mgc_process_log()) Process log lustre-client:ffff9e8379c6b800 from 45
+10000000:01000000:0.0:1579561098.822793:0:2293:0:(mgc_request.c:1133:mgc_enqueue()) Enqueue for lustre-client (res 0x65727473756c)
+00000020:01000000:0.0:1579561098.829899:0:2293:0:(obd_config.c:1723:class_config_parse_llog()) Processed log lustre-client gen 45-44 (rc=0)
+10000000:01000000:0.0:1579561098.829912:0:2293:0:(mgc_request.c:2151:mgc_process_log()) MGC10.24.84.84@tcp: configuration from log 'lustre-client' succeeded (0).
+10000000:01000000:0.0:1579561098.829921:0:2293:0:(mgc_request.c:600:do_requeue()) updating log lustre-OST0002
+10000000:01000000:0.0:1579561098.829923:0:2293:0:(mgc_request.c:2076:mgc_process_log()) Process log lustre-OST0002:          (null) from 5
+10000000:01000000:0.0:1579561098.829926:0:2293:0:(mgc_request.c:1133:mgc_enqueue()) Enqueue for lustre-OST0002 (res 0x65727473756c)
+00000020:01000000:0.0:1579561098.837432:0:2293:0:(obd_config.c:1723:class_config_parse_llog()) Processed log lustre-OST0002 gen 5-4 (rc=0)
+10000000:01000000:0.0:1579561098.837446:0:2293:0:(mgc_request.c:2151:mgc_process_log()) MGC10.24.84.84@tcp: configuration from log 'lustre-OST0002' succeeded (0).
+10000000:01000000:0.0:1579561098.837454:0:2293:0:(mgc_request.c:600:do_requeue()) updating log params
+10000000:01000000:0.0:1579561098.837456:0:2293:0:(mgc_request.c:2076:mgc_process_log()) Process log params:ffff9e8379c6b800 from 1
+10000000:01000000:0.0:1579561098.837459:0:2293:0:(mgc_request.c:1133:mgc_enqueue()) Enqueue for params (res 0x736d61726170)
+00000020:01000000:0.0:1579561098.844188:0:2293:0:(obd_config.c:1723:class_config_parse_llog()) Processed log params gen 1-0 (rc=0)
+10000000:01000000:0.0:1579561098.844201:0:2293:0:(mgc_request.c:2151:mgc_process_log()) MGC10.24.84.84@tcp: configuration from log 'params' succeeded (0).
+10000000:01000000:0.0:1579561098.844208:0:2293:0:(mgc_request.c:600:do_requeue()) updating log nodemap
+10000000:01000000:0.0:1579561098.844210:0:2293:0:(mgc_request.c:2076:mgc_process_log()) Process log nodemap:ffff9e837a620f78 from 1
+10000000:01000000:0.0:1579561098.844213:0:2293:0:(mgc_request.c:1133:mgc_enqueue()) Enqueue for nodemap (res 0x70616d65646f6e)
+00080000:00020000:0.0:1579561098.851270:0:2293:0:(osd_oi.c:734:osd_oi_insert()) sdb: the FID [0x200000003:0x3:0x0] is used by two objects: 32045/2167468777 99/4084814169
+00000001:00000400:0.0:1579561098.851302:0:2293:0:(nodemap_storage.c:1092:nodemap_save_all_caches()) lustre-OST0002-osd: error writing to nodemap config: rc = 0
+10000000:01000000:0.0:1579561098.851421:0:2293:0:(mgc_request.c:2151:mgc_process_log()) MGC10.24.84.84@tcp: configuration from log 'nodemap' succeeded (0).
+10000000:01000000:0.0:1579561098.851430:0:2293:0:(mgc_request.c:600:do_requeue()) updating log lustre-sptlrpc
+10000000:01000000:0.0:1579561098.851432:0:2293:0:(mgc_request.c:2076:mgc_process_log()) Process log lustre-sptlrpc:          (null) from 1
+10000000:01000000:0.0:1579561098.851435:0:2293:0:(mgc_request.c:1133:mgc_enqueue()) Enqueue for lustre-sptlrpc (res 0x65727473756c)
+10000000:01000000:0.0:1579561098.855210:0:2293:0:(mgc_request.c:2151:mgc_process_log()) MGC10.24.84.84@tcp: configuration from log 'lustre-sptlrpc' failed (-2).
+00010000:02000400:0.0:1579561103.338540:0:2448:0:(ldlm_lib.c:779:target_handle_reconnect()) lustre-OST0002: Client lustre-MDT0000-mdtlov_UUID (at 10.29.161.11@tcp) reconnecting
+00010000:00080000:0.0:1579561103.338558:0:2448:0:(ldlm_lib.c:1231:target_handle_connect()) lustre-OST0002: connection from lustre-MDT0000-mdtlov_UUID@10.29.161.11@tcp t0 exp ffff9e830015f400 cur 1579561103 last 1579561103
+00002000:00080000:0.0:1579561103.338570:0:2448:0:(ofd_obd.c:180:ofd_parse_connect_data()) lustre-OST0002: Received MDS connection for group 0
+00000100:00080000:0.0:1579561103.338582:0:2448:0:(import.c:105:ptlrpc_import_enter_resend()) ffff9e834ef4a000 X3bzƒžÿÿX3bzƒžÿÿ: changing import state from FULL to RECOVER
+00000100:00080000:0.0:1579561103.338594:0:2448:0:(import.c:1535:ptlrpc_import_recovery_state_machine()) ffff9e834ef4a000 X3bzƒžÿÿX3bzƒžÿÿ: changing import state from RECOVER to FULL
+00000100:02000000:0.0:1579561103.338599:0:2448:0:(import.c:1541:ptlrpc_import_recovery_state_machine()) lustre-OST0002: Connection restored to lustre-MDT0000-mdtlov_UUID (at 10.29.161.11@tcp)
+00002000:00080000:0.0:1579561103.343578:0:2448:0:(ofd_dev.c:1635:ofd_create_hdl()) ofd_last_id() = 677 -> diff = -25
+00002000:02000040:0.0:1579561103.343584:0:2448:0:(ofd_dev.c:1495:ofd_orphans_destroy()) lustre-OST0002: deleting orphan objects from 0x0:653 to 0x0:677
+00002000:00080000:0.0:1579561103.347913:0:2448:0:(ofd_dev.c:1522:ofd_orphans_destroy()) lustre-OST0002: after destroy: set last_id to 0x0:652
+00002000:00080000:0.0:1579561108.383098:0:2448:0:(ofd_dev.c:1752:ofd_create_hdl()) lustre-OST0002: reserve 8 objects in group 0x0 at 678
+00002000:00080000:0.0:1579561108.383409:0:2448:0:(ofd_dev.c:1752:ofd_create_hdl()) lustre-OST0002: reserve 8 objects in group 0x0 at 686
+00002000:00080000:0.0:1579561108.383592:0:2448:0:(ofd_dev.c:1752:ofd_create_hdl()) lustre-OST0002: reserve 8 objects in group 0x0 at 694
+00002000:00080000:0.0:1579561108.383770:0:2448:0:(ofd_dev.c:1752:ofd_create_hdl()) lustre-OST0002: reserve 8 objects in group 0x0 at 702
+00100000:10000000:0.0:1579561109.740380:0:2448:0:(lfsck_layout.c:4964:lfsck_layout_reset()) lustre-OST0002-osd: layout LFSCK reset: rc = 0
+00100000:10000000:0.0:1579561109.740496:0:3719:0:(osd_scrub.c:669:osd_scrub_prep()) sdb: OI scrub prep, flags = 0x46
+00100000:10000000:0.0:1579561109.740500:0:3719:0:(osd_scrub.c:279:osd_scrub_file_reset()) sdb: reset OI scrub file, old flags = 0x0, add flags = 0x0
+00100000:10000000:0.0:1579561109.740516:0:3718:0:(lfsck_layout.c:5156:lfsck_layout_slave_prep()) lustre-OST0002-osd: layout LFSCK slave prep done, start pos [1]
+00100000:10000000:0.0:1579561109.740521:0:3719:0:(osd_scrub.c:1541:osd_scrub_main()) sdb: OI scrub start, flags = 0x46, pos = 12
+00100000:10000000:0.0:1579561109.742876:0:3718:0:(lfsck_layout.c:5047:lfsck_layout_slave_checkpoint()) lustre-OST0002-osd: layout LFSCK slave checkpoint at the pos [12], status = 1: rc = 0
+00100000:10000000:0.0:1579561109.742882:0:3718:0:(lfsck_engine.c:1060:lfsck_master_engine()) LFSCK entry: oit_flags = 0x60003, dir_flags = 0x8006, oit_cookie = 12, dir_cookie = 0x0, parent = [0x0:0x0:0x0], pid = 3718
+00100000:10000000:0.0:1579561109.747179:0:3719:0:(osd_scrub.c:767:osd_scrub_post()) sdb: OI scrub post, result = 1
+00100000:10000000:0.0:1579561109.747193:0:3719:0:(osd_scrub.c:1551:osd_scrub_main()) sdb: OI scrub: stop, pos = 128001: rc = 1
+00100000:10000000:0.0:1579561109.747300:0:3718:0:(lfsck_engine.c:1092:lfsck_master_engine()) LFSCK exit: oit_flags = 0x60003, dir_flags = 0x8006, oit_cookie = 64038, dir_cookie = 0x0, parent = [0x0:0x0:0x0], pid = 3718, rc = 1
+00100000:10000000:0.0:1579561109.747325:0:3718:0:(lfsck_layout.c:4657:lfsck_layout_slave_notify_master()) lustre-OST0002-osd: layout LFSCK slave notifies master
+00000020:01000004:0.0:1579561109.747333:0:3718:0:(obd_mount_server.c:170:server_get_mount()) get mount ffff9e8379c6b800 from lustre-OST0002, refs=3
+00000020:01000004:0.0:1579561109.747342:0:3718:0:(obd_mount_server.c:204:server_put_mount()) put mount ffff9e8379c6b800 from lustre-OST0002, refs=3
+00000020:01000004:0.0:1579561109.747345:0:3718:0:(obd_mount.c:662:lustre_put_lsi()) put ffff9e8379c6b800 3
+00100000:10000000:0.0:1579561109.749913:0:3718:0:(lfsck_layout.c:5819:lfsck_layout_slave_post()) lustre-OST0002-osd: layout LFSCK slave post done: rc = 0
+00100000:10000000:0.0:1579561109.749923:0:3718:0:(lfsck_layout.c:6043:lfsck_layout_slave_double_scan()) lustre-OST0002-osd: layout LFSCK slave phase2 scan start
+00000020:01000004:0.0:1579561109.749929:0:3718:0:(obd_mount_server.c:170:server_get_mount()) get mount ffff9e8379c6b800 from lustre-OST0002, refs=3
+00000020:01000004:0.0:1579561109.749936:0:3718:0:(obd_mount_server.c:204:server_put_mount()) put mount ffff9e8379c6b800 from lustre-OST0002, refs=3
+00000020:01000004:0.0:1579561109.749940:0:3718:0:(obd_mount.c:662:lustre_put_lsi()) put ffff9e8379c6b800 3
+00100000:10000000:0.0:1579561109.751659:0:3718:0:(lfsck_layout.c:4636:lfsck_layout_slave_query_master()) lustre-OST0002-osd: layout LFSCK slave queries master: rc = 0
+00100000:10000000:0.0:1579561109.779216:0:2448:0:(lfsck_layout.c:6446:lfsck_layout_slave_in_notify()) lustre-OST0002-osd: layout LFSCK slave handle notify 4 from MDT 0, status 1
+00100000:10000000:0.0:1579561109.779472:0:3718:0:(lfsck_layout.c:1445:lfsck_layout_double_scan_result()) lustre-OST0002-osd: layout LFSCK double scan: rc = 1
+00100000:10000000:0.0:1579561109.779505:0:3718:0:(lfsck_layout.c:1486:lfsck_layout_double_scan_result()) lustre-OST0002-osd: layout LFSCK double scan result 3: rc = 0
+00100000:10000000:0.0:1579561109.779508:0:3718:0:(lfsck_layout.c:4657:lfsck_layout_slave_notify_master()) lustre-OST0002-osd: layout LFSCK slave notifies master
+00100000:10000000:0.0:1579561109.779517:0:3718:0:(lfsck_layout.c:680:lfsck_rbtree_cleanup()) lustre-OST0002-osd: layout LFSCK fini OST-objects accessing bitmap
+00100000:10000000:0.0:1579561109.779519:0:3718:0:(lfsck_layout.c:6100:lfsck_layout_slave_double_scan()) lustre-OST0002-osd: layout LFSCK slave phase2 scan finished, status 3: rc = 0

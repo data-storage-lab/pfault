@@ -1,0 +1,239 @@
+00000020:01000004:0.0F:1579382560.815672:0:23424:0:(obd_mount_server.c:1546:server_put_super()) server put_super MGS
+00000020:01000004:0.0:1579382560.815679:0:23424:0:(obd_mount_server.c:273:server_stop_mgs()) Stop MGS service MGS
+00000020:01000000:0.0:1579382560.815684:0:23424:0:(obd_config.c:1996:class_manual_cleanup()) Manual cleanup of MGS (flags='F')
+00000020:00000080:0.0:1579382560.815687:0:23424:0:(obd_config.c:1115:class_process_config()) processing cmd: cf004
+00000020:00000080:0.0:1579382560.815691:0:23424:0:(obd_config.c:658:class_cleanup()) MGS: forcing exports to disconnect: 6/12
+00000020:00080000:0.0:1579382560.815698:0:23424:0:(genops.c:1774:print_export_data()) MGS: ACTIVE ffff946733afa000 82e53315-03bd-5344-9e2d-6a7561890ba0 10.24.85.117@tcp 8 (0 0 4) 0 0 0 0:           (null)  0 stale:0
+00000020:00080000:0.0:1579382560.815711:0:23424:0:(genops.c:1774:print_export_data()) MGS: ACTIVE ffff946733afb800 9fd93fbe-d7ce-08a9-3908-3ad59acbbb13 10.29.162.26@tcp 9 (0 0 5) 0 0 0 0:           (null)  0 stale:0
+00000020:00080000:0.0:1579382560.815721:0:23424:0:(genops.c:1774:print_export_data()) MGS: ACTIVE ffff9466fcbf3800 95020deb-bd90-0068-9670-83f9e8e68a09 10.29.160.166@tcp 9 (0 0 5) 0 0 0 0:           (null)  0 stale:0
+00000020:00080000:0.0:1579382560.815731:0:23424:0:(genops.c:1774:print_export_data()) MGS: ACTIVE ffff9466df395c00 5c565410-e636-85ec-3253-5c0de6bcfa2e 10.29.161.11@tcp 11 (0 0 7) 0 0 0 0:           (null)  0 stale:0
+00000020:00080000:0.0:1579382560.815740:0:23424:0:(genops.c:1774:print_export_data()) MGS: ACTIVE ffff9466fcb82c00 42d5d391-5101-0cda-02b0-e3ab7fbc0520 10.24.85.194@tcp 9 (0 0 5) 0 0 0 0:           (null)  0 stale:0
+00000020:00080000:0.0:1579382560.815749:0:23424:0:(genops.c:1774:print_export_data()) MGS: ACTIVE ffff9466df394c00 8e2a2ffc-76ba-28ad-3e40-c019bb38b8a6 0@lo 3 (0 0 0) 0 0 0 0:           (null)  0 stale:0
+00000020:00080000:0.0:1579382560.815756:0:23424:0:(genops.c:1547:class_disconnect_exports()) OBD device 1 (ffff9466cf430f78) has exports, disconnecting them
+00000020:00080000:0.0:1579382560.815761:0:23424:0:(genops.c:1522:class_disconnect_export_list()) MGS: disconnecting export at 10.24.85.117@tcp (ffff946733afa000), last request at 1579382537
+00000020:00000080:0.0:1579382560.815774:0:23424:0:(genops.c:1463:class_disconnect()) disconnect: cookie 0x67d4ed8ee00aa816
+00000100:00080000:0.0:1579382560.815781:0:23424:0:(import.c:1650:ptlrpc_cleanup_imp()) ffff9466cc23a800 : changing import state from FULL to CLOSED
+00000020:00080000:0.0:1579382560.815793:0:23424:0:(genops.c:1527:class_disconnect_export_list()) disconnected export at 10.24.85.117@tcp (ffff946733afa000): rc 0
+00000020:00080000:0.0:1579382560.815797:0:23424:0:(genops.c:1522:class_disconnect_export_list()) MGS: disconnecting export at 10.29.162.26@tcp (ffff946733afb800), last request at 1579382554
+00000020:00000080:0.0:1579382560.815802:0:23424:0:(genops.c:1463:class_disconnect()) disconnect: cookie 0x67d4ed8ee00aa791
+00000100:00080000:0.0:1579382560.815805:0:23424:0:(import.c:1650:ptlrpc_cleanup_imp()) ffff94673994a000 : changing import state from FULL to CLOSED
+00000020:00080000:0.0:1579382560.815812:0:23424:0:(genops.c:1527:class_disconnect_export_list()) disconnected export at 10.29.162.26@tcp (ffff946733afb800): rc 0
+00000020:00080000:0.0:1579382560.815816:0:23424:0:(genops.c:1522:class_disconnect_export_list()) MGS: disconnecting export at 10.29.160.166@tcp (ffff9466fcbf3800), last request at 1579382555
+00000020:00000080:0.0:1579382560.815820:0:23424:0:(genops.c:1463:class_disconnect()) disconnect: cookie 0x67d4ed8ee00aa721
+00000100:00080000:0.0:1579382560.815823:0:23424:0:(import.c:1650:ptlrpc_cleanup_imp()) ffff94673994b000 : changing import state from FULL to CLOSED
+00000020:00080000:0.0:1579382560.815828:0:23424:0:(genops.c:1527:class_disconnect_export_list()) disconnected export at 10.29.160.166@tcp (ffff9466fcbf3800): rc 0
+00000020:00080000:0.0:1579382560.815832:0:23424:0:(genops.c:1522:class_disconnect_export_list()) MGS: disconnecting export at 10.29.161.11@tcp (ffff9466df395c00), last request at 1579382559
+00000020:00000080:0.0:1579382560.815836:0:23424:0:(genops.c:1463:class_disconnect()) disconnect: cookie 0x67d4ed8ee00aa68e
+00000100:00080000:0.0:1579382560.815838:0:23424:0:(import.c:1650:ptlrpc_cleanup_imp()) ffff946733aa2800 : changing import state from FULL to CLOSED
+00000020:00080000:0.0:1579382560.815844:0:23424:0:(genops.c:1527:class_disconnect_export_list()) disconnected export at 10.29.161.11@tcp (ffff9466df395c00): rc 0
+00000020:00080000:0.0:1579382560.815848:0:23424:0:(genops.c:1522:class_disconnect_export_list()) MGS: disconnecting export at 10.24.85.194@tcp (ffff9466fcb82c00), last request at 1579382554
+00000020:00000080:0.0:1579382560.815853:0:23424:0:(genops.c:1463:class_disconnect()) disconnect: cookie 0x67d4ed8ee00aa625
+00000100:00080000:0.0:1579382560.815855:0:23424:0:(import.c:1650:ptlrpc_cleanup_imp()) ffff946733b8d800 : changing import state from FULL to CLOSED
+00000020:00080000:0.0:1579382560.815860:0:23424:0:(genops.c:1527:class_disconnect_export_list()) disconnected export at 10.24.85.194@tcp (ffff9466fcb82c00): rc 0
+00000020:00080000:0.0:1579382560.815863:0:23424:0:(genops.c:1522:class_disconnect_export_list()) MGS: disconnecting export at 0@lo (ffff9466df394c00), last request at 1579382549
+00000020:00000080:0.0:1579382560.815866:0:23424:0:(genops.c:1463:class_disconnect()) disconnect: cookie 0x67d4ed8ee00aa617
+00000100:00080000:0.0:1579382560.815869:0:23424:0:(import.c:1650:ptlrpc_cleanup_imp()) ffff9467392a0000 : changing import state from FULL to CLOSED
+00000020:00080000:0.0:1579382560.815872:0:23424:0:(genops.c:1527:class_disconnect_export_list()) disconnected export at 0@lo (ffff9466df394c00): rc 0
+00000020:00000080:0.0:1579382560.815875:0:23424:0:(genops.c:987:class_export_put()) final put ffff9466df394c00/8e2a2ffc-76ba-28ad-3e40-c019bb38b8a6
+00000020:00080000:0.0:1579382560.815893:0:23424:0:(genops.c:1552:class_disconnect_exports()) OBD device 1 (ffff9466cf430f78) has no exports
+00000020:00000080:0.0:1579382560.842633:0:3676:0:(genops.c:987:class_export_put()) final put ffff946733afa000/82e53315-03bd-5344-9e2d-6a7561890ba0
+00000020:00000080:0.0:1579382560.842654:0:3676:0:(genops.c:987:class_export_put()) final put ffff946733afb800/9fd93fbe-d7ce-08a9-3908-3ad59acbbb13
+00000020:00000080:0.0:1579382560.842676:0:3676:0:(genops.c:987:class_export_put()) final put ffff9466fcbf3800/95020deb-bd90-0068-9670-83f9e8e68a09
+00000020:00000080:0.0:1579382560.842697:0:3676:0:(genops.c:987:class_export_put()) final put ffff9466df395c00/5c565410-e636-85ec-3253-5c0de6bcfa2e
+00000020:00000080:0.0:1579382560.842718:0:3676:0:(genops.c:987:class_export_put()) final put ffff9466fcb82c00/42d5d391-5101-0cda-02b0-e3ab7fbc0520
+00000020:00000080:0.0:1579382560.842723:0:3643:0:(genops.c:937:class_export_destroy()) destroying export ffff9466fcb82c00/42d5d391-5101-0cda-02b0-e3ab7fbc0520 for MGS
+00000020:00000080:0.0:1579382560.842733:0:3643:0:(genops.c:1177:class_import_destroy()) destroying import ffff946733b8d800 for MGS
+00000020:00000080:0.0:1579382560.842734:0:3643:0:(genops.c:937:class_export_destroy()) destroying export ffff9466df395c00/5c565410-e636-85ec-3253-5c0de6bcfa2e for MGS
+00000020:00000080:0.0:1579382560.842739:0:3643:0:(genops.c:1177:class_import_destroy()) destroying import ffff946733aa2800 for MGS
+00000020:00000080:0.0:1579382560.842740:0:3643:0:(genops.c:937:class_export_destroy()) destroying export ffff9466fcbf3800/95020deb-bd90-0068-9670-83f9e8e68a09 for MGS
+00000020:00000080:0.0:1579382560.842746:0:3643:0:(genops.c:1177:class_import_destroy()) destroying import ffff94673994b000 for MGS
+00000020:00000080:0.0:1579382560.842746:0:3643:0:(genops.c:937:class_export_destroy()) destroying export ffff946733afb800/9fd93fbe-d7ce-08a9-3908-3ad59acbbb13 for MGS
+00000020:00000080:0.0:1579382560.842751:0:3643:0:(genops.c:1177:class_import_destroy()) destroying import ffff94673994a000 for MGS
+00000020:00000080:0.0:1579382560.842752:0:3643:0:(genops.c:937:class_export_destroy()) destroying export ffff946733afa000/82e53315-03bd-5344-9e2d-6a7561890ba0 for MGS
+00000020:00000080:0.0:1579382560.842758:0:3643:0:(genops.c:1177:class_import_destroy()) destroying import ffff9466cc23a800 for MGS
+00000020:00000080:0.0:1579382560.842759:0:3643:0:(genops.c:937:class_export_destroy()) destroying export ffff9466df394c00/8e2a2ffc-76ba-28ad-3e40-c019bb38b8a6 for MGS
+00000020:00000080:0.0:1579382560.842764:0:3643:0:(genops.c:1177:class_import_destroy()) destroying import ffff9467392a0000 for MGS
+00000100:00080000:0.0:1579382560.842768:0:3684:0:(pinger.c:677:ping_evictor_main()) Exiting Ping Evictor
+00000020:01000000:0.0:1579382560.843965:0:23424:0:(lprocfs_status_server.c:120:lprocfs_free_client_stats()) stat ffff946733b1f900 - data ffff946734947780/ffff946733a085a0
+00000020:01000000:0.0:1579382560.843971:0:23424:0:(lprocfs_status_server.c:120:lprocfs_free_client_stats()) stat ffff946738e15660 - data ffff9467358866c0/ffff9467347c6e00
+00000020:01000000:0.0:1579382560.843975:0:23424:0:(lprocfs_status_server.c:120:lprocfs_free_client_stats()) stat ffff9466df3b26c0 - data ffff9467343de6c0/ffff9467347c6660
+00000020:01000000:0.0:1579382560.843979:0:23424:0:(lprocfs_status_server.c:120:lprocfs_free_client_stats()) stat ffff946733b1fa20 - data ffff9467348d9cc0/ffff946733a086c0
+00000020:01000000:0.0:1579382560.843984:0:23424:0:(lprocfs_status_server.c:120:lprocfs_free_client_stats()) stat ffff946738e151e0 - data ffff946739470900/ffff946734573100
+00000020:01000000:0.0:1579382560.843988:0:23424:0:(lprocfs_status_server.c:120:lprocfs_free_client_stats()) stat ffff9466df3a4780 - data ffff9466c0166e40/ffff946733a089e0
+00000020:00000080:0.0:1579382560.854063:0:23424:0:(genops.c:1463:class_disconnect()) disconnect: cookie 0x67d4ed8ee00aa5fb
+00000020:00000080:0.0:1579382560.854065:0:23424:0:(genops.c:987:class_export_put()) final put ffff946739888c00/MGS-osd_UUID
+00000020:01000004:0.0:1579382560.854069:0:23424:0:(obd_mount_server.c:204:server_put_mount()) put mount ffff946733bc9000 from MGS, refs=2
+00000020:01000004:0.0:1579382560.854070:0:23424:0:(obd_mount.c:662:lustre_put_lsi()) put ffff946733bc9000 2
+00000020:01000004:0.0:1579382560.854071:0:23424:0:(obd_mount_server.c:139:server_deregister_mount()) deregister mount ffff946733bc9000 from MGS
+00000020:00000080:0.0:1579382560.854090:0:23424:0:(obd_config.c:1115:class_process_config()) processing cmd: cf002
+00000020:00000080:0.0:1579382560.854092:0:23424:0:(obd_config.c:588:class_detach()) detach on obd MGS (uuid MGS)
+00000020:00000080:0.0:1579382560.854093:0:23424:0:(genops.c:987:class_export_put()) final put ffff946739888400/MGS
+00000020:00000080:0.0:1579382560.854093:0:23424:0:(genops.c:937:class_export_destroy()) destroying export ffff946739888400/MGS for MGS
+00000020:01000000:0.0:1579382560.854095:0:23424:0:(genops.c:403:class_free_dev()) finishing cleanup of obd MGS (MGS)
+00000020:01000004:0.0:1579382560.854104:0:23424:0:(obd_mount.c:907:lustre_common_put_super()) dropping sb ffff946733bc9000
+00000100:00080000:0.0:1579382560.854106:0:23424:0:(pinger.c:434:ptlrpc_pinger_del_import()) removing pingable import 8e2a2ffc-76ba-28ad-3e40-c019bb38b8a6->MGS
+00000100:00080000:0.0:1579382560.854114:0:23424:0:(import.c:1622:ptlrpc_disconnect_import()) ffff9466cc239000 MGS: changing import state from FULL to CONNECTING
+00000400:00000100:0.0:1579382560.854132:0:23424:0:(lib-move.c:2052:lnet_parse_put()) Dropping PUT from 12345-0@lo portal 26 match 1656005247167088 offset 0 length 224: 4
+00000020:00000080:0.0:1579382560.854267:0:3643:0:(genops.c:937:class_export_destroy()) destroying export ffff946739888c00/MGS-osd_UUID for MGS-osd
+00000400:00000100:0.0:1579382562.143165:0:3657:0:(lib-move.c:2052:lnet_parse_put()) Dropping PUT from 12345-10.24.85.117@tcp portal 26 match 1656004861027440 offset 0 length 224: 4
+00000100:00000400:0.0:1579382566.852671:0:23424:0:(client.c:2116:ptlrpc_expire_one_request()) @@@ Request sent has timed out for slow reply: [sent 1579382560/real 1579382560]  req@ffff946734a1c000 x1656005247167088/t0(0) o251->MGC10.24.84.84@tcp@0@lo:26/25 lens 224/224 e 0 to 1 dl 1579382566 ref 2 fl Rpc:XN/0/ffffffff rc 0/-1
+00000100:00080000:0.0:1579382566.852730:0:23424:0:(import.c:1635:ptlrpc_disconnect_import()) ffff9466cc239000 MGS: changing import state from CONNECTING to CLOSED
+00000100:00080000:0.0:1579382566.852736:0:23424:0:(import.c:215:ptlrpc_deactivate_and_unlock_import()) setting import MGS INVALID
+10000000:01000000:0.0:1579382566.852740:0:23424:0:(mgc_request.c:1367:mgc_import_event()) import event 0x808002
+10000000:01000000:0.0:1579382566.852743:0:23424:0:(mgc_request.c:1367:mgc_import_event()) import event 0x808003
+00000020:00000080:0.0:1579382566.852753:0:23424:0:(genops.c:1463:class_disconnect()) disconnect: cookie 0x67d4ed8ee00aa610
+00000020:00000080:0.0:1579382566.852757:0:23424:0:(genops.c:987:class_export_put()) final put ffff9466cc222800/8e2a2ffc-76ba-28ad-3e40-c019bb38b8a6
+00000020:01000000:0.0:1579382566.852773:0:23424:0:(obd_config.c:1996:class_manual_cleanup()) Manual cleanup of MGC10.24.84.84@tcp (flags='')
+00000020:00000080:0.0:1579382566.852776:0:23424:0:(obd_config.c:1115:class_process_config()) processing cmd: cf004
+00000020:00000080:0.0:1579382566.852781:0:23424:0:(obd_config.c:658:class_cleanup()) MGC10.24.84.84@tcp: forcing exports to disconnect: 0/2
+00000020:00080000:0.0:1579382566.852785:0:23424:0:(genops.c:1774:print_export_data()) MGC10.24.84.84@tcp: ZOMBIE ffff9466cc222800 8e2a2ffc-76ba-28ad-3e40-c019bb38b8a6 0@lo 0 (0 0 0) 1 0 0 0:           (null)  0 stale:0
+00000020:00080000:0.0:1579382566.852795:0:23424:0:(genops.c:1552:class_disconnect_exports()) OBD device 2 (ffff9466cf431ef0) has no exports
+00000020:00000080:0.0:1579382566.852806:0:3643:0:(genops.c:937:class_export_destroy()) destroying export ffff9466cc222800/8e2a2ffc-76ba-28ad-3e40-c019bb38b8a6 for MGC10.24.84.84@tcp
+10000000:01000000:0.0:1579382566.852816:0:3685:0:(mgc_request.c:706:mgc_requeue_thread()) Ending requeue thread
+10000000:01000000:0.0:1579382566.852887:0:23424:0:(obd_class.h:685:obd_cleanup_client_import()) MGC10.24.84.84@tcp: client import never connected
+00000100:00080000:0.0:1579382566.852889:0:23424:0:(import.c:215:ptlrpc_deactivate_and_unlock_import()) setting import MGS INVALID
+00000020:00000080:0.0:1579382566.852938:0:23424:0:(obd_config.c:1115:class_process_config()) processing cmd: cf002
+00000020:00000080:0.0:1579382566.852941:0:23424:0:(obd_config.c:588:class_detach()) detach on obd MGC10.24.84.84@tcp (uuid 8e2a2ffc-76ba-28ad-3e40-c019bb38b8a6)
+00000020:00000080:0.0:1579382566.852946:0:23424:0:(obd_config.c:1115:class_process_config()) processing cmd: cf006
+00000020:00000080:0.0:1579382566.852948:0:23424:0:(obd_config.c:1134:class_process_config()) removing mappings for uuid MGC10.24.84.84@tcp_0
+00000020:01000004:0.0:1579382566.852954:0:23424:0:(obd_mount.c:662:lustre_put_lsi()) put ffff946733bc9000 1
+00000020:00000080:0.0:1579382566.852959:0:23424:0:(genops.c:1463:class_disconnect()) disconnect: cookie 0x67d4ed8ee00aa5ed
+00000020:00000080:0.0:1579382566.852961:0:23424:0:(genops.c:987:class_export_put()) final put ffff946739888000/MGS-osd_UUID
+00000020:01000000:0.0:1579382566.852963:0:23424:0:(obd_config.c:1996:class_manual_cleanup()) Manual cleanup of MGS-osd (flags='')
+00000020:00000080:0.0:1579382566.852966:0:23424:0:(obd_config.c:1115:class_process_config()) processing cmd: cf004
+00000020:00000080:0.0:1579382566.852968:0:23424:0:(obd_config.c:658:class_cleanup()) MGS-osd: forcing exports to disconnect: 0/1
+00000020:00080000:0.0:1579382566.852970:0:23424:0:(genops.c:1774:print_export_data()) MGS-osd: ZOMBIE ffff946739888000 MGS-osd_UUID (no nid) 0 (0 0 0) 1 0 0 0:           (null)  0 stale:0
+00000020:00080000:0.0:1579382566.852978:0:23424:0:(genops.c:1552:class_disconnect_exports()) OBD device 0 (ffff9466cf430000) has no exports
+00000020:00000080:0.0:1579382566.853175:0:23424:0:(obd_config.c:1115:class_process_config()) processing cmd: cf002
+00000020:00000080:0.0:1579382566.853177:0:23424:0:(obd_config.c:588:class_detach()) detach on obd MGS-osd (uuid MGS-osd_UUID)
+00000020:00000080:0.0:1579382566.853184:0:3643:0:(genops.c:1177:class_import_destroy()) destroying import ffff9466cc239000 for MGC10.24.84.84@tcp
+00000020:00000080:0.0:1579382566.853187:0:3643:0:(genops.c:987:class_export_put()) final put ffff9466cc221c00/8e2a2ffc-76ba-28ad-3e40-c019bb38b8a6
+00000020:00000080:0.0:1579382566.853189:0:3643:0:(genops.c:937:class_export_destroy()) destroying export ffff9466cc221c00/8e2a2ffc-76ba-28ad-3e40-c019bb38b8a6 for MGC10.24.84.84@tcp
+00000020:01000000:0.0:1579382566.853192:0:3643:0:(genops.c:403:class_free_dev()) finishing cleanup of obd MGC10.24.84.84@tcp (8e2a2ffc-76ba-28ad-3e40-c019bb38b8a6)
+00000020:00000080:0.0:1579382566.853846:0:3643:0:(genops.c:937:class_export_destroy()) destroying export ffff946739888000/MGS-osd_UUID for MGS-osd
+00000020:00000080:0.0:1579382566.853850:0:3643:0:(genops.c:987:class_export_put()) final put ffff9466cf0e6400/MGS-osd_UUID
+00000020:00000080:0.0:1579382566.853852:0:3643:0:(genops.c:937:class_export_destroy()) destroying export ffff9466cf0e6400/MGS-osd_UUID for MGS-osd
+00000020:01000000:0.0:1579382566.853854:0:3643:0:(genops.c:403:class_free_dev()) finishing cleanup of obd MGS-osd (MGS-osd_UUID)
+00000020:01000004:0.0:1579382566.899911:0:23424:0:(obd_mount.c:606:lustre_free_lsi()) Freeing lsi ffff9466fcbf6400
+00000020:02000400:0.0:1579382566.899917:0:23424:0:(obd_mount_server.c:1634:server_put_super()) server umount MGS complete
+00000400:00000100:0.0:1579382569.146600:0:3657:0:(lib-move.c:2052:lnet_parse_put()) Dropping PUT from 12345-10.24.85.117@tcp portal 26 match 1656004861027520 offset 0 length 520: 4
+00000400:00000100:0.0:1579382579.431654:0:3657:0:(lib-move.c:2052:lnet_parse_put()) Dropping PUT from 12345-10.29.162.26@tcp portal 26 match 1656004811035216 offset 0 length 224: 4
+00000400:00000100:0.0:1579382579.559865:0:3657:0:(lib-move.c:2052:lnet_parse_put()) Dropping PUT from 12345-10.24.85.194@tcp portal 26 match 1656006195156624 offset 0 length 224: 4
+00000400:00000100:0.0:1579382580.603271:0:3657:0:(lib-move.c:2052:lnet_parse_put()) Dropping PUT from 12345-10.29.160.166@tcp portal 26 match 1656006775018512 offset 0 length 224: 4
+00000400:00000100:0.0:1579382584.963333:0:3657:0:(lib-move.c:2052:lnet_parse_put()) Dropping PUT from 12345-10.29.161.11@tcp portal 26 match 1656004725947168 offset 0 length 224: 4
+00000400:00000100:0.0:1579382586.431771:0:3657:0:(lib-move.c:2052:lnet_parse_put()) Dropping PUT from 12345-10.29.162.26@tcp portal 26 match 1656004811035248 offset 0 length 520: 4
+00000400:00000100:0.0:1579382586.560604:0:3657:0:(lib-move.c:2052:lnet_parse_put()) Dropping PUT from 12345-10.24.85.194@tcp portal 26 match 1656006195156656 offset 0 length 520: 4
+00000400:00000100:0.0:1579382587.603550:0:3657:0:(lib-move.c:2052:lnet_parse_put()) Dropping PUT from 12345-10.29.160.166@tcp portal 26 match 1656006775018544 offset 0 length 520: 4
+00000020:01200004:0.0:1579382588.472472:0:23432:0:(obd_mount.c:1516:lustre_fill_super()) VFS Op: sb ffff9466df3bf800
+00000020:01000004:0.0:1579382588.472484:0:23432:0:(obd_mount.c:931:lmd_print())   mount data:
+00000020:01000004:0.0:1579382588.472485:0:23432:0:(obd_mount.c:934:lmd_print()) device:  /dev/sdc
+00000020:01000004:0.0:1579382588.472486:0:23432:0:(obd_mount.c:935:lmd_print()) flags:   200
+00000020:01000004:0.0:1579382588.472486:0:23432:0:(obd_mount.c:938:lmd_print()) options: user_xattr,errors=remount-ro
+00000020:01000004:0.0:1579382588.472487:0:23432:0:(obd_mount.c:1563:lustre_fill_super()) Mounting server from /dev/sdc
+00000020:01000004:0.0:1579382588.472489:0:23432:0:(obd_mount_server.c:1773:osd_start()) Attempting to start MGS, type=osd-ldiskfs, lsifl=200004, mountfl=0
+00000020:01000004:0.0:1579382588.472521:0:23432:0:(obd_mount.c:194:lustre_start_simple()) Starting obd MGS-osd (typ=osd-ldiskfs)
+00000020:00000080:0.0:1579382588.472523:0:23432:0:(obd_config.c:1115:class_process_config()) processing cmd: cf001
+00000020:00000080:0.0:1579382588.472528:0:23432:0:(genops.c:373:class_newdev()) Allocate new device MGS-osd (ffff9466cf430000)
+00000020:00000080:0.0:1579382588.472558:0:23432:0:(obd_config.c:430:class_attach()) OBD: dev 0 attached type osd-ldiskfs with refcount 1
+00000020:00000080:0.0:1579382588.472560:0:23432:0:(obd_config.c:1115:class_process_config()) processing cmd: cf003
+00000020:00000080:0.0:1579382588.991311:0:23432:0:(obd_config.c:537:class_setup()) finished setup of obd MGS-osd (uuid MGS-osd_UUID)
+00080000:01000000:0.0:1579382588.991316:0:23432:0:(osd_handler.c:7373:osd_obd_connect()) connect #0
+00000020:00000080:0.0:1579382588.991320:0:23432:0:(genops.c:1379:class_connect()) connect: client MGS-osd_UUID, cookie 0x67d4ed8ee00aa8be
+00000020:01000004:0.0:1579382588.991323:0:23432:0:(obd_mount_server.c:1854:server_fill_super()) Found service MGS on device /dev/sdc
+00000020:01000000:0.0:1579382588.991361:0:23432:0:(obd_mount_server.c:236:server_start_mgs()) Start MGS service MGS
+00000020:01000004:0.0:1579382588.991363:0:23432:0:(obd_mount_server.c:120:server_register_mount()) register mount ffff9466df3bf800 from MGS
+00000020:01000004:0.0:1579382588.991364:0:23432:0:(obd_mount.c:194:lustre_start_simple()) Starting obd MGS (typ=mgs)
+00000020:00000080:0.0:1579382588.991367:0:23432:0:(obd_config.c:1115:class_process_config()) processing cmd: cf001
+00000020:00000080:0.0:1579382588.991371:0:23432:0:(genops.c:373:class_newdev()) Allocate new device MGS (ffff9466cf431ef0)
+00000020:00000080:0.0:1579382588.991408:0:23432:0:(obd_config.c:430:class_attach()) OBD: dev 1 attached type mgs with refcount 1
+00000020:00000080:0.0:1579382588.991411:0:23432:0:(obd_config.c:1115:class_process_config()) processing cmd: cf003
+00000020:01000004:0.0:1579382588.991440:0:23432:0:(obd_mount_server.c:170:server_get_mount()) get mount ffff9466df3bf800 from MGS, refs=2
+00080000:01000000:0.0:1579382588.991442:0:23432:0:(osd_handler.c:7373:osd_obd_connect()) connect #1
+00000020:00000080:0.0:1579382588.991444:0:23432:0:(genops.c:1379:class_connect()) connect: client MGS-osd_UUID, cookie 0x67d4ed8ee00aa8cc
+00000040:01000000:0.0:1579382588.992454:0:23432:0:(llog_obd.c:210:llog_setup()) obd MGS ctxt 0 is initialized
+10000000:01000000:0.0:1579382588.992537:0:23453:0:(mgc_request.c:90:mgc_name2resid()) log params to resid 0x736d61726170/0x2 (params)
+20000000:01000000:0.0:1579382588.992542:0:23432:0:(mgs_nids.c:393:mgs_nidtbl_init_fs()) IR: current version is 2
+20000000:01000000:0.0:1579382588.992550:0:23432:0:(mgs_llog.c:560:mgs_find_or_make_fsdb_nolock()) Created new db: rc = 0
+00000040:00080000:0.0:1579382588.992560:0:23432:0:(llog_osd.c:231:llog_osd_read_header()) not reading header from 0-byte log
+20000000:01000000:0.0:1579382588.992567:0:23432:0:(mgs_llog.c:560:mgs_find_or_make_fsdb_nolock()) Created new db: rc = 0
+00000020:00000080:0.0:1579382588.993014:0:23432:0:(obd_config.c:537:class_setup()) finished setup of obd MGS (uuid MGS)
+00000020:01000004:0.0:1579382588.993057:0:23432:0:(obd_mount.c:340:lustre_start_mgc()) Start MGC 'MGC10.24.84.84@tcp'
+00000020:01000004:0.0:1579382588.993059:0:23432:0:(obd_mount.c:347:lustre_start_mgc()) mgs nids (null).
+00000020:00000080:0.0:1579382588.993060:0:23432:0:(obd_config.c:1115:class_process_config()) processing cmd: cf005
+00000020:00000080:0.0:1579382588.993062:0:23432:0:(obd_config.c:1126:class_process_config()) adding mapping from uuid MGC10.24.84.84@tcp_0 to nid 0x9000000000000 (0@lo)
+00000020:00000080:0.0:1579382588.993065:0:23432:0:(obd_config.c:1115:class_process_config()) processing cmd: cf005
+00000020:00000080:0.0:1579382588.993067:0:23432:0:(obd_config.c:1126:class_process_config()) adding mapping from uuid MGC10.24.84.84@tcp_0 to nid 0x200000a185454 (10.24.84.84@tcp)
+00000020:01000004:0.0:1579382588.993077:0:23432:0:(obd_mount.c:194:lustre_start_simple()) Starting obd MGC10.24.84.84@tcp (typ=mgc)
+00000020:00000080:0.0:1579382588.993078:0:23432:0:(obd_config.c:1115:class_process_config()) processing cmd: cf001
+00000020:00000080:0.0:1579382588.993082:0:23432:0:(genops.c:373:class_newdev()) Allocate new device MGC10.24.84.84@tcp (ffff9466cf430f78)
+00000020:00000080:0.0:1579382588.993119:0:23432:0:(obd_config.c:430:class_attach()) OBD: dev 2 attached type mgc with refcount 1
+00000020:00000080:0.0:1579382588.993121:0:23432:0:(obd_config.c:1115:class_process_config()) processing cmd: cf003
+00010000:00080000:0.0:1579382588.993152:0:23432:0:(ldlm_lib.c:112:import_set_conn()) imp ffff94673994b800@MGC10.24.84.84@tcp: add connection MGC10.24.84.84@tcp_0 at head
+00000040:01000000:0.0:1579382588.993182:0:23432:0:(llog_obd.c:210:llog_setup()) obd MGC10.24.84.84@tcp ctxt 1 is initialized
+00000100:00080000:0.0:1579382588.993204:0:23457:0:(pinger.c:611:ping_evictor_main()) Starting Ping Evictor
+10000000:01000000:0.0:1579382588.993209:0:23458:0:(mgc_request.c:626:mgc_requeue_thread()) Starting requeue thread
+00000020:00000080:0.0:1579382588.993212:0:23432:0:(obd_config.c:537:class_setup()) finished setup of obd MGC10.24.84.84@tcp (uuid 6163510f-c17c-2405-0abc-5100527d4b71)
+00000020:00000080:0.0:1579382588.993217:0:23432:0:(genops.c:1379:class_connect()) connect: client 6163510f-c17c-2405-0abc-5100527d4b71, cookie 0x67d4ed8ee00aa8e1
+00000100:00080000:0.0:1579382588.993220:0:23432:0:(import.c:681:ptlrpc_connect_import()) ffff94673994b800 MGS: changing import state from NEW to CONNECTING
+00000100:00080000:0.0:1579382588.993222:0:23432:0:(import.c:524:import_select_connection()) MGC10.24.84.84@tcp: connect to NID 0@lo last attempt 0
+00000100:00080000:0.0:1579382588.993224:0:23432:0:(import.c:602:import_select_connection()) MGC10.24.84.84@tcp: import ffff94673994b800 using connection MGC10.24.84.84@tcp_0/0@lo
+00000100:00080000:0.0:1579382588.993237:0:23432:0:(pinger.c:409:ptlrpc_pinger_add_import()) adding pingable import 6163510f-c17c-2405-0abc-5100527d4b71->MGS
+00000020:01000004:0.0:1579382588.993241:0:23432:0:(obd_mount_server.c:1733:server_fill_super_common()) Server sb, dev=40
+00010000:00080000:0.0:1579382589.003175:0:23456:0:(ldlm_lib.c:1231:target_handle_connect()) MGS: connection from 6163510f-c17c-2405-0abc-5100527d4b71@0@lo t0 exp           (null) cur 1579382589 last 0
+00000020:00000080:0.0:1579382589.003185:0:23456:0:(genops.c:1379:class_connect()) connect: client 6163510f-c17c-2405-0abc-5100527d4b71, cookie 0x67d4ed8ee00aa8e8
+00000020:01000000:0.0:1579382589.003187:0:23456:0:(lprocfs_status_server.c:342:lprocfs_exp_setup()) using hash ffff94673646a180
+00000100:00080000:0.0:1579382589.003205:0:23456:0:(import.c:105:ptlrpc_import_enter_resend()) ffff9466c013e800 : changing import state from NEW to RECOVER
+00000100:00080000:0.0:1579382589.003208:0:23456:0:(import.c:1535:ptlrpc_import_recovery_state_machine()) ffff9466c013e800 : changing import state from RECOVER to FULL
+00000100:02000000:0.0:1579382589.003210:0:23456:0:(import.c:1541:ptlrpc_import_recovery_state_machine()) MGS: Connection restored to 8e2a2ffc-76ba-28ad-3e40-c019bb38b8a6 (at 0@lo)
+00000100:00080000:0.0:1579382589.004154:0:3660:0:(import.c:1035:ptlrpc_connect_interpret()) MGC10.24.84.84@tcp: connect to target with instance 0
+00000100:00080000:0.0:1579382589.004157:0:3660:0:(import.c:910:ptlrpc_connect_set_flags()) MGC10.24.84.84@tcp: Resetting ns_connect_flags to server flags: 0x2000011005002020
+10000000:01000000:0.0:1579382589.004159:0:3660:0:(mgc_request.c:1367:mgc_import_event()) import event 0x808005
+00000100:00080000:0.0:1579382589.004160:0:3660:0:(import.c:1140:ptlrpc_connect_interpret()) ffff94673994b800 MGS: changing import state from CONNECTING to FULL
+10000000:01000000:0.0:1579382589.004161:0:3660:0:(mgc_request.c:1367:mgc_import_event()) import event 0x808004
+00000100:00080000:0.0:1579382589.004164:0:3660:0:(pinger.c:171:ptlrpc_pinger_ir_up()) IR up
+00010000:00080000:0.0:1579382591.749881:0:23456:0:(ldlm_lib.c:1231:target_handle_connect()) MGS: connection from 5c565410-e636-85ec-3253-5c0de6bcfa2e@10.29.161.11@tcp t0 exp           (null) cur 1579382591 last 0
+00000020:00000080:0.0:1579382591.749909:0:23456:0:(genops.c:1379:class_connect()) connect: client 5c565410-e636-85ec-3253-5c0de6bcfa2e, cookie 0x67d4ed8ee00aa8f6
+00000020:01000000:0.0:1579382591.749917:0:23456:0:(lprocfs_status_server.c:342:lprocfs_exp_setup()) using hash ffff94673646a180
+00000100:00080000:0.0:1579382591.749954:0:23456:0:(import.c:105:ptlrpc_import_enter_resend()) ffff94673994a000 : changing import state from NEW to RECOVER
+00000100:00080000:0.0:1579382591.749963:0:23456:0:(import.c:1535:ptlrpc_import_recovery_state_machine()) ffff94673994a000 : changing import state from RECOVER to FULL
+00000100:02000000:0.0:1579382591.749969:0:23456:0:(import.c:1541:ptlrpc_import_recovery_state_machine()) MGS: Connection restored to 5c565410-e636-85ec-3253-5c0de6bcfa2e (at 10.29.161.11@tcp)
+00010000:00080000:0.0:1579382594.146884:0:23456:0:(ldlm_lib.c:1231:target_handle_connect()) MGS: connection from 82e53315-03bd-5344-9e2d-6a7561890ba0@10.24.85.117@tcp t0 exp           (null) cur 1579382594 last 0
+00000020:00000080:0.0:1579382594.146913:0:23456:0:(genops.c:1379:class_connect()) connect: client 82e53315-03bd-5344-9e2d-6a7561890ba0, cookie 0x67d4ed8ee00aa904
+00000020:01000000:0.0:1579382594.146921:0:23456:0:(lprocfs_status_server.c:342:lprocfs_exp_setup()) using hash ffff94673646a180
+00000100:00080000:0.0:1579382594.146965:0:23456:0:(import.c:105:ptlrpc_import_enter_resend()) ffff946733bcc800 : changing import state from NEW to RECOVER
+00000100:00080000:0.0:1579382594.146973:0:23456:0:(import.c:1535:ptlrpc_import_recovery_state_machine()) ffff946733bcc800 : changing import state from RECOVER to FULL
+00000100:02000000:0.0:1579382594.146979:0:23456:0:(import.c:1541:ptlrpc_import_recovery_state_machine()) MGS: Connection restored to fefdc782-54b5-199f-d8a0-1c19bf8a5969 (at 10.24.85.117@tcp)
+10000000:01000000:0.0:1579382596.755651:0:23464:0:(mgc_request.c:90:mgc_name2resid()) log lustre to resid 0x65727473756c/0x2 (lustre)
+20000000:01000000:0.0:1579382596.755684:0:23456:0:(mgs_nids.c:393:mgs_nidtbl_init_fs()) IR: current version is 6
+20000000:01000000:0.0:1579382596.755769:0:23465:0:(mgs_llog.c:222:mgs_fsdb_handler()) OST index for lustre-OST0001_UUID is 1 (1)
+20000000:01000000:0.0:1579382596.755775:0:23465:0:(mgs_llog.c:238:mgs_fsdb_handler()) MDT index is 0
+20000000:01000000:0.0:1579382596.755780:0:23465:0:(mgs_llog.c:222:mgs_fsdb_handler()) OST index for lustre-OST0000_UUID is 0 (0)
+20000000:01000000:0.0:1579382596.755783:0:23465:0:(mgs_llog.c:222:mgs_fsdb_handler()) OST index for lustre-OST0002_UUID is 2 (2)
+20000000:01000000:0.0:1579382596.755846:0:23456:0:(mgs_llog.c:560:mgs_find_or_make_fsdb_nolock()) Created new db: rc = 0
+20000000:01000000:0.0:1579382596.762985:0:23456:0:(mgs_nids.c:633:mgs_get_ir_logs()) Reading IR log lustre-mdtir bufsize 16384.
+20000000:01000000:0.0:1579382596.762991:0:23456:0:(mgs_nids.c:204:mgs_nidtbl_read()) Read IR logs lustre return with 0, version 6
+00000040:00080000:0.0:1579382596.779210:0:23456:0:(llog_osd.c:231:llog_osd_read_header()) not reading header from 0-byte log
+20000000:01000000:0.0:1579382600.449230:0:23456:0:(mgs_nids.c:633:mgs_get_ir_logs()) Reading IR log lustre-cliir bufsize 16384.
+20000000:01000000:0.0:1579382600.449238:0:23456:0:(mgs_nids.c:204:mgs_nidtbl_read()) Read IR logs lustre return with 0, version 6
+00000040:00080000:0.0:1579382600.457119:0:23456:0:(llog_osd.c:231:llog_osd_read_header()) not reading header from 0-byte log
+00010000:00080000:0.0:1579382611.432049:0:23456:0:(ldlm_lib.c:1231:target_handle_connect()) MGS: connection from 9fd93fbe-d7ce-08a9-3908-3ad59acbbb13@10.29.162.26@tcp t0 exp           (null) cur 1579382611 last 0
+00000020:00000080:0.0:1579382611.432079:0:23456:0:(genops.c:1379:class_connect()) connect: client 9fd93fbe-d7ce-08a9-3908-3ad59acbbb13, cookie 0x67d4ed8ee00aa95f
+00000020:01000000:0.0:1579382611.432086:0:23456:0:(lprocfs_status_server.c:342:lprocfs_exp_setup()) using hash ffff94673646a180
+00000100:00080000:0.0:1579382611.432128:0:23456:0:(import.c:105:ptlrpc_import_enter_resend()) ffff9466df3bd800 : changing import state from NEW to RECOVER
+00000100:00080000:0.0:1579382611.432137:0:23456:0:(import.c:1535:ptlrpc_import_recovery_state_machine()) ffff9466df3bd800 : changing import state from RECOVER to FULL
+00000100:02000000:0.0:1579382611.432143:0:23456:0:(import.c:1541:ptlrpc_import_recovery_state_machine()) MGS: Connection restored to 9fd93fbe-d7ce-08a9-3908-3ad59acbbb13 (at 10.29.162.26@tcp)
+00010000:00080000:0.0:1579382611.561624:0:23456:0:(ldlm_lib.c:1231:target_handle_connect()) MGS: connection from 42d5d391-5101-0cda-02b0-e3ab7fbc0520@10.24.85.194@tcp t0 exp           (null) cur 1579382611 last 0
+00000020:00000080:0.0:1579382611.561655:0:23456:0:(genops.c:1379:class_connect()) connect: client 42d5d391-5101-0cda-02b0-e3ab7fbc0520, cookie 0x67d4ed8ee00aa96d
+00000020:01000000:0.0:1579382611.561662:0:23456:0:(lprocfs_status_server.c:342:lprocfs_exp_setup()) using hash ffff94673646a180
+00000100:00080000:0.0:1579382611.561705:0:23456:0:(import.c:105:ptlrpc_import_enter_resend()) ffff946733bce800 : changing import state from NEW to RECOVER
+00000100:00080000:0.0:1579382611.561714:0:23456:0:(import.c:1535:ptlrpc_import_recovery_state_machine()) ffff946733bce800 : changing import state from RECOVER to FULL
+00000100:02000000:0.0:1579382611.561720:0:23456:0:(import.c:1541:ptlrpc_import_recovery_state_machine()) MGS: Connection restored to 42d5d391-5101-0cda-02b0-e3ab7fbc0520 (at 10.24.85.194@tcp)
+00010000:00080000:0.0:1579382612.603599:0:23456:0:(ldlm_lib.c:1231:target_handle_connect()) MGS: connection from 95020deb-bd90-0068-9670-83f9e8e68a09@10.29.160.166@tcp t0 exp           (null) cur 1579382612 last 0
+00000020:00000080:0.0:1579382612.603628:0:23456:0:(genops.c:1379:class_connect()) connect: client 95020deb-bd90-0068-9670-83f9e8e68a09, cookie 0x67d4ed8ee00aa97b
+00000020:01000000:0.0:1579382612.603635:0:23456:0:(lprocfs_status_server.c:342:lprocfs_exp_setup()) using hash ffff94673646a180
+00000100:00080000:0.0:1579382612.603678:0:23456:0:(import.c:105:ptlrpc_import_enter_resend()) ffff9466f59e5800 : changing import state from NEW to RECOVER
+00000100:00080000:0.0:1579382612.603686:0:23456:0:(import.c:1535:ptlrpc_import_recovery_state_machine()) ffff9466f59e5800 : changing import state from RECOVER to FULL
+00000100:02000000:0.0:1579382612.603692:0:23456:0:(import.c:1541:ptlrpc_import_recovery_state_machine()) MGS: Connection restored to 95020deb-bd90-0068-9670-83f9e8e68a09 (at 10.29.160.166@tcp)
+00000040:00080000:0.0:1579382617.912283:0:23456:0:(llog_osd.c:231:llog_osd_read_header()) not reading header from 0-byte log
+00000040:00080000:0.0:1579382618.482343:0:23456:0:(llog_osd.c:231:llog_osd_read_header()) not reading header from 0-byte log
+00000040:00080000:0.0:1579382622.392084:0:23456:0:(llog_osd.c:231:llog_osd_read_header()) not reading header from 0-byte log

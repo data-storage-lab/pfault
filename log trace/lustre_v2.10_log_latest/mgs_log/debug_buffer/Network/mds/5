@@ -1,0 +1,12 @@
+00000800:00000100:0.0F:1574194851.831197:0:2477:0:(socklnd_cb.c:2282:ksocknal_find_timed_out_conn()) A connection with 12345-10.24.85.134@tcp (10.24.85.134:1022) timed out; the network or node may be down.
+00000100:00080000:0.0:1574194945.937233:0:2503:0:(service.c:1104:ptlrpc_update_export_timer()) MGS: Think about evicting 10.24.85.134@tcp from 1574194794
+00000100:00080000:0.0:1574195030.453604:0:2504:0:(pinger.c:632:ping_evictor_main()) evicting all exports of obd MGS older than 1574194880
+00000100:02000400:0.0:1574195030.453614:0:2504:0:(pinger.c:658:ping_evictor_main()) MGS: haven't heard from client 211a631d-5c8e-2a8b-bf41-14dd735dbc1d (at 10.24.85.134@tcp) in 236 seconds. I think it's dead, and I am evicting it. exp ffff992ff64de800, cur 1574195030 expire 1574194880 last 1574194794
+00000100:00080000:0.0:1574195030.453633:0:2504:0:(pinger.c:660:ping_evictor_main()) Last request was at 1574194794
+00000020:00080000:0.0:1574195030.453636:0:2504:0:(genops.c:1625:class_fail_export()) disconnecting export ffff992ff64de800/211a631d-5c8e-2a8b-bf41-14dd735dbc1d
+00000020:00000080:0.0:1574195030.453646:0:2504:0:(genops.c:1463:class_disconnect()) disconnect: cookie 0x2a371519dfb01d95
+00000100:00080000:0.0:1574195030.453651:0:2504:0:(import.c:1650:ptlrpc_cleanup_imp()) ffff99303a8d3800 : changing import state from FULL to CLOSED
+00000020:00080000:0.0:1574195030.453659:0:2504:0:(genops.c:1642:class_fail_export()) disconnected export ffff992ff64de800/211a631d-5c8e-2a8b-bf41-14dd735dbc1d
+00000020:00000080:0.0:1574195030.453729:0:2497:0:(genops.c:987:class_export_put()) final put ffff992ff64de800/211a631d-5c8e-2a8b-bf41-14dd735dbc1d
+00000020:00000080:0.0:1574195030.453738:0:2464:0:(genops.c:937:class_export_destroy()) destroying export ffff992ff64de800/211a631d-5c8e-2a8b-bf41-14dd735dbc1d for MGS
+00000020:00000080:0.0:1574195030.453754:0:2464:0:(genops.c:1177:class_import_destroy()) destroying import ffff99303a8d3800 for MGS

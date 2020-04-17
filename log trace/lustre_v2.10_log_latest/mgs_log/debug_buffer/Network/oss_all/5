@@ -1,0 +1,32 @@
+00000800:00000100:0.0F:1574200173.830311:0:2477:0:(socklnd_cb.c:2282:ksocknal_find_timed_out_conn()) A connection with 12345-10.29.163.83@tcp (10.29.163.83:1022) timed out; the network or node may be down.
+00000800:00000100:0.0:1574200183.825888:0:2477:0:(socklnd_cb.c:2282:ksocknal_find_timed_out_conn()) A connection with 12345-10.29.160.122@tcp (10.29.160.122:1023) timed out; the network or node may be down.
+00000800:00000100:0.0:1574200194.826502:0:2477:0:(socklnd_cb.c:2282:ksocknal_find_timed_out_conn()) A connection with 12345-10.29.161.60@tcp (10.29.161.60:1023) timed out; the network or node may be down.
+00000100:00080000:0.0:1574200281.841124:0:2503:0:(service.c:1104:ptlrpc_update_export_timer()) MGS: Think about evicting 10.29.160.122@tcp from 1574200125
+00000100:00080000:0.0:1574200360.570568:0:2504:0:(pinger.c:632:ping_evictor_main()) evicting all exports of obd MGS older than 1574200210
+00000100:02000400:0.0:1574200360.570578:0:2504:0:(pinger.c:658:ping_evictor_main()) MGS: haven't heard from client b868109f-e93f-8c82-fbee-badb94b83d87 (at 10.29.160.122@tcp) in 235 seconds. I think it's dead, and I am evicting it. exp ffff993037e73800, cur 1574200360 expire 1574200210 last 1574200125
+00000100:00080000:0.0:1574200360.570598:0:2504:0:(pinger.c:660:ping_evictor_main()) Last request was at 1574200125
+00000020:00080000:0.0:1574200360.570601:0:2504:0:(genops.c:1625:class_fail_export()) disconnecting export ffff993037e73800/b868109f-e93f-8c82-fbee-badb94b83d87
+00000020:00000080:0.0:1574200360.570612:0:2504:0:(genops.c:1463:class_disconnect()) disconnect: cookie 0x2a371519dfb01cd8
+00000100:00080000:0.0:1574200360.570617:0:2504:0:(import.c:1650:ptlrpc_cleanup_imp()) ffff99300443d000 : changing import state from FULL to CLOSED
+00000020:00080000:0.0:1574200360.570625:0:2504:0:(genops.c:1642:class_fail_export()) disconnected export ffff993037e73800/b868109f-e93f-8c82-fbee-badb94b83d87
+00000100:02000400:0.0:1574200360.570630:0:2504:0:(pinger.c:658:ping_evictor_main()) MGS: haven't heard from client fe50d0c9-0c5a-0c72-9f55-b67a6ef167e6 (at 10.29.163.83@tcp) in 232 seconds. I think it's dead, and I am evicting it. exp ffff992ff9df6000, cur 1574200360 expire 1574200210 last 1574200128
+00000100:00080000:0.0:1574200360.570635:0:2504:0:(pinger.c:660:ping_evictor_main()) Last request was at 1574200128
+00000020:00080000:0.0:1574200360.570637:0:2504:0:(genops.c:1625:class_fail_export()) disconnecting export ffff992ff9df6000/fe50d0c9-0c5a-0c72-9f55-b67a6ef167e6
+00000020:00000080:0.0:1574200360.570641:0:2504:0:(genops.c:1463:class_disconnect()) disconnect: cookie 0x2a371519dfb01d10
+00000100:00080000:0.0:1574200360.570644:0:2504:0:(import.c:1650:ptlrpc_cleanup_imp()) ffff99300443e000 : changing import state from FULL to CLOSED
+00000020:00080000:0.0:1574200360.570649:0:2504:0:(genops.c:1642:class_fail_export()) disconnected export ffff992ff9df6000/fe50d0c9-0c5a-0c72-9f55-b67a6ef167e6
+00000100:02000400:0.0:1574200360.570653:0:2504:0:(pinger.c:658:ping_evictor_main()) MGS: haven't heard from client aca9e26f-1a2c-05f9-96c2-6c9562f8f53b (at 10.29.161.60@tcp) in 227 seconds. I think it's dead, and I am evicting it. exp ffff992ff9cc7400, cur 1574200360 expire 1574200210 last 1574200133
+00000100:00080000:0.0:1574200360.570657:0:2504:0:(pinger.c:660:ping_evictor_main()) Last request was at 1574200133
+00000020:00080000:0.0:1574200360.570659:0:2504:0:(genops.c:1625:class_fail_export()) disconnecting export ffff992ff9cc7400/aca9e26f-1a2c-05f9-96c2-6c9562f8f53b
+00000020:00000080:0.0:1574200360.570663:0:2504:0:(genops.c:1463:class_disconnect()) disconnect: cookie 0x2a371519dfb01ea6
+00000100:00080000:0.0:1574200360.570666:0:2504:0:(import.c:1650:ptlrpc_cleanup_imp()) ffff993037542800 : changing import state from FULL to CLOSED
+00000020:00080000:0.0:1574200360.570668:0:2504:0:(genops.c:1642:class_fail_export()) disconnected export ffff992ff9cc7400/aca9e26f-1a2c-05f9-96c2-6c9562f8f53b
+00000020:00000080:0.0:1574200360.570723:0:2497:0:(genops.c:987:class_export_put()) final put ffff993037e73800/b868109f-e93f-8c82-fbee-badb94b83d87
+00000020:00000080:0.0:1574200360.570760:0:2497:0:(genops.c:987:class_export_put()) final put ffff992ff9df6000/fe50d0c9-0c5a-0c72-9f55-b67a6ef167e6
+00000020:00000080:0.0:1574200360.570795:0:2497:0:(genops.c:987:class_export_put()) final put ffff992ff9cc7400/aca9e26f-1a2c-05f9-96c2-6c9562f8f53b
+00000020:00000080:0.0:1574200360.570806:0:2464:0:(genops.c:937:class_export_destroy()) destroying export ffff992ff9cc7400/aca9e26f-1a2c-05f9-96c2-6c9562f8f53b for MGS
+00000020:00000080:0.0:1574200360.570823:0:2464:0:(genops.c:1177:class_import_destroy()) destroying import ffff993037542800 for MGS
+00000020:00000080:0.0:1574200360.570826:0:2464:0:(genops.c:937:class_export_destroy()) destroying export ffff992ff9df6000/fe50d0c9-0c5a-0c72-9f55-b67a6ef167e6 for MGS
+00000020:00000080:0.0:1574200360.570838:0:2464:0:(genops.c:1177:class_import_destroy()) destroying import ffff99300443e000 for MGS
+00000020:00000080:0.0:1574200360.570840:0:2464:0:(genops.c:937:class_export_destroy()) destroying export ffff993037e73800/b868109f-e93f-8c82-fbee-badb94b83d87 for MGS
+00000020:00000080:0.0:1574200360.570851:0:2464:0:(genops.c:1177:class_import_destroy()) destroying import ffff99300443d000 for MGS

@@ -1,0 +1,8 @@
+00000100:00080000:0.0F:1574199735.547274:0:4835:0:(pinger.c:217:ptlrpc_pinger_process_import()) e06734de-5238-64b2-8ad8-e120574318e5->lustre-OST0002_UUID: level CONNECTING/4 force 0 force_next 0 deactive 0 pingable 1 suppress 1
+00000100:00080000:0.0:1574199735.547289:0:4835:0:(pinger.c:230:ptlrpc_pinger_process_import()) e06734de-5238-64b2-8ad8-e120574318e5->lustre-OST0002_UUID: not pinging (in recovery or recovery disabled: CONNECTING)
+00000400:00000100:0.0:1574199737.874506:0:4826:0:(lib-socket.c:645:lnet_sock_connect()) Error -110 connecting 10.24.86.108/1023 -> 10.29.161.60/988
+00000400:00000100:0.0:1574199737.874518:0:4826:0:(acceptor.c:118:lnet_connect_console_error()) Connection to 10.29.161.60@tcp at host 10.29.161.60 on port 988 took too long: that node may be hung or experiencing high load.
+00000800:00000100:0.0:1574199737.874523:0:4826:0:(socklnd_cb.c:425:ksocknal_txlist_done()) Deleting packet type 1 len 520 10.24.86.108@tcp->10.29.161.60@tcp
+00000100:00000400:0.0:1574199737.874618:0:4832:0:(client.c:2116:ptlrpc_expire_one_request()) @@@ Request sent has failed due to network error: [sent 1574199685/real 1574199737]  req@ffff96005ce34300 x1650385115718528/t0(0) o8->lustre-OST0002-osc-ffff9600bba42800@10.29.161.60@tcp:28/4 lens 520/544 e 0 to 1 dl 1574199740 ref 1 fl Rpc:eXN/0/ffffffff rc 0/-1
+00000100:00080000:0.0:1574199737.874626:0:4832:0:(import.c:1284:ptlrpc_connect_interpret()) ffff9600b9577800 lustre-OST0002_UUID: changing import state from CONNECTING to DISCONN
+00000100:00080000:0.0:1574199737.874627:0:4832:0:(import.c:1330:ptlrpc_connect_interpret()) recovery of lustre-OST0002_UUID on 10.29.161.60@tcp failed (-110)

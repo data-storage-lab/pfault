@@ -1,0 +1,36 @@
+00000100:00080000:0.0F:1574202114.374132:0:2274:0:(pinger.c:217:ptlrpc_pinger_process_import()) lustre-MDT0000-lwp-OST0000_UUID->lustre-MDT0000_UUID: level CONNECTING/4 force 0 force_next 0 deactive 0 pingable 1 suppress 0
+00000100:00080000:0.0:1574202114.374146:0:2274:0:(pinger.c:230:ptlrpc_pinger_process_import()) lustre-MDT0000-lwp-OST0000_UUID->lustre-MDT0000_UUID: not pinging (in recovery or recovery disabled: CONNECTING)
+00000100:00080000:0.0:1574202139.373438:0:2274:0:(pinger.c:217:ptlrpc_pinger_process_import()) lustre-MDT0000-lwp-OST0000_UUID->lustre-MDT0000_UUID: level CONNECTING/4 force 0 force_next 0 deactive 0 pingable 1 suppress 0
+00000100:00080000:0.0:1574202139.373447:0:2274:0:(pinger.c:230:ptlrpc_pinger_process_import()) lustre-MDT0000-lwp-OST0000_UUID->lustre-MDT0000_UUID: not pinging (in recovery or recovery disabled: CONNECTING)
+00000100:00000400:0.0:1574202140.386371:0:2271:0:(client.c:2116:ptlrpc_expire_one_request()) @@@ Request sent has timed out for sent delay: [sent 1574202089/real 0]  req@ffff98df7b9ba300 x1650398270430992/t0(0) o38->lustre-MDT0000-lwp-OST0000@10.24.85.134@tcp:12/10 lens 520/544 e 0 to 1 dl 1574202140 ref 2 fl Rpc:XN/0/ffffffff rc 0/-1
+00000800:00000100:0.0:1574202140.821712:0:2267:0:(socklnd_cb.c:425:ksocknal_txlist_done()) Deleting packet type 1 len 520 10.29.160.122@tcp->10.24.85.134@tcp
+00000100:00080000:0.0:1574202140.821749:0:2271:0:(import.c:1284:ptlrpc_connect_interpret()) ffff98df4d347000 lustre-MDT0000_UUID: changing import state from CONNECTING to DISCONN
+00000100:00080000:0.0:1574202140.821755:0:2271:0:(import.c:1330:ptlrpc_connect_interpret()) recovery of lustre-MDT0000_UUID on 10.24.85.134@tcp failed (-110)
+00000400:00000100:0.0:1574202141.603907:0:2264:0:(lib-socket.c:645:lnet_sock_connect()) Error -110 connecting 10.29.160.122/1023 -> 10.24.85.134/988
+00000400:00000100:0.0:1574202141.603939:0:2264:0:(acceptor.c:118:lnet_connect_console_error()) Connection to 10.24.85.134@tcp at host 10.24.85.134 on port 988 took too long: that node may be hung or experiencing high load.
+00000100:00080000:0.0:1574202164.374777:0:2274:0:(pinger.c:217:ptlrpc_pinger_process_import()) lustre-MDT0000-lwp-OST0000_UUID->lustre-MDT0000_UUID: level DISCONN/3 force 0 force_next 0 deactive 0 pingable 1 suppress 0
+00000100:00080000:0.0:1574202164.374781:0:2274:0:(recover.c:58:ptlrpc_initiate_recovery()) lustre-MDT0000_UUID: starting recovery
+00000100:00080000:0.0:1574202164.374782:0:2274:0:(import.c:681:ptlrpc_connect_import()) ffff98df4d347000 lustre-MDT0000_UUID: changing import state from DISCONN to CONNECTING
+00000100:00080000:0.0:1574202164.374784:0:2274:0:(import.c:524:import_select_connection()) lustre-MDT0000-lwp-OST0000: connect to NID 10.24.85.134@tcp last attempt 4554508665
+00000100:00080000:0.0:1574202164.374786:0:2274:0:(import.c:568:import_select_connection()) lustre-MDT0000-lwp-OST0000: tried all connections, increasing latency to 50s
+00000100:00080000:0.0:1574202164.374788:0:2274:0:(import.c:602:import_select_connection()) lustre-MDT0000-lwp-OST0000: import ffff98df4d347000 using connection 10.24.85.134@tcp/10.24.85.134@tcp
+00000100:00080000:0.0:1574202164.419425:0:2271:0:(import.c:1035:ptlrpc_connect_interpret()) lustre-MDT0000-lwp-OST0000: connect to target with instance 4
+00000100:00080000:0.0:1574202164.419429:0:2271:0:(import.c:1206:ptlrpc_connect_interpret()) reconnected to lustre-MDT0000_UUID@10.24.85.134@tcp after partition
+00000100:00080000:0.0:1574202164.419430:0:2271:0:(import.c:1224:ptlrpc_connect_interpret()) ffff98df4d347000 lustre-MDT0000_UUID: changing import state from CONNECTING to RECOVER
+00000100:00080000:0.0:1574202164.419432:0:2271:0:(import.c:1535:ptlrpc_import_recovery_state_machine()) ffff98df4d347000 lustre-MDT0000_UUID: changing import state from RECOVER to FULL
+00000100:02000000:0.0:1574202164.419434:0:2271:0:(import.c:1541:ptlrpc_import_recovery_state_machine()) lustre-MDT0000-lwp-OST0000: Connection restored to 10.24.85.134@tcp (at 10.24.85.134@tcp)
+00010000:00080000:0.0:1574202187.728409:0:2364:0:(ldlm_lib.c:1231:target_handle_connect()) lustre-OST0000: connection from lustre-MDT0000-mdtlov_UUID@10.24.85.134@tcp t0 exp           (null) cur 1574202187 last 0
+00000020:00000080:0.0:1574202187.728440:0:2364:0:(genops.c:1379:class_connect()) connect: client lustre-MDT0000-mdtlov_UUID, cookie 0x10a0b56b85f004a3
+00002000:00080000:0.0:1574202187.728453:0:2364:0:(ofd_obd.c:180:ofd_parse_connect_data()) lustre-OST0000: Received MDS connection for group 0
+00000020:01000000:0.0:1574202187.728497:0:2364:0:(lprocfs_status_server.c:342:lprocfs_exp_setup()) using hash ffff98df4d2c23c0
+00002000:00080000:0.0:1574202187.728503:0:2364:0:(ofd_obd.c:397:ofd_obd_connect()) lustre-OST0000: get connection from MDS 0
+00000100:00080000:0.0:1574202187.728516:0:2364:0:(import.c:105:ptlrpc_import_enter_resend()) ffff98df43cfd000 X³Ûvß˜ÿÿX³Ûvß˜ÿÿ: changing import state from NEW to RECOVER
+00000100:00080000:0.0:1574202187.728523:0:2364:0:(import.c:1535:ptlrpc_import_recovery_state_machine()) ffff98df43cfd000 X³Ûvß˜ÿÿX³Ûvß˜ÿÿ: changing import state from RECOVER to FULL
+00000100:02000000:0.0:1574202187.728529:0:2364:0:(import.c:1541:ptlrpc_import_recovery_state_machine()) lustre-OST0000: Connection restored to lustre-MDT0000-mdtlov_UUID (at 10.24.85.134@tcp)
+00002000:00080000:0.0:1574202187.734204:0:2364:0:(ofd_dev.c:1635:ofd_create_hdl()) ofd_last_id() = 1953 -> diff = -40
+00002000:02000040:0.0:1574202187.734210:0:2364:0:(ofd_dev.c:1495:ofd_orphans_destroy()) lustre-OST0000: deleting orphan objects from 0x0:1914 to 0x0:1953
+00002000:00080000:0.0:1574202187.736273:0:2364:0:(ofd_dev.c:1522:ofd_orphans_destroy()) lustre-OST0000: after destroy: set last_id to 0x0:1913
+00002000:00080000:0.0:1574202187.738715:0:2364:0:(ofd_dev.c:1752:ofd_create_hdl()) lustre-OST0000: reserve 8 objects in group 0x0 at 1954
+00002000:00080000:0.0:1574202187.739019:0:2364:0:(ofd_dev.c:1752:ofd_create_hdl()) lustre-OST0000: reserve 8 objects in group 0x0 at 1962
+00002000:00080000:0.0:1574202187.739294:0:2364:0:(ofd_dev.c:1752:ofd_create_hdl()) lustre-OST0000: reserve 8 objects in group 0x0 at 1970
+00002000:00080000:0.0:1574202187.739501:0:2364:0:(ofd_dev.c:1752:ofd_create_hdl()) lustre-OST0000: reserve 8 objects in group 0x0 at 1978

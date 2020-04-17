@@ -1,0 +1,67 @@
+00000100:00000400:0.0F:1579384601.610545:0:3730:0:(client.c:2116:ptlrpc_expire_one_request()) @@@ Request sent has timed out for slow reply: [sent 1579384594/real 1579384594]  req@ffff9232d552a000 x1656006775029456/t0(0) o400->MGC10.24.84.84@tcp@10.24.84.84@tcp:26/25 lens 224/224 e 0 to 1 dl 1579384601 ref 1 fl Rpc:XN/0/ffffffff rc 0/-1
+00000100:02020000:0.0:1579384601.610600:0:3730:0:(import.c:186:ptlrpc_set_import_discon()) 166-1: MGC10.24.84.84@tcp: Connection to MGS (at 10.24.84.84@tcp) was lost; in progress operations using this service will fail
+00000100:00080000:0.0:1579384601.610613:0:3730:0:(import.c:188:ptlrpc_set_import_discon()) ffff9232d1422000 MGS: changing import state from FULL to DISCONN
+10000000:01000000:0.0:1579384601.610619:0:3730:0:(mgc_request.c:1367:mgc_import_event()) import event 0x808001
+00000100:00080000:0.0:1579384601.610622:0:3730:0:(pinger.c:178:ptlrpc_pinger_ir_down()) IR down
+00000100:00080000:0.0:1579384601.610624:0:3730:0:(import.c:441:ptlrpc_fail_import()) import MGS@MGC10.24.84.84@tcp_0 for MGC10.24.84.84@tcp not replayable, auto-deactivating
+00000100:00080000:0.0:1579384601.610627:0:3730:0:(import.c:215:ptlrpc_deactivate_and_unlock_import()) setting import MGS INVALID
+10000000:01000000:0.0:1579384601.610630:0:3730:0:(mgc_request.c:1367:mgc_import_event()) import event 0x808002
+00000100:00080000:0.0:1579384601.610631:0:3730:0:(import.c:418:ptlrpc_pinger_force()) MGS: waking up pinger s:DISCONN
+00000100:00080000:0.0:1579384601.610664:0:3731:0:(pinger.c:217:ptlrpc_pinger_process_import()) 95020deb-bd90-0068-9670-83f9e8e68a09->MGS: level DISCONN/3 force 1 force_next 0 deactive 0 pingable 1 suppress 0
+00000100:00080000:0.0:1579384601.610670:0:3731:0:(recover.c:58:ptlrpc_initiate_recovery()) MGS: starting recovery
+00000100:00080000:0.0:1579384601.610673:0:3731:0:(import.c:681:ptlrpc_connect_import()) ffff9232d1422000 MGS: changing import state from DISCONN to CONNECTING
+00000100:00080000:0.0:1579384601.610678:0:3731:0:(import.c:524:import_select_connection()) MGC10.24.84.84@tcp: connect to NID 10.24.84.84@tcp last attempt 4390104241
+00000100:00080000:0.0:1579384601.610686:0:3731:0:(import.c:602:import_select_connection()) MGC10.24.84.84@tcp: import ffff9232d1422000 using connection MGC10.24.84.84@tcp_0/10.24.84.84@tcp
+00000100:00000400:0.0:1579384607.610901:0:3728:0:(client.c:2116:ptlrpc_expire_one_request()) @@@ Request sent has timed out for slow reply: [sent 1579384601/real 1579384601]  req@ffff9232d552a000 x1656006775029488/t0(0) o250->MGC10.24.84.84@tcp@10.24.84.84@tcp:26/25 lens 520/544 e 0 to 1 dl 1579384607 ref 1 fl Rpc:XN/0/ffffffff rc 0/-1
+00000100:00080000:0.0:1579384607.610940:0:3728:0:(import.c:1284:ptlrpc_connect_interpret()) ffff9232d1422000 MGS: changing import state from CONNECTING to DISCONN
+00000100:00080000:0.0:1579384607.610945:0:3728:0:(import.c:1330:ptlrpc_connect_interpret()) recovery of MGS on MGC10.24.84.84@tcp_0 failed (-110)
+00000800:00000100:0.0:1579384619.459298:0:3724:0:(socklnd_cb.c:2282:ksocknal_find_timed_out_conn()) A connection with 12345-10.24.84.84@tcp (10.24.84.84:988) timed out; the network or node may be down.
+00000100:00080000:0.0:1579384626.610315:0:3731:0:(pinger.c:217:ptlrpc_pinger_process_import()) 95020deb-bd90-0068-9670-83f9e8e68a09->MGS: level DISCONN/3 force 0 force_next 0 deactive 0 pingable 1 suppress 0
+00000100:00080000:0.0:1579384626.610325:0:3731:0:(recover.c:58:ptlrpc_initiate_recovery()) MGS: starting recovery
+00000100:00080000:0.0:1579384626.610327:0:3731:0:(import.c:681:ptlrpc_connect_import()) ffff9232d1422000 MGS: changing import state from DISCONN to CONNECTING
+00000100:00080000:0.0:1579384626.610337:0:3731:0:(import.c:524:import_select_connection()) MGC10.24.84.84@tcp: connect to NID 10.24.84.84@tcp last attempt 4390636243
+00000100:00080000:0.0:1579384626.610340:0:3731:0:(import.c:568:import_select_connection()) MGC10.24.84.84@tcp: tried all connections, increasing latency to 6s
+00000100:00080000:0.0:1579384626.610349:0:3731:0:(import.c:602:import_select_connection()) MGC10.24.84.84@tcp: import ffff9232d1422000 using connection MGC10.24.84.84@tcp_0/10.24.84.84@tcp
+00100000:10000000:0.0:1579384629.482980:0:3942:0:(lfsck_layout.c:4964:lfsck_layout_reset()) lustre-OST0000-osd: layout LFSCK reset: rc = 0
+00100000:10000000:0.0:1579384629.483096:0:20891:0:(osd_scrub.c:669:osd_scrub_prep()) sdb: OI scrub prep, flags = 0x46
+00100000:10000000:0.0:1579384629.483102:0:20891:0:(osd_scrub.c:279:osd_scrub_file_reset()) sdb: reset OI scrub file, old flags = 0x0, add flags = 0x0
+00100000:10000000:0.0:1579384629.483116:0:20890:0:(lfsck_layout.c:5156:lfsck_layout_slave_prep()) lustre-OST0000-osd: layout LFSCK slave prep done, start pos [1]
+00100000:10000000:0.0:1579384629.483122:0:20891:0:(osd_scrub.c:1541:osd_scrub_main()) sdb: OI scrub start, flags = 0x46, pos = 12
+00100000:10000000:0.0:1579384629.484344:0:20890:0:(lfsck_layout.c:5047:lfsck_layout_slave_checkpoint()) lustre-OST0000-osd: layout LFSCK slave checkpoint at the pos [12], status = 1: rc = 0
+00100000:10000000:0.0:1579384629.484350:0:20890:0:(lfsck_engine.c:1060:lfsck_master_engine()) LFSCK entry: oit_flags = 0x60003, dir_flags = 0x8006, oit_cookie = 12, dir_cookie = 0x0, parent = [0x0:0x0:0x0], pid = 20890
+00100000:10000000:0.0:1579384629.485206:0:20891:0:(osd_scrub.c:767:osd_scrub_post()) sdb: OI scrub post, result = 1
+00100000:10000000:0.0:1579384629.485216:0:20891:0:(osd_scrub.c:1551:osd_scrub_main()) sdb: OI scrub: stop, pos = 128001: rc = 1
+00100000:10000000:0.0:1579384629.485365:0:20890:0:(lfsck_engine.c:1092:lfsck_master_engine()) LFSCK exit: oit_flags = 0x60003, dir_flags = 0x8006, oit_cookie = 64038, dir_cookie = 0x0, parent = [0x0:0x0:0x0], pid = 20890, rc = 1
+00100000:10000000:0.0:1579384629.485384:0:20890:0:(lfsck_layout.c:4657:lfsck_layout_slave_notify_master()) lustre-OST0000-osd: layout LFSCK slave notifies master
+00000020:01000004:0.0:1579384629.485391:0:20890:0:(obd_mount_server.c:170:server_get_mount()) get mount ffff9232f3dbb000 from lustre-OST0000, refs=3
+00000020:01000004:0.0:1579384629.485400:0:20890:0:(obd_mount_server.c:204:server_put_mount()) put mount ffff9232f3dbb000 from lustre-OST0000, refs=3
+00000020:01000004:0.0:1579384629.485403:0:20890:0:(obd_mount.c:662:lustre_put_lsi()) put ffff9232f3dbb000 3
+00100000:10000000:0.0:1579384629.486892:0:20890:0:(lfsck_layout.c:5819:lfsck_layout_slave_post()) lustre-OST0000-osd: layout LFSCK slave post done: rc = 0
+00100000:10000000:0.0:1579384629.486900:0:20890:0:(lfsck_layout.c:6043:lfsck_layout_slave_double_scan()) lustre-OST0000-osd: layout LFSCK slave phase2 scan start
+00000020:01000004:0.0:1579384629.486906:0:20890:0:(obd_mount_server.c:170:server_get_mount()) get mount ffff9232f3dbb000 from lustre-OST0000, refs=3
+00000020:01000004:0.0:1579384629.486912:0:20890:0:(obd_mount_server.c:204:server_put_mount()) put mount ffff9232f3dbb000 from lustre-OST0000, refs=3
+00000020:01000004:0.0:1579384629.486915:0:20890:0:(obd_mount.c:662:lustre_put_lsi()) put ffff9232f3dbb000 3
+00100000:10000000:0.0:1579384629.493272:0:20890:0:(lfsck_layout.c:4636:lfsck_layout_slave_query_master()) lustre-OST0000-osd: layout LFSCK slave queries master: rc = 0
+00100000:10000000:0.0:1579384629.564893:0:3942:0:(lfsck_layout.c:6446:lfsck_layout_slave_in_notify()) lustre-OST0000-osd: layout LFSCK slave handle notify 4 from MDT 0, status 1
+00100000:10000000:0.0:1579384629.564912:0:20890:0:(lfsck_layout.c:1445:lfsck_layout_double_scan_result()) lustre-OST0000-osd: layout LFSCK double scan: rc = 1
+00100000:10000000:0.0:1579384629.564924:0:20890:0:(lfsck_layout.c:1486:lfsck_layout_double_scan_result()) lustre-OST0000-osd: layout LFSCK double scan result 3: rc = 0
+00100000:10000000:0.0:1579384629.564925:0:20890:0:(lfsck_layout.c:4657:lfsck_layout_slave_notify_master()) lustre-OST0000-osd: layout LFSCK slave notifies master
+00100000:10000000:0.0:1579384629.564928:0:20890:0:(lfsck_layout.c:680:lfsck_rbtree_cleanup()) lustre-OST0000-osd: layout LFSCK fini OST-objects accessing bitmap
+00100000:10000000:0.0:1579384629.564928:0:20890:0:(lfsck_layout.c:6100:lfsck_layout_slave_double_scan()) lustre-OST0000-osd: layout LFSCK slave phase2 scan finished, status 3: rc = 0
+00000100:00000400:0.0:1579384637.610299:0:3728:0:(client.c:2116:ptlrpc_expire_one_request()) @@@ Request sent has timed out for sent delay: [sent 1579384626/real 0]  req@ffff9232d552a000 x1656006775029504/t0(0) o250->MGC10.24.84.84@tcp@10.24.84.84@tcp:26/25 lens 520/544 e 0 to 1 dl 1579384637 ref 2 fl Rpc:XN/0/ffffffff rc 0/-1
+00000100:00080000:0.0:1579384651.610386:0:3731:0:(pinger.c:217:ptlrpc_pinger_process_import()) 95020deb-bd90-0068-9670-83f9e8e68a09->MGS: level CONNECTING/4 force 0 force_next 0 deactive 0 pingable 1 suppress 0
+00000100:00080000:0.0:1579384651.610400:0:3731:0:(pinger.c:230:ptlrpc_pinger_process_import()) 95020deb-bd90-0068-9670-83f9e8e68a09->MGS: not pinging (in recovery or recovery disabled: CONNECTING)
+00000100:00080000:0.0:1579384676.610385:0:3731:0:(pinger.c:217:ptlrpc_pinger_process_import()) 95020deb-bd90-0068-9670-83f9e8e68a09->MGS: level CONNECTING/4 force 0 force_next 0 deactive 0 pingable 1 suppress 0
+00000100:00080000:0.0:1579384676.610395:0:3731:0:(pinger.c:230:ptlrpc_pinger_process_import()) 95020deb-bd90-0068-9670-83f9e8e68a09->MGS: not pinging (in recovery or recovery disabled: CONNECTING)
+00000800:00000100:0.0:1579384682.470262:0:3724:0:(socklnd_cb.c:425:ksocknal_txlist_done()) Deleting packet type 1 len 520 10.29.160.166@tcp->10.24.84.84@tcp
+00000100:00080000:0.0:1579384682.470278:0:3728:0:(import.c:1284:ptlrpc_connect_interpret()) ffff9232d1422000 MGS: changing import state from CONNECTING to DISCONN
+00000100:00080000:0.0:1579384682.470280:0:3728:0:(import.c:1330:ptlrpc_connect_interpret()) recovery of MGS on MGC10.24.84.84@tcp_0 failed (-110)
+00000100:00080000:0.0:1579384701.610333:0:3731:0:(pinger.c:217:ptlrpc_pinger_process_import()) 95020deb-bd90-0068-9670-83f9e8e68a09->MGS: level DISCONN/3 force 0 force_next 0 deactive 0 pingable 1 suppress 0
+00000100:00080000:0.0:1579384701.610344:0:3731:0:(recover.c:58:ptlrpc_initiate_recovery()) MGS: starting recovery
+00000100:00080000:0.0:1579384701.610347:0:3731:0:(import.c:681:ptlrpc_connect_import()) ffff9232d1422000 MGS: changing import state from DISCONN to CONNECTING
+00000100:00080000:0.0:1579384701.610356:0:3731:0:(import.c:524:import_select_connection()) MGC10.24.84.84@tcp: connect to NID 10.24.84.84@tcp last attempt 4390661243
+00000100:00080000:0.0:1579384701.610360:0:3731:0:(import.c:568:import_select_connection()) MGC10.24.84.84@tcp: tried all connections, increasing latency to 11s
+00000100:00080000:0.0:1579384701.610368:0:3731:0:(import.c:602:import_select_connection()) MGC10.24.84.84@tcp: import ffff9232d1422000 using connection MGC10.24.84.84@tcp_0/10.24.84.84@tcp
+00000100:00000400:0.0:1579384717.610330:0:3728:0:(client.c:2116:ptlrpc_expire_one_request()) @@@ Request sent has timed out for sent delay: [sent 1579384701/real 0]  req@ffff9232d552a000 x1656006775029584/t0(0) o250->MGC10.24.84.84@tcp@10.24.84.84@tcp:26/25 lens 520/544 e 0 to 1 dl 1579384717 ref 2 fl Rpc:XN/0/ffffffff rc 0/-1
+00000100:00080000:0.0:1579384726.610321:0:3731:0:(pinger.c:217:ptlrpc_pinger_process_import()) 95020deb-bd90-0068-9670-83f9e8e68a09->MGS: level CONNECTING/4 force 0 force_next 0 deactive 0 pingable 1 suppress 0
+00000100:00080000:0.0:1579384726.610331:0:3731:0:(pinger.c:230:ptlrpc_pinger_process_import()) 95020deb-bd90-0068-9670-83f9e8e68a09->MGS: not pinging (in recovery or recovery disabled: CONNECTING)

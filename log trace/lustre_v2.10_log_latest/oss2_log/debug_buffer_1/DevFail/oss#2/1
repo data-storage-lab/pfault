@@ -1,0 +1,540 @@
+00000020:01000004:0.0F:1579551795.993262:0:19796:0:(obd_mount_server.c:1546:server_put_super()) server put_super lustre-OST0002
+10000000:01000000:0.0:1579551795.993276:0:19796:0:(mgc_request.c:537:config_log_end()) end config log lustre-client (0)
+00000100:00080000:0.0:1579551795.993285:0:19796:0:(import.c:215:ptlrpc_deactivate_and_unlock_import()) setting import lustre-MDT0000_UUID INVALID
+00000100:00080000:0.0:1579551795.993290:0:19796:0:(pinger.c:434:ptlrpc_pinger_del_import()) removing pingable import lustre-MDT0000-lwp-OST0002_UUID->lustre-MDT0000_UUID
+00000100:00080000:0.0:1579551795.993305:0:19796:0:(import.c:1622:ptlrpc_disconnect_import()) ffff9aa0b5c67000 lustre-MDT0000_UUID: changing import state from FULL to CONNECTING
+00000100:00080000:0.0:1579551796.021199:0:19796:0:(import.c:1635:ptlrpc_disconnect_import()) ffff9aa0b5c67000 lustre-MDT0000_UUID: changing import state from CONNECTING to CLOSED
+00000100:00080000:0.0:1579551796.021202:0:19796:0:(import.c:215:ptlrpc_deactivate_and_unlock_import()) setting import lustre-MDT0000_UUID INVALID
+10000000:01000000:0.0:1579551796.023533:0:19796:0:(mgc_request.c:537:config_log_end()) end config log lustre-OST0002 (0)
+00000020:01000004:0.0:1579551796.023536:0:19796:0:(obd_mount_server.c:1584:server_put_super()) stopping lustre-OST0002
+00000020:01000000:0.0:1579551796.023537:0:19796:0:(obd_config.c:1996:class_manual_cleanup()) Manual cleanup of lustre-OST0002 (flags='FA')
+00000020:00000080:0.0:1579551796.023539:0:19796:0:(obd_config.c:1115:class_process_config()) processing cmd: cf004
+00000020:02000400:0.0:1579551796.023541:0:19796:0:(obd_config.c:639:class_cleanup()) Failing over lustre-OST0002
+00002000:00000080:0.0:1579551796.023548:0:19796:0:(ofd_obd.c:1238:ofd_iocontrol()) handling ioctl cmd 0x40086672
+00000020:00000080:0.0:1579551796.023564:0:19796:0:(obd_config.c:658:class_cleanup()) lustre-OST0002: forcing exports to disconnect: 2/4
+00000020:00080000:0.0:1579551796.023567:0:19796:0:(genops.c:1774:print_export_data()) lustre-OST0002: ACTIVE ffff9aa0be744400 lustre-MDT0000-mdtlov_UUID 10.29.161.11@tcp 4 (0 0 0) 0 0 0 0:           (null)  0 stale:0
+00000020:00080000:0.0:1579551796.023572:0:19796:0:(genops.c:1774:print_export_data()) lustre-OST0002: ACTIVE ffff9aa0f9e76400 2fb222c3-e064-c835-3428-a0df9365dd56 10.24.85.117@tcp 4 (0 0 0) 0 0 0 0:           (null)  4294967540 stale:0
+00000020:00080000:0.0:1579551796.023575:0:19796:0:(genops.c:1547:class_disconnect_exports()) OBD device 3 (ffff9aa0bb992e68) has exports, disconnecting them
+00000020:00080000:0.0:1579551796.023577:0:19796:0:(genops.c:1522:class_disconnect_export_list()) lustre-OST0002: disconnecting export at 10.29.161.11@tcp (ffff9aa0be744400), last request at 1579551791
+00000020:00000080:0.0:1579551796.023581:0:19796:0:(genops.c:1463:class_disconnect()) disconnect: cookie 0xd995b795b955992e
+00000100:00080000:0.0:1579551796.023584:0:19796:0:(import.c:1650:ptlrpc_cleanup_imp()) ffff9aa09e9b2000 X3™» šÿÿX3™» šÿÿ: changing import state from FULL to CLOSED
+00000020:00080000:0.0:1579551796.023590:0:19796:0:(genops.c:1527:class_disconnect_export_list()) disconnected export at 10.29.161.11@tcp (ffff9aa0be744400): rc 0
+00000020:00000080:0.0:1579551796.023591:0:19796:0:(genops.c:987:class_export_put()) final put ffff9aa0be744400/lustre-MDT0000-mdtlov_UUID
+00000020:00080000:0.0:1579551796.023594:0:19796:0:(genops.c:1522:class_disconnect_export_list()) lustre-OST0002: disconnecting export at 10.24.85.117@tcp (ffff9aa0f9e76400), last request at 1579551781
+00000020:00000080:0.0:1579551796.023595:0:19796:0:(genops.c:1463:class_disconnect()) disconnect: cookie 0xd995b795b9559346
+00000100:00080000:0.0:1579551796.023597:0:19796:0:(import.c:1650:ptlrpc_cleanup_imp()) ffff9aa0f699c800 X3™» šÿÿX3™» šÿÿ: changing import state from FULL to CLOSED
+00000020:00080000:0.0:1579551796.023599:0:19796:0:(genops.c:1527:class_disconnect_export_list()) disconnected export at 10.24.85.117@tcp (ffff9aa0f9e76400): rc 0
+00000020:00000080:0.0:1579551796.023600:0:19796:0:(genops.c:987:class_export_put()) final put ffff9aa0f9e76400/2fb222c3-e064-c835-3428-a0df9365dd56
+00000020:00080000:0.0:1579551796.023605:0:19796:0:(genops.c:1552:class_disconnect_exports()) OBD device 3 (ffff9aa0bb992e68) has no exports
+00000020:00000080:0.0:1579551796.028237:0:3234:0:(genops.c:937:class_export_destroy()) destroying export ffff9aa0f9e76400/2fb222c3-e064-c835-3428-a0df9365dd56 for lustre-OST0002
+00000020:00000080:0.0:1579551796.028264:0:3234:0:(genops.c:1177:class_import_destroy()) destroying import ffff9aa0f699c800 for lustre-OST0002
+00000020:00000080:0.0:1579551796.028265:0:3234:0:(genops.c:937:class_export_destroy()) destroying export ffff9aa0be744400/lustre-MDT0000-mdtlov_UUID for lustre-OST0002
+00000020:00000080:0.0:1579551796.028273:0:3234:0:(genops.c:1177:class_import_destroy()) destroying import ffff9aa09e9b2000 for lustre-OST0002
+00100000:10000000:0.0:1579551796.029124:0:19796:0:(lfsck_layout.c:680:lfsck_rbtree_cleanup()) lustre-OST0002-osd: layout LFSCK fini OST-objects accessing bitmap
+00000020:00000080:0.0:1579551796.038965:0:19796:0:(genops.c:1463:class_disconnect()) disconnect: cookie 0xd995b795b955930e
+00000020:00000080:0.0:1579551796.038967:0:19796:0:(genops.c:987:class_export_put()) final put ffff9aa0c23dc000/lustre-OST0002-osd_UUID
+00000020:01000000:0.0:1579551796.038972:0:19796:0:(lprocfs_status_server.c:120:lprocfs_free_client_stats()) stat ffff9aa0bb8e5420 - data ffff9aa0f9b12840/ffff9aa0a820b540
+00000020:01000000:0.0:1579551796.038976:0:19796:0:(lprocfs_status_server.c:120:lprocfs_free_client_stats()) stat ffff9aa0bb8e5120 - data ffff9aa0f9e40540/ffff9aa0a820b800
+00000020:01000004:0.0:1579551796.038994:0:19796:0:(obd_mount_server.c:204:server_put_mount()) put mount ffff9aa0d92b8000 from lustre-OST0002, refs=2
+00000020:01000004:0.0:1579551796.038996:0:19796:0:(obd_mount.c:662:lustre_put_lsi()) put ffff9aa0d92b8000 2
+00000020:01000004:0.0:1579551796.038996:0:19796:0:(obd_mount_server.c:139:server_deregister_mount()) deregister mount ffff9aa0d92b8000 from lustre-OST0002
+00000020:00000080:0.0:1579551796.039013:0:19796:0:(obd_config.c:1115:class_process_config()) processing cmd: cf002
+00000020:00000080:0.0:1579551796.039014:0:19796:0:(obd_config.c:588:class_detach()) detach on obd lustre-OST0002 (uuid lustre-OST0002_UUID)
+00000020:00000080:0.0:1579551796.039015:0:19796:0:(genops.c:987:class_export_put()) final put ffff9aa0caff1800/lustre-OST0002_UUID
+00000020:00000080:0.0:1579551796.039016:0:19796:0:(genops.c:937:class_export_destroy()) destroying export ffff9aa0caff1800/lustre-OST0002_UUID for lustre-OST0002
+00000020:01000000:0.0:1579551796.039017:0:19796:0:(genops.c:403:class_free_dev()) finishing cleanup of obd lustre-OST0002 (lustre-OST0002_UUID)
+00000020:01000000:0.0:1579551796.039035:0:19796:0:(obd_config.c:1996:class_manual_cleanup()) Manual cleanup of lustre-MDT0000-lwp-OST0002 (flags='F')
+00000020:00000080:0.0:1579551796.039036:0:19796:0:(obd_config.c:1115:class_process_config()) processing cmd: cf004
+00000020:00000080:0.0:1579551796.039037:0:19796:0:(obd_config.c:658:class_cleanup()) lustre-MDT0000-lwp-OST0002: forcing exports to disconnect: 1/2
+00000020:00080000:0.0:1579551796.039039:0:19796:0:(genops.c:1774:print_export_data()) lustre-MDT0000-lwp-OST0002: ACTIVE ffff9aa0caff1000 lustre-MDT0000-lwp-OST0002 10.29.161.11@tcp 3 (0 0 0) 0 0 0 0:           (null)  0 stale:0
+00000020:00080000:0.0:1579551796.039042:0:19796:0:(genops.c:1774:print_export_data()) lustre-OST0002-osd: ZOMBIE ffff9aa0c23dc000 lustre-OST0002-osd_UUID (no nid) 0 (0 0 0) 1 0 0 0:           (null)  0 stale:0
+00000020:00080000:0.0:1579551796.039044:0:19796:0:(genops.c:1547:class_disconnect_exports()) OBD device 4 (ffff9aa0bb993de0) has exports, disconnecting them
+00000020:00080000:0.0:1579551796.039045:0:19796:0:(genops.c:1522:class_disconnect_export_list()) lustre-MDT0000-lwp-OST0002: disconnecting export at 10.29.161.11@tcp (ffff9aa0caff1000), last request at 1579478142
+00000020:00000080:0.0:1579551796.039047:0:19796:0:(genops.c:1463:class_disconnect()) disconnect: cookie 0xd995b795b9559331
+00000020:00080000:0.0:1579551796.039048:0:19796:0:(genops.c:1527:class_disconnect_export_list()) disconnected export at 10.29.161.11@tcp (ffff9aa0caff1000): rc 0
+00000020:00000080:0.0:1579551796.039051:0:19796:0:(genops.c:987:class_export_put()) final put ffff9aa0caff1000/lustre-MDT0000-lwp-OST0002
+00010000:01000000:0.0:1579551796.039997:0:19796:0:(obd_class.h:685:obd_cleanup_client_import()) lustre-MDT0000-lwp-OST0002: client import never connected
+00000100:00080000:0.0:1579551796.039999:0:19796:0:(import.c:215:ptlrpc_deactivate_and_unlock_import()) setting import lustre-MDT0000_UUID INVALID
+00000020:00000080:0.0:1579551796.040019:0:19796:0:(obd_config.c:1115:class_process_config()) processing cmd: cf002
+00000020:00000080:0.0:1579551796.040020:0:19796:0:(obd_config.c:588:class_detach()) detach on obd lustre-MDT0000-lwp-OST0002 (uuid lustre-MDT0000-lwp-OST0002_UUID)
+00000020:01000004:0.0:1579551796.040021:0:19796:0:(obd_mount.c:907:lustre_common_put_super()) dropping sb ffff9aa0d92b8000
+00000100:00080000:0.0:1579551796.040023:0:19796:0:(pinger.c:434:ptlrpc_pinger_del_import()) removing pingable import a81ab62c-22aa-dc03-9de7-d4224c39d08f->MGS
+10000000:01000000:0.0:1579551796.040026:0:19796:0:(mgc_request.c:1025:mgc_blocking_ast()) Lock res [0x70616d65646f6e:0x4:0x0].0x0 (nodemap)
+10000000:01000000:0.0:1579551796.040028:0:19796:0:(mgc_request.c:1048:mgc_blocking_ast()) log nodemap: disconnecting, won't requeue
+10000000:01000000:0.0:1579551796.040028:0:19796:0:(mgc_request.c:151:config_log_put()) dropping config log nodemap
+10000000:01000000:0.0:1579551796.040041:0:19796:0:(mgc_request.c:1025:mgc_blocking_ast()) Lock res [0x736d61726170:0x3:0x0].0x0 (params)
+10000000:01000000:0.0:1579551796.040042:0:19796:0:(mgc_request.c:1039:mgc_blocking_ast()) log params: stopping, won't requeue
+10000000:01000000:0.0:1579551796.040042:0:19796:0:(mgc_request.c:151:config_log_put()) dropping config log params
+10000000:01000000:0.0:1579551796.040045:0:19796:0:(mgc_request.c:1025:mgc_blocking_ast()) Lock res [0x65727473756c:0x0:0x0].0x0 (lustre)
+10000000:01000000:0.0:1579551796.040045:0:19796:0:(mgc_request.c:1048:mgc_blocking_ast()) log lustre-s: disconnecting, won't requeue
+10000000:01000000:0.0:1579551796.040046:0:19796:0:(mgc_request.c:151:config_log_put()) dropping config log lustre-sptlrpc
+10000000:01000000:0.0:1579551796.040048:0:19796:0:(mgc_request.c:1025:mgc_blocking_ast()) Lock res [0x65727473756c:0x0:0x0].0x0 (lustre)
+10000000:01000000:0.0:1579551796.040048:0:19796:0:(mgc_request.c:1039:mgc_blocking_ast()) log lustre-OST0002: stopping, won't requeue
+10000000:01000000:0.0:1579551796.040049:0:19796:0:(mgc_request.c:151:config_log_put()) dropping config log lustre-OST0002
+10000000:01000000:0.0:1579551796.040050:0:19796:0:(mgc_request.c:1025:mgc_blocking_ast()) Lock res [0x65727473756c:0x0:0x0].0x0 (lustre)
+10000000:01000000:0.0:1579551796.040050:0:19796:0:(mgc_request.c:1039:mgc_blocking_ast()) log lustre-client: stopping, won't requeue
+10000000:01000000:0.0:1579551796.040051:0:19796:0:(mgc_request.c:151:config_log_put()) dropping config log lustre-client
+00000100:00080000:0.0:1579551796.040055:0:19796:0:(import.c:1622:ptlrpc_disconnect_import()) ffff9aa0f5336000 MGS: changing import state from FULL to CONNECTING
+00000020:00000080:0.0:1579551796.040079:0:3234:0:(genops.c:1177:class_import_destroy()) destroying import ffff9aa0b5c67000 for lustre-MDT0000-lwp-OST0002
+00000020:00000080:0.0:1579551796.040080:0:3234:0:(genops.c:937:class_export_destroy()) destroying export ffff9aa0caff1000/lustre-MDT0000-lwp-OST0002 for lustre-MDT0000-lwp-OST0002
+00000020:00000080:0.0:1579551796.040081:0:3234:0:(genops.c:987:class_export_put()) final put ffff9aa0c23dd800/lustre-MDT0000-lwp-OST0002_UUID
+00000020:00000080:0.0:1579551796.040082:0:3234:0:(genops.c:937:class_export_destroy()) destroying export ffff9aa0c23dd800/lustre-MDT0000-lwp-OST0002_UUID for lustre-MDT0000-lwp-OST0002
+00000020:01000000:0.0:1579551796.040082:0:3234:0:(genops.c:403:class_free_dev()) finishing cleanup of obd lustre-MDT0000-lwp-OST0002 (lustre-MDT0000-lwp-OST0002_UUID)
+00000020:00000080:0.0:1579551796.040088:0:3234:0:(genops.c:937:class_export_destroy()) destroying export ffff9aa0c23dc000/lustre-OST0002-osd_UUID for lustre-OST0002-osd
+00000100:00080000:0.0:1579551796.041180:0:19796:0:(import.c:1635:ptlrpc_disconnect_import()) ffff9aa0f5336000 MGS: changing import state from CONNECTING to CLOSED
+00000100:00080000:0.0:1579551796.041182:0:19796:0:(import.c:215:ptlrpc_deactivate_and_unlock_import()) setting import MGS INVALID
+10000000:01000000:0.0:1579551796.041183:0:19796:0:(mgc_request.c:1367:mgc_import_event()) import event 0x808002
+10000000:01000000:0.0:1579551796.041184:0:19796:0:(mgc_request.c:1367:mgc_import_event()) import event 0x808003
+00000020:00000080:0.0:1579551796.041186:0:19796:0:(genops.c:1463:class_disconnect()) disconnect: cookie 0xd995b795b95592e4
+00000020:00000080:0.0:1579551796.041187:0:19796:0:(genops.c:987:class_export_put()) final put ffff9aa0985e1000/a81ab62c-22aa-dc03-9de7-d4224c39d08f
+00000020:01000000:0.0:1579551796.041189:0:19796:0:(obd_config.c:1996:class_manual_cleanup()) Manual cleanup of MGC10.24.84.84@tcp (flags='')
+00000020:00000080:0.0:1579551796.041190:0:19796:0:(obd_config.c:1115:class_process_config()) processing cmd: cf004
+00000020:00000080:0.0:1579551796.041191:0:19796:0:(obd_config.c:658:class_cleanup()) MGC10.24.84.84@tcp: forcing exports to disconnect: 0/2
+00000020:00080000:0.0:1579551796.041192:0:19796:0:(genops.c:1774:print_export_data()) MGC10.24.84.84@tcp: ZOMBIE ffff9aa0985e1000 a81ab62c-22aa-dc03-9de7-d4224c39d08f 10.24.84.84@tcp 0 (0 0 0) 1 0 0 0:           (null)  0 stale:0
+00000020:00080000:0.0:1579551796.041194:0:19796:0:(genops.c:1552:class_disconnect_exports()) OBD device 1 (ffff9aa0bb991ef0) has no exports
+00000020:00000080:0.0:1579551796.041197:0:3234:0:(genops.c:937:class_export_destroy()) destroying export ffff9aa0985e1000/a81ab62c-22aa-dc03-9de7-d4224c39d08f for MGC10.24.84.84@tcp
+10000000:01000000:0.0:1579551796.041199:0:6534:0:(mgc_request.c:706:mgc_requeue_thread()) Ending requeue thread
+10000000:01000000:0.0:1579551796.041213:0:19796:0:(obd_class.h:685:obd_cleanup_client_import()) MGC10.24.84.84@tcp: client import never connected
+00000100:00080000:0.0:1579551796.041214:0:19796:0:(import.c:215:ptlrpc_deactivate_and_unlock_import()) setting import MGS INVALID
+00000020:00000080:0.0:1579551796.041226:0:19796:0:(obd_config.c:1115:class_process_config()) processing cmd: cf002
+00000020:00000080:0.0:1579551796.041227:0:19796:0:(obd_config.c:588:class_detach()) detach on obd MGC10.24.84.84@tcp (uuid a81ab62c-22aa-dc03-9de7-d4224c39d08f)
+00000020:00000080:0.0:1579551796.041228:0:19796:0:(obd_config.c:1115:class_process_config()) processing cmd: cf006
+00000020:00000080:0.0:1579551796.041228:0:19796:0:(obd_config.c:1134:class_process_config()) removing mappings for uuid MGC10.24.84.84@tcp_0
+00000020:01000004:0.0:1579551796.041229:0:19796:0:(obd_mount.c:662:lustre_put_lsi()) put ffff9aa0d92b8000 1
+00000020:00000080:0.0:1579551796.041230:0:19796:0:(genops.c:1463:class_disconnect()) disconnect: cookie 0xd995b795b95592cf
+00000020:00000080:0.0:1579551796.041231:0:19796:0:(genops.c:987:class_export_put()) final put ffff9aa0c1c38800/lustre-OST0002-osd_UUID
+00000020:01000000:0.0:1579551796.041232:0:19796:0:(obd_config.c:1996:class_manual_cleanup()) Manual cleanup of lustre-OST0002-osd (flags='')
+00000020:00000080:0.0:1579551796.041232:0:19796:0:(obd_config.c:1115:class_process_config()) processing cmd: cf004
+00000020:00000080:0.0:1579551796.041232:0:19796:0:(obd_config.c:658:class_cleanup()) lustre-OST0002-osd: forcing exports to disconnect: 0/1
+00000020:00080000:0.0:1579551796.041233:0:19796:0:(genops.c:1774:print_export_data()) lustre-OST0002-osd: ZOMBIE ffff9aa0c1c38800 lustre-OST0002-osd_UUID (no nid) 0 (0 0 0) 1 0 0 0:           (null)  0 stale:0
+00000020:00080000:0.0:1579551796.041235:0:19796:0:(genops.c:1552:class_disconnect_exports()) OBD device 0 (ffff9aa0bb990f78) has no exports
+00000020:00000080:0.0:1579551796.041321:0:19796:0:(obd_config.c:1115:class_process_config()) processing cmd: cf002
+00000020:00000080:0.0:1579551796.041322:0:19796:0:(obd_config.c:588:class_detach()) detach on obd lustre-OST0002-osd (uuid lustre-OST0002-osd_UUID)
+00000020:00000080:0.0:1579551796.041324:0:3234:0:(genops.c:1177:class_import_destroy()) destroying import ffff9aa0f5336000 for MGC10.24.84.84@tcp
+00000020:00000080:0.0:1579551796.041325:0:3234:0:(genops.c:987:class_export_put()) final put ffff9aa0c1c39000/a81ab62c-22aa-dc03-9de7-d4224c39d08f
+00000020:00000080:0.0:1579551796.041325:0:3234:0:(genops.c:937:class_export_destroy()) destroying export ffff9aa0c1c39000/a81ab62c-22aa-dc03-9de7-d4224c39d08f for MGC10.24.84.84@tcp
+00000020:01000000:0.0:1579551796.041326:0:3234:0:(genops.c:403:class_free_dev()) finishing cleanup of obd MGC10.24.84.84@tcp (a81ab62c-22aa-dc03-9de7-d4224c39d08f)
+00000020:00000080:0.0:1579551796.041517:0:3234:0:(genops.c:937:class_export_destroy()) destroying export ffff9aa0c1c38800/lustre-OST0002-osd_UUID for lustre-OST0002-osd
+00000020:00000080:0.0:1579551796.041517:0:3234:0:(genops.c:987:class_export_put()) final put ffff9aa0c1c9bc00/lustre-OST0002-osd_UUID
+00000020:00000080:0.0:1579551796.041519:0:3234:0:(genops.c:937:class_export_destroy()) destroying export ffff9aa0c1c9bc00/lustre-OST0002-osd_UUID for lustre-OST0002-osd
+00000020:01000000:0.0:1579551796.041519:0:3234:0:(genops.c:403:class_free_dev()) finishing cleanup of obd lustre-OST0002-osd (lustre-OST0002-osd_UUID)
+00000020:01000004:0.0:1579551796.054248:0:19796:0:(obd_mount.c:606:lustre_free_lsi()) Freeing lsi ffff9aa0c1c9a800
+00000020:01000000:0.0:1579551796.054252:0:19796:0:(obd_config.c:1996:class_manual_cleanup()) Manual cleanup of OSS (flags='F')
+00000020:00000080:0.0:1579551796.054253:0:19796:0:(obd_config.c:1115:class_process_config()) processing cmd: cf004
+00000020:00000080:0.0:1579551796.054254:0:19796:0:(obd_config.c:658:class_cleanup()) OSS: forcing exports to disconnect: 0/0
+00000020:00080000:0.0:1579551796.054254:0:19796:0:(genops.c:1552:class_disconnect_exports()) OBD device 2 (ffff9aa0bb990000) has no exports
+00000020:00000080:0.0:1579551796.054263:0:19796:0:(obd_config.c:1115:class_process_config()) processing cmd: cf002
+00000020:00000080:0.0:1579551796.054264:0:19796:0:(obd_config.c:588:class_detach()) detach on obd OSS (uuid OSS_uuid)
+00000020:00000080:0.0:1579551796.054264:0:19796:0:(genops.c:987:class_export_put()) final put ffff9aa0985e0400/OSS_uuid
+00000020:00000080:0.0:1579551796.054265:0:19796:0:(genops.c:937:class_export_destroy()) destroying export ffff9aa0985e0400/OSS_uuid for OSS
+00000020:01000000:0.0:1579551796.054266:0:19796:0:(genops.c:403:class_free_dev()) finishing cleanup of obd OSS (OSS_uuid)
+00000100:00080000:0.0:1579551796.054274:0:6547:0:(pinger.c:677:ping_evictor_main()) Exiting Ping Evictor
+00000020:02000400:0.0:1579551796.057295:0:19796:0:(obd_mount_server.c:1634:server_put_super()) server umount lustre-OST0002 complete
+00000400:00000100:0.0:1579551796.980343:0:3248:0:(lib-move.c:2052:lnet_parse_put()) Dropping PUT from 12345-10.29.161.11@tcp portal 7 match 1656199481987712 offset 0 length 224: 4
+00000400:00000100:0.0:1579551803.997561:0:3248:0:(lib-move.c:2052:lnet_parse_put()) Dropping PUT from 12345-10.29.161.11@tcp portal 28 match 1656199481987776 offset 0 length 520: 4
+00000400:00000100:0.0:1579551806.568318:0:3248:0:(lib-move.c:2052:lnet_parse_put()) Dropping PUT from 12345-10.24.85.117@tcp portal 28 match 1656202877794512 offset 0 length 224: 4
+00000400:00000100:0.0:1579551813.570500:0:3248:0:(lib-move.c:2052:lnet_parse_put()) Dropping PUT from 12345-10.24.85.117@tcp portal 28 match 1656202877794544 offset 0 length 520: 4
+00000400:00000100:0.0:1579551838.570915:0:3248:0:(lib-move.c:2052:lnet_parse_put()) Dropping PUT from 12345-10.24.85.117@tcp portal 28 match 1656202877794624 offset 0 length 520: 4
+00000400:00000100:0.0:1579551870.572078:0:3248:0:(lib-move.c:2052:lnet_parse_put()) Dropping PUT from 12345-10.24.85.117@tcp portal 28 match 1656202877794768 offset 0 length 520: 4
+00000400:00000100:0.0:1579551895.573361:0:3248:0:(lib-move.c:2052:lnet_parse_put()) Dropping PUT from 12345-10.24.85.117@tcp portal 28 match 1656202877794848 offset 0 length 520: 4
+00000400:00000100:0.0:1579551920.573623:0:3248:0:(lib-move.c:2052:lnet_parse_put()) Dropping PUT from 12345-10.24.85.117@tcp portal 28 match 1656202877795232 offset 0 length 520: 4
+00000020:01200004:0.0:1579551951.908072:0:19863:0:(obd_mount.c:1516:lustre_fill_super()) VFS Op: sb ffff9aa09da9d800
+00000020:01000004:0.0:1579551951.908090:0:19863:0:(obd_mount.c:931:lmd_print())   mount data:
+00000020:01000004:0.0:1579551951.908091:0:19863:0:(obd_mount.c:934:lmd_print()) device:  /dev/sdb
+00000020:01000004:0.0:1579551951.908092:0:19863:0:(obd_mount.c:935:lmd_print()) flags:   3000
+00000020:01000004:0.0:1579551951.908093:0:19863:0:(obd_mount.c:938:lmd_print()) options: ,errors=remount-ro
+00000020:01000004:0.0:1579551951.908094:0:19863:0:(obd_mount.c:1563:lustre_fill_super()) Mounting server from /dev/sdb
+00000020:01000004:0.0:1579551951.908096:0:19863:0:(obd_mount_server.c:1773:osd_start()) Attempting to start lustre-OST0002, type=osd-ldiskfs, lsifl=200062, mountfl=0
+00000020:01000004:0.0:1579551951.908136:0:19863:0:(obd_mount.c:194:lustre_start_simple()) Starting obd lustre-OST0002-osd (typ=osd-ldiskfs)
+00000020:00000080:0.0:1579551951.908138:0:19863:0:(obd_config.c:1115:class_process_config()) processing cmd: cf001
+00000020:00000080:0.0:1579551951.908146:0:19863:0:(genops.c:373:class_newdev()) Allocate new device lustre-OST0002-osd (ffff9aa0bb990000)
+00000020:00000080:0.0:1579551951.908183:0:19863:0:(obd_config.c:430:class_attach()) OBD: dev 0 attached type osd-ldiskfs with refcount 1
+00000020:00000080:0.0:1579551951.908186:0:19863:0:(obd_config.c:1115:class_process_config()) processing cmd: cf003
+00000020:00000080:0.0:1579551951.950916:0:19863:0:(obd_config.c:537:class_setup()) finished setup of obd lustre-OST0002-osd (uuid lustre-OST0002-osd_UUID)
+00080000:01000000:0.0:1579551951.950921:0:19863:0:(osd_handler.c:7373:osd_obd_connect()) connect #0
+00000020:00000080:0.0:1579551951.950925:0:19863:0:(genops.c:1379:class_connect()) connect: client lustre-OST0002-osd_UUID, cookie 0xd995b795b95599ba
+00000020:01000004:0.0:1579551951.950928:0:19863:0:(obd_mount_server.c:1854:server_fill_super()) Found service lustre-OST0002 on device /dev/sdb
+00000020:01000004:0.0:1579551951.951006:0:19863:0:(obd_mount.c:340:lustre_start_mgc()) Start MGC 'MGC10.24.84.84@tcp'
+00000020:01000004:0.0:1579551951.951007:0:19863:0:(obd_mount.c:347:lustre_start_mgc()) mgs nids 10.24.84.84@tcp.
+00000020:00000080:0.0:1579551951.951010:0:19863:0:(obd_config.c:1115:class_process_config()) processing cmd: cf005
+00000020:00000080:0.0:1579551951.951013:0:19863:0:(obd_config.c:1126:class_process_config()) adding mapping from uuid MGC10.24.84.84@tcp_0 to nid 0x200000a185454 (10.24.84.84@tcp)
+00000020:01000004:0.0:1579551951.951023:0:19863:0:(obd_mount.c:194:lustre_start_simple()) Starting obd MGC10.24.84.84@tcp (typ=mgc)
+00000020:00000080:0.0:1579551951.951025:0:19863:0:(obd_config.c:1115:class_process_config()) processing cmd: cf001
+00000020:00000080:0.0:1579551951.951029:0:19863:0:(genops.c:373:class_newdev()) Allocate new device MGC10.24.84.84@tcp (ffff9aa0bb990f78)
+00000020:00000080:0.0:1579551951.951066:0:19863:0:(obd_config.c:430:class_attach()) OBD: dev 1 attached type mgc with refcount 1
+00000020:00000080:0.0:1579551951.951068:0:19863:0:(obd_config.c:1115:class_process_config()) processing cmd: cf003
+00010000:00080000:0.0:1579551951.951577:0:19863:0:(ldlm_lib.c:112:import_set_conn()) imp ffff9aa0801ba000@MGC10.24.84.84@tcp: add connection MGC10.24.84.84@tcp_0 at head
+00000040:01000000:0.0:1579551951.951609:0:19863:0:(llog_obd.c:210:llog_setup()) obd MGC10.24.84.84@tcp ctxt 1 is initialized
+10000000:01000000:0.0:1579551951.951631:0:19887:0:(mgc_request.c:626:mgc_requeue_thread()) Starting requeue thread
+00000020:00000080:0.0:1579551951.951635:0:19863:0:(obd_config.c:537:class_setup()) finished setup of obd MGC10.24.84.84@tcp (uuid 81a00c7c-9d3a-6868-71b6-ab5c38e79354)
+00000020:00000080:0.0:1579551951.951640:0:19863:0:(genops.c:1379:class_connect()) connect: client 81a00c7c-9d3a-6868-71b6-ab5c38e79354, cookie 0xd995b795b95599cf
+00000100:00080000:0.0:1579551951.951643:0:19863:0:(import.c:681:ptlrpc_connect_import()) ffff9aa0801ba000 MGS: changing import state from NEW to CONNECTING
+00000100:00080000:0.0:1579551951.951647:0:19863:0:(import.c:524:import_select_connection()) MGC10.24.84.84@tcp: connect to NID 10.24.84.84@tcp last attempt 0
+00000100:00080000:0.0:1579551951.951650:0:19863:0:(import.c:602:import_select_connection()) MGC10.24.84.84@tcp: import ffff9aa0801ba000 using connection MGC10.24.84.84@tcp_0/10.24.84.84@tcp
+00000100:00080000:0.0:1579551951.951663:0:19863:0:(pinger.c:409:ptlrpc_pinger_add_import()) adding pingable import 81a00c7c-9d3a-6868-71b6-ab5c38e79354->MGS
+00000020:01000004:0.0:1579551951.951668:0:19863:0:(obd_mount_server.c:1322:server_start_targets()) starting target lustre-OST0002
+00000020:01000004:0.0:1579551951.951705:0:19863:0:(obd_mount.c:194:lustre_start_simple()) Starting obd OSS (typ=ost)
+00000020:00000080:0.0:1579551951.951707:0:19863:0:(obd_config.c:1115:class_process_config()) processing cmd: cf001
+00000020:00000080:0.0:1579551951.951710:0:19863:0:(genops.c:373:class_newdev()) Allocate new device OSS (ffff9aa0bb991ef0)
+00000020:00000080:0.0:1579551951.951746:0:19863:0:(obd_config.c:430:class_attach()) OBD: dev 2 attached type ost with refcount 1
+00000020:00000080:0.0:1579551951.951748:0:19863:0:(obd_config.c:1115:class_process_config()) processing cmd: cf003
+00000100:00080000:0.0:1579551951.954024:0:3251:0:(import.c:1035:ptlrpc_connect_interpret()) MGC10.24.84.84@tcp: connect to target with instance 0
+00000100:00080000:0.0:1579551951.954031:0:3251:0:(import.c:910:ptlrpc_connect_set_flags()) MGC10.24.84.84@tcp: Resetting ns_connect_flags to server flags: 0x2000011005002020
+10000000:01000000:0.0:1579551951.954034:0:3251:0:(mgc_request.c:1367:mgc_import_event()) import event 0x808005
+00000100:00080000:0.0:1579551951.954035:0:3251:0:(import.c:1140:ptlrpc_connect_interpret()) ffff9aa0801ba000 MGS: changing import state from CONNECTING to FULL
+10000000:01000000:0.0:1579551951.954037:0:3251:0:(mgc_request.c:1367:mgc_import_event()) import event 0x808004
+00000100:00080000:0.0:1579551951.954040:0:3251:0:(pinger.c:171:ptlrpc_pinger_ir_up()) IR up
+00000020:00000080:0.0:1579551951.961395:0:19863:0:(obd_config.c:537:class_setup()) finished setup of obd OSS (uuid OSS_uuid)
+00000020:01000004:0.0:1579551951.961405:0:19863:0:(obd_mount_server.c:297:server_mgc_set_fs()) Set mgc disk for /dev/sdb
+00000040:01000000:0.0:1579551951.965060:0:19863:0:(llog_obd.c:210:llog_setup()) obd MGC10.24.84.84@tcp ctxt 0 is initialized
+00000020:01000004:0.0:1579551951.965073:0:19863:0:(obd_mount_server.c:1215:server_register_target()) Registration lustre-OST0002, fs=lustre, 10.29.162.26@tcp, index=0002, flags=0x62
+10000000:01000000:0.0:1579551951.965077:0:19863:0:(mgc_request.c:1267:mgc_set_info_async()) register_target lustre-OST0002 0x10000062
+10000000:01000000:0.0:1579551951.965087:0:19863:0:(mgc_request.c:1206:mgc_target_register()) register lustre-OST0002
+00000100:00080000:0.0:1579551951.965390:0:19900:0:(pinger.c:611:ping_evictor_main()) Starting Ping Evictor
+10000000:01000000:0.0:1579551952.003724:0:19863:0:(mgc_request.c:1223:mgc_target_register()) register lustre-OST0002 got index = 2
+00000020:01000004:0.0:1579551952.003735:0:19863:0:(obd_mount_server.c:120:server_register_mount()) register mount ffff9aa09da9d800 from lustre-OST0002
+10000000:01000000:0.0:1579551952.003740:0:19863:0:(mgc_request.c:2211:mgc_process_config()) parse_log lustre-OST0002 from 0
+10000000:01000000:0.0:1579551952.003741:0:19863:0:(mgc_request.c:331:config_log_add()) adding config log lustre-OST0002:          (null)
+10000000:01000000:0.0:1579551952.003744:0:19863:0:(mgc_request.c:211:do_config_log_add()) do adding config log lustre-sptlrpc:          (null)
+10000000:01000000:0.0:1579551952.003746:0:19863:0:(mgc_request.c:90:mgc_name2resid()) log lustre-sptlrpc to resid 0x65727473756c/0x0 (lustre)
+10000000:01000000:0.0:1579551952.003750:0:19863:0:(mgc_request.c:2076:mgc_process_log()) Process log lustre-sptlrpc:          (null) from 1
+10000000:01000000:0.0:1579551952.003751:0:19863:0:(mgc_request.c:1133:mgc_enqueue()) Enqueue for lustre-sptlrpc (res 0x65727473756c)
+10000000:01000000:0.0:1579551952.007126:0:19863:0:(mgc_request.c:2151:mgc_process_log()) MGC10.24.84.84@tcp: configuration from log 'lustre-sptlrpc' failed (-2).
+10000000:01000000:0.0:1579551952.007132:0:19863:0:(mgc_request.c:211:do_config_log_add()) do adding config log nodemap:ffff9aa0bb990f78
+10000000:01000000:0.0:1579551952.007134:0:19863:0:(mgc_request.c:90:mgc_name2resid()) log nodemap to resid 0x70616d65646f6e/0x4 (nodemap)
+10000000:01000000:0.0:1579551952.007137:0:19863:0:(mgc_request.c:2076:mgc_process_log()) Process log nodemap:ffff9aa0bb990f78 from 1
+10000000:01000000:0.0:1579551952.007138:0:19863:0:(mgc_request.c:1133:mgc_enqueue()) Enqueue for nodemap (res 0x70616d65646f6e)
+10000000:01000000:0.0:1579551952.011942:0:19863:0:(mgc_request.c:2151:mgc_process_log()) MGC10.24.84.84@tcp: configuration from log 'nodemap' succeeded (0).
+10000000:01000000:0.0:1579551952.011947:0:19863:0:(mgc_request.c:211:do_config_log_add()) do adding config log params:ffff9aa09da9d800
+10000000:01000000:0.0:1579551952.011949:0:19863:0:(mgc_request.c:90:mgc_name2resid()) log params to resid 0x736d61726170/0x3 (params)
+10000000:01000000:0.0:1579551952.011951:0:19863:0:(mgc_request.c:211:do_config_log_add()) do adding config log lustre-OST0002:          (null)
+10000000:01000000:0.0:1579551952.011953:0:19863:0:(mgc_request.c:90:mgc_name2resid()) log lustre-OST0002 to resid 0x65727473756c/0x0 (lustre)
+10000000:01000000:0.0:1579551952.011955:0:19863:0:(mgc_request.c:2076:mgc_process_log()) Process log lustre-OST0002:          (null) from 1
+10000000:01000000:0.0:1579551952.011957:0:19863:0:(mgc_request.c:1133:mgc_enqueue()) Enqueue for lustre-OST0002 (res 0x65727473756c)
+00000040:00080000:0.0:1579551952.016841:0:19863:0:(llog_osd.c:231:llog_osd_read_header()) not reading header from 0-byte log
+00000040:00080000:0.0:1579551952.019249:0:19863:0:(llog_osd.c:698:llog_osd_write_rec()) added record [0xa:0x2:0x0].1, 224 off8416
+00000040:00080000:0.0:1579551952.019273:0:19863:0:(llog_osd.c:698:llog_osd_write_rec()) added record [0xa:0x2:0x0].2, 128 off8544
+00000040:00080000:0.0:1579551952.019280:0:19863:0:(llog_osd.c:698:llog_osd_write_rec()) added record [0xa:0x2:0x0].3, 112 off8656
+00000040:00080000:0.0:1579551952.019286:0:19863:0:(llog_osd.c:698:llog_osd_write_rec()) added record [0xa:0x2:0x0].4, 224 off8880
+00000020:01000000:0.0:1579551952.019352:0:19901:0:(obd_config.c:1459:class_config_llog_handler()) Marker, inst_flg=0x8 mark_flg=0x1
+00000020:01000004:0.0:1579551952.019356:0:19901:0:(obd_mount.c:969:lustre_check_exclusion()) Check exclusion lustre-OST0002 (2) in 0 of /dev/sdb
+00000020:00000080:0.0:1579551952.019360:0:19901:0:(obd_config.c:1115:class_process_config()) processing cmd: cf010
+00000020:00000080:0.0:1579551952.019361:0:19901:0:(obd_config.c:1185:class_process_config()) marker 14 (0x1) lustre-OST0002 add ost
+00000020:00000080:0.0:1579551952.019364:0:19901:0:(obd_config.c:1115:class_process_config()) processing cmd: cf001
+00000020:00000080:0.0:1579551952.019369:0:19901:0:(genops.c:373:class_newdev()) Allocate new device lustre-OST0002 (ffff9aa0bb993de0)
+00000020:00000080:0.0:1579551952.019409:0:19901:0:(obd_config.c:430:class_attach()) OBD: dev 3 attached type obdfilter with refcount 1
+00000020:00000080:0.0:1579551952.019411:0:19901:0:(obd_config.c:1115:class_process_config()) processing cmd: cf003
+00000020:01000004:0.0:1579551952.019492:0:19901:0:(obd_mount_server.c:170:server_get_mount()) get mount ffff9aa09da9d800 from lustre-OST0002, refs=2
+00080000:01000000:0.0:1579551952.019496:0:19901:0:(osd_handler.c:7373:osd_obd_connect()) connect #1
+00000020:00000080:0.0:1579551952.019499:0:19901:0:(genops.c:1379:class_connect()) connect: client lustre-OST0002-osd_UUID, cookie 0xd995b795b95599f9
+00000001:02000400:0.0:1579551952.024000:0:19901:0:(tgt_lastrcvd.c:1632:tgt_server_data_init()) lustre-OST0002: new disk, initializing
+40000000:02000000:0.0:1579551952.024071:0:19901:0:(fid_handler.c:575:seq_server_init()) srv-lustre-OST0002: No data found on store. Initialize space
+00000020:00000080:0.0:1579551952.024388:0:19901:0:(obd_config.c:537:class_setup()) finished setup of obd lustre-OST0002 (uuid lustre-OST0002_UUID)
+00000020:01000000:0.0:1579551952.024391:0:19901:0:(obd_config.c:1459:class_config_llog_handler()) Marker, inst_flg=0x2 mark_flg=0x2
+00000020:00000080:0.0:1579551952.024394:0:19901:0:(obd_config.c:1115:class_process_config()) processing cmd: cf010
+00000020:00000080:0.0:1579551952.024396:0:19901:0:(obd_config.c:1185:class_process_config()) marker 14 (0x2) lustre-OST0002 add ost
+00000020:01000000:0.0:1579551952.024426:0:19863:0:(obd_config.c:1723:class_config_parse_llog()) Processed log lustre-OST0002 gen 1-4 (rc=0)
+10000000:01000000:0.0:1579551952.024435:0:19863:0:(mgc_request.c:2151:mgc_process_log()) MGC10.24.84.84@tcp: configuration from log 'lustre-OST0002' succeeded (0).
+10000000:01000000:0.0:1579551952.024439:0:19863:0:(mgc_request.c:2076:mgc_process_log()) Process log params:ffff9aa09da9d800 from 1
+10000000:01000000:0.0:1579551952.024441:0:19863:0:(mgc_request.c:1133:mgc_enqueue()) Enqueue for params (res 0x736d61726170)
+00000040:00080000:0.0:1579551952.029440:0:19863:0:(llog_osd.c:231:llog_osd_read_header()) not reading header from 0-byte log
+00000040:00080000:0.0:1579551952.029725:0:19863:0:(llog_osd.c:231:llog_osd_read_header()) not reading header from 0-byte log
+00000020:01000000:0.0:1579551952.030050:0:19863:0:(obd_config.c:1723:class_config_parse_llog()) Processed log params gen 1-0 (rc=0)
+10000000:01000000:0.0:1579551952.030058:0:19863:0:(mgc_request.c:2151:mgc_process_log()) MGC10.24.84.84@tcp: configuration from log 'params' succeeded (0).
+10000000:01000000:0.0:1579551952.030066:0:19863:0:(mgc_request.c:2211:mgc_process_config()) parse_log lustre-client from 0
+10000000:01000000:0.0:1579551952.030067:0:19863:0:(mgc_request.c:331:config_log_add()) adding config log lustre-client:ffff9aa09da9d800
+10000000:01000000:0.0:1579551952.030069:0:19863:0:(mgc_request.c:211:do_config_log_add()) do adding config log lustre-client:ffff9aa09da9d800
+10000000:01000000:0.0:1579551952.030072:0:19863:0:(mgc_request.c:90:mgc_name2resid()) log lustre-client to resid 0x65727473756c/0x0 (lustre)
+10000000:01000000:0.0:1579551952.030075:0:19863:0:(mgc_request.c:2076:mgc_process_log()) Process log lustre-client:ffff9aa09da9d800 from 1
+10000000:01000000:0.0:1579551952.030077:0:19863:0:(mgc_request.c:1133:mgc_enqueue()) Enqueue for lustre-client (res 0x65727473756c)
+00000040:00080000:0.0:1579551952.035353:0:19863:0:(llog_osd.c:231:llog_osd_read_header()) not reading header from 0-byte log
+00000040:00080000:0.0:1579551952.037841:0:19863:0:(llog_osd.c:698:llog_osd_write_rec()) added record [0xa:0x4:0x0].1, 224 off8416
+00000040:00080000:0.0:1579551952.037851:0:19863:0:(llog_osd.c:698:llog_osd_write_rec()) added record [0xa:0x4:0x0].2, 120 off8536
+00000040:00080000:0.0:1579551952.037857:0:19863:0:(llog_osd.c:698:llog_osd_write_rec()) added record [0xa:0x4:0x0].3, 168 off8704
+00000040:00080000:0.0:1579551952.037862:0:19863:0:(llog_osd.c:698:llog_osd_write_rec()) added record [0xa:0x4:0x0].4, 224 off8928
+00000040:00080000:0.0:1579551952.037867:0:19863:0:(llog_osd.c:698:llog_osd_write_rec()) added record [0xa:0x4:0x0].5, 224 off9152
+00000040:00080000:0.0:1579551952.037872:0:19863:0:(llog_osd.c:698:llog_osd_write_rec()) added record [0xa:0x4:0x0].6, 120 off9272
+00000040:00080000:0.0:1579551952.037877:0:19863:0:(llog_osd.c:698:llog_osd_write_rec()) added record [0xa:0x4:0x0].7, 168 off9440
+00000040:00080000:0.0:1579551952.037882:0:19863:0:(llog_osd.c:698:llog_osd_write_rec()) added record [0xa:0x4:0x0].8, 224 off9664
+00000040:00080000:0.0:1579551952.037888:0:19863:0:(llog_osd.c:698:llog_osd_write_rec()) added record [0xa:0x4:0x0].9, 224 off9888
+00000040:00080000:0.0:1579551952.037894:0:19863:0:(llog_osd.c:698:llog_osd_write_rec()) added record [0xa:0x4:0x0].10, 88 off9976
+00000040:00080000:0.0:1579551952.037899:0:19863:0:(llog_osd.c:698:llog_osd_write_rec()) added record [0xa:0x4:0x0].11, 128 off10104
+00000040:00080000:0.0:1579551952.037905:0:19863:0:(llog_osd.c:698:llog_osd_write_rec()) added record [0xa:0x4:0x0].12, 144 off10248
+00000040:00080000:0.0:1579551952.037911:0:19863:0:(llog_osd.c:698:llog_osd_write_rec()) added record [0xa:0x4:0x0].13, 160 off10408
+00000040:00080000:0.0:1579551952.037916:0:19863:0:(llog_osd.c:698:llog_osd_write_rec()) added record [0xa:0x4:0x0].14, 224 off10632
+00000040:00080000:0.0:1579551952.037921:0:19863:0:(llog_osd.c:698:llog_osd_write_rec()) added record [0xa:0x4:0x0].15, 224 off10856
+00000040:00080000:0.0:1579551952.037926:0:19863:0:(llog_osd.c:698:llog_osd_write_rec()) added record [0xa:0x4:0x0].16, 120 off10976
+00000040:00080000:0.0:1579551952.037931:0:19863:0:(llog_osd.c:698:llog_osd_write_rec()) added record [0xa:0x4:0x0].17, 224 off11200
+00000040:00080000:0.0:1579551952.037937:0:19863:0:(llog_osd.c:698:llog_osd_write_rec()) added record [0xa:0x4:0x0].18, 224 off11424
+00000040:00080000:0.0:1579551952.037942:0:19863:0:(llog_osd.c:698:llog_osd_write_rec()) added record [0xa:0x4:0x0].19, 88 off11512
+00000040:00080000:0.0:1579551952.037947:0:19863:0:(llog_osd.c:698:llog_osd_write_rec()) added record [0xa:0x4:0x0].20, 128 off11640
+00000040:00080000:0.0:1579551952.037952:0:19863:0:(llog_osd.c:698:llog_osd_write_rec()) added record [0xa:0x4:0x0].21, 144 off11784
+00000040:00080000:0.0:1579551952.037957:0:19863:0:(llog_osd.c:698:llog_osd_write_rec()) added record [0xa:0x4:0x0].22, 128 off11912
+00000040:00080000:0.0:1579551952.037962:0:19863:0:(llog_osd.c:698:llog_osd_write_rec()) added record [0xa:0x4:0x0].23, 224 off12136
+00000040:00080000:0.0:1579551952.037975:0:19863:0:(llog_osd.c:698:llog_osd_write_rec()) added record [0xa:0x4:0x0].24, 224 off12360
+00000040:00080000:0.0:1579551952.037981:0:19863:0:(llog_osd.c:698:llog_osd_write_rec()) added record [0xa:0x4:0x0].25, 88 off12448
+00000040:00080000:0.0:1579551952.037986:0:19863:0:(llog_osd.c:698:llog_osd_write_rec()) added record [0xa:0x4:0x0].26, 128 off12576
+00000040:00080000:0.0:1579551952.037991:0:19863:0:(llog_osd.c:698:llog_osd_write_rec()) added record [0xa:0x4:0x0].27, 144 off12720
+00000040:00080000:0.0:1579551952.037996:0:19863:0:(llog_osd.c:698:llog_osd_write_rec()) added record [0xa:0x4:0x0].28, 128 off12848
+00000040:00080000:0.0:1579551952.038001:0:19863:0:(llog_osd.c:698:llog_osd_write_rec()) added record [0xa:0x4:0x0].29, 224 off13072
+00000040:00080000:0.0:1579551952.038007:0:19863:0:(llog_osd.c:698:llog_osd_write_rec()) added record [0xa:0x4:0x0].30, 224 off13296
+00000040:00080000:0.0:1579551952.038012:0:19863:0:(llog_osd.c:698:llog_osd_write_rec()) added record [0xa:0x4:0x0].31, 88 off13384
+00000040:00080000:0.0:1579551952.038017:0:19863:0:(llog_osd.c:698:llog_osd_write_rec()) added record [0xa:0x4:0x0].32, 128 off13512
+00000040:00080000:0.0:1579551952.038023:0:19863:0:(llog_osd.c:698:llog_osd_write_rec()) added record [0xa:0x4:0x0].33, 144 off13656
+00000040:00080000:0.0:1579551952.038028:0:19863:0:(llog_osd.c:698:llog_osd_write_rec()) added record [0xa:0x4:0x0].34, 128 off13784
+00000040:00080000:0.0:1579551952.038033:0:19863:0:(llog_osd.c:698:llog_osd_write_rec()) added record [0xa:0x4:0x0].35, 224 off14008
+00000020:01000004:0.0:1579551952.038094:0:19904:0:(obd_mount.c:194:lustre_start_simple()) Starting obd lustre-MDT0000-lwp-OST0002 (typ=lwp)
+00000020:00000080:0.0:1579551952.038097:0:19904:0:(obd_config.c:1115:class_process_config()) processing cmd: cf001
+00000020:00000080:0.0:1579551952.038102:0:19904:0:(genops.c:373:class_newdev()) Allocate new device lustre-MDT0000-lwp-OST0002 (ffff9aa0bb992e68)
+00000020:00000080:0.0:1579551952.038141:0:19904:0:(obd_config.c:430:class_attach()) OBD: dev 4 attached type lwp with refcount 1
+00000020:00000080:0.0:1579551952.038143:0:19904:0:(obd_config.c:1115:class_process_config()) processing cmd: cf003
+00010000:00080000:0.0:1579551952.038189:0:19904:0:(ldlm_lib.c:112:import_set_conn()) imp ffff9aa08ef64800@lustre-MDT0000-lwp-OST0002: add connection 10.29.161.11@tcp at head
+00000020:00000080:0.0:1579551952.040295:0:19904:0:(obd_config.c:537:class_setup()) finished setup of obd lustre-MDT0000-lwp-OST0002 (uuid lustre-MDT0000-lwp-OST0002_UUID)
+00000010:01000000:0.0:1579551952.040305:0:19904:0:(lwp_dev.c:490:lwp_obd_connect()) connect #0
+00000020:00000080:0.0:1579551952.040310:0:19904:0:(genops.c:1379:class_connect()) connect: client lustre-MDT0000-lwp-OST0002, cookie 0xd995b795b9559a1c
+00000100:00080000:0.0:1579551952.040312:0:19904:0:(import.c:681:ptlrpc_connect_import()) ffff9aa08ef64800 lustre-MDT0000_UUID: changing import state from NEW to CONNECTING
+00000100:00080000:0.0:1579551952.040316:0:19904:0:(import.c:524:import_select_connection()) lustre-MDT0000-lwp-OST0002: connect to NID 10.29.161.11@tcp last attempt 0
+00000100:00080000:0.0:1579551952.040320:0:19904:0:(import.c:602:import_select_connection()) lustre-MDT0000-lwp-OST0002: import ffff9aa08ef64800 using connection 10.29.161.11@tcp/10.29.161.11@tcp
+00000100:00080000:0.0:1579551952.040333:0:19904:0:(pinger.c:409:ptlrpc_pinger_add_import()) adding pingable import lustre-MDT0000-lwp-OST0002_UUID->lustre-MDT0000_UUID
+00000020:01000000:0.0:1579551952.040550:0:19863:0:(obd_config.c:1723:class_config_parse_llog()) Processed log lustre-client gen 1-35 (rc=0)
+10000000:01000000:0.0:1579551952.040559:0:19863:0:(mgc_request.c:2151:mgc_process_log()) MGC10.24.84.84@tcp: configuration from log 'lustre-client' succeeded (0).
+10000000:01000000:0.0:1579551952.040568:0:19863:0:(mgc_request.c:1267:mgc_set_info_async()) register_target lustre-OST0002 0x40000062
+10000000:01000000:0.0:1579551952.040575:0:19863:0:(mgc_request.c:1206:mgc_target_register()) register lustre-OST0002
+00000100:00080000:0.0:1579551952.040792:0:19905:0:(client.c:1563:ptlrpc_send_new_req()) @@@ req from PID 19905 waiting for recovery: (FULL != CONNECTING)  req@ffff9aa095366900 x1656004811292816/t0(0) o901->lustre-MDT0000-lwp-OST0002@10.29.161.11@tcp:29/10 lens 248/4320 e 0 to 0 dl 0 ref 2 fl Rpc:W/0/ffffffff rc 0/-1
+00010000:00080000:0.0:1579551952.041076:0:3251:0:(ldlm_request.c:1329:ldlm_cli_update_pool()) @@@ Zero SLV or Limit found (SLV: 0, Limit: 91900)  req@ffff9aa095366000 x1656004811292784/t0(0) o38->lustre-MDT0000-lwp-OST0002@10.29.161.11@tcp:12/10 lens 520/384 e 0 to 0 dl 1579551957 ref 1 fl Rpc:RN/0/0 rc 0/0
+00000100:00080000:0.0:1579551952.041087:0:3251:0:(import.c:1035:ptlrpc_connect_interpret()) lustre-MDT0000-lwp-OST0002: connect to target with instance 1
+00000100:00080000:0.0:1579551952.041090:0:3251:0:(import.c:910:ptlrpc_connect_set_flags()) lustre-MDT0000-lwp-OST0002: Resetting ns_connect_flags to server flags: 0x2041401043000020
+00000100:00080000:0.0:1579551952.041093:0:3251:0:(import.c:1120:ptlrpc_connect_interpret()) connected to replayable target: lustre-MDT0000_UUID
+00000100:00080000:0.0:1579551952.041096:0:3251:0:(import.c:1140:ptlrpc_connect_interpret()) ffff9aa08ef64800 lustre-MDT0000_UUID: changing import state from CONNECTING to FULL
+00000100:00080000:0.0:1579551952.041099:0:3251:0:(recover.c:223:ptlrpc_wake_delayed()) @@@ waking (set ffff9aa0f66c4a80):  req@ffff9aa095366900 x1656004811292816/t0(0) o901->lustre-MDT0000-lwp-OST0002@10.29.161.11@tcp:29/10 lens 248/4320 e 0 to 0 dl 0 ref 2 fl Rpc:W/0/ffffffff rc 0/-1
+00010000:00080000:0.0:1579551952.041583:0:19905:0:(ldlm_request.c:1329:ldlm_cli_update_pool()) @@@ Zero SLV or Limit found (SLV: 0, Limit: 91900)  req@ffff9aa095366900 x1656004811292816/t0(0) o901->lustre-MDT0000-lwp-OST0002@10.29.161.11@tcp:29/10 lens 248/4288 e 0 to 0 dl 1579551964 ref 2 fl Rpc:R/0/0 rc 0/0
+10000000:01000000:0.0:1579551952.060832:0:19863:0:(mgc_request.c:1223:mgc_target_register()) register lustre-OST0002 got index = 2
+00000020:02000000:0.0:1579551952.060842:0:19863:0:(obd_mount_server.c:1958:server_calc_timeout()) lustre-OST0002: Imperative Recovery not enabled, recovery window 300-900
+00002000:00080000:0.0:1579551952.124927:0:19863:0:(ofd_obd.c:556:ofd_postrecov()) lustre-OST0002: recovery is over
+00000020:01000004:0.0:1579551952.124937:0:19863:0:(obd_mount_server.c:315:server_mgc_clear_fs()) Unassign mgc disk
+00000020:01000004:0.0:1579551952.124952:0:19863:0:(obd_mount_server.c:1733:server_fill_super_common()) Server sb, dev=40
+00010000:00080000:0.0:1579551958.348299:0:19890:0:(ldlm_lib.c:1231:target_handle_connect()) lustre-OST0002: connection from lustre-MDT0000-mdtlov_UUID@10.29.161.11@tcp t0 exp           (null) cur 1579551958 last 0
+00000020:00000080:0.0:1579551958.348328:0:19890:0:(genops.c:1379:class_connect()) connect: client lustre-MDT0000-mdtlov_UUID, cookie 0xd995b795b9559a23
+00002000:00080000:0.0:1579551958.348336:0:19890:0:(ofd_obd.c:180:ofd_parse_connect_data()) lustre-OST0002: Received MDS connection for group 0
+00000020:01000000:0.0:1579551958.348448:0:19890:0:(lprocfs_status_server.c:342:lprocfs_exp_setup()) using hash ffff9aa0f6d236c0
+00002000:00080000:0.0:1579551958.348476:0:19890:0:(ofd_obd.c:397:ofd_obd_connect()) lustre-OST0002: get connection from MDS 0
+00000100:00080000:0.0:1579551958.348490:0:19890:0:(import.c:105:ptlrpc_import_enter_resend()) ffff9aa0b5a2d000 ÐB™» šÿÿÐB™» šÿÿ: changing import state from NEW to RECOVER
+00000100:00080000:0.0:1579551958.348499:0:19890:0:(import.c:1535:ptlrpc_import_recovery_state_machine()) ffff9aa0b5a2d000 ÐB™» šÿÿÐB™» šÿÿ: changing import state from RECOVER to FULL
+00000100:02000000:0.0:1579551958.348505:0:19890:0:(import.c:1541:ptlrpc_import_recovery_state_machine()) lustre-OST0002: Connection restored to lustre-MDT0000-mdtlov_UUID (at 10.29.161.11@tcp)
+00002000:00080000:0.0:1579551958.441099:0:19890:0:(ofd_dev.c:1257:ofd_get_info_hdl()) lustre-OST0002: LAST FID is [0x100020000:0x0:0x0]
+00002000:00080000:0.0:1579551958.441586:0:19890:0:(ofd_dev.c:1635:ofd_create_hdl()) ofd_last_id() = 0 -> diff = 1
+00002000:00080000:0.0:1579551958.441587:0:19890:0:(ofd_dev.c:1752:ofd_create_hdl()) lustre-OST0002: reserve 1 objects in group 0x0 at 1
+00002000:00080000:0.0:1579551958.442008:0:19890:0:(ofd_dev.c:1752:ofd_create_hdl()) lustre-OST0002: reserve 8 objects in group 0x0 at 2
+00002000:00080000:0.0:1579551958.442076:0:19890:0:(ofd_dev.c:1752:ofd_create_hdl()) lustre-OST0002: reserve 8 objects in group 0x0 at 10
+00002000:00080000:0.0:1579551958.442131:0:19890:0:(ofd_dev.c:1752:ofd_create_hdl()) lustre-OST0002: reserve 8 objects in group 0x0 at 18
+00002000:00080000:0.0:1579551958.442181:0:19890:0:(ofd_dev.c:1752:ofd_create_hdl()) lustre-OST0002: reserve 8 objects in group 0x0 at 26
+10000000:01000000:0.0:1579551958.638795:0:19883:0:(mgc_request.c:1025:mgc_blocking_ast()) Lock res [0x65727473756c:0x0:0x0].0x0 (lustre)
+10000000:01000000:0.0:1579551958.638829:0:19883:0:(mgc_request.c:1025:mgc_blocking_ast()) Lock res [0x65727473756c:0x0:0x0].0x0 (lustre)
+10000000:01000000:0.0:1579551958.638839:0:19883:0:(mgc_request.c:1025:mgc_blocking_ast()) Lock res [0x65727473756c:0x0:0x0].0x0 (lustre)
+10000000:01000000:0.0:1579551965.357977:0:19887:0:(mgc_request.c:600:do_requeue()) updating log lustre-client
+10000000:01000000:0.0:1579551965.357982:0:19887:0:(mgc_request.c:2076:mgc_process_log()) Process log lustre-client:ffff9aa09da9d800 from 36
+10000000:01000000:0.0:1579551965.357992:0:19887:0:(mgc_request.c:1133:mgc_enqueue()) Enqueue for lustre-client (res 0x65727473756c)
+00000020:01000000:0.0:1579551965.367655:0:19887:0:(obd_config.c:1723:class_config_parse_llog()) Processed log lustre-client gen 36-44 (rc=0)
+10000000:01000000:0.0:1579551965.367670:0:19887:0:(mgc_request.c:2151:mgc_process_log()) MGC10.24.84.84@tcp: configuration from log 'lustre-client' succeeded (0).
+10000000:01000000:0.0:1579551965.367678:0:19887:0:(mgc_request.c:600:do_requeue()) updating log lustre-OST0002
+10000000:01000000:0.0:1579551965.367680:0:19887:0:(mgc_request.c:2076:mgc_process_log()) Process log lustre-OST0002:          (null) from 5
+10000000:01000000:0.0:1579551965.367683:0:19887:0:(mgc_request.c:1133:mgc_enqueue()) Enqueue for lustre-OST0002 (res 0x65727473756c)
+00000020:01000000:0.0:1579551965.375153:0:19887:0:(obd_config.c:1723:class_config_parse_llog()) Processed log lustre-OST0002 gen 5-4 (rc=0)
+10000000:01000000:0.0:1579551965.375167:0:19887:0:(mgc_request.c:2151:mgc_process_log()) MGC10.24.84.84@tcp: configuration from log 'lustre-OST0002' succeeded (0).
+10000000:01000000:0.0:1579551965.375174:0:19887:0:(mgc_request.c:600:do_requeue()) updating log lustre-sptlrpc
+10000000:01000000:0.0:1579551965.375176:0:19887:0:(mgc_request.c:2076:mgc_process_log()) Process log lustre-sptlrpc:          (null) from 1
+10000000:01000000:0.0:1579551965.375180:0:19887:0:(mgc_request.c:1133:mgc_enqueue()) Enqueue for lustre-sptlrpc (res 0x65727473756c)
+10000000:01000000:0.0:1579551965.378467:0:19887:0:(mgc_request.c:2151:mgc_process_log()) MGC10.24.84.84@tcp: configuration from log 'lustre-sptlrpc' failed (-2).
+00010000:00080000:0.0:1579551970.574643:0:19890:0:(ldlm_lib.c:1231:target_handle_connect()) lustre-OST0002: connection from 2fb222c3-e064-c835-3428-a0df9365dd56@10.24.85.117@tcp t0 exp           (null) cur 1579551970 last 0
+00000020:00000080:0.0:1579551970.574671:0:19890:0:(genops.c:1379:class_connect()) connect: client 2fb222c3-e064-c835-3428-a0df9365dd56, cookie 0xd995b795b9559a46
+00000020:01000000:0.0:1579551970.574738:0:19890:0:(lprocfs_status_server.c:342:lprocfs_exp_setup()) using hash ffff9aa0f6d236c0
+00002000:00080000:0.0:1579551970.574769:0:19890:0:(ofd_obd.c:397:ofd_obd_connect()) lustre-OST0002: get connection from MDS 0
+00000100:00080000:0.0:1579551970.574783:0:19890:0:(import.c:105:ptlrpc_import_enter_resend()) ffff9aa09e9f1000 ÐB™» šÿÿÐB™» šÿÿ: changing import state from NEW to RECOVER
+00000100:00080000:0.0:1579551970.574791:0:19890:0:(import.c:1535:ptlrpc_import_recovery_state_machine()) ffff9aa09e9f1000 ÐB™» šÿÿÐB™» šÿÿ: changing import state from RECOVER to FULL
+00000100:02000000:0.0:1579551970.574796:0:19890:0:(import.c:1541:ptlrpc_import_recovery_state_machine()) lustre-OST0002: Connection restored to e1640c7d-8580-cd33-5086-5ef76dc83e1f (at 10.24.85.117@tcp)
+00000020:00000080:0.0:1579551996.592536:0:19890:0:(genops.c:1463:class_disconnect()) disconnect: cookie 0xd995b795b9559a46
+00000100:00080000:0.0:1579551996.592539:0:19890:0:(import.c:1650:ptlrpc_cleanup_imp()) ffff9aa09e9f1000 ÐB™» šÿÿÐB™» šÿÿ: changing import state from FULL to CLOSED
+00000020:00000080:0.0:1579552002.424489:0:19875:0:(genops.c:987:class_export_put()) final put ffff9aa0b93cbc00/2fb222c3-e064-c835-3428-a0df9365dd56
+00000020:00000080:0.0:1579552002.424498:0:3234:0:(genops.c:937:class_export_destroy()) destroying export ffff9aa0b93cbc00/2fb222c3-e064-c835-3428-a0df9365dd56 for lustre-OST0002
+00000020:00000080:0.0:1579552002.424507:0:3234:0:(genops.c:1177:class_import_destroy()) destroying import ffff9aa09e9f1000 for lustre-OST0002
+00000800:00000100:0.0:1579552020.433928:0:3247:0:(socklnd_cb.c:2274:ksocknal_find_timed_out_conn()) A connection with 12345-10.24.85.117@tcp (10.24.85.117:1021) was reset; it may have rebooted.
+00010000:00080000:0.0:1579552052.489097:0:19890:0:(ldlm_lib.c:1231:target_handle_connect()) lustre-OST0002: connection from c2ceedd9-2c07-7002-70a4-4cd78df09e02@10.24.85.117@tcp t0 exp           (null) cur 1579552052 last 0
+00000020:00000080:0.0:1579552052.489107:0:19890:0:(genops.c:1379:class_connect()) connect: client c2ceedd9-2c07-7002-70a4-4cd78df09e02, cookie 0xd995b795b9559a54
+00000020:01000000:0.0:1579552052.489127:0:19890:0:(lprocfs_status_server.c:342:lprocfs_exp_setup()) using hash ffff9aa0f6d236c0
+00002000:00080000:0.0:1579552052.489131:0:19890:0:(ofd_obd.c:397:ofd_obd_connect()) lustre-OST0002: get connection from MDS 0
+00000100:00080000:0.0:1579552052.489135:0:19890:0:(import.c:105:ptlrpc_import_enter_resend()) ffff9aa0a0a2f000 ÐB™» šÿÿÐB™» šÿÿ: changing import state from NEW to RECOVER
+00000100:00080000:0.0:1579552052.489138:0:19890:0:(import.c:1535:ptlrpc_import_recovery_state_machine()) ffff9aa0a0a2f000 ÐB™» šÿÿÐB™» šÿÿ: changing import state from RECOVER to FULL
+00000100:02000000:0.0:1579552052.489139:0:19890:0:(import.c:1541:ptlrpc_import_recovery_state_machine()) lustre-OST0002: Connection restored to e1640c7d-8580-cd33-5086-5ef76dc83e1f (at 10.24.85.117@tcp)
+10000000:01000000:0.0:1579552054.526912:0:19884:0:(mgc_request.c:1025:mgc_blocking_ast()) Lock res [0x65727473756c:0x0:0x0].0x0 (lustre)
+10000000:01000000:0.0:1579552054.526948:0:19884:0:(mgc_request.c:1025:mgc_blocking_ast()) Lock res [0x65727473756c:0x0:0x0].0x0 (lustre)
+10000000:01000000:0.0:1579552054.526959:0:19884:0:(mgc_request.c:1025:mgc_blocking_ast()) Lock res [0x65727473756c:0x0:0x0].0x0 (lustre)
+10000000:01000000:0.0:1579552063.627002:0:19887:0:(mgc_request.c:600:do_requeue()) updating log lustre-client
+10000000:01000000:0.0:1579552063.627007:0:19887:0:(mgc_request.c:2076:mgc_process_log()) Process log lustre-client:ffff9aa09da9d800 from 45
+10000000:01000000:0.0:1579552063.627012:0:19887:0:(mgc_request.c:1133:mgc_enqueue()) Enqueue for lustre-client (res 0x65727473756c)
+00000020:01000000:0.0:1579552063.639770:0:19887:0:(obd_config.c:1723:class_config_parse_llog()) Processed log lustre-client gen 45-54 (rc=0)
+10000000:01000000:0.0:1579552063.639788:0:19887:0:(mgc_request.c:2151:mgc_process_log()) MGC10.24.84.84@tcp: configuration from log 'lustre-client' succeeded (0).
+10000000:01000000:0.0:1579552063.639797:0:19887:0:(mgc_request.c:600:do_requeue()) updating log lustre-OST0002
+10000000:01000000:0.0:1579552063.639799:0:19887:0:(mgc_request.c:2076:mgc_process_log()) Process log lustre-OST0002:          (null) from 5
+10000000:01000000:0.0:1579552063.639803:0:19887:0:(mgc_request.c:1133:mgc_enqueue()) Enqueue for lustre-OST0002 (res 0x65727473756c)
+00000020:01000000:0.0:1579552063.646844:0:19887:0:(obd_config.c:1723:class_config_parse_llog()) Processed log lustre-OST0002 gen 5-4 (rc=0)
+10000000:01000000:0.0:1579552063.646857:0:19887:0:(mgc_request.c:2151:mgc_process_log()) MGC10.24.84.84@tcp: configuration from log 'lustre-OST0002' succeeded (0).
+10000000:01000000:0.0:1579552063.646866:0:19887:0:(mgc_request.c:600:do_requeue()) updating log lustre-sptlrpc
+10000000:01000000:0.0:1579552063.646868:0:19887:0:(mgc_request.c:2076:mgc_process_log()) Process log lustre-sptlrpc:          (null) from 1
+10000000:01000000:0.0:1579552063.646871:0:19887:0:(mgc_request.c:1133:mgc_enqueue()) Enqueue for lustre-sptlrpc (res 0x65727473756c)
+10000000:01000000:0.0:1579552063.650780:0:19887:0:(mgc_request.c:2151:mgc_process_log()) MGC10.24.84.84@tcp: configuration from log 'lustre-sptlrpc' failed (-2).
+00002000:00080000:0.0:1579552141.944931:0:19890:0:(ofd_dev.c:1752:ofd_create_hdl()) lustre-OST0002: reserve 8 objects in group 0x0 at 34
+00002000:00080000:0.0:1579552141.945086:0:19890:0:(ofd_dev.c:1752:ofd_create_hdl()) lustre-OST0002: reserve 8 objects in group 0x0 at 42
+00002000:00080000:0.0:1579552141.945151:0:19890:0:(ofd_dev.c:1752:ofd_create_hdl()) lustre-OST0002: reserve 8 objects in group 0x0 at 50
+00002000:00080000:0.0:1579552141.945205:0:19890:0:(ofd_dev.c:1752:ofd_create_hdl()) lustre-OST0002: reserve 8 objects in group 0x0 at 58
+00000001:00080000:0.0:1579552143.445752:0:19875:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0002: transno 4294967333 is committed
+00000001:00080000:0.0:1579552143.445756:0:19875:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0002: transno 4294967328 is committed
+00002000:00080000:0.0:1579552144.030731:0:19889:0:(ofd_dev.c:1875:ofd_destroy_hdl()) lustre-OST0002: Destroy object 0x0:15 count 1
+00002000:00080000:0.0:1579552144.032480:0:19889:0:(ofd_dev.c:1875:ofd_destroy_hdl()) lustre-OST0002: Destroy object 0x0:2 count 1
+00000001:00080000:0.0:1579552149.454049:0:19875:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0002: transno 4294967355 is committed
+00000001:00080000:0.0:1579552149.454082:0:19875:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0002: transno 4294967345 is committed
+00002000:00080000:0.0:1579552149.536972:0:19889:0:(ofd_dev.c:1875:ofd_destroy_hdl()) lustre-OST0002: Destroy object 0x0:38 count 1
+00000001:00080000:0.0:1579552154.674189:0:19875:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0002: transno 4294967367 is committed
+00000001:00080000:0.0:1579552154.674202:0:19875:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0002: transno 4294967356 is committed
+00000001:00080000:0.0:1579552161.474484:0:19875:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0002: transno 4294967378 is committed
+00002000:00080000:0.0:1579552162.747170:0:19889:0:(ofd_dev.c:1752:ofd_create_hdl()) lustre-OST0002: reserve 8 objects in group 0x0 at 66
+00002000:00080000:0.0:1579552162.747331:0:19889:0:(ofd_dev.c:1752:ofd_create_hdl()) lustre-OST0002: reserve 8 objects in group 0x0 at 74
+00002000:00080000:0.0:1579552162.747392:0:19889:0:(ofd_dev.c:1752:ofd_create_hdl()) lustre-OST0002: reserve 8 objects in group 0x0 at 82
+00002000:00080000:0.0:1579552162.747446:0:19889:0:(ofd_dev.c:1752:ofd_create_hdl()) lustre-OST0002: reserve 8 objects in group 0x0 at 90
+00000001:00080000:0.0:1579552167.449149:0:19875:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0002: transno 4294967379 is committed
+00002000:00080000:0.0:1579552169.060543:0:19889:0:(ofd_dev.c:1752:ofd_create_hdl()) lustre-OST0002: reserve 8 objects in group 0x0 at 98
+00002000:00080000:0.0:1579552169.060669:0:19889:0:(ofd_dev.c:1752:ofd_create_hdl()) lustre-OST0002: reserve 8 objects in group 0x0 at 106
+00002000:00080000:0.0:1579552169.060743:0:19889:0:(ofd_dev.c:1752:ofd_create_hdl()) lustre-OST0002: reserve 8 objects in group 0x0 at 114
+00002000:00080000:0.0:1579552169.060808:0:19889:0:(ofd_dev.c:1752:ofd_create_hdl()) lustre-OST0002: reserve 8 objects in group 0x0 at 122
+00000001:00080000:0.0:1579552174.142273:0:19875:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0002: transno 4294967398 is committed
+00000001:00080000:0.0:1579552179.712664:0:19875:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0002: transno 4294967413 is committed
+00000001:00080000:0.0:1579552185.485506:0:19875:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0002: transno 4294967442 is committed
+00002000:00080000:0.0:1579552188.797057:0:19889:0:(ofd_dev.c:1875:ofd_destroy_hdl()) lustre-OST0002: Destroy object 0x0:3 count 1
+00000001:00080000:0.0:1579552191.483596:0:19875:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0002: transno 4294967483 is committed
+00000001:00080000:0.0:1579552191.483621:0:19875:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0002: transno 4294967477 is committed
+00002000:00080000:0.0:1579552192.063427:0:19889:0:(ofd_dev.c:1752:ofd_create_hdl()) lustre-OST0002: reserve 8 objects in group 0x0 at 130
+00002000:00080000:0.0:1579552192.063554:0:19889:0:(ofd_dev.c:1752:ofd_create_hdl()) lustre-OST0002: reserve 8 objects in group 0x0 at 138
+00002000:00080000:0.0:1579552192.063612:0:19889:0:(ofd_dev.c:1752:ofd_create_hdl()) lustre-OST0002: reserve 8 objects in group 0x0 at 146
+00002000:00080000:0.0:1579552192.063668:0:19889:0:(ofd_dev.c:1752:ofd_create_hdl()) lustre-OST0002: reserve 8 objects in group 0x0 at 154
+00002000:00080000:0.0:1579552194.219536:0:19889:0:(ofd_dev.c:1875:ofd_destroy_hdl()) lustre-OST0002: Destroy object 0x0:4 count 1
+00002000:00080000:0.0:1579552194.225233:0:19889:0:(ofd_dev.c:1875:ofd_destroy_hdl()) lustre-OST0002: Destroy object 0x0:5 count 1
+00002000:00080000:0.0:1579552194.226162:0:19977:0:(ofd_dev.c:1875:ofd_destroy_hdl()) lustre-OST0002: Destroy object 0x0:6 count 1
+00002000:00080000:0.0:1579552194.232349:0:19889:0:(ofd_dev.c:1875:ofd_destroy_hdl()) lustre-OST0002: Destroy object 0x0:7 count 1
+00002000:00080000:0.0:1579552194.233737:0:19890:0:(ofd_dev.c:1875:ofd_destroy_hdl()) lustre-OST0002: Destroy object 0x0:8 count 1
+00002000:00080000:0.0:1579552194.234146:0:19889:0:(ofd_dev.c:1875:ofd_destroy_hdl()) lustre-OST0002: Destroy object 0x0:9 count 1
+00002000:00080000:0.0:1579552194.234312:0:19978:0:(ofd_dev.c:1875:ofd_destroy_hdl()) lustre-OST0002: Destroy object 0x0:10 count 1
+00002000:00080000:0.0:1579552194.236075:0:19890:0:(ofd_dev.c:1875:ofd_destroy_hdl()) lustre-OST0002: Destroy object 0x0:11 count 1
+00002000:00080000:0.0:1579552194.236323:0:19889:0:(ofd_dev.c:1875:ofd_destroy_hdl()) lustre-OST0002: Destroy object 0x0:12 count 1
+00002000:00080000:0.0:1579552194.236606:0:19978:0:(ofd_dev.c:1875:ofd_destroy_hdl()) lustre-OST0002: Destroy object 0x0:13 count 1
+00002000:00080000:0.0:1579552194.236769:0:19979:0:(ofd_dev.c:1875:ofd_destroy_hdl()) lustre-OST0002: Destroy object 0x0:100 count 1
+00002000:00080000:0.0:1579552194.236930:0:19980:0:(ofd_dev.c:1875:ofd_destroy_hdl()) lustre-OST0002: Destroy object 0x0:17 count 1
+00002000:00080000:0.0:1579552194.238610:0:19890:0:(ofd_dev.c:1875:ofd_destroy_hdl()) lustre-OST0002: Destroy object 0x0:112 count 1
+00002000:00080000:0.0:1579552194.239763:0:19979:0:(ofd_dev.c:1875:ofd_destroy_hdl()) lustre-OST0002: Destroy object 0x0:18 count 1
+00002000:00080000:0.0:1579552194.239804:0:19978:0:(ofd_dev.c:1875:ofd_destroy_hdl()) lustre-OST0002: Destroy object 0x0:19 count 1
+00002000:00080000:0.0:1579552194.239901:0:19889:0:(ofd_dev.c:1875:ofd_destroy_hdl()) lustre-OST0002: Destroy object 0x0:20 count 1
+00002000:00080000:0.0:1579552194.240725:0:19890:0:(ofd_dev.c:1875:ofd_destroy_hdl()) lustre-OST0002: Destroy object 0x0:21 count 1
+00000001:00080000:0.0:1579552196.613798:0:19875:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0002: transno 4294967513 is committed
+00000001:00080000:0.0:1579552196.613806:0:19875:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0002: transno 4294967512 is committed
+00002000:00080000:0.0:1579552199.520874:0:19890:0:(ofd_dev.c:1875:ofd_destroy_hdl()) lustre-OST0002: Destroy object 0x0:22 count 1
+00002000:00080000:0.0:1579552199.520911:0:19889:0:(ofd_dev.c:1875:ofd_destroy_hdl()) lustre-OST0002: Destroy object 0x0:24 count 1
+00002000:00080000:0.0:1579552199.520921:0:19979:0:(ofd_dev.c:1875:ofd_destroy_hdl()) lustre-OST0002: Destroy object 0x0:26 count 1
+00002000:00080000:0.0:1579552199.520930:0:19978:0:(ofd_dev.c:1875:ofd_destroy_hdl()) lustre-OST0002: Destroy object 0x0:28 count 1
+00002000:00080000:0.0:1579552199.520939:0:19981:0:(ofd_dev.c:1875:ofd_destroy_hdl()) lustre-OST0002: Destroy object 0x0:23 count 1
+00002000:00080000:0.0:1579552199.520948:0:19888:0:(ofd_dev.c:1875:ofd_destroy_hdl()) lustre-OST0002: Destroy object 0x0:25 count 1
+00002000:00080000:0.0:1579552199.521098:0:19982:0:(ofd_dev.c:1875:ofd_destroy_hdl()) lustre-OST0002: Destroy object 0x0:27 count 1
+00002000:00080000:0.0:1579552200.497821:0:19991:0:(ofd_dev.c:1875:ofd_destroy_hdl()) lustre-OST0002: Destroy object 0x0:29 count 1
+00002000:00080000:0.0:1579552200.499552:0:19978:0:(ofd_dev.c:1875:ofd_destroy_hdl()) lustre-OST0002: Destroy object 0x0:30 count 1
+00002000:00080000:0.0:1579552200.499750:0:19890:0:(ofd_dev.c:1875:ofd_destroy_hdl()) lustre-OST0002: Destroy object 0x0:31 count 1
+00002000:00080000:0.0:1579552200.503109:0:19982:0:(ofd_dev.c:1875:ofd_destroy_hdl()) lustre-OST0002: Destroy object 0x0:32 count 1
+00002000:00080000:0.0:1579552200.503129:0:19888:0:(ofd_dev.c:1875:ofd_destroy_hdl()) lustre-OST0002: Destroy object 0x0:33 count 1
+00002000:00080000:0.0:1579552200.503317:0:19981:0:(ofd_dev.c:1875:ofd_destroy_hdl()) lustre-OST0002: Destroy object 0x0:34 count 1
+00000001:00080000:0.0:1579552201.995350:0:19875:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0002: transno 4294967542 is committed
+00000001:00080000:0.0:1579552201.995354:0:19875:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0002: transno 4294967541 is committed
+00002000:00080000:0.0:1579552207.045959:0:19982:0:(ofd_dev.c:1875:ofd_destroy_hdl()) lustre-OST0002: Destroy object 0x0:35 count 1
+00002000:00080000:0.0:1579552207.046194:0:19981:0:(ofd_dev.c:1875:ofd_destroy_hdl()) lustre-OST0002: Destroy object 0x0:133 count 1
+00002000:00080000:0.0:1579552207.046210:0:19888:0:(ofd_dev.c:1875:ofd_destroy_hdl()) lustre-OST0002: Destroy object 0x0:36 count 1
+00002000:00080000:0.0:1579552207.046219:0:19890:0:(ofd_dev.c:1875:ofd_destroy_hdl()) lustre-OST0002: Destroy object 0x0:39 count 1
+00000001:00080000:0.0:1579552207.081911:0:19875:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0002: transno 4294967557 is committed
+00000001:00080000:0.0:1579552207.081915:0:19875:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0002: transno 4294967556 is committed
+00000001:00080000:0.0:1579552212.430798:0:19875:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0002: transno 4294967566 is committed
+00000001:00080000:0.0:1579552212.430808:0:19875:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0002: transno 4294967560 is committed
+00002000:00080000:0.0:1579552212.519132:0:19888:0:(ofd_dev.c:1875:ofd_destroy_hdl()) lustre-OST0002: Destroy object 0x0:40 count 1
+00002000:00080000:0.0:1579552214.136116:0:19888:0:(ofd_dev.c:1752:ofd_create_hdl()) lustre-OST0002: reserve 8 objects in group 0x0 at 162
+00002000:00080000:0.0:1579552214.136243:0:19888:0:(ofd_dev.c:1752:ofd_create_hdl()) lustre-OST0002: reserve 8 objects in group 0x0 at 170
+00002000:00080000:0.0:1579552214.136337:0:19888:0:(ofd_dev.c:1752:ofd_create_hdl()) lustre-OST0002: reserve 8 objects in group 0x0 at 178
+00002000:00080000:0.0:1579552214.136404:0:19888:0:(ofd_dev.c:1752:ofd_create_hdl()) lustre-OST0002: reserve 8 objects in group 0x0 at 186
+00002000:00080000:0.0:1579552217.542025:0:19888:0:(ofd_dev.c:1875:ofd_destroy_hdl()) lustre-OST0002: Destroy object 0x0:42 count 1
+00002000:00080000:0.0:1579552217.542058:0:19981:0:(ofd_dev.c:1875:ofd_destroy_hdl()) lustre-OST0002: Destroy object 0x0:44 count 1
+00002000:00080000:0.0:1579552217.542068:0:19890:0:(ofd_dev.c:1875:ofd_destroy_hdl()) lustre-OST0002: Destroy object 0x0:46 count 1
+00002000:00080000:0.0:1579552217.542080:0:19982:0:(ofd_dev.c:1875:ofd_destroy_hdl()) lustre-OST0002: Destroy object 0x0:48 count 1
+00002000:00080000:0.0:1579552217.542089:0:19978:0:(ofd_dev.c:1875:ofd_destroy_hdl()) lustre-OST0002: Destroy object 0x0:43 count 1
+00002000:00080000:0.0:1579552217.542097:0:19991:0:(ofd_dev.c:1875:ofd_destroy_hdl()) lustre-OST0002: Destroy object 0x0:45 count 1
+00002000:00080000:0.0:1579552217.542105:0:19889:0:(ofd_dev.c:1875:ofd_destroy_hdl()) lustre-OST0002: Destroy object 0x0:47 count 1
+00002000:00080000:0.0:1579552217.542113:0:19979:0:(ofd_dev.c:1875:ofd_destroy_hdl()) lustre-OST0002: Destroy object 0x0:49 count 1
+00002000:00080000:0.0:1579552217.552060:0:19888:0:(ofd_dev.c:1875:ofd_destroy_hdl()) lustre-OST0002: Destroy object 0x0:50 count 1
+00002000:00080000:0.0:1579552217.557961:0:19888:0:(ofd_dev.c:1875:ofd_destroy_hdl()) lustre-OST0002: Destroy object 0x0:51 count 1
+00002000:00080000:0.0:1579552217.558041:0:19979:0:(ofd_dev.c:1875:ofd_destroy_hdl()) lustre-OST0002: Destroy object 0x0:53 count 1
+00002000:00080000:0.0:1579552217.558053:0:19982:0:(ofd_dev.c:1875:ofd_destroy_hdl()) lustre-OST0002: Destroy object 0x0:55 count 1
+00002000:00080000:0.0:1579552217.558061:0:19889:0:(ofd_dev.c:1875:ofd_destroy_hdl()) lustre-OST0002: Destroy object 0x0:57 count 1
+00002000:00080000:0.0:1579552217.558069:0:19890:0:(ofd_dev.c:1875:ofd_destroy_hdl()) lustre-OST0002: Destroy object 0x0:52 count 1
+00002000:00080000:0.0:1579552217.558077:0:19981:0:(ofd_dev.c:1875:ofd_destroy_hdl()) lustre-OST0002: Destroy object 0x0:54 count 1
+00002000:00080000:0.0:1579552217.558085:0:19991:0:(ofd_dev.c:1875:ofd_destroy_hdl()) lustre-OST0002: Destroy object 0x0:56 count 1
+00002000:00080000:0.0:1579552217.558093:0:19978:0:(ofd_dev.c:1875:ofd_destroy_hdl()) lustre-OST0002: Destroy object 0x0:58 count 1
+00002000:00080000:0.0:1579552217.560258:0:19888:0:(ofd_dev.c:1875:ofd_destroy_hdl()) lustre-OST0002: Destroy object 0x0:59 count 1
+00002000:00080000:0.0:1579552217.561019:0:19991:0:(ofd_dev.c:1875:ofd_destroy_hdl()) lustre-OST0002: Destroy object 0x0:60 count 1
+00002000:00080000:0.0:1579552217.561033:0:19978:0:(ofd_dev.c:1875:ofd_destroy_hdl()) lustre-OST0002: Destroy object 0x0:61 count 1
+00002000:00080000:0.0:1579552217.561284:0:19890:0:(ofd_dev.c:1875:ofd_destroy_hdl()) lustre-OST0002: Destroy object 0x0:62 count 1
+00002000:00080000:0.0:1579552217.561297:0:19982:0:(ofd_dev.c:1875:ofd_destroy_hdl()) lustre-OST0002: Destroy object 0x0:64 count 1
+00002000:00080000:0.0:1579552217.561305:0:19981:0:(ofd_dev.c:1875:ofd_destroy_hdl()) lustre-OST0002: Destroy object 0x0:66 count 1
+00002000:00080000:0.0:1579552217.561312:0:19889:0:(ofd_dev.c:1875:ofd_destroy_hdl()) lustre-OST0002: Destroy object 0x0:63 count 1
+00002000:00080000:0.0:1579552217.561320:0:19979:0:(ofd_dev.c:1875:ofd_destroy_hdl()) lustre-OST0002: Destroy object 0x0:65 count 1
+00002000:00080000:0.0:1579552217.562531:0:19888:0:(ofd_dev.c:1875:ofd_destroy_hdl()) lustre-OST0002: Destroy object 0x0:67 count 1
+00002000:00080000:0.0:1579552217.562978:0:19991:0:(ofd_dev.c:1875:ofd_destroy_hdl()) lustre-OST0002: Destroy object 0x0:68 count 1
+00000001:00080000:0.0:1579552217.581160:0:19875:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0002: transno 4294967570 is committed
+00000001:00080000:0.0:1579552217.581164:0:19875:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0002: transno 4294967569 is committed
+00002000:00080000:0.0:1579552220.602223:0:19991:0:(ofd_dev.c:1752:ofd_create_hdl()) lustre-OST0002: reserve 8 objects in group 0x0 at 194
+00002000:00080000:0.0:1579552220.602358:0:19991:0:(ofd_dev.c:1752:ofd_create_hdl()) lustre-OST0002: reserve 8 objects in group 0x0 at 202
+00002000:00080000:0.0:1579552220.602433:0:19991:0:(ofd_dev.c:1752:ofd_create_hdl()) lustre-OST0002: reserve 8 objects in group 0x0 at 210
+00002000:00080000:0.0:1579552220.602568:0:19991:0:(ofd_dev.c:1752:ofd_create_hdl()) lustre-OST0002: reserve 8 objects in group 0x0 at 218
+00000001:00080000:0.0:1579552222.621879:0:19875:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0002: transno 4294967611 is committed
+00000001:00080000:0.0:1579552222.621893:0:19875:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0002: transno 4294967596 is committed
+00002000:00080000:0.0:1579552223.528210:0:19888:0:(ofd_dev.c:1875:ofd_destroy_hdl()) lustre-OST0002: Destroy object 0x0:69 count 1
+00002000:00080000:0.0:1579552223.528246:0:19981:0:(ofd_dev.c:1875:ofd_destroy_hdl()) lustre-OST0002: Destroy object 0x0:71 count 1
+00002000:00080000:0.0:1579552223.528258:0:19979:0:(ofd_dev.c:1875:ofd_destroy_hdl()) lustre-OST0002: Destroy object 0x0:73 count 1
+00002000:00080000:0.0:1579552223.528560:0:19889:0:(ofd_dev.c:1875:ofd_destroy_hdl()) lustre-OST0002: Destroy object 0x0:75 count 1
+00002000:00080000:0.0:1579552223.528581:0:19890:0:(ofd_dev.c:1875:ofd_destroy_hdl()) lustre-OST0002: Destroy object 0x0:70 count 1
+00002000:00080000:0.0:1579552223.528591:0:19982:0:(ofd_dev.c:1875:ofd_destroy_hdl()) lustre-OST0002: Destroy object 0x0:72 count 1
+00002000:00080000:0.0:1579552223.528600:0:19978:0:(ofd_dev.c:1875:ofd_destroy_hdl()) lustre-OST0002: Destroy object 0x0:74 count 1
+00002000:00080000:0.0:1579552224.421838:0:19991:0:(ofd_dev.c:1875:ofd_destroy_hdl()) lustre-OST0002: Destroy object 0x0:78 count 1
+00000001:00080000:0.0:1579552227.888869:0:19875:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0002: transno 4294967634 is committed
+00000001:00080000:0.0:1579552227.888880:0:19875:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0002: transno 4294967625 is committed
+00002000:00080000:0.0:1579552228.920877:0:19991:0:(ofd_dev.c:1875:ofd_destroy_hdl()) lustre-OST0002: Destroy object 0x0:80 count 1
+00002000:00080000:0.0:1579552228.921025:0:19982:0:(ofd_dev.c:1875:ofd_destroy_hdl()) lustre-OST0002: Destroy object 0x0:82 count 1
+00002000:00080000:0.0:1579552228.921041:0:19978:0:(ofd_dev.c:1875:ofd_destroy_hdl()) lustre-OST0002: Destroy object 0x0:84 count 1
+00002000:00080000:0.0:1579552228.921052:0:19889:0:(ofd_dev.c:1875:ofd_destroy_hdl()) lustre-OST0002: Destroy object 0x0:86 count 1
+00002000:00080000:0.0:1579552228.921065:0:19890:0:(ofd_dev.c:1875:ofd_destroy_hdl()) lustre-OST0002: Destroy object 0x0:79 count 1
+00002000:00080000:0.0:1579552228.921075:0:19979:0:(ofd_dev.c:1875:ofd_destroy_hdl()) lustre-OST0002: Destroy object 0x0:81 count 1
+00002000:00080000:0.0:1579552228.921087:0:19888:0:(ofd_dev.c:1875:ofd_destroy_hdl()) lustre-OST0002: Destroy object 0x0:83 count 1
+00002000:00080000:0.0:1579552228.921098:0:19981:0:(ofd_dev.c:1875:ofd_destroy_hdl()) lustre-OST0002: Destroy object 0x0:85 count 1
+00002000:00080000:0.0:1579552228.941162:0:19991:0:(ofd_dev.c:1875:ofd_destroy_hdl()) lustre-OST0002: Destroy object 0x0:88 count 1
+00002000:00080000:0.0:1579552228.941254:0:19977:0:(ofd_dev.c:1875:ofd_destroy_hdl()) lustre-OST0002: Destroy object 0x0:90 count 1
+00002000:00080000:0.0:1579552228.941270:0:19980:0:(ofd_dev.c:1875:ofd_destroy_hdl()) lustre-OST0002: Destroy object 0x0:87 count 1
+00002000:00080000:0.0:1579552228.941284:0:19889:0:(ofd_dev.c:1875:ofd_destroy_hdl()) lustre-OST0002: Destroy object 0x0:89 count 1
+00002000:00080000:0.0:1579552228.946610:0:19979:0:(ofd_dev.c:1875:ofd_destroy_hdl()) lustre-OST0002: Destroy object 0x0:92 count 1
+00002000:00080000:0.0:1579552228.946693:0:19888:0:(ofd_dev.c:1875:ofd_destroy_hdl()) lustre-OST0002: Destroy object 0x0:91 count 1
+00002000:00080000:0.0:1579552228.946822:0:19890:0:(ofd_dev.c:1875:ofd_destroy_hdl()) lustre-OST0002: Destroy object 0x0:94 count 1
+00002000:00080000:0.0:1579552228.946845:0:19982:0:(ofd_dev.c:1875:ofd_destroy_hdl()) lustre-OST0002: Destroy object 0x0:93 count 1
+00002000:00080000:0.0:1579552228.951424:0:19980:0:(ofd_dev.c:1875:ofd_destroy_hdl()) lustre-OST0002: Destroy object 0x0:95 count 1
+00002000:00080000:0.0:1579552228.951565:0:19991:0:(ofd_dev.c:1875:ofd_destroy_hdl()) lustre-OST0002: Destroy object 0x0:96 count 1
+00002000:00080000:0.0:1579552228.951702:0:19889:0:(ofd_dev.c:1875:ofd_destroy_hdl()) lustre-OST0002: Destroy object 0x0:97 count 1
+00000001:00080000:0.0:1579552233.460010:0:19875:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0002: transno 4294967681 is committed
+00000001:00080000:0.0:1579552233.460024:0:19875:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0002: transno 4294967673 is committed
+00002000:00080000:0.0:1579552234.007602:0:19991:0:(ofd_dev.c:1875:ofd_destroy_hdl()) lustre-OST0002: Destroy object 0x0:98 count 1
+00002000:00080000:0.0:1579552234.007636:0:19889:0:(ofd_dev.c:1875:ofd_destroy_hdl()) lustre-OST0002: Destroy object 0x0:99 count 1
+00000001:00080000:0.0:1579552239.466852:0:19875:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0002: transno 4294967687 is committed
+00000001:00080000:0.0:1579552239.466875:0:19875:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0002: transno 4294967685 is committed
+00000001:00080000:0.0:1579552246.509270:0:19875:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0002: transno 4294967692 is committed
+00000001:00080000:0.0:1579552252.488699:0:19875:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0002: transno 4294967697 is committed
+00000001:00080000:0.0:1579552258.171477:0:19875:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0002: transno 4294967705 is committed
+00000001:00080000:0.0:1579552263.389872:0:19875:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0002: transno 4294967712 is committed
+00000001:00080000:0.0:1579552270.460080:0:19875:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0002: transno 4294967715 is committed
+00000001:00080000:0.0:1579552295.451545:0:19875:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0002: transno 4294967717 is committed

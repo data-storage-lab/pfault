@@ -1,0 +1,26 @@
+00000100:00080000:0.0F:1574202117.164074:0:2272:0:(pinger.c:217:ptlrpc_pinger_process_import()) lustre-MDT0000-lwp-OST0001_UUID->lustre-MDT0000_UUID: level DISCONN/3 force 0 force_next 0 deactive 0 pingable 1 suppress 0
+00000100:00080000:0.0:1574202117.164088:0:2272:0:(recover.c:58:ptlrpc_initiate_recovery()) lustre-MDT0000_UUID: starting recovery
+00000100:00080000:0.0:1574202117.164091:0:2272:0:(import.c:681:ptlrpc_connect_import()) ffff8d52b9004800 lustre-MDT0000_UUID: changing import state from DISCONN to CONNECTING
+00000100:00080000:0.0:1574202117.164101:0:2272:0:(import.c:524:import_select_connection()) lustre-MDT0000-lwp-OST0001: connect to NID 10.24.85.134@tcp last attempt 4554447480
+00000100:00080000:0.0:1574202117.164105:0:2272:0:(import.c:568:import_select_connection()) lustre-MDT0000-lwp-OST0001: tried all connections, increasing latency to 46s
+00000100:00080000:0.0:1574202117.164112:0:2272:0:(import.c:602:import_select_connection()) lustre-MDT0000-lwp-OST0001: import ffff8d52b9004800 using connection 10.24.85.134@tcp/10.24.85.134@tcp
+00000100:00080000:0.0:1574202124.183213:0:2269:0:(import.c:1035:ptlrpc_connect_interpret()) lustre-MDT0000-lwp-OST0001: connect to target with instance 4
+00000100:00080000:0.0:1574202124.183225:0:2269:0:(import.c:1206:ptlrpc_connect_interpret()) reconnected to lustre-MDT0000_UUID@10.24.85.134@tcp after partition
+00000100:00080000:0.0:1574202124.183228:0:2269:0:(import.c:1224:ptlrpc_connect_interpret()) ffff8d52b9004800 lustre-MDT0000_UUID: changing import state from CONNECTING to RECOVER
+00000100:00080000:0.0:1574202124.183234:0:2269:0:(import.c:1535:ptlrpc_import_recovery_state_machine()) ffff8d52b9004800 lustre-MDT0000_UUID: changing import state from RECOVER to FULL
+00000100:02000000:0.0:1574202124.183242:0:2269:0:(import.c:1541:ptlrpc_import_recovery_state_machine()) lustre-MDT0000-lwp-OST0001: Connection restored to 10.24.85.134@tcp (at 10.24.85.134@tcp)
+00010000:00080000:0.0:1574202137.727050:0:2369:0:(ldlm_lib.c:1231:target_handle_connect()) lustre-OST0001: connection from lustre-MDT0000-mdtlov_UUID@10.24.85.134@tcp t0 exp           (null) cur 1574202137 last 0
+00000020:00000080:0.0:1574202137.727060:0:2369:0:(genops.c:1379:class_connect()) connect: client lustre-MDT0000-mdtlov_UUID, cookie 0x6801af190fa50d6
+00002000:00080000:0.0:1574202137.727063:0:2369:0:(ofd_obd.c:180:ofd_parse_connect_data()) lustre-OST0001: Received MDS connection for group 0
+00000020:01000000:0.0:1574202137.727082:0:2369:0:(lprocfs_status_server.c:342:lprocfs_exp_setup()) using hash ffff8d528c860f00
+00002000:00080000:0.0:1574202137.727084:0:2369:0:(ofd_obd.c:397:ofd_obd_connect()) lustre-OST0001: get connection from MDS 0
+00000100:00080000:0.0:1574202137.727088:0:2369:0:(import.c:105:ptlrpc_import_enter_resend()) ffff8d528577d000 X3=¹RÿÿX3=¹Rÿÿ: changing import state from NEW to RECOVER
+00000100:00080000:0.0:1574202137.727091:0:2369:0:(import.c:1535:ptlrpc_import_recovery_state_machine()) ffff8d528577d000 X3=¹RÿÿX3=¹Rÿÿ: changing import state from RECOVER to FULL
+00000100:02000000:0.0:1574202137.727092:0:2369:0:(import.c:1541:ptlrpc_import_recovery_state_machine()) lustre-OST0001: Connection restored to lustre-MDT0000-mdtlov_UUID (at 10.24.85.134@tcp)
+00002000:00080000:0.0:1574202137.740464:0:2369:0:(ofd_dev.c:1635:ofd_create_hdl()) ofd_last_id() = 1953 -> diff = -40
+00002000:02000040:0.0:1574202137.740466:0:2369:0:(ofd_dev.c:1495:ofd_orphans_destroy()) lustre-OST0001: deleting orphan objects from 0x0:1914 to 0x0:1953
+00002000:00080000:0.0:1574202137.740917:0:2369:0:(ofd_dev.c:1522:ofd_orphans_destroy()) lustre-OST0001: after destroy: set last_id to 0x0:1913
+00002000:00080000:0.0:1574202137.753235:0:2369:0:(ofd_dev.c:1752:ofd_create_hdl()) lustre-OST0001: reserve 8 objects in group 0x0 at 1954
+00002000:00080000:0.0:1574202137.753337:0:2369:0:(ofd_dev.c:1752:ofd_create_hdl()) lustre-OST0001: reserve 8 objects in group 0x0 at 1962
+00002000:00080000:0.0:1574202137.753389:0:2369:0:(ofd_dev.c:1752:ofd_create_hdl()) lustre-OST0001: reserve 8 objects in group 0x0 at 1970
+00002000:00080000:0.0:1574202137.753441:0:2369:0:(ofd_dev.c:1752:ofd_create_hdl()) lustre-OST0001: reserve 8 objects in group 0x0 at 1978

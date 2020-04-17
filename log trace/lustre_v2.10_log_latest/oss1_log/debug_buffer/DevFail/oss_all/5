@@ -1,0 +1,31 @@
+00100000:10000000:0.0F:1573940937.259888:0:3600:0:(lfsck_layout.c:4964:lfsck_layout_reset()) lustre-OST0001-osd: layout LFSCK reset: rc = 0
+00100000:10000000:0.0:1573940937.260010:0:5550:0:(osd_scrub.c:669:osd_scrub_prep()) sdb: OI scrub prep, flags = 0x46
+00100000:10000000:0.0:1573940937.260014:0:5550:0:(osd_scrub.c:279:osd_scrub_file_reset()) sdb: reset OI scrub file, old flags = 0x0, add flags = 0x0
+00100000:10000000:0.0:1573940937.260028:0:5549:0:(lfsck_layout.c:5156:lfsck_layout_slave_prep()) lustre-OST0001-osd: layout LFSCK slave prep done, start pos [1]
+00100000:10000000:0.0:1573940937.260034:0:5550:0:(osd_scrub.c:1541:osd_scrub_main()) sdb: OI scrub start, flags = 0x46, pos = 12
+00100000:10000000:0.0:1573940937.261464:0:5549:0:(lfsck_layout.c:5047:lfsck_layout_slave_checkpoint()) lustre-OST0001-osd: layout LFSCK slave checkpoint at the pos [12], status = 1: rc = 0
+00100000:10000000:0.0:1573940937.261469:0:5549:0:(lfsck_engine.c:1060:lfsck_master_engine()) LFSCK entry: oit_flags = 0x60003, dir_flags = 0x8006, oit_cookie = 12, dir_cookie = 0x0, parent = [0x0:0x0:0x0], pid = 5549
+00100000:10000000:0.0:1573940937.262595:0:5550:0:(osd_scrub.c:767:osd_scrub_post()) sdb: OI scrub post, result = 1
+00100000:10000000:0.0:1573940937.262606:0:5550:0:(osd_scrub.c:1551:osd_scrub_main()) sdb: OI scrub: stop, pos = 128001: rc = 1
+00100000:10000000:0.0:1573940937.262758:0:5549:0:(lfsck_engine.c:1092:lfsck_master_engine()) LFSCK exit: oit_flags = 0x60003, dir_flags = 0x8006, oit_cookie = 64038, dir_cookie = 0x0, parent = [0x0:0x0:0x0], pid = 5549, rc = 1
+00100000:10000000:0.0:1573940937.263007:0:5549:0:(lfsck_layout.c:4657:lfsck_layout_slave_notify_master()) lustre-OST0001-osd: layout LFSCK slave notifies master
+00000020:01000004:0.0:1573940937.263017:0:5549:0:(obd_mount_server.c:170:server_get_mount()) get mount ffff91e3b8a29000 from lustre-OST0001, refs=3
+00000020:01000004:0.0:1573940937.263025:0:5549:0:(obd_mount_server.c:204:server_put_mount()) put mount ffff91e3b8a29000 from lustre-OST0001, refs=3
+00000020:01000004:0.0:1573940937.263028:0:5549:0:(obd_mount.c:662:lustre_put_lsi()) put ffff91e3b8a29000 3
+00100000:10000000:0.0:1573940937.271284:0:5549:0:(lfsck_layout.c:5819:lfsck_layout_slave_post()) lustre-OST0001-osd: layout LFSCK slave post done: rc = 0
+00100000:10000000:0.0:1573940937.271296:0:5549:0:(lfsck_layout.c:6043:lfsck_layout_slave_double_scan()) lustre-OST0001-osd: layout LFSCK slave phase2 scan start
+00000020:01000004:0.0:1573940937.271304:0:5549:0:(obd_mount_server.c:170:server_get_mount()) get mount ffff91e3b8a29000 from lustre-OST0001, refs=3
+00000020:01000004:0.0:1573940937.271312:0:5549:0:(obd_mount_server.c:204:server_put_mount()) put mount ffff91e3b8a29000 from lustre-OST0001, refs=3
+00000020:01000004:0.0:1573940937.271315:0:5549:0:(obd_mount.c:662:lustre_put_lsi()) put ffff91e3b8a29000 3
+00100000:10000000:0.0:1573940937.307129:0:5549:0:(lfsck_layout.c:4636:lfsck_layout_slave_query_master()) lustre-OST0001-osd: layout LFSCK slave queries master: rc = 0
+00100000:10000000:0.0:1573940937.421948:0:3600:0:(lfsck_layout.c:6446:lfsck_layout_slave_in_notify()) lustre-OST0001-osd: layout LFSCK slave handle notify 4 from MDT 0, status 1
+00100000:10000000:0.0:1573940937.421976:0:5549:0:(lfsck_layout.c:1445:lfsck_layout_double_scan_result()) lustre-OST0001-osd: layout LFSCK double scan: rc = 1
+00100000:10000000:0.0:1573940937.421995:0:5549:0:(lfsck_layout.c:1486:lfsck_layout_double_scan_result()) lustre-OST0001-osd: layout LFSCK double scan result 3: rc = 0
+00100000:10000000:0.0:1573940937.421997:0:5549:0:(lfsck_layout.c:4657:lfsck_layout_slave_notify_master()) lustre-OST0001-osd: layout LFSCK slave notifies master
+00100000:10000000:0.0:1573940937.422002:0:5549:0:(lfsck_layout.c:680:lfsck_rbtree_cleanup()) lustre-OST0001-osd: layout LFSCK fini OST-objects accessing bitmap
+00100000:10000000:0.0:1573940937.422003:0:5549:0:(lfsck_layout.c:6100:lfsck_layout_slave_double_scan()) lustre-OST0001-osd: layout LFSCK slave phase2 scan finished, status 3: rc = 0
+00080000:00020000:0.0:1573940942.947994:0:3440:0:(osd_handler.c:1588:osd_trans_commit_cb()) transaction @0xffff91e35064dc00 commit error: 2
+00080000:00020000:0.0:1573940942.948011:0:3440:0:(osd_handler.c:1588:osd_trans_commit_cb()) transaction @0xffff91e3b8b9e300 commit error: 2
+00080000:00020000:0.0:1573940942.948013:0:3440:0:(osd_handler.c:1588:osd_trans_commit_cb()) transaction @0xffff91e3528f89c0 commit error: 2
+00080000:00020000:0.0:1573940942.948020:0:3440:0:(osd_handler.c:1588:osd_trans_commit_cb()) transaction @0xffff91e3505ea540 commit error: 2
+00080000:00020000:0.0:1573940942.948022:0:3440:0:(osd_handler.c:1588:osd_trans_commit_cb()) transaction @0xffff91e3b8b9e540 commit error: 2

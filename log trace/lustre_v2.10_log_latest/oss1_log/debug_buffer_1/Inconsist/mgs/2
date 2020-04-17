@@ -1,0 +1,89 @@
+00000100:00000400:0.0F:1579382586.559870:0:3622:0:(client.c:2116:ptlrpc_expire_one_request()) @@@ Request sent has timed out for slow reply: [sent 1579382579/real 1579382579]  req@ffff90913e313500 x1656006195156624/t0(0) o400->MGC10.24.84.84@tcp@10.24.84.84@tcp:26/25 lens 224/224 e 0 to 1 dl 1579382586 ref 1 fl Rpc:XN/0/ffffffff rc 0/-1
+00000100:02020000:0.0:1579382586.559924:0:3622:0:(import.c:186:ptlrpc_set_import_discon()) 166-1: MGC10.24.84.84@tcp: Connection to MGS (at 10.24.84.84@tcp) was lost; in progress operations using this service will fail
+00000100:00080000:0.0:1579382586.559936:0:3622:0:(import.c:188:ptlrpc_set_import_discon()) ffff909111076000 MGS: changing import state from FULL to DISCONN
+10000000:01000000:0.0:1579382586.559941:0:3622:0:(mgc_request.c:1367:mgc_import_event()) import event 0x808001
+00000100:00080000:0.0:1579382586.559944:0:3622:0:(pinger.c:178:ptlrpc_pinger_ir_down()) IR down
+00000100:00080000:0.0:1579382586.559945:0:3622:0:(import.c:441:ptlrpc_fail_import()) import MGS@MGC10.24.84.84@tcp_0 for MGC10.24.84.84@tcp not replayable, auto-deactivating
+00000100:00080000:0.0:1579382586.559948:0:3622:0:(import.c:215:ptlrpc_deactivate_and_unlock_import()) setting import MGS INVALID
+10000000:01000000:0.0:1579382586.559951:0:3622:0:(mgc_request.c:1367:mgc_import_event()) import event 0x808002
+00000100:00080000:0.0:1579382586.559953:0:3622:0:(import.c:418:ptlrpc_pinger_force()) MGS: waking up pinger s:DISCONN
+00000100:00080000:0.0:1579382586.559986:0:3623:0:(pinger.c:217:ptlrpc_pinger_process_import()) 42d5d391-5101-0cda-02b0-e3ab7fbc0520->MGS: level DISCONN/3 force 1 force_next 0 deactive 0 pingable 1 suppress 0
+00000100:00080000:0.0:1579382586.559992:0:3623:0:(recover.c:58:ptlrpc_initiate_recovery()) MGS: starting recovery
+00000100:00080000:0.0:1579382586.559994:0:3623:0:(import.c:681:ptlrpc_connect_import()) ffff909111076000 MGS: changing import state from DISCONN to CONNECTING
+00000100:00080000:0.0:1579382586.560000:0:3623:0:(import.c:524:import_select_connection()) MGC10.24.84.84@tcp: connect to NID 10.24.84.84@tcp last attempt 4296610048
+00000100:00080000:0.0:1579382586.560008:0:3623:0:(import.c:602:import_select_connection()) MGC10.24.84.84@tcp: import ffff909111076000 using connection MGC10.24.84.84@tcp_0/10.24.84.84@tcp
+00000100:00000400:0.0:1579382592.559391:0:3620:0:(client.c:2116:ptlrpc_expire_one_request()) @@@ Request sent has timed out for slow reply: [sent 1579382586/real 1579382586]  req@ffff90913e313500 x1656006195156656/t0(0) o250->MGC10.24.84.84@tcp@10.24.84.84@tcp:26/25 lens 520/544 e 0 to 1 dl 1579382592 ref 1 fl Rpc:XN/0/ffffffff rc 0/-1
+00000100:00080000:0.0:1579382592.559814:0:3620:0:(import.c:1284:ptlrpc_connect_interpret()) ffff909111076000 MGS: changing import state from CONNECTING to DISCONN
+00000100:00080000:0.0:1579382592.559820:0:3620:0:(import.c:1330:ptlrpc_connect_interpret()) recovery of MGS on MGC10.24.84.84@tcp_0 failed (-110)
+00000100:00080000:0.0:1579382611.560802:0:3623:0:(pinger.c:217:ptlrpc_pinger_process_import()) 42d5d391-5101-0cda-02b0-e3ab7fbc0520->MGS: level DISCONN/3 force 0 force_next 0 deactive 0 pingable 1 suppress 0
+00000100:00080000:0.0:1579382611.560812:0:3623:0:(recover.c:58:ptlrpc_initiate_recovery()) MGS: starting recovery
+00000100:00080000:0.0:1579382611.560815:0:3623:0:(import.c:681:ptlrpc_connect_import()) ffff909111076000 MGS: changing import state from DISCONN to CONNECTING
+00000100:00080000:0.0:1579382611.560823:0:3623:0:(import.c:524:import_select_connection()) MGC10.24.84.84@tcp: connect to NID 10.24.84.84@tcp last attempt 4388619563
+00000100:00080000:0.0:1579382611.560827:0:3623:0:(import.c:568:import_select_connection()) MGC10.24.84.84@tcp: tried all connections, increasing latency to 6s
+00000100:00080000:0.0:1579382611.560835:0:3623:0:(import.c:602:import_select_connection()) MGC10.24.84.84@tcp: import ffff909111076000 using connection MGC10.24.84.84@tcp_0/10.24.84.84@tcp
+00000100:00080000:0.0:1579382611.562329:0:3620:0:(import.c:1035:ptlrpc_connect_interpret()) MGC10.24.84.84@tcp: connect to target with instance 0
+10000000:01000000:0.0:1579382611.562339:0:3620:0:(mgc_request.c:1367:mgc_import_event()) import event 0x808005
+00000100:02000400:0.0:1579382611.562343:0:3620:0:(import.c:1191:ptlrpc_connect_interpret()) Evicted from MGS (at MGC10.24.84.84@tcp_0) after server handle changed from 0x67d4ed8ee00aa625 to 0x67d4ed8ee00aa96d
+00000100:00080000:0.0:1579382611.562363:0:3620:0:(import.c:1199:ptlrpc_connect_interpret()) ffff909111076000 MGS: changing import state from CONNECTING to EVICTED
+00000100:00080000:0.0:1579382611.562368:0:3620:0:(import.c:1474:ptlrpc_import_recovery_state_machine()) evicted from MGS@MGC10.24.84.84@tcp_0; invalidating
+00000100:00080000:0.0:1579382611.562432:0:23308:0:(import.c:1416:ptlrpc_invalidate_import_thread()) thread invalidate import MGC10.24.84.84@tcp to MGS@MGC10.24.84.84@tcp_0
+10000000:01000000:0.0:1579382611.562436:0:23308:0:(mgc_request.c:1367:mgc_import_event()) import event 0x808003
+10000000:01000000:0.0:1579382611.562621:0:23308:0:(mgc_request.c:1025:mgc_blocking_ast()) Lock res [0x70616d65646f6e:0x4:0x0].0x0 (nodemap)
+10000000:01000000:0.0:1579382611.562687:0:23308:0:(mgc_request.c:1025:mgc_blocking_ast()) Lock res [0x736d61726170:0x3:0x0].0x0 (params)
+10000000:01000000:0.0:1579382611.562695:0:23308:0:(mgc_request.c:1025:mgc_blocking_ast()) Lock res [0x65727473756c:0x0:0x0].0x0 (lustre)
+10000000:01000000:0.0:1579382611.562700:0:23308:0:(mgc_request.c:1025:mgc_blocking_ast()) Lock res [0x65727473756c:0x0:0x0].0x0 (lustre)
+10000000:01000000:0.0:1579382611.562705:0:23308:0:(mgc_request.c:1025:mgc_blocking_ast()) Lock res [0x65727473756c:0x0:0x0].0x0 (lustre)
+00000100:00080000:0.0:1579382611.562714:0:23308:0:(import.c:1425:ptlrpc_invalidate_import_thread()) ffff909111076000 MGS: changing import state from EVICTED to RECOVER
+00000100:00080000:0.0:1579382611.562719:0:23308:0:(import.c:1535:ptlrpc_import_recovery_state_machine()) ffff909111076000 MGS: changing import state from RECOVER to FULL
+10000000:01000000:0.0:1579382611.562722:0:23308:0:(mgc_request.c:1367:mgc_import_event()) import event 0x808004
+00000100:00080000:0.0:1579382611.562724:0:23308:0:(pinger.c:171:ptlrpc_pinger_ir_up()) IR up
+00000100:02000000:0.0:1579382611.562729:0:23308:0:(import.c:1541:ptlrpc_import_recovery_state_machine()) MGC10.24.84.84@tcp: Connection restored to MGC10.24.84.84@tcp_0 (at 10.24.84.84@tcp)
+10000000:01000000:0.0:1579382618.472403:0:3640:0:(mgc_request.c:600:do_requeue()) updating log lustre-client
+10000000:01000000:0.0:1579382618.472408:0:3640:0:(mgc_request.c:2076:mgc_process_log()) Process log lustre-client:ffff90917633f000 from 45
+10000000:01000000:0.0:1579382618.472412:0:3640:0:(mgc_request.c:1133:mgc_enqueue()) Enqueue for lustre-client (res 0x65727473756c)
+00000020:01000000:0.0:1579382618.476298:0:3640:0:(obd_config.c:1723:class_config_parse_llog()) Processed log lustre-client gen 45-44 (rc=0)
+10000000:01000000:0.0:1579382618.476313:0:3640:0:(mgc_request.c:2151:mgc_process_log()) MGC10.24.84.84@tcp: configuration from log 'lustre-client' succeeded (0).
+10000000:01000000:0.0:1579382618.476320:0:3640:0:(mgc_request.c:600:do_requeue()) updating log lustre-OST0001
+10000000:01000000:0.0:1579382618.476322:0:3640:0:(mgc_request.c:2076:mgc_process_log()) Process log lustre-OST0001:          (null) from 5
+10000000:01000000:0.0:1579382618.476325:0:3640:0:(mgc_request.c:1133:mgc_enqueue()) Enqueue for lustre-OST0001 (res 0x65727473756c)
+00000020:01000000:0.0:1579382618.480019:0:3640:0:(obd_config.c:1723:class_config_parse_llog()) Processed log lustre-OST0001 gen 5-4 (rc=0)
+10000000:01000000:0.0:1579382618.480031:0:3640:0:(mgc_request.c:2151:mgc_process_log()) MGC10.24.84.84@tcp: configuration from log 'lustre-OST0001' succeeded (0).
+10000000:01000000:0.0:1579382618.480039:0:3640:0:(mgc_request.c:600:do_requeue()) updating log params
+10000000:01000000:0.0:1579382618.480041:0:3640:0:(mgc_request.c:2076:mgc_process_log()) Process log params:ffff90917633f000 from 1
+10000000:01000000:0.0:1579382618.480044:0:3640:0:(mgc_request.c:1133:mgc_enqueue()) Enqueue for params (res 0x736d61726170)
+00000020:01000000:0.0:1579382618.483649:0:3640:0:(obd_config.c:1723:class_config_parse_llog()) Processed log params gen 1-0 (rc=0)
+10000000:01000000:0.0:1579382618.483662:0:3640:0:(mgc_request.c:2151:mgc_process_log()) MGC10.24.84.84@tcp: configuration from log 'params' succeeded (0).
+10000000:01000000:0.0:1579382618.483669:0:3640:0:(mgc_request.c:600:do_requeue()) updating log nodemap
+10000000:01000000:0.0:1579382618.483671:0:3640:0:(mgc_request.c:2076:mgc_process_log()) Process log nodemap:ffff9091163d0f78 from 1
+10000000:01000000:0.0:1579382618.483677:0:3640:0:(mgc_request.c:1133:mgc_enqueue()) Enqueue for nodemap (res 0x70616d65646f6e)
+10000000:01000000:0.0:1579382618.487351:0:3640:0:(mgc_request.c:2151:mgc_process_log()) MGC10.24.84.84@tcp: configuration from log 'nodemap' succeeded (0).
+10000000:01000000:0.0:1579382618.487360:0:3640:0:(mgc_request.c:600:do_requeue()) updating log lustre-sptlrpc
+10000000:01000000:0.0:1579382618.487362:0:3640:0:(mgc_request.c:2076:mgc_process_log()) Process log lustre-sptlrpc:          (null) from 1
+10000000:01000000:0.0:1579382618.487366:0:3640:0:(mgc_request.c:1133:mgc_enqueue()) Enqueue for lustre-sptlrpc (res 0x65727473756c)
+10000000:01000000:0.0:1579382618.489470:0:3640:0:(mgc_request.c:2151:mgc_process_log()) MGC10.24.84.84@tcp: configuration from log 'lustre-sptlrpc' failed (-2).
+00100000:10000000:0.0:1579382660.108080:0:4240:0:(lfsck_layout.c:4964:lfsck_layout_reset()) lustre-OST0001-osd: layout LFSCK reset: rc = 0
+00100000:10000000:0.0:1579382660.108188:0:23321:0:(osd_scrub.c:669:osd_scrub_prep()) sdb: OI scrub prep, flags = 0x46
+00100000:10000000:0.0:1579382660.108193:0:23321:0:(osd_scrub.c:279:osd_scrub_file_reset()) sdb: reset OI scrub file, old flags = 0x0, add flags = 0x0
+00100000:10000000:0.0:1579382660.108207:0:23320:0:(lfsck_layout.c:5156:lfsck_layout_slave_prep()) lustre-OST0001-osd: layout LFSCK slave prep done, start pos [1]
+00100000:10000000:0.0:1579382660.108212:0:23321:0:(osd_scrub.c:1541:osd_scrub_main()) sdb: OI scrub start, flags = 0x46, pos = 12
+00100000:10000000:0.0:1579382660.109370:0:23320:0:(lfsck_layout.c:5047:lfsck_layout_slave_checkpoint()) lustre-OST0001-osd: layout LFSCK slave checkpoint at the pos [12], status = 1: rc = 0
+00100000:10000000:0.0:1579382660.109375:0:23320:0:(lfsck_engine.c:1060:lfsck_master_engine()) LFSCK entry: oit_flags = 0x60003, dir_flags = 0x8006, oit_cookie = 12, dir_cookie = 0x0, parent = [0x0:0x0:0x0], pid = 23320
+00100000:10000000:0.0:1579382660.110446:0:23321:0:(osd_scrub.c:767:osd_scrub_post()) sdb: OI scrub post, result = 1
+00100000:10000000:0.0:1579382660.110457:0:23321:0:(osd_scrub.c:1551:osd_scrub_main()) sdb: OI scrub: stop, pos = 128001: rc = 1
+00100000:10000000:0.0:1579382660.110952:0:23320:0:(lfsck_engine.c:1092:lfsck_master_engine()) LFSCK exit: oit_flags = 0x60003, dir_flags = 0x8006, oit_cookie = 64038, dir_cookie = 0x0, parent = [0x0:0x0:0x0], pid = 23320, rc = 1
+00100000:10000000:0.0:1579382660.110978:0:23320:0:(lfsck_layout.c:4657:lfsck_layout_slave_notify_master()) lustre-OST0001-osd: layout LFSCK slave notifies master
+00000020:01000004:0.0:1579382660.110986:0:23320:0:(obd_mount_server.c:170:server_get_mount()) get mount ffff90917633f000 from lustre-OST0001, refs=3
+00000020:01000004:0.0:1579382660.110994:0:23320:0:(obd_mount_server.c:204:server_put_mount()) put mount ffff90917633f000 from lustre-OST0001, refs=3
+00000020:01000004:0.0:1579382660.110997:0:23320:0:(obd_mount.c:662:lustre_put_lsi()) put ffff90917633f000 3
+00100000:10000000:0.0:1579382660.112988:0:23320:0:(lfsck_layout.c:5819:lfsck_layout_slave_post()) lustre-OST0001-osd: layout LFSCK slave post done: rc = 0
+00100000:10000000:0.0:1579382660.112998:0:23320:0:(lfsck_layout.c:6043:lfsck_layout_slave_double_scan()) lustre-OST0001-osd: layout LFSCK slave phase2 scan start
+00000020:01000004:0.0:1579382660.113004:0:23320:0:(obd_mount_server.c:170:server_get_mount()) get mount ffff90917633f000 from lustre-OST0001, refs=3
+00000020:01000004:0.0:1579382660.113011:0:23320:0:(obd_mount_server.c:204:server_put_mount()) put mount ffff90917633f000 from lustre-OST0001, refs=3
+00000020:01000004:0.0:1579382660.113014:0:23320:0:(obd_mount.c:662:lustre_put_lsi()) put ffff90917633f000 3
+00100000:10000000:0.0:1579382660.121251:0:23320:0:(lfsck_layout.c:4636:lfsck_layout_slave_query_master()) lustre-OST0001-osd: layout LFSCK slave queries master: rc = 0
+00100000:10000000:0.0:1579382660.158845:0:4240:0:(lfsck_layout.c:6446:lfsck_layout_slave_in_notify()) lustre-OST0001-osd: layout LFSCK slave handle notify 4 from MDT 0, status 1
+00100000:10000000:0.0:1579382660.158866:0:23320:0:(lfsck_layout.c:1445:lfsck_layout_double_scan_result()) lustre-OST0001-osd: layout LFSCK double scan: rc = 1
+00100000:10000000:0.0:1579382660.158881:0:23320:0:(lfsck_layout.c:1486:lfsck_layout_double_scan_result()) lustre-OST0001-osd: layout LFSCK double scan result 3: rc = 0
+00100000:10000000:0.0:1579382660.158884:0:23320:0:(lfsck_layout.c:4657:lfsck_layout_slave_notify_master()) lustre-OST0001-osd: layout LFSCK slave notifies master
+00100000:10000000:0.0:1579382660.158888:0:23320:0:(lfsck_layout.c:680:lfsck_rbtree_cleanup()) lustre-OST0001-osd: layout LFSCK fini OST-objects accessing bitmap
+00100000:10000000:0.0:1579382660.158888:0:23320:0:(lfsck_layout.c:6100:lfsck_layout_slave_double_scan()) lustre-OST0001-osd: layout LFSCK slave phase2 scan finished, status 3: rc = 0

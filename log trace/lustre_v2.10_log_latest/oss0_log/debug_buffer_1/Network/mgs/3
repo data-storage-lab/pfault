@@ -1,0 +1,1250 @@
+00000100:00080000:0.0F:1579384751.610467:0:3731:0:(pinger.c:217:ptlrpc_pinger_process_import()) 95020deb-bd90-0068-9670-83f9e8e68a09->MGS: level CONNECTING/4 force 0 force_next 0 deactive 0 pingable 1 suppress 0
+00000100:00080000:0.0:1579384751.610481:0:3731:0:(pinger.c:230:ptlrpc_pinger_process_import()) 95020deb-bd90-0068-9670-83f9e8e68a09->MGS: not pinging (in recovery or recovery disabled: CONNECTING)
+00000400:00000100:0.0:1579384753.847366:0:3720:0:(lib-socket.c:645:lnet_sock_connect()) Error -110 connecting 10.29.160.166/1022 -> 10.24.84.84/988
+00000400:00000100:0.0:1579384753.847400:0:3720:0:(acceptor.c:118:lnet_connect_console_error()) Connection to 10.24.84.84@tcp at host 10.24.84.84 on port 988 took too long: that node may be hung or experiencing high load.
+00000800:00000100:0.0:1579384753.847415:0:3720:0:(socklnd_cb.c:425:ksocknal_txlist_done()) Deleting packet type 1 len 520 10.29.160.166@tcp->10.24.84.84@tcp
+00000100:00080000:0.0:1579384753.847446:0:3728:0:(import.c:1284:ptlrpc_connect_interpret()) ffff9232d1422000 MGS: changing import state from CONNECTING to DISCONN
+00000100:00080000:0.0:1579384753.847451:0:3728:0:(import.c:1330:ptlrpc_connect_interpret()) recovery of MGS on MGC10.24.84.84@tcp_0 failed (-110)
+00000100:00080000:0.0:1579384776.610485:0:3731:0:(pinger.c:217:ptlrpc_pinger_process_import()) 95020deb-bd90-0068-9670-83f9e8e68a09->MGS: level DISCONN/3 force 0 force_next 0 deactive 0 pingable 1 suppress 0
+00000100:00080000:0.0:1579384776.610496:0:3731:0:(recover.c:58:ptlrpc_initiate_recovery()) MGS: starting recovery
+00000100:00080000:0.0:1579384776.610499:0:3731:0:(import.c:681:ptlrpc_connect_import()) ffff9232d1422000 MGS: changing import state from DISCONN to CONNECTING
+00000100:00080000:0.0:1579384776.610510:0:3731:0:(import.c:524:import_select_connection()) MGC10.24.84.84@tcp: connect to NID 10.24.84.84@tcp last attempt 4390736243
+00000100:00080000:0.0:1579384776.610515:0:3731:0:(import.c:568:import_select_connection()) MGC10.24.84.84@tcp: tried all connections, increasing latency to 16s
+00000100:00080000:0.0:1579384776.610525:0:3731:0:(import.c:602:import_select_connection()) MGC10.24.84.84@tcp: import ffff9232d1422000 using connection MGC10.24.84.84@tcp_0/10.24.84.84@tcp
+00000100:00000400:0.0:1579384797.611335:0:3728:0:(client.c:2116:ptlrpc_expire_one_request()) @@@ Request sent has timed out for sent delay: [sent 1579384776/real 0]  req@ffff9232d552a000 x1656006775029648/t0(0) o250->MGC10.24.84.84@tcp@10.24.84.84@tcp:26/25 lens 520/544 e 0 to 1 dl 1579384797 ref 2 fl Rpc:XN/0/ffffffff rc 0/-1
+00000100:00080000:0.0:1579384801.610284:0:3731:0:(pinger.c:217:ptlrpc_pinger_process_import()) 95020deb-bd90-0068-9670-83f9e8e68a09->MGS: level CONNECTING/4 force 0 force_next 0 deactive 0 pingable 1 suppress 0
+00000100:00080000:0.0:1579384801.610294:0:3731:0:(pinger.c:230:ptlrpc_pinger_process_import()) 95020deb-bd90-0068-9670-83f9e8e68a09->MGS: not pinging (in recovery or recovery disabled: CONNECTING)
+00000100:00080000:0.0:1579384826.610405:0:3731:0:(pinger.c:217:ptlrpc_pinger_process_import()) 95020deb-bd90-0068-9670-83f9e8e68a09->MGS: level CONNECTING/4 force 0 force_next 0 deactive 0 pingable 1 suppress 0
+00000100:00080000:0.0:1579384826.610415:0:3731:0:(pinger.c:230:ptlrpc_pinger_process_import()) 95020deb-bd90-0068-9670-83f9e8e68a09->MGS: not pinging (in recovery or recovery disabled: CONNECTING)
+00000800:00000100:0.0:1579384833.459274:0:3724:0:(socklnd_cb.c:425:ksocknal_txlist_done()) Deleting packet type 1 len 520 10.29.160.166@tcp->10.24.84.84@tcp
+00000100:00080000:0.0:1579384833.459311:0:3728:0:(import.c:1284:ptlrpc_connect_interpret()) ffff9232d1422000 MGS: changing import state from CONNECTING to DISCONN
+00000100:00080000:0.0:1579384833.459317:0:3728:0:(import.c:1330:ptlrpc_connect_interpret()) recovery of MGS on MGC10.24.84.84@tcp_0 failed (-110)
+00000100:00080000:0.0:1579384851.610487:0:3731:0:(pinger.c:217:ptlrpc_pinger_process_import()) 95020deb-bd90-0068-9670-83f9e8e68a09->MGS: level DISCONN/3 force 0 force_next 0 deactive 0 pingable 1 suppress 0
+00000100:00080000:0.0:1579384851.610498:0:3731:0:(recover.c:58:ptlrpc_initiate_recovery()) MGS: starting recovery
+00000100:00080000:0.0:1579384851.610501:0:3731:0:(import.c:681:ptlrpc_connect_import()) ffff9232d1422000 MGS: changing import state from DISCONN to CONNECTING
+00000100:00080000:0.0:1579384851.610516:0:3731:0:(import.c:524:import_select_connection()) MGC10.24.84.84@tcp: connect to NID 10.24.84.84@tcp last attempt 4390811243
+00000100:00080000:0.0:1579384851.610520:0:3731:0:(import.c:568:import_select_connection()) MGC10.24.84.84@tcp: tried all connections, increasing latency to 21s
+00000100:00080000:0.0:1579384851.610528:0:3731:0:(import.c:602:import_select_connection()) MGC10.24.84.84@tcp: import ffff9232d1422000 using connection MGC10.24.84.84@tcp_0/10.24.84.84@tcp
+00000100:00080000:0.0:1579384876.610255:0:3731:0:(pinger.c:217:ptlrpc_pinger_process_import()) 95020deb-bd90-0068-9670-83f9e8e68a09->MGS: level CONNECTING/4 force 0 force_next 0 deactive 0 pingable 1 suppress 0
+00000100:00080000:0.0:1579384876.610260:0:3731:0:(pinger.c:230:ptlrpc_pinger_process_import()) 95020deb-bd90-0068-9670-83f9e8e68a09->MGS: not pinging (in recovery or recovery disabled: CONNECTING)
+00000100:00000400:0.0:1579384877.610247:0:3728:0:(client.c:2116:ptlrpc_expire_one_request()) @@@ Request sent has timed out for sent delay: [sent 1579384851/real 0]  req@ffff9232d552a000 x1656006775029712/t0(0) o250->MGC10.24.84.84@tcp@10.24.84.84@tcp:26/25 lens 520/544 e 0 to 1 dl 1579384877 ref 2 fl Rpc:XN/0/ffffffff rc 0/-1
+00000100:00080000:0.0:1579384901.610377:0:3731:0:(pinger.c:217:ptlrpc_pinger_process_import()) 95020deb-bd90-0068-9670-83f9e8e68a09->MGS: level CONNECTING/4 force 0 force_next 0 deactive 0 pingable 1 suppress 0
+00000100:00080000:0.0:1579384901.610381:0:3731:0:(pinger.c:230:ptlrpc_pinger_process_import()) 95020deb-bd90-0068-9670-83f9e8e68a09->MGS: not pinging (in recovery or recovery disabled: CONNECTING)
+00000400:00000100:0.0:1579384903.863424:0:3721:0:(lib-socket.c:645:lnet_sock_connect()) Error -110 connecting 10.29.160.166/1023 -> 10.24.84.84/988
+00000400:00000100:0.0:1579384903.863457:0:3721:0:(acceptor.c:118:lnet_connect_console_error()) Connection to 10.24.84.84@tcp at host 10.24.84.84 on port 988 took too long: that node may be hung or experiencing high load.
+00000800:00000100:0.0:1579384903.863472:0:3721:0:(socklnd_cb.c:425:ksocknal_txlist_done()) Deleting packet type 1 len 520 10.29.160.166@tcp->10.24.84.84@tcp
+00000100:00080000:0.0:1579384903.863501:0:3728:0:(import.c:1284:ptlrpc_connect_interpret()) ffff9232d1422000 MGS: changing import state from CONNECTING to DISCONN
+00000100:00080000:0.0:1579384903.863506:0:3728:0:(import.c:1330:ptlrpc_connect_interpret()) recovery of MGS on MGC10.24.84.84@tcp_0 failed (-110)
+00000100:00080000:0.0:1579384926.610283:0:3731:0:(pinger.c:217:ptlrpc_pinger_process_import()) 95020deb-bd90-0068-9670-83f9e8e68a09->MGS: level DISCONN/3 force 0 force_next 0 deactive 0 pingable 1 suppress 0
+00000100:00080000:0.0:1579384926.610293:0:3731:0:(recover.c:58:ptlrpc_initiate_recovery()) MGS: starting recovery
+00000100:00080000:0.0:1579384926.610296:0:3731:0:(import.c:681:ptlrpc_connect_import()) ffff9232d1422000 MGS: changing import state from DISCONN to CONNECTING
+00000100:00080000:0.0:1579384926.610304:0:3731:0:(import.c:524:import_select_connection()) MGC10.24.84.84@tcp: connect to NID 10.24.84.84@tcp last attempt 4390886243
+00000100:00080000:0.0:1579384926.610308:0:3731:0:(import.c:568:import_select_connection()) MGC10.24.84.84@tcp: tried all connections, increasing latency to 26s
+00000100:00080000:0.0:1579384926.610316:0:3731:0:(import.c:602:import_select_connection()) MGC10.24.84.84@tcp: import ffff9232d1422000 using connection MGC10.24.84.84@tcp_0/10.24.84.84@tcp
+00000100:00080000:0.0:1579384951.610129:0:3731:0:(pinger.c:217:ptlrpc_pinger_process_import()) 95020deb-bd90-0068-9670-83f9e8e68a09->MGS: level CONNECTING/4 force 0 force_next 0 deactive 0 pingable 1 suppress 0
+00000100:00080000:0.0:1579384951.610132:0:3731:0:(pinger.c:230:ptlrpc_pinger_process_import()) 95020deb-bd90-0068-9670-83f9e8e68a09->MGS: not pinging (in recovery or recovery disabled: CONNECTING)
+00000100:00000400:0.0:1579384957.610323:0:3728:0:(client.c:2116:ptlrpc_expire_one_request()) @@@ Request sent has timed out for sent delay: [sent 1579384926/real 0]  req@ffff9232d552a000 x1656006775029776/t0(0) o250->MGC10.24.84.84@tcp@10.24.84.84@tcp:26/25 lens 520/544 e 0 to 1 dl 1579384957 ref 2 fl Rpc:XN/0/ffffffff rc 0/-1
+00000001:00080000:0.0:1579384958.245911:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971389 is committed
+00000001:00080000:0.0:1579384964.483121:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971394 is committed
+00000001:00080000:0.0:1579384970.458648:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971399 is committed
+00000001:00080000:0.0:1579384975.980177:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971405 is committed
+00000100:00080000:0.0:1579384976.610391:0:3731:0:(pinger.c:217:ptlrpc_pinger_process_import()) 95020deb-bd90-0068-9670-83f9e8e68a09->MGS: level CONNECTING/4 force 0 force_next 0 deactive 0 pingable 1 suppress 0
+00000100:00080000:0.0:1579384976.610401:0:3731:0:(pinger.c:230:ptlrpc_pinger_process_import()) 95020deb-bd90-0068-9670-83f9e8e68a09->MGS: not pinging (in recovery or recovery disabled: CONNECTING)
+00000001:00080000:0.0:1579384977.150901:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971406 is committed
+00000001:00080000:0.0:1579384977.342143:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971407 is committed
+00000001:00080000:0.0:1579384977.478805:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971408 is committed
+00000001:00080000:0.0:1579384977.578312:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971409 is committed
+00000001:00080000:0.0:1579384977.711321:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971410 is committed
+00000001:00080000:0.0:1579384977.853985:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971411 is committed
+00000001:00080000:0.0:1579384977.996362:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971412 is committed
+00000001:00080000:0.0:1579384978.144794:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971413 is committed
+00000001:00080000:0.0:1579384978.318417:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971414 is committed
+00000001:00080000:0.0:1579384978.468892:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971415 is committed
+00000001:00080000:0.0:1579384978.613954:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971416 is committed
+00000001:00080000:0.0:1579384978.758051:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971417 is committed
+00000001:00080000:0.0:1579384978.900009:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971418 is committed
+00000001:00080000:0.0:1579384979.038824:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971419 is committed
+00000001:00080000:0.0:1579384979.185128:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971420 is committed
+00000001:00080000:0.0:1579384979.329870:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971421 is committed
+00000001:00080000:0.0:1579384979.475777:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971422 is committed
+00000001:00080000:0.0:1579384979.622453:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971423 is committed
+00000001:00080000:0.0:1579384979.765544:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971424 is committed
+00000001:00080000:0.0:1579384979.909180:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971425 is committed
+00000001:00080000:0.0:1579384980.058398:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971426 is committed
+00000001:00080000:0.0:1579384980.181764:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971427 is committed
+00000001:00080000:0.0:1579384980.313624:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971428 is committed
+00000001:00080000:0.0:1579384980.451985:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971429 is committed
+00000001:00080000:0.0:1579384980.594895:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971430 is committed
+00000001:00080000:0.0:1579384980.747152:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971431 is committed
+00000001:00080000:0.0:1579384980.913094:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971432 is committed
+00000001:00080000:0.0:1579384981.061641:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971433 is committed
+00000001:00080000:0.0:1579384981.197810:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971434 is committed
+00000001:00080000:0.0:1579384981.342388:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971435 is committed
+00000001:00080000:0.0:1579384982.515190:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971437 is committed
+00000001:00080000:0.0:1579384982.650989:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971438 is committed
+00000001:00080000:0.0:1579384982.794492:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971439 is committed
+00000001:00080000:0.0:1579384982.933858:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971440 is committed
+00000001:00080000:0.0:1579384983.075803:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971441 is committed
+00000001:00080000:0.0:1579384983.211416:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971442 is committed
+00000001:00080000:0.0:1579384983.346603:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971443 is committed
+00000001:00080000:0.0:1579384983.486910:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971444 is committed
+00000001:00080000:0.0:1579384983.629794:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971445 is committed
+00000001:00080000:0.0:1579384983.776439:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971446 is committed
+00000001:00080000:0.0:1579384983.922944:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971447 is committed
+00000001:00080000:0.0:1579384984.089709:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971448 is committed
+00000001:00080000:0.0:1579384984.240560:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971449 is committed
+00000001:00080000:0.0:1579384984.386574:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971450 is committed
+00000001:00080000:0.0:1579384984.531410:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971451 is committed
+00000001:00080000:0.0:1579384984.669935:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971452 is committed
+00000001:00080000:0.0:1579384984.816308:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971453 is committed
+00000001:00080000:0.0:1579384984.976293:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971454 is committed
+00000001:00080000:0.0:1579384985.109899:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971455 is committed
+00000001:00080000:0.0:1579384985.253878:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971456 is committed
+00000001:00080000:0.0:1579384985.394796:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971457 is committed
+00000800:00000100:0.0:1579384985.459253:0:3724:0:(socklnd_cb.c:425:ksocknal_txlist_done()) Deleting packet type 1 len 520 10.29.160.166@tcp->10.24.84.84@tcp
+00000100:00080000:0.0:1579384985.459291:0:3728:0:(import.c:1284:ptlrpc_connect_interpret()) ffff9232d1422000 MGS: changing import state from CONNECTING to DISCONN
+00000100:00080000:0.0:1579384985.459297:0:3728:0:(import.c:1330:ptlrpc_connect_interpret()) recovery of MGS on MGC10.24.84.84@tcp_0 failed (-110)
+00000001:00080000:0.0:1579384985.542047:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971458 is committed
+00000001:00080000:0.0:1579384985.686467:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971459 is committed
+00000001:00080000:0.0:1579384985.829556:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971460 is committed
+00000001:00080000:0.0:1579384985.967927:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971461 is committed
+00000001:00080000:0.0:1579384986.111020:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971462 is committed
+00000001:00080000:0.0:1579384986.254085:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971463 is committed
+00000001:00080000:0.0:1579384986.399558:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971464 is committed
+00000001:00080000:0.0:1579384986.553905:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971465 is committed
+00000001:00080000:0.0:1579384986.720944:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971466 is committed
+00000001:00080000:0.0:1579384986.876776:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971467 is committed
+00000001:00080000:0.0:1579384987.022559:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971468 is committed
+00000001:00080000:0.0:1579384987.169628:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971469 is committed
+00000001:00080000:0.0:1579384987.314642:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971470 is committed
+00000001:00080000:0.0:1579384987.457743:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971471 is committed
+00000001:00080000:0.0:1579384987.605029:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971472 is committed
+00000001:00080000:0.0:1579384987.741810:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971473 is committed
+00000001:00080000:0.0:1579384987.877347:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971474 is committed
+00000001:00080000:0.0:1579384988.017560:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971475 is committed
+00000001:00080000:0.0:1579384988.159390:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971476 is committed
+00000001:00080000:0.0:1579384988.310943:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971477 is committed
+00000001:00080000:0.0:1579384988.458676:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971478 is committed
+00000001:00080000:0.0:1579384988.601707:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971479 is committed
+00000001:00080000:0.0:1579384988.741715:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971480 is committed
+00000001:00080000:0.0:1579384988.886487:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971481 is committed
+00000001:00080000:0.0:1579384989.041847:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971482 is committed
+00000001:00080000:0.0:1579384989.202140:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971483 is committed
+00000001:00080000:0.0:1579384989.355313:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971484 is committed
+00000001:00080000:0.0:1579384989.505681:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971485 is committed
+00000001:00080000:0.0:1579384989.967463:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971486 is committed
+00000001:00080000:0.0:1579384990.105082:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971487 is committed
+00000001:00080000:0.0:1579384990.238438:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971488 is committed
+00000001:00080000:0.0:1579384990.382213:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971489 is committed
+00000001:00080000:0.0:1579384990.624350:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971490 is committed
+00000001:00080000:0.0:1579384990.746010:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971491 is committed
+00000001:00080000:0.0:1579384990.881700:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971492 is committed
+00000001:00080000:0.0:1579384991.024374:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971493 is committed
+00000001:00080000:0.0:1579384991.169441:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971494 is committed
+00000001:00080000:0.0:1579384991.315303:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971495 is committed
+00000001:00080000:0.0:1579384991.476072:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971496 is committed
+00000001:00080000:0.0:1579384991.643751:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971497 is committed
+00000001:00080000:0.0:1579384991.833073:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971498 is committed
+00000001:00080000:0.0:1579384991.994437:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971499 is committed
+00000001:00080000:0.0:1579384992.180425:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971500 is committed
+00000001:00080000:0.0:1579384992.373178:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971501 is committed
+00000001:00080000:0.0:1579384992.524420:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971502 is committed
+00000001:00080000:0.0:1579384992.687156:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971503 is committed
+00000001:00080000:0.0:1579384992.842079:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971504 is committed
+00000001:00080000:0.0:1579384992.988924:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971505 is committed
+00000001:00080000:0.0:1579384993.120840:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971506 is committed
+00000001:00080000:0.0:1579384993.253397:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971507 is committed
+00000001:00080000:0.0:1579384993.406561:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971508 is committed
+00000001:00080000:0.0:1579384993.630997:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971509 is committed
+00000001:00080000:0.0:1579384993.785125:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971510 is committed
+00000001:00080000:0.0:1579384993.951135:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971511 is committed
+00000001:00080000:0.0:1579384994.120622:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971512 is committed
+00000001:00080000:0.0:1579384994.272251:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971513 is committed
+00000001:00080000:0.0:1579384994.433333:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971514 is committed
+00000001:00080000:0.0:1579384994.583356:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971515 is committed
+00000001:00080000:0.0:1579384994.730202:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971516 is committed
+00000001:00080000:0.0:1579384994.887532:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971517 is committed
+00000001:00080000:0.0:1579384995.050161:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971518 is committed
+00000001:00080000:0.0:1579384995.216979:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971519 is committed
+00000001:00080000:0.0:1579384995.386874:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971520 is committed
+00000001:00080000:0.0:1579384995.540073:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971521 is committed
+00000001:00080000:0.0:1579384995.682004:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971522 is committed
+00000001:00080000:0.0:1579384995.822718:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971523 is committed
+00000001:00080000:0.0:1579384995.969485:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971524 is committed
+00000001:00080000:0.0:1579384996.115284:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971525 is committed
+00000001:00080000:0.0:1579384996.255565:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971526 is committed
+00000001:00080000:0.0:1579384996.394230:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971527 is committed
+00000001:00080000:0.0:1579384996.534775:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971528 is committed
+00000001:00080000:0.0:1579384996.678202:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971529 is committed
+00000001:00080000:0.0:1579384996.816582:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971530 is committed
+00000001:00080000:0.0:1579384996.957833:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971531 is committed
+00000001:00080000:0.0:1579384997.095454:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971532 is committed
+00000001:00080000:0.0:1579384997.233473:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971533 is committed
+00000001:00080000:0.0:1579384997.374073:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971534 is committed
+00000001:00080000:0.0:1579384997.522352:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971535 is committed
+00000001:00080000:0.0:1579384997.670854:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971536 is committed
+00000001:00080000:0.0:1579384997.849258:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971537 is committed
+00000001:00080000:0.0:1579384997.993805:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971538 is committed
+00000001:00080000:0.0:1579384998.138104:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971539 is committed
+00000001:00080000:0.0:1579384998.283412:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971540 is committed
+00000001:00080000:0.0:1579384998.427449:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971541 is committed
+00000001:00080000:0.0:1579384998.568974:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971542 is committed
+00000001:00080000:0.0:1579384998.717622:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971543 is committed
+00000001:00080000:0.0:1579384998.864508:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971544 is committed
+00000001:00080000:0.0:1579384999.014419:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971545 is committed
+00000001:00080000:0.0:1579384999.154583:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971546 is committed
+00000001:00080000:0.0:1579384999.295386:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971547 is committed
+00000001:00080000:0.0:1579384999.433438:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971548 is committed
+00000001:00080000:0.0:1579384999.581661:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971549 is committed
+00000001:00080000:0.0:1579384999.722941:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971550 is committed
+00000001:00080000:0.0:1579384999.859094:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971551 is committed
+00000001:00080000:0.0:1579384999.994563:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971552 is committed
+00000001:00080000:0.0:1579385000.148954:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971553 is committed
+00000001:00080000:0.0:1579385000.292370:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971554 is committed
+00000001:00080000:0.0:1579385000.464149:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971555 is committed
+00000001:00080000:0.0:1579385000.621470:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971556 is committed
+00000001:00080000:0.0:1579385000.765458:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971557 is committed
+00000001:00080000:0.0:1579385000.907427:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971558 is committed
+00000001:00080000:0.0:1579385001.053890:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971559 is committed
+00000001:00080000:0.0:1579385001.210266:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971560 is committed
+00000001:00080000:0.0:1579385001.355332:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971561 is committed
+00000001:00080000:0.0:1579385001.502535:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971562 is committed
+00000100:00080000:0.0:1579385001.610380:0:3731:0:(pinger.c:217:ptlrpc_pinger_process_import()) 95020deb-bd90-0068-9670-83f9e8e68a09->MGS: level DISCONN/3 force 0 force_next 0 deactive 0 pingable 1 suppress 0
+00000100:00080000:0.0:1579385001.610567:0:3731:0:(recover.c:58:ptlrpc_initiate_recovery()) MGS: starting recovery
+00000100:00080000:0.0:1579385001.610570:0:3731:0:(import.c:681:ptlrpc_connect_import()) ffff9232d1422000 MGS: changing import state from DISCONN to CONNECTING
+00000100:00080000:0.0:1579385001.610580:0:3731:0:(import.c:524:import_select_connection()) MGC10.24.84.84@tcp: connect to NID 10.24.84.84@tcp last attempt 4390961243
+00000100:00080000:0.0:1579385001.610584:0:3731:0:(import.c:568:import_select_connection()) MGC10.24.84.84@tcp: tried all connections, increasing latency to 31s
+00000100:00080000:0.0:1579385001.610591:0:3731:0:(import.c:602:import_select_connection()) MGC10.24.84.84@tcp: import ffff9232d1422000 using connection MGC10.24.84.84@tcp_0/10.24.84.84@tcp
+00000001:00080000:0.0:1579385001.649059:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971563 is committed
+00000001:00080000:0.0:1579385001.795038:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971564 is committed
+00000001:00080000:0.0:1579385001.936931:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971565 is committed
+00000001:00080000:0.0:1579385002.075797:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971566 is committed
+00000001:00080000:0.0:1579385002.208276:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971567 is committed
+00000001:00080000:0.0:1579385002.362516:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971568 is committed
+00000001:00080000:0.0:1579385002.544855:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971569 is committed
+00000001:00080000:0.0:1579385002.700700:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971570 is committed
+00000001:00080000:0.0:1579385002.849942:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971571 is committed
+00000001:00080000:0.0:1579385003.005818:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971572 is committed
+00000001:00080000:0.0:1579385003.178074:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971573 is committed
+00000001:00080000:0.0:1579385003.325896:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971574 is committed
+00000001:00080000:0.0:1579385003.473403:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971575 is committed
+00000001:00080000:0.0:1579385003.603046:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971576 is committed
+00000001:00080000:0.0:1579385003.749042:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971577 is committed
+00000001:00080000:0.0:1579385003.893722:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971578 is committed
+00000001:00080000:0.0:1579385004.038091:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971579 is committed
+00000001:00080000:0.0:1579385004.181814:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971580 is committed
+00000001:00080000:0.0:1579385004.323146:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971581 is committed
+00000001:00080000:0.0:1579385004.461744:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971582 is committed
+00000001:00080000:0.0:1579385004.607274:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971583 is committed
+00000001:00080000:0.0:1579385004.747222:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971584 is committed
+00000001:00080000:0.0:1579385004.881547:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971585 is committed
+00000001:00080000:0.0:1579385005.026799:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971586 is committed
+00000001:00080000:0.0:1579385005.170091:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971587 is committed
+00000001:00080000:0.0:1579385005.309813:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971588 is committed
+00000001:00080000:0.0:1579385005.455969:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971589 is committed
+00000001:00080000:0.0:1579385005.784618:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971590 is committed
+00000001:00080000:0.0:1579385006.136210:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971591 is committed
+00000001:00080000:0.0:1579385006.294020:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971592 is committed
+00000001:00080000:0.0:1579385006.437384:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971593 is committed
+00000001:00080000:0.0:1579385006.597358:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971594 is committed
+00000001:00080000:0.0:1579385006.759269:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971595 is committed
+00000001:00080000:0.0:1579385006.904951:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971596 is committed
+00000001:00080000:0.0:1579385007.047365:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971597 is committed
+00000001:00080000:0.0:1579385007.202216:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971598 is committed
+00000001:00080000:0.0:1579385007.341455:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971599 is committed
+00000001:00080000:0.0:1579385007.483360:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971600 is committed
+00000001:00080000:0.0:1579385007.626041:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971601 is committed
+00000001:00080000:0.0:1579385007.770261:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971602 is committed
+00000001:00080000:0.0:1579385007.909923:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971603 is committed
+00000001:00080000:0.0:1579385008.346333:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971604 is committed
+00000001:00080000:0.0:1579385008.545296:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971605 is committed
+00000001:00080000:0.0:1579385008.717295:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971606 is committed
+00000001:00080000:0.0:1579385008.866872:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971607 is committed
+00000001:00080000:0.0:1579385009.143012:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971608 is committed
+00000001:00080000:0.0:1579385009.298364:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971609 is committed
+00000001:00080000:0.0:1579385009.446027:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971610 is committed
+00000001:00080000:0.0:1579385009.581317:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971611 is committed
+00000001:00080000:0.0:1579385009.719488:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971612 is committed
+00000001:00080000:0.0:1579385009.862450:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971613 is committed
+00000001:00080000:0.0:1579385010.010596:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971614 is committed
+00000001:00080000:0.0:1579385010.161937:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971615 is committed
+00000001:00080000:0.0:1579385010.313986:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971616 is committed
+00000001:00080000:0.0:1579385010.487626:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971617 is committed
+00000001:00080000:0.0:1579385010.673210:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971618 is committed
+00000001:00080000:0.0:1579385010.860556:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971619 is committed
+00000001:00080000:0.0:1579385011.074520:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971620 is committed
+00000001:00080000:0.0:1579385011.256887:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971621 is committed
+00000001:00080000:0.0:1579385011.444009:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971622 is committed
+00000001:00080000:0.0:1579385011.649800:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971623 is committed
+00000001:00080000:0.0:1579385011.835802:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971624 is committed
+00000001:00080000:0.0:1579385012.007220:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971625 is committed
+00000001:00080000:0.0:1579385012.200848:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971626 is committed
+00000001:00080000:0.0:1579385012.353708:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971627 is committed
+00000001:00080000:0.0:1579385012.498580:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971628 is committed
+00000001:00080000:0.0:1579385012.666104:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971629 is committed
+00000001:00080000:0.0:1579385012.830231:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971630 is committed
+00000001:00080000:0.0:1579385012.991008:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971631 is committed
+00000001:00080000:0.0:1579385013.163792:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971632 is committed
+00000001:00080000:0.0:1579385013.317559:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971633 is committed
+00000001:00080000:0.0:1579385013.491174:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971634 is committed
+00000001:00080000:0.0:1579385013.656514:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971635 is committed
+00000001:00080000:0.0:1579385013.822699:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971636 is committed
+00000001:00080000:0.0:1579385014.002585:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971637 is committed
+00000001:00080000:0.0:1579385014.196740:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971638 is committed
+00000001:00080000:0.0:1579385014.374029:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971639 is committed
+00000001:00080000:0.0:1579385014.516760:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971640 is committed
+00000001:00080000:0.0:1579385014.697375:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971641 is committed
+00000001:00080000:0.0:1579385014.879902:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971642 is committed
+00000001:00080000:0.0:1579385015.073501:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971643 is committed
+00000001:00080000:0.0:1579385015.276474:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971644 is committed
+00000001:00080000:0.0:1579385015.421223:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971645 is committed
+00000001:00080000:0.0:1579385015.577019:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971646 is committed
+00000001:00080000:0.0:1579385015.725883:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971647 is committed
+00000001:00080000:0.0:1579385015.873144:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971648 is committed
+00000001:00080000:0.0:1579385016.017405:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971649 is committed
+00000001:00080000:0.0:1579385016.162133:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971650 is committed
+00000001:00080000:0.0:1579385016.308829:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971651 is committed
+00000001:00080000:0.0:1579385016.454920:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971652 is committed
+00000001:00080000:0.0:1579385016.597568:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971653 is committed
+00000001:00080000:0.0:1579385016.742223:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971654 is committed
+00000001:00080000:0.0:1579385016.885242:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971655 is committed
+00000001:00080000:0.0:1579385017.025615:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971656 is committed
+00000001:00080000:0.0:1579385017.166203:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971657 is committed
+00000001:00080000:0.0:1579385017.309914:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971658 is committed
+00000001:00080000:0.0:1579385017.446927:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971659 is committed
+00000001:00080000:0.0:1579385017.597564:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971660 is committed
+00000001:00080000:0.0:1579385017.746015:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971661 is committed
+00000001:00080000:0.0:1579385017.913276:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971662 is committed
+00000001:00080000:0.0:1579385018.060445:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971663 is committed
+00000001:00080000:0.0:1579385018.201339:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971664 is committed
+00000001:00080000:0.0:1579385018.345729:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971665 is committed
+00000001:00080000:0.0:1579385018.490894:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971666 is committed
+00000001:00080000:0.0:1579385018.639181:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971667 is committed
+00000001:00080000:0.0:1579385018.785814:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971668 is committed
+00000001:00080000:0.0:1579385018.930052:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971669 is committed
+00000001:00080000:0.0:1579385019.072570:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971670 is committed
+00000001:00080000:0.0:1579385019.225415:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971671 is committed
+00000001:00080000:0.0:1579385019.369178:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971672 is committed
+00000001:00080000:0.0:1579385019.508372:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971673 is committed
+00000001:00080000:0.0:1579385019.650026:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971674 is committed
+00000001:00080000:0.0:1579385019.789601:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971675 is committed
+00000001:00080000:0.0:1579385019.926395:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971676 is committed
+00000001:00080000:0.0:1579385020.075324:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971677 is committed
+00000001:00080000:0.0:1579385020.230220:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971678 is committed
+00000001:00080000:0.0:1579385020.389744:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971679 is committed
+00000001:00080000:0.0:1579385020.534521:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971680 is committed
+00000001:00080000:0.0:1579385020.679043:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971681 is committed
+00000001:00080000:0.0:1579385020.825536:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971682 is committed
+00000001:00080000:0.0:1579385020.968332:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971683 is committed
+00000001:00080000:0.0:1579385021.168046:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971684 is committed
+00000001:00080000:0.0:1579385021.278200:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971685 is committed
+00000001:00080000:0.0:1579385021.430101:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971686 is committed
+00000001:00080000:0.0:1579385021.578492:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971687 is committed
+00000001:00080000:0.0:1579385021.726933:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971688 is committed
+00000001:00080000:0.0:1579385021.872718:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971689 is committed
+00000001:00080000:0.0:1579385022.013843:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971690 is committed
+00000001:00080000:0.0:1579385022.149974:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971691 is committed
+00000001:00080000:0.0:1579385022.293251:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971692 is committed
+00000001:00080000:0.0:1579385022.429027:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971693 is committed
+00000001:00080000:0.0:1579385022.572433:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971694 is committed
+00000001:00080000:0.0:1579385022.709701:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971695 is committed
+00000001:00080000:0.0:1579385022.861753:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971696 is committed
+00000001:00080000:0.0:1579385023.033005:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971697 is committed
+00000001:00080000:0.0:1579385023.169468:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971698 is committed
+00000001:00080000:0.0:1579385023.315289:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971699 is committed
+00000001:00080000:0.0:1579385023.460940:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971700 is committed
+00000001:00080000:0.0:1579385023.611013:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971701 is committed
+00000001:00080000:0.0:1579385023.758037:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971702 is committed
+00000001:00080000:0.0:1579385023.909440:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971703 is committed
+00000001:00080000:0.0:1579385024.049738:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971704 is committed
+00000001:00080000:0.0:1579385024.194218:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971705 is committed
+00000001:00080000:0.0:1579385024.346258:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971706 is committed
+00000001:00080000:0.0:1579385024.489894:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971707 is committed
+00000001:00080000:0.0:1579385024.634857:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971708 is committed
+00000001:00080000:0.0:1579385024.774928:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971709 is committed
+00000001:00080000:0.0:1579385024.910619:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971710 is committed
+00000001:00080000:0.0:1579385025.050537:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971711 is committed
+00000001:00080000:0.0:1579385025.190119:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971712 is committed
+00000001:00080000:0.0:1579385025.327495:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971713 is committed
+00000001:00080000:0.0:1579385025.481496:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971714 is committed
+00000001:00080000:0.0:1579385025.648794:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971715 is committed
+00000001:00080000:0.0:1579385025.802996:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971716 is committed
+00000001:00080000:0.0:1579385025.947633:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971717 is committed
+00000001:00080000:0.0:1579385026.096795:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971718 is committed
+00000001:00080000:0.0:1579385026.241857:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971719 is committed
+00000001:00080000:0.0:1579385026.390807:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971720 is committed
+00000001:00080000:0.0:1579385026.534327:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971721 is committed
+00000100:00080000:0.0:1579385026.610529:0:3731:0:(pinger.c:217:ptlrpc_pinger_process_import()) 95020deb-bd90-0068-9670-83f9e8e68a09->MGS: level CONNECTING/4 force 0 force_next 0 deactive 0 pingable 1 suppress 0
+00000100:00080000:0.0:1579385026.610539:0:3731:0:(pinger.c:230:ptlrpc_pinger_process_import()) 95020deb-bd90-0068-9670-83f9e8e68a09->MGS: not pinging (in recovery or recovery disabled: CONNECTING)
+00000001:00080000:0.0:1579385026.676707:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971722 is committed
+00000001:00080000:0.0:1579385026.826097:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971723 is committed
+00000001:00080000:0.0:1579385026.974682:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971724 is committed
+00000001:00080000:0.0:1579385027.121987:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971725 is committed
+00000001:00080000:0.0:1579385027.262944:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971726 is committed
+00000001:00080000:0.0:1579385027.402457:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971727 is committed
+00000001:00080000:0.0:1579385027.542543:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971728 is committed
+00000001:00080000:0.0:1579385027.685690:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971729 is committed
+00000001:00080000:0.0:1579385027.824963:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971730 is committed
+00000001:00080000:0.0:1579385027.983632:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971731 is committed
+00000001:00080000:0.0:1579385028.156624:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971732 is committed
+00000001:00080000:0.0:1579385028.306205:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971733 is committed
+00000001:00080000:0.0:1579385028.452665:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971734 is committed
+00000001:00080000:0.0:1579385028.600926:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971735 is committed
+00000001:00080000:0.0:1579385028.746855:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971736 is committed
+00000001:00080000:0.0:1579385028.890605:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971737 is committed
+00000001:00080000:0.0:1579385029.038093:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971738 is committed
+00000001:00080000:0.0:1579385029.179203:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971739 is committed
+00000001:00080000:0.0:1579385029.329483:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971740 is committed
+00000001:00080000:0.0:1579385029.481551:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971741 is committed
+00000001:00080000:0.0:1579385029.625945:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971742 is committed
+00000001:00080000:0.0:1579385029.768639:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971743 is committed
+00000001:00080000:0.0:1579385029.905937:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971744 is committed
+00000001:00080000:0.0:1579385030.048775:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971745 is committed
+00000001:00080000:0.0:1579385030.186607:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971746 is committed
+00000001:00080000:0.0:1579385030.329374:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971747 is committed
+00000001:00080000:0.0:1579385030.468919:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971748 is committed
+00000001:00080000:0.0:1579385030.619932:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971749 is committed
+00000001:00080000:0.0:1579385030.797785:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971750 is committed
+00000001:00080000:0.0:1579385030.942468:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971751 is committed
+00000001:00080000:0.0:1579385031.091153:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971752 is committed
+00000001:00080000:0.0:1579385031.233871:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971753 is committed
+00000001:00080000:0.0:1579385031.375100:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971754 is committed
+00000001:00080000:0.0:1579385031.517222:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971755 is committed
+00000001:00080000:0.0:1579385031.662087:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971756 is committed
+00000001:00080000:0.0:1579385031.804756:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971757 is committed
+00000001:00080000:0.0:1579385031.950079:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971758 is committed
+00000001:00080000:0.0:1579385032.096319:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971759 is committed
+00000001:00080000:0.0:1579385032.258949:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971760 is committed
+00000001:00080000:0.0:1579385032.400654:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971761 is committed
+00000001:00080000:0.0:1579385032.546300:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971762 is committed
+00000001:00080000:0.0:1579385032.690985:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971763 is committed
+00000001:00080000:0.0:1579385032.830397:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971764 is committed
+00000001:00080000:0.0:1579385032.965181:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971765 is committed
+00000001:00080000:0.0:1579385033.105293:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971766 is committed
+00000001:00080000:0.0:1579385033.252043:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971767 is committed
+00000001:00080000:0.0:1579385033.413760:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971768 is committed
+00000001:00080000:0.0:1579385033.566184:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971769 is committed
+00000001:00080000:0.0:1579385033.708936:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971770 is committed
+00000001:00080000:0.0:1579385033.854476:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971771 is committed
+00000001:00080000:0.0:1579385033.998611:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971772 is committed
+00000001:00080000:0.0:1579385034.142464:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971773 is committed
+00000001:00080000:0.0:1579385034.286734:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971774 is committed
+00000001:00080000:0.0:1579385034.434797:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971775 is committed
+00000001:00080000:0.0:1579385034.582884:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971776 is committed
+00000001:00080000:0.0:1579385034.730032:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971777 is committed
+00000001:00080000:0.0:1579385034.873596:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971778 is committed
+00000001:00080000:0.0:1579385035.017008:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971779 is committed
+00000001:00080000:0.0:1579385035.158962:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971780 is committed
+00000001:00080000:0.0:1579385035.302722:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971781 is committed
+00000001:00080000:0.0:1579385035.449774:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971782 is committed
+00000001:00080000:0.0:1579385035.589657:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971783 is committed
+00000001:00080000:0.0:1579385035.726843:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971784 is committed
+00000001:00080000:0.0:1579385035.879553:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971785 is committed
+00000001:00080000:0.0:1579385036.046066:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971786 is committed
+00000001:00080000:0.0:1579385036.214031:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971787 is committed
+00000001:00080000:0.0:1579385036.358628:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971788 is committed
+00000001:00080000:0.0:1579385036.502756:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971789 is committed
+00000001:00080000:0.0:1579385036.647146:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971790 is committed
+00000001:00080000:0.0:1579385036.790930:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971791 is committed
+00000001:00080000:0.0:1579385036.937581:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971792 is committed
+00000001:00080000:0.0:1579385037.087136:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971793 is committed
+00000001:00080000:0.0:1579385037.229725:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971794 is committed
+00000001:00080000:0.0:1579385037.378422:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971795 is committed
+00000001:00080000:0.0:1579385037.530742:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971796 is committed
+00000100:00000400:0.0:1579385037.616239:0:3728:0:(client.c:2116:ptlrpc_expire_one_request()) @@@ Request sent has timed out for sent delay: [sent 1579385001/real 0]  req@ffff9232d552a000 x1656006775029840/t0(0) o250->MGC10.24.84.84@tcp@10.24.84.84@tcp:26/25 lens 520/544 e 0 to 1 dl 1579385037 ref 2 fl Rpc:XN/0/ffffffff rc 0/-1
+00000001:00080000:0.0:1579385037.675422:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971797 is committed
+00000001:00080000:0.0:1579385037.817357:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971798 is committed
+00000001:00080000:0.0:1579385037.957628:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971799 is committed
+00000001:00080000:0.0:1579385038.095099:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971800 is committed
+00000001:00080000:0.0:1579385038.228903:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971801 is committed
+00000001:00080000:0.0:1579385038.369410:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971802 is committed
+00000001:00080000:0.0:1579385038.521640:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971803 is committed
+00000001:00080000:0.0:1579385038.681770:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971804 is committed
+00000001:00080000:0.0:1579385038.834586:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971805 is committed
+00000001:00080000:0.0:1579385038.985985:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971806 is committed
+00000001:00080000:0.0:1579385039.129116:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971807 is committed
+00000001:00080000:0.0:1579385039.273650:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971808 is committed
+00000001:00080000:0.0:1579385039.414530:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971809 is committed
+00000001:00080000:0.0:1579385039.565184:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971810 is committed
+00000001:00080000:0.0:1579385039.710121:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971811 is committed
+00000001:00080000:0.0:1579385039.855296:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971812 is committed
+00000001:00080000:0.0:1579385039.996862:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971813 is committed
+00000001:00080000:0.0:1579385040.146683:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971814 is committed
+00000001:00080000:0.0:1579385040.283241:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971815 is committed
+00000001:00080000:0.0:1579385040.440943:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971816 is committed
+00000001:00080000:0.0:1579385040.581581:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971817 is committed
+00000001:00080000:0.0:1579385040.713315:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971818 is committed
+00000001:00080000:0.0:1579385040.845162:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971819 is committed
+00000001:00080000:0.0:1579385040.978779:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971820 is committed
+00000001:00080000:0.0:1579385041.125716:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971821 is committed
+00000001:00080000:0.0:1579385041.273890:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971822 is committed
+00000001:00080000:0.0:1579385041.417427:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971823 is committed
+00000001:00080000:0.0:1579385041.561565:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971824 is committed
+00000001:00080000:0.0:1579385041.693506:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971825 is committed
+00000001:00080000:0.0:1579385041.837579:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971826 is committed
+00000001:00080000:0.0:1579385041.974143:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971827 is committed
+00000001:00080000:0.0:1579385042.118111:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971828 is committed
+00000001:00080000:0.0:1579385042.259935:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971829 is committed
+00000001:00080000:0.0:1579385042.409699:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971830 is committed
+00000001:00080000:0.0:1579385042.562375:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971831 is committed
+00000001:00080000:0.0:1579385042.711853:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971832 is committed
+00000001:00080000:0.0:1579385042.857652:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971833 is committed
+00000001:00080000:0.0:1579385043.002682:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971834 is committed
+00000001:00080000:0.0:1579385043.146086:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971835 is committed
+00000001:00080000:0.0:1579385043.284581:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971836 is committed
+00000001:00080000:0.0:1579385043.425693:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971837 is committed
+00000001:00080000:0.0:1579385043.568625:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971838 is committed
+00000001:00080000:0.0:1579385043.719560:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971839 is committed
+00000001:00080000:0.0:1579385043.881664:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971840 is committed
+00000001:00080000:0.0:1579385044.033251:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971841 is committed
+00000001:00080000:0.0:1579385044.177471:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971842 is committed
+00000001:00080000:0.0:1579385044.322059:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971843 is committed
+00000001:00080000:0.0:1579385044.461862:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971844 is committed
+00000001:00080000:0.0:1579385044.618263:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971845 is committed
+00000001:00080000:0.0:1579385044.761961:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971846 is committed
+00000001:00080000:0.0:1579385044.910091:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971847 is committed
+00000001:00080000:0.0:1579385045.058331:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971848 is committed
+00000001:00080000:0.0:1579385045.202360:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971849 is committed
+00000001:00080000:0.0:1579385045.350017:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971850 is committed
+00000001:00080000:0.0:1579385045.497674:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971851 is committed
+00000001:00080000:0.0:1579385045.639299:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971852 is committed
+00000001:00080000:0.0:1579385045.785324:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971853 is committed
+00000001:00080000:0.0:1579385045.926141:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971854 is committed
+00000001:00080000:0.0:1579385046.064166:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971855 is committed
+00000001:00080000:0.0:1579385046.209197:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971856 is committed
+00000001:00080000:0.0:1579385046.357618:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971857 is committed
+00000001:00080000:0.0:1579385046.521043:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971858 is committed
+00000001:00080000:0.0:1579385046.669383:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971859 is committed
+00000001:00080000:0.0:1579385046.817520:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971860 is committed
+00000001:00080000:0.0:1579385046.962103:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971861 is committed
+00000001:00080000:0.0:1579385047.104765:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971862 is committed
+00000001:00080000:0.0:1579385047.246963:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971863 is committed
+00000001:00080000:0.0:1579385047.394910:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971864 is committed
+00000001:00080000:0.0:1579385047.541177:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971865 is committed
+00000001:00080000:0.0:1579385047.689813:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971866 is committed
+00000001:00080000:0.0:1579385047.834032:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971867 is committed
+00000001:00080000:0.0:1579385047.974901:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971868 is committed
+00000001:00080000:0.0:1579385048.118797:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971869 is committed
+00000001:00080000:0.0:1579385048.303360:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971870 is committed
+00000001:00080000:0.0:1579385048.447470:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971871 is committed
+00000001:00080000:0.0:1579385048.593953:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971872 is committed
+00000001:00080000:0.0:1579385048.741433:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971873 is committed
+00000001:00080000:0.0:1579385048.889435:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971874 is committed
+00000001:00080000:0.0:1579385049.044813:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971875 is committed
+00000001:00080000:0.0:1579385049.202239:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971876 is committed
+00000001:00080000:0.0:1579385049.351234:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971877 is committed
+00000001:00080000:0.0:1579385049.497850:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971878 is committed
+00000001:00080000:0.0:1579385049.643450:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971879 is committed
+00000001:00080000:0.0:1579385049.789863:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971880 is committed
+00000001:00080000:0.0:1579385049.946261:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971881 is committed
+00000001:00080000:0.0:1579385050.089189:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971882 is committed
+00000001:00080000:0.0:1579385050.234251:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971883 is committed
+00000001:00080000:0.0:1579385050.377979:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971884 is committed
+00000001:00080000:0.0:1579385050.536640:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971885 is committed
+00000001:00080000:0.0:1579385050.709416:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971886 is committed
+00000001:00080000:0.0:1579385050.846596:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971887 is committed
+00000001:00080000:0.0:1579385050.994351:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971888 is committed
+00000001:00080000:0.0:1579385051.136464:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971889 is committed
+00000001:00080000:0.0:1579385051.277708:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971890 is committed
+00000001:00080000:0.0:1579385051.432094:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971891 is committed
+00000100:00080000:0.0:1579385051.610281:0:3731:0:(pinger.c:217:ptlrpc_pinger_process_import()) 95020deb-bd90-0068-9670-83f9e8e68a09->MGS: level CONNECTING/4 force 0 force_next 0 deactive 0 pingable 1 suppress 0
+00000100:00080000:0.0:1579385051.610290:0:3731:0:(pinger.c:230:ptlrpc_pinger_process_import()) 95020deb-bd90-0068-9670-83f9e8e68a09->MGS: not pinging (in recovery or recovery disabled: CONNECTING)
+00000001:00080000:0.0:1579385051.637406:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971892 is committed
+00000001:00080000:0.0:1579385051.876601:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971893 is committed
+00000001:00080000:0.0:1579385052.146362:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971894 is committed
+00000001:00080000:0.0:1579385052.436210:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971895 is committed
+00000001:00080000:0.0:1579385052.722652:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971896 is committed
+00000001:00080000:0.0:1579385053.018653:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971897 is committed
+00000001:00080000:0.0:1579385053.313895:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971898 is committed
+00000001:00080000:0.0:1579385053.600600:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971899 is committed
+00000400:00000100:0.0:1579385053.879307:0:3722:0:(lib-socket.c:645:lnet_sock_connect()) Error -110 connecting 10.29.160.166/1023 -> 10.24.84.84/988
+00000400:00000100:0.0:1579385053.879338:0:3722:0:(acceptor.c:118:lnet_connect_console_error()) Connection to 10.24.84.84@tcp at host 10.24.84.84 on port 988 took too long: that node may be hung or experiencing high load.
+00000800:00000100:0.0:1579385053.879352:0:3722:0:(socklnd_cb.c:425:ksocknal_txlist_done()) Deleting packet type 1 len 520 10.29.160.166@tcp->10.24.84.84@tcp
+00000100:00080000:0.0:1579385053.879380:0:3728:0:(import.c:1284:ptlrpc_connect_interpret()) ffff9232d1422000 MGS: changing import state from CONNECTING to DISCONN
+00000100:00080000:0.0:1579385053.879385:0:3728:0:(import.c:1330:ptlrpc_connect_interpret()) recovery of MGS on MGC10.24.84.84@tcp_0 failed (-110)
+00000001:00080000:0.0:1579385053.888204:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971900 is committed
+00000001:00080000:0.0:1579385054.169263:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971901 is committed
+00000001:00080000:0.0:1579385054.459064:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971902 is committed
+00000001:00080000:0.0:1579385054.756671:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971903 is committed
+00000001:00080000:0.0:1579385055.056752:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971904 is committed
+00000001:00080000:0.0:1579385055.346515:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971905 is committed
+00000001:00080000:0.0:1579385055.630553:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971906 is committed
+00000001:00080000:0.0:1579385055.918516:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971907 is committed
+00000001:00080000:0.0:1579385056.208888:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971908 is committed
+00000001:00080000:0.0:1579385056.493368:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971909 is committed
+00000001:00080000:0.0:1579385056.772025:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971910 is committed
+00000001:00080000:0.0:1579385057.106178:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971911 is committed
+00000001:00080000:0.0:1579385057.392017:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971912 is committed
+00000001:00080000:0.0:1579385057.680141:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971913 is committed
+00000001:00080000:0.0:1579385057.967917:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971914 is committed
+00000001:00080000:0.0:1579385058.256111:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971915 is committed
+00000001:00080000:0.0:1579385058.542592:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971916 is committed
+00000001:00080000:0.0:1579385058.829452:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971917 is committed
+00000001:00080000:0.0:1579385059.109366:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971918 is committed
+00000001:00080000:0.0:1579385059.417630:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971919 is committed
+00000001:00080000:0.0:1579385059.704645:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971920 is committed
+00000001:00080000:0.0:1579385059.993424:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971921 is committed
+00000001:00080000:0.0:1579385060.279803:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971922 is committed
+00000001:00080000:0.0:1579385060.566455:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971923 is committed
+00000001:00080000:0.0:1579385060.850499:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971924 is committed
+00000001:00080000:0.0:1579385061.140266:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971925 is committed
+00000001:00080000:0.0:1579385061.420813:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971926 is committed
+00000001:00080000:0.0:1579385061.702263:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971927 is committed
+00000001:00080000:0.0:1579385061.989164:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971928 is committed
+00000001:00080000:0.0:1579385062.276833:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971929 is committed
+00000001:00080000:0.0:1579385062.567230:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971930 is committed
+00000001:00080000:0.0:1579385062.901873:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971931 is committed
+00000001:00080000:0.0:1579385063.214954:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971932 is committed
+00000001:00080000:0.0:1579385063.503492:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971933 is committed
+00000001:00080000:0.0:1579385063.791804:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971934 is committed
+00000001:00080000:0.0:1579385064.076967:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971935 is committed
+00000001:00080000:0.0:1579385064.369154:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971936 is committed
+00000001:00080000:0.0:1579385064.666095:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971937 is committed
+00000001:00080000:0.0:1579385064.956274:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971938 is committed
+00000001:00080000:0.0:1579385065.244343:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971939 is committed
+00000001:00080000:0.0:1579385065.532257:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971940 is committed
+00000001:00080000:0.0:1579385065.825509:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971941 is committed
+00000001:00080000:0.0:1579385066.114296:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971942 is committed
+00000001:00080000:0.0:1579385066.399647:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971943 is committed
+00000001:00080000:0.0:1579385066.682887:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971944 is committed
+00000001:00080000:0.0:1579385066.967251:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971945 is committed
+00000001:00080000:0.0:1579385067.251825:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971946 is committed
+00000001:00080000:0.0:1579385067.539309:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971947 is committed
+00000001:00080000:0.0:1579385067.808667:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971948 is committed
+00000001:00080000:0.0:1579385068.096365:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971949 is committed
+00000001:00080000:0.0:1579385068.384147:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971950 is committed
+00000001:00080000:0.0:1579385068.675132:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971951 is committed
+00000001:00080000:0.0:1579385068.963110:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971952 is committed
+00000001:00080000:0.0:1579385069.242023:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971953 is committed
+00000001:00080000:0.0:1579385069.524294:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971954 is committed
+00000001:00080000:0.0:1579385069.814159:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971955 is committed
+00000001:00080000:0.0:1579385070.099639:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971956 is committed
+00000001:00080000:0.0:1579385070.383286:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971957 is committed
+00000001:00080000:0.0:1579385070.668999:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971958 is committed
+00000001:00080000:0.0:1579385070.976810:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971959 is committed
+00000001:00080000:0.0:1579385071.253443:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971960 is committed
+00000001:00080000:0.0:1579385071.534371:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971961 is committed
+00000001:00080000:0.0:1579385071.826223:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971962 is committed
+00000001:00080000:0.0:1579385072.125656:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971963 is committed
+00000001:00080000:0.0:1579385072.421942:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971964 is committed
+00000001:00080000:0.0:1579385072.708929:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971965 is committed
+00000001:00080000:0.0:1579385072.995896:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971966 is committed
+00000001:00080000:0.0:1579385073.281817:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971967 is committed
+00000001:00080000:0.0:1579385073.569931:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971968 is committed
+00000001:00080000:0.0:1579385073.860908:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971969 is committed
+00000001:00080000:0.0:1579385074.156624:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971970 is committed
+00000001:00080000:0.0:1579385074.447328:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971971 is committed
+00000001:00080000:0.0:1579385074.739359:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971972 is committed
+00000001:00080000:0.0:1579385075.032315:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971973 is committed
+00000001:00080000:0.0:1579385075.321880:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971974 is committed
+00000001:00080000:0.0:1579385075.605879:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971975 is committed
+00000001:00080000:0.0:1579385075.896203:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971976 is committed
+00000001:00080000:0.0:1579385076.179718:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971977 is committed
+00000001:00080000:0.0:1579385076.466477:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971978 is committed
+00000100:00080000:0.0:1579385076.610361:0:3731:0:(pinger.c:217:ptlrpc_pinger_process_import()) 95020deb-bd90-0068-9670-83f9e8e68a09->MGS: level DISCONN/3 force 0 force_next 0 deactive 0 pingable 1 suppress 0
+00000100:00080000:0.0:1579385076.610372:0:3731:0:(recover.c:58:ptlrpc_initiate_recovery()) MGS: starting recovery
+00000100:00080000:0.0:1579385076.610375:0:3731:0:(import.c:681:ptlrpc_connect_import()) ffff9232d1422000 MGS: changing import state from DISCONN to CONNECTING
+00000100:00080000:0.0:1579385076.610384:0:3731:0:(import.c:524:import_select_connection()) MGC10.24.84.84@tcp: connect to NID 10.24.84.84@tcp last attempt 4391036243
+00000100:00080000:0.0:1579385076.610388:0:3731:0:(import.c:568:import_select_connection()) MGC10.24.84.84@tcp: tried all connections, increasing latency to 36s
+00000100:00080000:0.0:1579385076.610395:0:3731:0:(import.c:602:import_select_connection()) MGC10.24.84.84@tcp: import ffff9232d1422000 using connection MGC10.24.84.84@tcp_0/10.24.84.84@tcp
+00000001:00080000:0.0:1579385076.755327:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971979 is committed
+00000001:00080000:0.0:1579385077.044789:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971980 is committed
+00000001:00080000:0.0:1579385077.336778:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971981 is committed
+00000001:00080000:0.0:1579385077.626106:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971982 is committed
+00000001:00080000:0.0:1579385077.930931:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971983 is committed
+00000001:00080000:0.0:1579385078.218237:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971984 is committed
+00000001:00080000:0.0:1579385078.510082:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971985 is committed
+00000001:00080000:0.0:1579385078.798780:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971986 is committed
+00000001:00080000:0.0:1579385079.094402:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971987 is committed
+00000001:00080000:0.0:1579385079.379682:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971988 is committed
+00000001:00080000:0.0:1579385079.674522:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971989 is committed
+00000001:00080000:0.0:1579385079.963676:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971990 is committed
+00000001:00080000:0.0:1579385080.251516:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971991 is committed
+00000001:00080000:0.0:1579385080.537225:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971992 is committed
+00000001:00080000:0.0:1579385080.827146:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971993 is committed
+00000001:00080000:0.0:1579385081.153991:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971994 is committed
+00000001:00080000:0.0:1579385081.465472:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971995 is committed
+00000001:00080000:0.0:1579385081.747389:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971996 is committed
+00000001:00080000:0.0:1579385082.046989:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971997 is committed
+00000001:00080000:0.0:1579385082.344675:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971998 is committed
+00000001:00080000:0.0:1579385082.642553:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294971999 is committed
+00000001:00080000:0.0:1579385082.937138:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972000 is committed
+00000001:00080000:0.0:1579385083.235170:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972001 is committed
+00000001:00080000:0.0:1579385083.529692:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972002 is committed
+00000001:00080000:0.0:1579385083.823609:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972003 is committed
+00000001:00080000:0.0:1579385084.117696:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972004 is committed
+00000001:00080000:0.0:1579385084.410768:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972005 is committed
+00000001:00080000:0.0:1579385084.705820:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972006 is committed
+00000001:00080000:0.0:1579385084.994718:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972007 is committed
+00000001:00080000:0.0:1579385085.281464:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972008 is committed
+00000001:00080000:0.0:1579385085.568036:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972009 is committed
+00000001:00080000:0.0:1579385085.857622:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972010 is committed
+00000001:00080000:0.0:1579385086.140019:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972011 is committed
+00000001:00080000:0.0:1579385086.473933:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972012 is committed
+00000001:00080000:0.0:1579385086.762447:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972013 is committed
+00000001:00080000:0.0:1579385087.060965:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972014 is committed
+00000001:00080000:0.0:1579385087.361879:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972015 is committed
+00000001:00080000:0.0:1579385087.658281:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972016 is committed
+00000001:00080000:0.0:1579385087.946550:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972017 is committed
+00000001:00080000:0.0:1579385088.245833:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972018 is committed
+00000001:00080000:0.0:1579385088.538403:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972019 is committed
+00000001:00080000:0.0:1579385088.856669:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972020 is committed
+00000001:00080000:0.0:1579385089.150225:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972021 is committed
+00000001:00080000:0.0:1579385089.444054:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972022 is committed
+00000001:00080000:0.0:1579385089.743038:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972023 is committed
+00000001:00080000:0.0:1579385090.035900:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972024 is committed
+00000001:00080000:0.0:1579385090.326201:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972025 is committed
+00000001:00080000:0.0:1579385090.614539:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972026 is committed
+00000001:00080000:0.0:1579385090.918104:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972027 is committed
+00000001:00080000:0.0:1579385091.213521:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972028 is committed
+00000001:00080000:0.0:1579385091.506485:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972029 is committed
+00000001:00080000:0.0:1579385091.795761:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972030 is committed
+00000001:00080000:0.0:1579385092.090782:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972031 is committed
+00000001:00080000:0.0:1579385092.380687:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972032 is committed
+00000001:00080000:0.0:1579385092.674159:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972033 is committed
+00000001:00080000:0.0:1579385092.968577:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972034 is committed
+00000001:00080000:0.0:1579385093.276619:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972035 is committed
+00000001:00080000:0.0:1579385093.570065:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972036 is committed
+00000001:00080000:0.0:1579385093.864224:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972037 is committed
+00000001:00080000:0.0:1579385094.155874:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972038 is committed
+00000001:00080000:0.0:1579385094.442850:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972039 is committed
+00000001:00080000:0.0:1579385094.731417:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972040 is committed
+00000001:00080000:0.0:1579385095.025604:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972041 is committed
+00000001:00080000:0.0:1579385095.314601:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972042 is committed
+00000001:00080000:0.0:1579385095.599612:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972043 is committed
+00000001:00080000:0.0:1579385095.883320:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972044 is committed
+00000001:00080000:0.0:1579385096.167382:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972045 is committed
+00000001:00080000:0.0:1579385096.496516:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972046 is committed
+00000001:00080000:0.0:1579385096.784845:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972047 is committed
+00000001:00080000:0.0:1579385097.073834:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972048 is committed
+00000001:00080000:0.0:1579385097.387952:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972049 is committed
+00000001:00080000:0.0:1579385097.680274:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972050 is committed
+00000001:00080000:0.0:1579385097.989163:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972051 is committed
+00000001:00080000:0.0:1579385098.283475:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972052 is committed
+00000001:00080000:0.0:1579385098.640469:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972053 is committed
+00000001:00080000:0.0:1579385098.934537:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972054 is committed
+00000001:00080000:0.0:1579385099.228500:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972055 is committed
+00000001:00080000:0.0:1579385099.526669:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972056 is committed
+00000001:00080000:0.0:1579385099.820841:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972057 is committed
+00000001:00080000:0.0:1579385100.132128:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972058 is committed
+00000001:00080000:0.0:1579385100.427771:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972059 is committed
+00000001:00080000:0.0:1579385100.710531:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972060 is committed
+00000001:00080000:0.0:1579385100.992316:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972061 is committed
+00000001:00080000:0.0:1579385101.280162:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972062 is committed
+00000001:00080000:0.0:1579385101.568467:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972063 is committed
+00000100:00080000:0.0:1579385101.610348:0:3731:0:(pinger.c:217:ptlrpc_pinger_process_import()) 95020deb-bd90-0068-9670-83f9e8e68a09->MGS: level CONNECTING/4 force 0 force_next 0 deactive 0 pingable 1 suppress 0
+00000100:00080000:0.0:1579385101.610358:0:3731:0:(pinger.c:230:ptlrpc_pinger_process_import()) 95020deb-bd90-0068-9670-83f9e8e68a09->MGS: not pinging (in recovery or recovery disabled: CONNECTING)
+00000001:00080000:0.0:1579385101.861565:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972064 is committed
+00000001:00080000:0.0:1579385102.145132:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972065 is committed
+00000001:00080000:0.0:1579385102.445041:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972066 is committed
+00000001:00080000:0.0:1579385102.730470:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972067 is committed
+00000001:00080000:0.0:1579385103.025897:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972068 is committed
+00000001:00080000:0.0:1579385103.314376:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972069 is committed
+00000001:00080000:0.0:1579385103.613511:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972070 is committed
+00000001:00080000:0.0:1579385103.905982:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972071 is committed
+00000001:00080000:0.0:1579385104.198291:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972072 is committed
+00000001:00080000:0.0:1579385104.529840:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972073 is committed
+00000001:00080000:0.0:1579385104.817962:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972074 is committed
+00000001:00080000:0.0:1579385105.100970:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972075 is committed
+00000001:00080000:0.0:1579385105.395124:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972076 is committed
+00000001:00080000:0.0:1579385105.712914:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972077 is committed
+00000001:00080000:0.0:1579385105.994797:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972078 is committed
+00000001:00080000:0.0:1579385106.284298:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972079 is committed
+00000001:00080000:0.0:1579385106.574258:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972080 is committed
+00000001:00080000:0.0:1579385106.852013:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972081 is committed
+00000001:00080000:0.0:1579385107.139097:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972082 is committed
+00000001:00080000:0.0:1579385107.429124:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972083 is committed
+00000001:00080000:0.0:1579385107.718497:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972084 is committed
+00000001:00080000:0.0:1579385108.011629:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972085 is committed
+00000001:00080000:0.0:1579385108.299534:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972086 is committed
+00000001:00080000:0.0:1579385108.589321:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972087 is committed
+00000001:00080000:0.0:1579385108.878161:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972088 is committed
+00000001:00080000:0.0:1579385109.162851:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972089 is committed
+00000001:00080000:0.0:1579385109.455975:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972090 is committed
+00000001:00080000:0.0:1579385109.744180:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972091 is committed
+00000001:00080000:0.0:1579385110.027257:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972092 is committed
+00000001:00080000:0.0:1579385110.314082:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972093 is committed
+00000001:00080000:0.0:1579385110.619057:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972094 is committed
+00000001:00080000:0.0:1579385110.896415:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972095 is committed
+00000001:00080000:0.0:1579385111.177482:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972096 is committed
+00000001:00080000:0.0:1579385111.486224:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972097 is committed
+00000001:00080000:0.0:1579385111.786799:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972098 is committed
+00000001:00080000:0.0:1579385112.071317:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972099 is committed
+00000001:00080000:0.0:1579385112.352586:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972100 is committed
+00000001:00080000:0.0:1579385112.694181:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972101 is committed
+00000001:00080000:0.0:1579385113.001455:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972102 is committed
+00000001:00080000:0.0:1579385113.295896:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972103 is committed
+00000001:00080000:0.0:1579385113.589973:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972104 is committed
+00000001:00080000:0.0:1579385113.884345:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972105 is committed
+00000001:00080000:0.0:1579385114.177894:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972106 is committed
+00000001:00080000:0.0:1579385114.471294:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972107 is committed
+00000001:00080000:0.0:1579385114.760979:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972108 is committed
+00000001:00080000:0.0:1579385115.057214:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972109 is committed
+00000001:00080000:0.0:1579385115.348710:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972110 is committed
+00000001:00080000:0.0:1579385115.637966:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972111 is committed
+00000001:00080000:0.0:1579385115.922639:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972112 is committed
+00000001:00080000:0.0:1579385116.210545:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972113 is committed
+00000001:00080000:0.0:1579385116.490034:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972114 is committed
+00000001:00080000:0.0:1579385116.781530:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972115 is committed
+00000001:00080000:0.0:1579385117.068852:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972116 is committed
+00000001:00080000:0.0:1579385117.354707:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972117 is committed
+00000100:00000400:0.0:1579385117.610385:0:3728:0:(client.c:2116:ptlrpc_expire_one_request()) @@@ Request sent has timed out for sent delay: [sent 1579385076/real 0]  req@ffff9232d552a000 x1656006775029904/t0(0) o250->MGC10.24.84.84@tcp@10.24.84.84@tcp:26/25 lens 520/544 e 0 to 1 dl 1579385117 ref 2 fl Rpc:XN/0/ffffffff rc 0/-1
+00000001:00080000:0.0:1579385117.645257:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972118 is committed
+00000001:00080000:0.0:1579385117.935639:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972119 is committed
+00000001:00080000:0.0:1579385118.227252:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972120 is committed
+00000001:00080000:0.0:1579385118.533177:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972121 is committed
+00000001:00080000:0.0:1579385118.827976:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972122 is committed
+00000001:00080000:0.0:1579385119.116767:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972123 is committed
+00000001:00080000:0.0:1579385119.407478:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972124 is committed
+00000001:00080000:0.0:1579385119.696207:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972125 is committed
+00000001:00080000:0.0:1579385119.981954:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972126 is committed
+00000001:00080000:0.0:1579385120.269842:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972127 is committed
+00000001:00080000:0.0:1579385120.561337:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972128 is committed
+00000001:00080000:0.0:1579385120.850953:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972129 is committed
+00000001:00080000:0.0:1579385121.149571:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972130 is committed
+00000001:00080000:0.0:1579385121.432906:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972131 is committed
+00000001:00080000:0.0:1579385121.718961:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972132 is committed
+00000001:00080000:0.0:1579385122.009165:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972133 is committed
+00000001:00080000:0.0:1579385122.296175:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972134 is committed
+00000001:00080000:0.0:1579385122.585282:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972135 is committed
+00000001:00080000:0.0:1579385122.872596:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972136 is committed
+00000001:00080000:0.0:1579385123.212455:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972137 is committed
+00000001:00080000:0.0:1579385123.509106:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972138 is committed
+00000001:00080000:0.0:1579385123.815051:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972139 is committed
+00000001:00080000:0.0:1579385124.106581:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972140 is committed
+00000001:00080000:0.0:1579385124.399455:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972141 is committed
+00000001:00080000:0.0:1579385124.716277:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972142 is committed
+00000001:00080000:0.0:1579385125.016879:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972143 is committed
+00000001:00080000:0.0:1579385125.313776:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972144 is committed
+00000001:00080000:0.0:1579385125.604622:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972145 is committed
+00000001:00080000:0.0:1579385125.895268:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972146 is committed
+00000001:00080000:0.0:1579385126.182588:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972147 is committed
+00000001:00080000:0.0:1579385126.472879:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972148 is committed
+00000100:00080000:0.0:1579385126.610402:0:3731:0:(pinger.c:217:ptlrpc_pinger_process_import()) 95020deb-bd90-0068-9670-83f9e8e68a09->MGS: level CONNECTING/4 force 0 force_next 0 deactive 0 pingable 1 suppress 0
+00000100:00080000:0.0:1579385126.610411:0:3731:0:(pinger.c:230:ptlrpc_pinger_process_import()) 95020deb-bd90-0068-9670-83f9e8e68a09->MGS: not pinging (in recovery or recovery disabled: CONNECTING)
+00000001:00080000:0.0:1579385126.764755:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972149 is committed
+00000001:00080000:0.0:1579385127.070796:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972150 is committed
+00000001:00080000:0.0:1579385127.363873:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972151 is committed
+00000001:00080000:0.0:1579385127.652587:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972152 is committed
+00000001:00080000:0.0:1579385127.969186:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972153 is committed
+00000001:00080000:0.0:1579385128.265415:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972154 is committed
+00000001:00080000:0.0:1579385128.560050:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972155 is committed
+00000001:00080000:0.0:1579385128.852319:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972156 is committed
+00000001:00080000:0.0:1579385129.165163:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972157 is committed
+00000001:00080000:0.0:1579385129.479995:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972158 is committed
+00000001:00080000:0.0:1579385129.869440:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972159 is committed
+00000001:00080000:0.0:1579385130.378612:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972160 is committed
+00000001:00080000:0.0:1579385130.732111:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972161 is committed
+00000001:00080000:0.0:1579385131.050133:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972162 is committed
+00000001:00080000:0.0:1579385131.358402:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972163 is committed
+00000001:00080000:0.0:1579385131.638901:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972164 is committed
+00000001:00080000:0.0:1579385131.929940:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972165 is committed
+00000001:00080000:0.0:1579385132.236975:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972166 is committed
+00000001:00080000:0.0:1579385132.573054:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972167 is committed
+00000001:00080000:0.0:1579385132.934524:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972168 is committed
+00000001:00080000:0.0:1579385133.281697:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972169 is committed
+00000001:00080000:0.0:1579385133.644279:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972170 is committed
+00000001:00080000:0.0:1579385134.034281:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972171 is committed
+00000001:00080000:0.0:1579385134.342976:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972172 is committed
+00000001:00080000:0.0:1579385134.663117:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972173 is committed
+00000001:00080000:0.0:1579385134.961817:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972174 is committed
+00000001:00080000:0.0:1579385135.253007:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972175 is committed
+00000001:00080000:0.0:1579385135.545464:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972176 is committed
+00000001:00080000:0.0:1579385135.835848:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972177 is committed
+00000001:00080000:0.0:1579385136.117370:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972178 is committed
+00000001:00080000:0.0:1579385136.405224:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972179 is committed
+00000800:00000100:0.0:1579385136.459377:0:3724:0:(socklnd_cb.c:425:ksocknal_txlist_done()) Deleting packet type 1 len 520 10.29.160.166@tcp->10.24.84.84@tcp
+00000100:00080000:0.0:1579385136.459413:0:3728:0:(import.c:1284:ptlrpc_connect_interpret()) ffff9232d1422000 MGS: changing import state from CONNECTING to DISCONN
+00000100:00080000:0.0:1579385136.459419:0:3728:0:(import.c:1330:ptlrpc_connect_interpret()) recovery of MGS on MGC10.24.84.84@tcp_0 failed (-110)
+00000001:00080000:0.0:1579385136.689087:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972180 is committed
+00000001:00080000:0.0:1579385136.970756:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972181 is committed
+00000001:00080000:0.0:1579385137.262014:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972182 is committed
+00000001:00080000:0.0:1579385137.549616:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972183 is committed
+00000001:00080000:0.0:1579385137.837883:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972184 is committed
+00000001:00080000:0.0:1579385138.123963:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972185 is committed
+00000001:00080000:0.0:1579385138.412247:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972186 is committed
+00000001:00080000:0.0:1579385138.717548:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972187 is committed
+00000001:00080000:0.0:1579385139.040787:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972188 is committed
+00000001:00080000:0.0:1579385139.336890:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972189 is committed
+00000001:00080000:0.0:1579385139.632391:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972190 is committed
+00000001:00080000:0.0:1579385139.948885:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972191 is committed
+00000001:00080000:0.0:1579385140.236921:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972192 is committed
+00000001:00080000:0.0:1579385140.528413:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972193 is committed
+00000001:00080000:0.0:1579385140.817329:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972194 is committed
+00000001:00080000:0.0:1579385141.100153:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972195 is committed
+00000001:00080000:0.0:1579385141.387558:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972196 is committed
+00000001:00080000:0.0:1579385141.677609:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972197 is committed
+00000001:00080000:0.0:1579385141.963524:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972198 is committed
+00000001:00080000:0.0:1579385142.256160:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972199 is committed
+00000001:00080000:0.0:1579385142.543581:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972200 is committed
+00000001:00080000:0.0:1579385142.891168:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972201 is committed
+00000001:00080000:0.0:1579385143.177858:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972202 is committed
+00000001:00080000:0.0:1579385143.463087:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972203 is committed
+00000001:00080000:0.0:1579385143.750447:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972204 is committed
+00000001:00080000:0.0:1579385144.049460:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972205 is committed
+00000001:00080000:0.0:1579385144.362840:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972206 is committed
+00000001:00080000:0.0:1579385144.681448:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972207 is committed
+00000001:00080000:0.0:1579385144.975249:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972208 is committed
+00000001:00080000:0.0:1579385145.264570:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972209 is committed
+00000001:00080000:0.0:1579385145.552787:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972210 is committed
+00000001:00080000:0.0:1579385145.838912:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972211 is committed
+00000001:00080000:0.0:1579385146.122906:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972212 is committed
+00000001:00080000:0.0:1579385146.405442:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972213 is committed
+00000001:00080000:0.0:1579385146.692704:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972214 is committed
+00000001:00080000:0.0:1579385146.973094:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972215 is committed
+00000001:00080000:0.0:1579385147.260187:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972216 is committed
+00000001:00080000:0.0:1579385147.545333:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972217 is committed
+00000001:00080000:0.0:1579385147.837401:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972218 is committed
+00000001:00080000:0.0:1579385148.125313:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972219 is committed
+00000001:00080000:0.0:1579385148.405920:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972220 is committed
+00000001:00080000:0.0:1579385148.693760:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972221 is committed
+00000001:00080000:0.0:1579385148.994235:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972222 is committed
+00000001:00080000:0.0:1579385149.286433:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972223 is committed
+00000001:00080000:0.0:1579385149.578393:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972224 is committed
+00000001:00080000:0.0:1579385149.869538:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972225 is committed
+00000001:00080000:0.0:1579385150.162080:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972226 is committed
+00000001:00080000:0.0:1579385150.449726:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972227 is committed
+00000001:00080000:0.0:1579385150.749396:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972228 is committed
+00000001:00080000:0.0:1579385151.033977:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972229 is committed
+00000001:00080000:0.0:1579385151.311491:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972230 is committed
+00000001:00080000:0.0:1579385151.601225:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972231 is committed
+00000100:00080000:0.0:1579385151.610157:0:3731:0:(pinger.c:217:ptlrpc_pinger_process_import()) 95020deb-bd90-0068-9670-83f9e8e68a09->MGS: level DISCONN/3 force 0 force_next 0 deactive 0 pingable 1 suppress 0
+00000100:00080000:0.0:1579385151.610166:0:3731:0:(recover.c:58:ptlrpc_initiate_recovery()) MGS: starting recovery
+00000100:00080000:0.0:1579385151.610169:0:3731:0:(import.c:681:ptlrpc_connect_import()) ffff9232d1422000 MGS: changing import state from DISCONN to CONNECTING
+00000100:00080000:0.0:1579385151.610177:0:3731:0:(import.c:524:import_select_connection()) MGC10.24.84.84@tcp: connect to NID 10.24.84.84@tcp last attempt 4391111243
+00000100:00080000:0.0:1579385151.610181:0:3731:0:(import.c:568:import_select_connection()) MGC10.24.84.84@tcp: tried all connections, increasing latency to 41s
+00000100:00080000:0.0:1579385151.610189:0:3731:0:(import.c:602:import_select_connection()) MGC10.24.84.84@tcp: import ffff9232d1422000 using connection MGC10.24.84.84@tcp_0/10.24.84.84@tcp
+00000001:00080000:0.0:1579385151.888349:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972232 is committed
+00000001:00080000:0.0:1579385152.177357:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972233 is committed
+00000001:00080000:0.0:1579385152.472511:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972234 is committed
+00000001:00080000:0.0:1579385152.762095:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972235 is committed
+00000001:00080000:0.0:1579385153.051155:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972236 is committed
+00000001:00080000:0.0:1579385153.340872:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972237 is committed
+00000001:00080000:0.0:1579385153.693229:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972238 is committed
+00000001:00080000:0.0:1579385154.027056:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972239 is committed
+00000001:00080000:0.0:1579385154.322098:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972240 is committed
+00000001:00080000:0.0:1579385154.611682:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972241 is committed
+00000001:00080000:0.0:1579385154.907594:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972242 is committed
+00000001:00080000:0.0:1579385155.198425:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972243 is committed
+00000001:00080000:0.0:1579385155.492155:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972244 is committed
+00000001:00080000:0.0:1579385155.782345:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972245 is committed
+00000001:00080000:0.0:1579385156.070328:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972246 is committed
+00000001:00080000:0.0:1579385156.356889:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972247 is committed
+00000001:00080000:0.0:1579385156.643136:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972248 is committed
+00000001:00080000:0.0:1579385156.927534:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972249 is committed
+00000001:00080000:0.0:1579385157.217014:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972250 is committed
+00000001:00080000:0.0:1579385157.532328:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972251 is committed
+00000001:00080000:0.0:1579385157.817369:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972252 is committed
+00000001:00080000:0.0:1579385158.116768:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972253 is committed
+00000001:00080000:0.0:1579385158.409177:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972254 is committed
+00000001:00080000:0.0:1579385158.699731:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972255 is committed
+00000001:00080000:0.0:1579385158.995317:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972256 is committed
+00000001:00080000:0.0:1579385159.286351:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972257 is committed
+00000001:00080000:0.0:1579385159.593083:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972258 is committed
+00000001:00080000:0.0:1579385159.885300:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972259 is committed
+00000001:00080000:0.0:1579385160.186929:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972260 is committed
+00000001:00080000:0.0:1579385160.479797:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972261 is committed
+00000001:00080000:0.0:1579385160.761433:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972262 is committed
+00000001:00080000:0.0:1579385161.041597:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972263 is committed
+00000001:00080000:0.0:1579385161.313923:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972264 is committed
+00000001:00080000:0.0:1579385161.598333:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972265 is committed
+00000001:00080000:0.0:1579385161.895713:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972266 is committed
+00000001:00080000:0.0:1579385162.178155:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972267 is committed
+00000001:00080000:0.0:1579385162.465185:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972268 is committed
+00000001:00080000:0.0:1579385162.776027:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972269 is committed
+00000001:00080000:0.0:1579385163.086403:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972270 is committed
+00000001:00080000:0.0:1579385163.393622:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972271 is committed
+00000001:00080000:0.0:1579385163.677781:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972272 is committed
+00000001:00080000:0.0:1579385163.987722:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972273 is committed
+00000001:00080000:0.0:1579385164.303668:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972274 is committed
+00000001:00080000:0.0:1579385164.595597:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972275 is committed
+00000001:00080000:0.0:1579385164.882842:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972276 is committed
+00000001:00080000:0.0:1579385165.179156:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972277 is committed
+00000001:00080000:0.0:1579385165.470661:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972278 is committed
+00000001:00080000:0.0:1579385165.758006:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972279 is committed
+00000001:00080000:0.0:1579385166.047464:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972280 is committed
+00000001:00080000:0.0:1579385166.331464:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972281 is committed
+00000001:00080000:0.0:1579385166.627796:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972282 is committed
+00000001:00080000:0.0:1579385166.916635:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972283 is committed
+00000001:00080000:0.0:1579385167.210107:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972284 is committed
+00000001:00080000:0.0:1579385167.499963:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972285 is committed
+00000001:00080000:0.0:1579385167.793947:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972286 is committed
+00000001:00080000:0.0:1579385168.106566:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972287 is committed
+00000001:00080000:0.0:1579385168.396787:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972288 is committed
+00000001:00080000:0.0:1579385168.678013:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972289 is committed
+00000001:00080000:0.0:1579385168.975963:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972290 is committed
+00000001:00080000:0.0:1579385169.264930:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972291 is committed
+00000001:00080000:0.0:1579385169.559053:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972292 is committed
+00000001:00080000:0.0:1579385169.878062:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972293 is committed
+00000001:00080000:0.0:1579385170.175779:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972294 is committed
+00000001:00080000:0.0:1579385170.465225:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972295 is committed
+00000001:00080000:0.0:1579385170.732874:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972296 is committed
+00000001:00080000:0.0:1579385171.015931:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972297 is committed
+00000001:00080000:0.0:1579385171.299640:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972298 is committed
+00000001:00080000:0.0:1579385171.584252:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972299 is committed
+00000001:00080000:0.0:1579385171.893227:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972300 is committed
+00000001:00080000:0.0:1579385172.179577:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972301 is committed
+00000001:00080000:0.0:1579385172.486211:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972302 is committed
+00000001:00080000:0.0:1579385172.772506:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972303 is committed
+00000001:00080000:0.0:1579385173.072951:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972304 is committed
+00000001:00080000:0.0:1579385173.359821:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972305 is committed
+00000001:00080000:0.0:1579385173.644394:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972306 is committed
+00000001:00080000:0.0:1579385173.932865:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972307 is committed
+00000001:00080000:0.0:1579385174.224434:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972308 is committed
+00000001:00080000:0.0:1579385174.522154:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972309 is committed
+00000001:00080000:0.0:1579385174.817821:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972310 is committed
+00000001:00080000:0.0:1579385175.121283:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972311 is committed
+00000001:00080000:0.0:1579385175.412888:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972312 is committed
+00000001:00080000:0.0:1579385175.700127:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972313 is committed
+00000001:00080000:0.0:1579385175.983149:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972314 is committed
+00000001:00080000:0.0:1579385176.264820:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972315 is committed
+00000001:00080000:0.0:1579385176.542091:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972316 is committed
+00000100:00080000:0.0:1579385176.610281:0:3731:0:(pinger.c:217:ptlrpc_pinger_process_import()) 95020deb-bd90-0068-9670-83f9e8e68a09->MGS: level CONNECTING/4 force 0 force_next 0 deactive 0 pingable 1 suppress 0
+00000100:00080000:0.0:1579385176.610310:0:3731:0:(pinger.c:230:ptlrpc_pinger_process_import()) 95020deb-bd90-0068-9670-83f9e8e68a09->MGS: not pinging (in recovery or recovery disabled: CONNECTING)
+00000001:00080000:0.0:1579385176.852697:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972317 is committed
+00000001:00080000:0.0:1579385177.151406:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972318 is committed
+00000001:00080000:0.0:1579385177.446568:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972319 is committed
+00000001:00080000:0.0:1579385177.745453:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972320 is committed
+00000001:00080000:0.0:1579385178.033697:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972321 is committed
+00000001:00080000:0.0:1579385178.325810:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972322 is committed
+00000001:00080000:0.0:1579385178.609969:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972323 is committed
+00000001:00080000:0.0:1579385178.920589:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972324 is committed
+00000001:00080000:0.0:1579385179.223961:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972325 is committed
+00000001:00080000:0.0:1579385179.517104:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972326 is committed
+00000001:00080000:0.0:1579385179.809806:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972327 is committed
+00000001:00080000:0.0:1579385180.103306:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972328 is committed
+00000001:00080000:0.0:1579385180.391444:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972329 is committed
+00000001:00080000:0.0:1579385180.689123:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972330 is committed
+00000001:00080000:0.0:1579385180.980547:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972331 is committed
+00000001:00080000:0.0:1579385181.266448:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972332 is committed
+00000001:00080000:0.0:1579385181.548083:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972333 is committed
+00000001:00080000:0.0:1579385181.830018:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972334 is committed
+00000001:00080000:0.0:1579385182.134736:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972335 is committed
+00000001:00080000:0.0:1579385182.423933:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972336 is committed
+00000001:00080000:0.0:1579385182.715817:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972337 is committed
+00000001:00080000:0.0:1579385183.005320:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972338 is committed
+00000001:00080000:0.0:1579385183.306634:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972339 is committed
+00000001:00080000:0.0:1579385183.601064:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972340 is committed
+00000001:00080000:0.0:1579385183.906403:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972341 is committed
+00000001:00080000:0.0:1579385184.199968:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972342 is committed
+00000001:00080000:0.0:1579385184.495631:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972343 is committed
+00000001:00080000:0.0:1579385184.791747:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972344 is committed
+00000001:00080000:0.0:1579385185.083420:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972345 is committed
+00000001:00080000:0.0:1579385185.378799:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972346 is committed
+00000001:00080000:0.0:1579385185.671371:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972347 is committed
+00000001:00080000:0.0:1579385185.956747:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972348 is committed
+00000001:00080000:0.0:1579385186.245769:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972349 is committed
+00000001:00080000:0.0:1579385186.532984:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972350 is committed
+00000001:00080000:0.0:1579385186.842600:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972351 is committed
+00000001:00080000:0.0:1579385187.131260:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972352 is committed
+00000001:00080000:0.0:1579385187.419240:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972353 is committed
+00000001:00080000:0.0:1579385187.722646:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972354 is committed
+00000001:00080000:0.0:1579385188.015314:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972355 is committed
+00000001:00080000:0.0:1579385188.307356:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972356 is committed
+00000001:00080000:0.0:1579385188.597012:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972357 is committed
+00000001:00080000:0.0:1579385188.886534:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972358 is committed
+00000001:00080000:0.0:1579385189.176678:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972359 is committed
+00000001:00080000:0.0:1579385189.459896:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972360 is committed
+00000001:00080000:0.0:1579385189.743711:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972361 is committed
+00000001:00080000:0.0:1579385190.063717:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972362 is committed
+00000001:00080000:0.0:1579385190.357840:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972363 is committed
+00000001:00080000:0.0:1579385190.653274:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972364 is committed
+00000001:00080000:0.0:1579385190.939011:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972365 is committed
+00000001:00080000:0.0:1579385191.234463:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972366 is committed
+00000001:00080000:0.0:1579385191.551120:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972367 is committed
+00000001:00080000:0.0:1579385191.842927:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972368 is committed
+00000001:00080000:0.0:1579385192.152436:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972369 is committed
+00000001:00080000:0.0:1579385192.437209:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972370 is committed
+00000001:00080000:0.0:1579385192.725503:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972371 is committed
+00000001:00080000:0.0:1579385193.019264:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972372 is committed
+00000001:00080000:0.0:1579385193.312304:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972373 is committed
+00000001:00080000:0.0:1579385193.594885:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972374 is committed
+00000001:00080000:0.0:1579385193.878849:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972375 is committed
+00000001:00080000:0.0:1579385194.194945:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972376 is committed
+00000001:00080000:0.0:1579385194.488261:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972377 is committed
+00000001:00080000:0.0:1579385194.772695:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972378 is committed
+00000001:00080000:0.0:1579385195.066628:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972379 is committed
+00000001:00080000:0.0:1579385195.358000:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972380 is committed
+00000001:00080000:0.0:1579385195.640971:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972381 is committed
+00000001:00080000:0.0:1579385195.931005:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972382 is committed
+00000001:00080000:0.0:1579385196.217982:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972383 is committed
+00000001:00080000:0.0:1579385196.506189:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972384 is committed
+00000001:00080000:0.0:1579385196.785851:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972385 is committed
+00000001:00080000:0.0:1579385197.092057:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972386 is committed
+00000001:00080000:0.0:1579385197.382173:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972387 is committed
+00000100:00000400:0.0:1579385197.610245:0:3728:0:(client.c:2116:ptlrpc_expire_one_request()) @@@ Request sent has timed out for sent delay: [sent 1579385151/real 0]  req@ffff9232d552a000 x1656006775029968/t0(0) o250->MGC10.24.84.84@tcp@10.24.84.84@tcp:26/25 lens 520/544 e 0 to 1 dl 1579385197 ref 2 fl Rpc:XN/0/ffffffff rc 0/-1
+00000001:00080000:0.0:1579385197.664525:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972388 is committed
+00000001:00080000:0.0:1579385197.969030:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972389 is committed
+00000001:00080000:0.0:1579385198.285843:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972390 is committed
+00000001:00080000:0.0:1579385198.576544:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972391 is committed
+00000001:00080000:0.0:1579385198.858769:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972392 is committed
+00000001:00080000:0.0:1579385199.181458:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972393 is committed
+00000001:00080000:0.0:1579385199.481127:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972394 is committed
+00000001:00080000:0.0:1579385199.763194:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972395 is committed
+00000001:00080000:0.0:1579385200.062582:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972396 is committed
+00000001:00080000:0.0:1579385200.352144:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972397 is committed
+00000001:00080000:0.0:1579385200.638361:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972398 is committed
+00000001:00080000:0.0:1579385200.926471:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972399 is committed
+00000001:00080000:0.0:1579385201.210477:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972400 is committed
+00000001:00080000:0.0:1579385201.498048:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972401 is committed
+00000100:00080000:0.0:1579385201.610615:0:3731:0:(pinger.c:217:ptlrpc_pinger_process_import()) 95020deb-bd90-0068-9670-83f9e8e68a09->MGS: level CONNECTING/4 force 0 force_next 0 deactive 0 pingable 1 suppress 0
+00000100:00080000:0.0:1579385201.610624:0:3731:0:(pinger.c:230:ptlrpc_pinger_process_import()) 95020deb-bd90-0068-9670-83f9e8e68a09->MGS: not pinging (in recovery or recovery disabled: CONNECTING)
+00000001:00080000:0.0:1579385201.799466:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972402 is committed
+00000001:00080000:0.0:1579385202.088726:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972403 is committed
+00000001:00080000:0.0:1579385202.377276:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972404 is committed
+00000001:00080000:0.0:1579385202.664293:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972405 is committed
+00000001:00080000:0.0:1579385203.021983:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972406 is committed
+00000001:00080000:0.0:1579385203.315136:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972407 is committed
+00000001:00080000:0.0:1579385203.604685:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972408 is committed
+00000400:00000100:0.0:1579385203.895285:0:3723:0:(lib-socket.c:645:lnet_sock_connect()) Error -110 connecting 10.29.160.166/1023 -> 10.24.84.84/988
+00000400:00000100:0.0:1579385203.895316:0:3723:0:(acceptor.c:118:lnet_connect_console_error()) Connection to 10.24.84.84@tcp at host 10.24.84.84 on port 988 took too long: that node may be hung or experiencing high load.
+00000800:00000100:0.0:1579385203.895331:0:3723:0:(socklnd_cb.c:425:ksocknal_txlist_done()) Deleting packet type 1 len 520 10.29.160.166@tcp->10.24.84.84@tcp
+00000100:00080000:0.0:1579385203.895359:0:3728:0:(import.c:1284:ptlrpc_connect_interpret()) ffff9232d1422000 MGS: changing import state from CONNECTING to DISCONN
+00000100:00080000:0.0:1579385203.895364:0:3728:0:(import.c:1330:ptlrpc_connect_interpret()) recovery of MGS on MGC10.24.84.84@tcp_0 failed (-110)
+00000001:00080000:0.0:1579385203.901072:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972409 is committed
+00000001:00080000:0.0:1579385204.197200:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972410 is committed
+00000001:00080000:0.0:1579385204.492296:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972411 is committed
+00000001:00080000:0.0:1579385204.834911:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972412 is committed
+00000001:00080000:0.0:1579385205.129685:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972413 is committed
+00000001:00080000:0.0:1579385205.421366:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972414 is committed
+00000001:00080000:0.0:1579385205.711297:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972415 is committed
+00000001:00080000:0.0:1579385206.021576:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972416 is committed
+00000001:00080000:0.0:1579385206.311372:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972417 is committed
+00000001:00080000:0.0:1579385206.606617:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972418 is committed
+00000001:00080000:0.0:1579385206.899300:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972419 is committed
+00000001:00080000:0.0:1579385207.224671:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972420 is committed
+00000001:00080000:0.0:1579385207.524747:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972421 is committed
+00000001:00080000:0.0:1579385207.819382:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972422 is committed
+00000001:00080000:0.0:1579385208.111991:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972423 is committed
+00000001:00080000:0.0:1579385208.399214:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972424 is committed
+00000001:00080000:0.0:1579385208.684819:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972425 is committed
+00000001:00080000:0.0:1579385208.981345:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972426 is committed
+00000001:00080000:0.0:1579385209.273420:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972427 is committed
+00000001:00080000:0.0:1579385209.564440:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972428 is committed
+00000001:00080000:0.0:1579385209.866541:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972429 is committed
+00000001:00080000:0.0:1579385210.175125:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972430 is committed
+00000001:00080000:0.0:1579385210.469240:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972431 is committed
+00000001:00080000:0.0:1579385210.774927:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972432 is committed
+00000001:00080000:0.0:1579385211.061800:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972433 is committed
+00000001:00080000:0.0:1579385211.350598:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972434 is committed
+00000001:00080000:0.0:1579385211.710404:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972438 is committed
+00000001:00080000:0.0:1579385211.783355:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972439 is committed
+00000001:00080000:0.0:1579385211.886380:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972441 is committed
+00000001:00080000:0.0:1579385211.954342:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972442 is committed
+00000001:00080000:0.0:1579385212.278658:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972445 is committed
+00000001:00080000:0.0:1579385212.350682:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972446 is committed
+00000001:00080000:0.0:1579385212.457348:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972448 is committed
+00000001:00080000:0.0:1579385212.528271:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972449 is committed
+00000001:00080000:0.0:1579385212.633004:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972451 is committed
+00000001:00080000:0.0:1579385212.703899:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972452 is committed
+00000001:00080000:0.0:1579385212.811238:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972454 is committed
+00000001:00080000:0.0:1579385212.871433:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972455 is committed
+00000001:00080000:0.0:1579385212.950821:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972456 is committed
+00000001:00080000:0.0:1579385213.022224:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972457 is committed
+00000001:00080000:0.0:1579385213.105521:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972458 is committed
+00000001:00080000:0.0:1579385213.380934:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972459 is committed
+00000001:00080000:0.0:1579385213.451171:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972460 is committed
+00000001:00080000:0.0:1579385213.532150:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972461 is committed
+00000001:00080000:0.0:1579385213.602223:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972462 is committed
+00000001:00080000:0.0:1579385213.680693:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972463 is committed
+00000001:00080000:0.0:1579385213.751536:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972464 is committed
+00000001:00080000:0.0:1579385213.829915:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972465 is committed
+00000001:00080000:0.0:1579385213.899316:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972466 is committed
+00000001:00080000:0.0:1579385213.981176:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972467 is committed
+00000001:00080000:0.0:1579385214.048644:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972468 is committed
+00000001:00080000:0.0:1579385214.115495:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972469 is committed
+00000001:00080000:0.0:1579385214.197767:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972470 is committed
+00000001:00080000:0.0:1579385214.272330:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972471 is committed
+00000001:00080000:0.0:1579385214.344654:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972472 is committed
+00000001:00080000:0.0:1579385214.421559:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972473 is committed
+00000001:00080000:0.0:1579385214.490960:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972474 is committed
+00000001:00080000:0.0:1579385214.751790:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972475 is committed
+00000001:00080000:0.0:1579385214.835688:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972476 is committed
+00000001:00080000:0.0:1579385214.905769:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972477 is committed
+00000001:00080000:0.0:1579385214.978254:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972478 is committed
+00000001:00080000:0.0:1579385215.049871:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972479 is committed
+00000001:00080000:0.0:1579385215.122852:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972480 is committed
+00000001:00080000:0.0:1579385215.202021:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972481 is committed
+00000001:00080000:0.0:1579385215.274692:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972482 is committed
+00000001:00080000:0.0:1579385215.346187:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972483 is committed
+00000001:00080000:0.0:1579385215.418893:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972484 is committed
+00000001:00080000:0.0:1579385215.553606:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972485 is committed
+00000001:00080000:0.0:1579385215.624618:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972486 is committed
+00000001:00080000:0.0:1579385215.702201:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972487 is committed
+00000001:00080000:0.0:1579385215.755267:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972488 is committed
+00000001:00080000:0.0:1579385215.827842:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972489 is committed
+00000001:00080000:0.0:1579385215.900427:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972490 is committed
+00000001:00080000:0.0:1579385215.971910:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972491 is committed
+00000001:00080000:0.0:1579385216.042368:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972492 is committed
+00000001:00080000:0.0:1579385216.113649:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972493 is committed
+00000001:00080000:0.0:1579385216.190196:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972494 is committed
+00000001:00080000:0.0:1579385216.257594:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972495 is committed
+00000001:00080000:0.0:1579385216.327598:0:3733:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0000: transno 4294972496 is committed
+00000100:00080000:0.0:1579385226.610559:0:3731:0:(pinger.c:217:ptlrpc_pinger_process_import()) 95020deb-bd90-0068-9670-83f9e8e68a09->MGS: level DISCONN/3 force 0 force_next 0 deactive 0 pingable 1 suppress 0
+00000100:00080000:0.0:1579385226.610569:0:3731:0:(recover.c:58:ptlrpc_initiate_recovery()) MGS: starting recovery
+00000100:00080000:0.0:1579385226.610572:0:3731:0:(import.c:681:ptlrpc_connect_import()) ffff9232d1422000 MGS: changing import state from DISCONN to CONNECTING
+00000100:00080000:0.0:1579385226.610581:0:3731:0:(import.c:524:import_select_connection()) MGC10.24.84.84@tcp: connect to NID 10.24.84.84@tcp last attempt 4391186243
+00000100:00080000:0.0:1579385226.610585:0:3731:0:(import.c:568:import_select_connection()) MGC10.24.84.84@tcp: tried all connections, increasing latency to 46s
+00000100:00080000:0.0:1579385226.610593:0:3731:0:(import.c:602:import_select_connection()) MGC10.24.84.84@tcp: import ffff9232d1422000 using connection MGC10.24.84.84@tcp_0/10.24.84.84@tcp
+00000100:00080000:0.0:1579385251.610312:0:3731:0:(pinger.c:217:ptlrpc_pinger_process_import()) 95020deb-bd90-0068-9670-83f9e8e68a09->MGS: level CONNECTING/4 force 0 force_next 0 deactive 0 pingable 1 suppress 0
+00000100:00080000:0.0:1579385251.610321:0:3731:0:(pinger.c:230:ptlrpc_pinger_process_import()) 95020deb-bd90-0068-9670-83f9e8e68a09->MGS: not pinging (in recovery or recovery disabled: CONNECTING)
+00000100:00080000:0.0:1579385276.610184:0:3731:0:(pinger.c:217:ptlrpc_pinger_process_import()) 95020deb-bd90-0068-9670-83f9e8e68a09->MGS: level CONNECTING/4 force 0 force_next 0 deactive 0 pingable 1 suppress 0
+00000100:00080000:0.0:1579385276.610194:0:3731:0:(pinger.c:230:ptlrpc_pinger_process_import()) 95020deb-bd90-0068-9670-83f9e8e68a09->MGS: not pinging (in recovery or recovery disabled: CONNECTING)
+00000100:00000400:0.0:1579385277.610338:0:3728:0:(client.c:2116:ptlrpc_expire_one_request()) @@@ Request sent has timed out for sent delay: [sent 1579385226/real 0]  req@ffff9232d552a000 x1656006775030032/t0(0) o250->MGC10.24.84.84@tcp@10.24.84.84@tcp:26/25 lens 520/544 e 0 to 1 dl 1579385277 ref 2 fl Rpc:XN/0/ffffffff rc 0/-1
+00000800:00000100:0.0:1579385288.459282:0:3724:0:(socklnd_cb.c:425:ksocknal_txlist_done()) Deleting packet type 1 len 520 10.29.160.166@tcp->10.24.84.84@tcp
+00000100:00080000:0.0:1579385288.459313:0:3728:0:(import.c:1284:ptlrpc_connect_interpret()) ffff9232d1422000 MGS: changing import state from CONNECTING to DISCONN
+00000100:00080000:0.0:1579385288.459318:0:3728:0:(import.c:1330:ptlrpc_connect_interpret()) recovery of MGS on MGC10.24.84.84@tcp_0 failed (-110)
+00000100:00080000:0.0:1579385301.610299:0:3731:0:(pinger.c:217:ptlrpc_pinger_process_import()) 95020deb-bd90-0068-9670-83f9e8e68a09->MGS: level DISCONN/3 force 0 force_next 0 deactive 0 pingable 1 suppress 0
+00000100:00080000:0.0:1579385301.610309:0:3731:0:(recover.c:58:ptlrpc_initiate_recovery()) MGS: starting recovery
+00000100:00080000:0.0:1579385301.610312:0:3731:0:(import.c:681:ptlrpc_connect_import()) ffff9232d1422000 MGS: changing import state from DISCONN to CONNECTING
+00000100:00080000:0.0:1579385301.610321:0:3731:0:(import.c:524:import_select_connection()) MGC10.24.84.84@tcp: connect to NID 10.24.84.84@tcp last attempt 4391261243
+00000100:00080000:0.0:1579385301.610325:0:3731:0:(import.c:568:import_select_connection()) MGC10.24.84.84@tcp: tried all connections, increasing latency to 50s
+00000100:00080000:0.0:1579385301.610333:0:3731:0:(import.c:602:import_select_connection()) MGC10.24.84.84@tcp: import ffff9232d1422000 using connection MGC10.24.84.84@tcp_0/10.24.84.84@tcp
+00000100:00080000:0.0:1579385326.610484:0:3731:0:(pinger.c:217:ptlrpc_pinger_process_import()) 95020deb-bd90-0068-9670-83f9e8e68a09->MGS: level CONNECTING/4 force 0 force_next 0 deactive 0 pingable 1 suppress 0
+00000100:00080000:0.0:1579385326.610492:0:3731:0:(pinger.c:230:ptlrpc_pinger_process_import()) 95020deb-bd90-0068-9670-83f9e8e68a09->MGS: not pinging (in recovery or recovery disabled: CONNECTING)
+00000100:00080000:0.0:1579385351.610596:0:3731:0:(pinger.c:217:ptlrpc_pinger_process_import()) 95020deb-bd90-0068-9670-83f9e8e68a09->MGS: level CONNECTING/4 force 0 force_next 0 deactive 0 pingable 1 suppress 0
+00000100:00080000:0.0:1579385351.610604:0:3731:0:(pinger.c:230:ptlrpc_pinger_process_import()) 95020deb-bd90-0068-9670-83f9e8e68a09->MGS: not pinging (in recovery or recovery disabled: CONNECTING)
+00000400:00000100:0.0:1579385353.783348:0:3720:0:(lib-socket.c:645:lnet_sock_connect()) Error -110 connecting 10.29.160.166/1023 -> 10.24.84.84/988
+00000400:00000100:0.0:1579385353.783379:0:3720:0:(acceptor.c:118:lnet_connect_console_error()) Connection to 10.24.84.84@tcp at host 10.24.84.84 on port 988 took too long: that node may be hung or experiencing high load.
+00000800:00000100:0.0:1579385353.783395:0:3720:0:(socklnd_cb.c:425:ksocknal_txlist_done()) Deleting packet type 1 len 520 10.29.160.166@tcp->10.24.84.84@tcp
+00000100:00000400:0.0:1579385353.783425:0:3728:0:(client.c:2116:ptlrpc_expire_one_request()) @@@ Request sent has failed due to network error: [sent 1579385301/real 1579385353]  req@ffff9232d552a000 x1656006775030096/t0(0) o250->MGC10.24.84.84@tcp@10.24.84.84@tcp:26/25 lens 520/544 e 0 to 1 dl 1579385356 ref 1 fl Rpc:eXN/0/ffffffff rc 0/-1
+00000100:00080000:0.0:1579385353.783451:0:3728:0:(import.c:1284:ptlrpc_connect_interpret()) ffff9232d1422000 MGS: changing import state from CONNECTING to DISCONN
+00000100:00080000:0.0:1579385353.783456:0:3728:0:(import.c:1330:ptlrpc_connect_interpret()) recovery of MGS on MGC10.24.84.84@tcp_0 failed (-110)
+00000100:00080000:0.0:1579385376.610326:0:3731:0:(pinger.c:217:ptlrpc_pinger_process_import()) 95020deb-bd90-0068-9670-83f9e8e68a09->MGS: level DISCONN/3 force 0 force_next 0 deactive 0 pingable 1 suppress 0
+00000100:00080000:0.0:1579385376.610337:0:3731:0:(recover.c:58:ptlrpc_initiate_recovery()) MGS: starting recovery
+00000100:00080000:0.0:1579385376.610340:0:3731:0:(import.c:681:ptlrpc_connect_import()) ffff9232d1422000 MGS: changing import state from DISCONN to CONNECTING
+00000100:00080000:0.0:1579385376.610349:0:3731:0:(import.c:524:import_select_connection()) MGC10.24.84.84@tcp: connect to NID 10.24.84.84@tcp last attempt 4391336243
+00000100:00080000:0.0:1579385376.610353:0:3731:0:(import.c:568:import_select_connection()) MGC10.24.84.84@tcp: tried all connections, increasing latency to 50s
+00000100:00080000:0.0:1579385376.610361:0:3731:0:(import.c:602:import_select_connection()) MGC10.24.84.84@tcp: import ffff9232d1422000 using connection MGC10.24.84.84@tcp_0/10.24.84.84@tcp
+00000100:00080000:0.0:1579385401.610314:0:3731:0:(pinger.c:217:ptlrpc_pinger_process_import()) 95020deb-bd90-0068-9670-83f9e8e68a09->MGS: level CONNECTING/4 force 0 force_next 0 deactive 0 pingable 1 suppress 0
+00000100:00080000:0.0:1579385401.610332:0:3731:0:(pinger.c:230:ptlrpc_pinger_process_import()) 95020deb-bd90-0068-9670-83f9e8e68a09->MGS: not pinging (in recovery or recovery disabled: CONNECTING)
+00000100:00080000:0.0:1579385426.610386:0:3731:0:(pinger.c:217:ptlrpc_pinger_process_import()) 95020deb-bd90-0068-9670-83f9e8e68a09->MGS: level CONNECTING/4 force 0 force_next 0 deactive 0 pingable 1 suppress 0
+00000100:00080000:0.0:1579385426.610395:0:3731:0:(pinger.c:230:ptlrpc_pinger_process_import()) 95020deb-bd90-0068-9670-83f9e8e68a09->MGS: not pinging (in recovery or recovery disabled: CONNECTING)
+00000800:00000100:0.0:1579385427.464333:0:3724:0:(socklnd_cb.c:425:ksocknal_txlist_done()) Deleting packet type 1 len 520 10.29.160.166@tcp->10.24.84.84@tcp
+00000100:00000400:0.0:1579385427.464364:0:3728:0:(client.c:2116:ptlrpc_expire_one_request()) @@@ Request sent has failed due to network error: [sent 1579385376/real 1579385427]  req@ffff9232d552a000 x1656006775030160/t0(0) o250->MGC10.24.84.84@tcp@10.24.84.84@tcp:26/25 lens 520/544 e 0 to 1 dl 1579385431 ref 1 fl Rpc:eXN/0/ffffffff rc 0/-1
+00000100:00080000:0.0:1579385427.464411:0:3728:0:(import.c:1284:ptlrpc_connect_interpret()) ffff9232d1422000 MGS: changing import state from CONNECTING to DISCONN
+00000100:00080000:0.0:1579385427.464415:0:3728:0:(import.c:1330:ptlrpc_connect_interpret()) recovery of MGS on MGC10.24.84.84@tcp_0 failed (-110)
+00000400:00000100:0.0:1579385439.741539:0:3721:0:(acceptor.c:118:lnet_connect_console_error()) Connection to 10.24.84.84@tcp at host 10.24.84.84 on port 988 took too long: that node may be hung or experiencing high load.
+00000100:00080000:0.0:1579385451.610418:0:3731:0:(pinger.c:217:ptlrpc_pinger_process_import()) 95020deb-bd90-0068-9670-83f9e8e68a09->MGS: level DISCONN/3 force 0 force_next 0 deactive 0 pingable 1 suppress 0
+00000100:00080000:0.0:1579385451.610423:0:3731:0:(recover.c:58:ptlrpc_initiate_recovery()) MGS: starting recovery
+00000100:00080000:0.0:1579385451.610425:0:3731:0:(import.c:681:ptlrpc_connect_import()) ffff9232d1422000 MGS: changing import state from DISCONN to CONNECTING
+00000100:00080000:0.0:1579385451.610429:0:3731:0:(import.c:524:import_select_connection()) MGC10.24.84.84@tcp: connect to NID 10.24.84.84@tcp last attempt 4391411243
+00000100:00080000:0.0:1579385451.610431:0:3731:0:(import.c:568:import_select_connection()) MGC10.24.84.84@tcp: tried all connections, increasing latency to 50s
+00000100:00080000:0.0:1579385451.610435:0:3731:0:(import.c:602:import_select_connection()) MGC10.24.84.84@tcp: import ffff9232d1422000 using connection MGC10.24.84.84@tcp_0/10.24.84.84@tcp
+00000100:00080000:0.0:1579385451.612379:0:3728:0:(import.c:1035:ptlrpc_connect_interpret()) MGC10.24.84.84@tcp: connect to target with instance 0
+10000000:01000000:0.0:1579385451.612384:0:3728:0:(mgc_request.c:1367:mgc_import_event()) import event 0x808005
+00000100:02000400:0.0:1579385451.612385:0:3728:0:(import.c:1191:ptlrpc_connect_interpret()) Evicted from MGS (at MGC10.24.84.84@tcp_0) after server handle changed from 0xcc982dc04d54cd0d to 0xcc982dc04d54ce3a
+00000100:00080000:0.0:1579385451.612393:0:3728:0:(import.c:1199:ptlrpc_connect_interpret()) ffff9232d1422000 MGS: changing import state from CONNECTING to EVICTED
+00000100:00080000:0.0:1579385451.612396:0:3728:0:(import.c:1474:ptlrpc_import_recovery_state_machine()) evicted from MGS@MGC10.24.84.84@tcp_0; invalidating
+00000100:00080000:0.0:1579385451.613083:0:21130:0:(import.c:1416:ptlrpc_invalidate_import_thread()) thread invalidate import MGC10.24.84.84@tcp to MGS@MGC10.24.84.84@tcp_0
+10000000:01000000:0.0:1579385451.613085:0:21130:0:(mgc_request.c:1367:mgc_import_event()) import event 0x808003
+10000000:01000000:0.0:1579385451.613091:0:21130:0:(mgc_request.c:1025:mgc_blocking_ast()) Lock res [0x70616d65646f6e:0x4:0x0].0x0 (nodemap)
+10000000:01000000:0.0:1579385451.613099:0:21130:0:(mgc_request.c:1025:mgc_blocking_ast()) Lock res [0x736d61726170:0x3:0x0].0x0 (params)
+10000000:01000000:0.0:1579385451.613103:0:21130:0:(mgc_request.c:1025:mgc_blocking_ast()) Lock res [0x65727473756c:0x0:0x0].0x0 (lustre)
+10000000:01000000:0.0:1579385451.613106:0:21130:0:(mgc_request.c:1025:mgc_blocking_ast()) Lock res [0x65727473756c:0x0:0x0].0x0 (lustre)
+10000000:01000000:0.0:1579385451.613108:0:21130:0:(mgc_request.c:1025:mgc_blocking_ast()) Lock res [0x65727473756c:0x0:0x0].0x0 (lustre)
+00000100:00080000:0.0:1579385451.613112:0:21130:0:(import.c:1425:ptlrpc_invalidate_import_thread()) ffff9232d1422000 MGS: changing import state from EVICTED to RECOVER
+00000100:00080000:0.0:1579385451.613114:0:21130:0:(import.c:1535:ptlrpc_import_recovery_state_machine()) ffff9232d1422000 MGS: changing import state from RECOVER to FULL
+10000000:01000000:0.0:1579385451.613115:0:21130:0:(mgc_request.c:1367:mgc_import_event()) import event 0x808004
+00000100:00080000:0.0:1579385451.613116:0:21130:0:(pinger.c:171:ptlrpc_pinger_ir_up()) IR up
+00000100:02000000:0.0:1579385451.613118:0:21130:0:(import.c:1541:ptlrpc_import_recovery_state_machine()) MGC10.24.84.84@tcp: Connection restored to MGC10.24.84.84@tcp_0 (at 10.24.84.84@tcp)

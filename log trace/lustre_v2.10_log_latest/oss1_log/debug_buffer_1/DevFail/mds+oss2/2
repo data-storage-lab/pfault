@@ -1,0 +1,145 @@
+00000001:00080000:0.0F:1579561411.937010:0:2281:0:(tgt_lastrcvd.c:891:tgt_cb_last_committed()) lustre-OST0001: transno 12884903598 is committed
+00000100:00000400:0.0:1579561546.709446:0:2277:0:(client.c:2116:ptlrpc_expire_one_request()) @@@ Request sent has timed out for slow reply: [sent 1579561539/real 1579561539]  req@ffff8f934329ec00 x1656288109935664/t0(0) o400->lustre-MDT0000-lwp-OST0001@10.29.161.11@tcp:12/10 lens 224/224 e 0 to 1 dl 1579561546 ref 1 fl Rpc:XN/0/ffffffff rc 0/-1
+00000100:02000400:0.0:1579561546.709457:0:2277:0:(import.c:179:ptlrpc_set_import_discon()) lustre-MDT0000-lwp-OST0001: Connection to lustre-MDT0000 (at 10.29.161.11@tcp) was lost; in progress operations using this service will wait for recovery to complete
+00000100:00080000:0.0:1579561546.709462:0:2277:0:(import.c:188:ptlrpc_set_import_discon()) ffff8f934ec8c000 lustre-MDT0000_UUID: changing import state from FULL to DISCONN
+00000100:00080000:0.0:1579561546.709463:0:2277:0:(import.c:418:ptlrpc_pinger_force()) lustre-MDT0000_UUID: waking up pinger s:DISCONN
+00000100:00080000:0.0:1579561546.709475:0:2279:0:(pinger.c:217:ptlrpc_pinger_process_import()) lustre-MDT0000-lwp-OST0001_UUID->lustre-MDT0000_UUID: level DISCONN/3 force 1 force_next 0 deactive 0 pingable 1 suppress 0
+00000100:00080000:0.0:1579561546.709476:0:2279:0:(recover.c:58:ptlrpc_initiate_recovery()) lustre-MDT0000_UUID: starting recovery
+00000100:00080000:0.0:1579561546.709477:0:2279:0:(import.c:681:ptlrpc_connect_import()) ffff8f934ec8c000 lustre-MDT0000_UUID: changing import state from DISCONN to CONNECTING
+00000100:00080000:0.0:1579561546.709479:0:2279:0:(import.c:524:import_select_connection()) lustre-MDT0000-lwp-OST0001: connect to NID 10.29.161.11@tcp last attempt 4296473820
+00000100:00080000:0.0:1579561546.709481:0:2279:0:(import.c:602:import_select_connection()) lustre-MDT0000-lwp-OST0001: import ffff8f934ec8c000 using connection 10.29.161.11@tcp/10.29.161.11@tcp
+00000100:00000400:0.0:1579561552.711484:0:2276:0:(client.c:2116:ptlrpc_expire_one_request()) @@@ Request sent has timed out for slow reply: [sent 1579561546/real 1579561546]  req@ffff8f934329ec00 x1656288109935680/t0(0) o38->lustre-MDT0000-lwp-OST0001@10.29.161.11@tcp:12/10 lens 520/544 e 0 to 1 dl 1579561552 ref 1 fl Rpc:XN/0/ffffffff rc 0/-1
+00000100:00080000:0.0:1579561552.711545:0:2276:0:(import.c:1284:ptlrpc_connect_interpret()) ffff8f934ec8c000 lustre-MDT0000_UUID: changing import state from CONNECTING to DISCONN
+00000100:00080000:0.0:1579561552.711547:0:2276:0:(import.c:1330:ptlrpc_connect_interpret()) recovery of lustre-MDT0000_UUID on 10.29.161.11@tcp failed (-110)
+00000100:00080000:0.0:1579561571.709487:0:2279:0:(pinger.c:217:ptlrpc_pinger_process_import()) lustre-MDT0000-lwp-OST0001_UUID->lustre-MDT0000_UUID: level DISCONN/3 force 0 force_next 0 deactive 0 pingable 1 suppress 0
+00000100:00080000:0.0:1579561571.709502:0:2279:0:(recover.c:58:ptlrpc_initiate_recovery()) lustre-MDT0000_UUID: starting recovery
+00000100:00080000:0.0:1579561571.709505:0:2279:0:(import.c:681:ptlrpc_connect_import()) ffff8f934ec8c000 lustre-MDT0000_UUID: changing import state from DISCONN to CONNECTING
+00000100:00080000:0.0:1579561571.709519:0:2279:0:(import.c:524:import_select_connection()) lustre-MDT0000-lwp-OST0001: connect to NID 10.29.161.11@tcp last attempt 4296930825
+00000100:00080000:0.0:1579561571.709523:0:2279:0:(import.c:568:import_select_connection()) lustre-MDT0000-lwp-OST0001: tried all connections, increasing latency to 6s
+00000100:00080000:0.0:1579561571.709534:0:2279:0:(import.c:602:import_select_connection()) lustre-MDT0000-lwp-OST0001: import ffff8f934ec8c000 using connection 10.29.161.11@tcp/10.29.161.11@tcp
+00000100:00000400:0.0:1579561582.709544:0:2276:0:(client.c:2116:ptlrpc_expire_one_request()) @@@ Request sent has timed out for slow reply: [sent 1579561571/real 1579561571]  req@ffff8f934329f800 x1656288109935712/t0(0) o38->lustre-MDT0000-lwp-OST0001@10.29.161.11@tcp:12/10 lens 520/544 e 0 to 1 dl 1579561582 ref 1 fl Rpc:XN/0/ffffffff rc 0/-1
+00000100:00080000:0.0:1579561582.709610:0:2276:0:(import.c:1284:ptlrpc_connect_interpret()) ffff8f934ec8c000 lustre-MDT0000_UUID: changing import state from CONNECTING to DISCONN
+00000100:00080000:0.0:1579561582.709614:0:2276:0:(import.c:1330:ptlrpc_connect_interpret()) recovery of lustre-MDT0000_UUID on 10.29.161.11@tcp failed (-110)
+00000800:00000100:0.0:1579561589.839590:0:2272:0:(socklnd_cb.c:2282:ksocknal_find_timed_out_conn()) A connection with 12345-10.29.161.11@tcp (10.29.161.11:1022) timed out; the network or node may be down.
+00000100:00080000:0.0:1579561596.708556:0:2279:0:(pinger.c:217:ptlrpc_pinger_process_import()) lustre-MDT0000-lwp-OST0001_UUID->lustre-MDT0000_UUID: level DISCONN/3 force 0 force_next 0 deactive 0 pingable 1 suppress 0
+00000100:00080000:0.0:1579561596.708559:0:2279:0:(recover.c:58:ptlrpc_initiate_recovery()) lustre-MDT0000_UUID: starting recovery
+00000100:00080000:0.0:1579561596.708560:0:2279:0:(import.c:681:ptlrpc_connect_import()) ffff8f934ec8c000 lustre-MDT0000_UUID: changing import state from DISCONN to CONNECTING
+00000100:00080000:0.0:1579561596.708563:0:2279:0:(import.c:524:import_select_connection()) lustre-MDT0000-lwp-OST0001: connect to NID 10.29.161.11@tcp last attempt 4296955825
+00000100:00080000:0.0:1579561596.708564:0:2279:0:(import.c:568:import_select_connection()) lustre-MDT0000-lwp-OST0001: tried all connections, increasing latency to 11s
+00000100:00080000:0.0:1579561596.708566:0:2279:0:(import.c:602:import_select_connection()) lustre-MDT0000-lwp-OST0001: import ffff8f934ec8c000 using connection 10.29.161.11@tcp/10.29.161.11@tcp
+00000400:00000100:0.0:1579561611.740487:0:2268:0:(lib-socket.c:645:lnet_sock_connect()) Error -111 connecting 10.24.85.194/1023 -> 10.29.161.11/988
+00000400:00000100:0.0:1579561611.740498:0:2268:0:(acceptor.c:105:lnet_connect_console_error()) Connection to 10.29.161.11@tcp at host 10.29.161.11 on port 988 was refused: check that Lustre is running on that node.
+00000800:00000100:0.0:1579561611.740503:0:2268:0:(socklnd_cb.c:425:ksocknal_txlist_done()) Deleting packet type 1 len 520 10.24.85.194@tcp->10.29.161.11@tcp
+00000100:00000400:0.0:1579561611.740514:0:2276:0:(client.c:2116:ptlrpc_expire_one_request()) @@@ Request sent has failed due to network error: [sent 1579561596/real 1579561611]  req@ffff8f934329ec00 x1656288109935744/t0(0) o38->lustre-MDT0000-lwp-OST0001@10.29.161.11@tcp:12/10 lens 520/544 e 0 to 1 dl 1579561612 ref 1 fl Rpc:eXN/0/ffffffff rc 0/-1
+00000100:00080000:0.0:1579561611.740521:0:2276:0:(import.c:1284:ptlrpc_connect_interpret()) ffff8f934ec8c000 lustre-MDT0000_UUID: changing import state from CONNECTING to DISCONN
+00000100:00080000:0.0:1579561611.740523:0:2276:0:(import.c:1330:ptlrpc_connect_interpret()) recovery of lustre-MDT0000_UUID on 10.29.161.11@tcp failed (-110)
+00000100:00080000:0.0:1579561621.708834:0:2279:0:(pinger.c:217:ptlrpc_pinger_process_import()) lustre-MDT0000-lwp-OST0001_UUID->lustre-MDT0000_UUID: level DISCONN/3 force 0 force_next 0 deactive 0 pingable 1 suppress 0
+00000100:00080000:0.0:1579561621.708844:0:2279:0:(recover.c:58:ptlrpc_initiate_recovery()) lustre-MDT0000_UUID: starting recovery
+00000100:00080000:0.0:1579561621.708847:0:2279:0:(import.c:681:ptlrpc_connect_import()) ffff8f934ec8c000 lustre-MDT0000_UUID: changing import state from DISCONN to CONNECTING
+00000100:00080000:0.0:1579561621.708856:0:2279:0:(import.c:524:import_select_connection()) lustre-MDT0000-lwp-OST0001: connect to NID 10.29.161.11@tcp last attempt 4296980825
+00000100:00080000:0.0:1579561621.708860:0:2279:0:(import.c:568:import_select_connection()) lustre-MDT0000-lwp-OST0001: tried all connections, increasing latency to 16s
+00000100:00080000:0.0:1579561621.708868:0:2279:0:(import.c:602:import_select_connection()) lustre-MDT0000-lwp-OST0001: import ffff8f934ec8c000 using connection 10.29.161.11@tcp/10.29.161.11@tcp
+00000400:00000100:0.0:1579561621.710614:0:2270:0:(lib-socket.c:645:lnet_sock_connect()) Error -111 connecting 10.24.85.194/1023 -> 10.29.161.11/988
+00000400:00000100:0.0:1579561621.710640:0:2270:0:(acceptor.c:105:lnet_connect_console_error()) Connection to 10.29.161.11@tcp at host 10.29.161.11 on port 988 was refused: check that Lustre is running on that node.
+00000800:00000100:0.0:1579561621.710652:0:2270:0:(socklnd_cb.c:425:ksocknal_txlist_done()) Deleting packet type 1 len 520 10.24.85.194@tcp->10.29.161.11@tcp
+00000100:00000400:0.0:1579561621.710673:0:2276:0:(client.c:2116:ptlrpc_expire_one_request()) @@@ Request sent has failed due to network error: [sent 1579561621/real 1579561621]  req@ffff8f934329f800 x1656288109935776/t0(0) o38->lustre-MDT0000-lwp-OST0001@10.29.161.11@tcp:12/10 lens 520/544 e 0 to 1 dl 1579561642 ref 1 fl Rpc:eXN/0/ffffffff rc 0/-1
+00000100:00080000:0.0:1579561621.710700:0:2276:0:(import.c:1284:ptlrpc_connect_interpret()) ffff8f934ec8c000 lustre-MDT0000_UUID: changing import state from CONNECTING to DISCONN
+00000100:00080000:0.0:1579561621.710704:0:2276:0:(import.c:1330:ptlrpc_connect_interpret()) recovery of lustre-MDT0000_UUID on 10.29.161.11@tcp failed (-110)
+00000100:00080000:0.0:1579561646.708617:0:2279:0:(pinger.c:217:ptlrpc_pinger_process_import()) lustre-MDT0000-lwp-OST0001_UUID->lustre-MDT0000_UUID: level DISCONN/3 force 0 force_next 0 deactive 0 pingable 1 suppress 0
+00000100:00080000:0.0:1579561646.708627:0:2279:0:(recover.c:58:ptlrpc_initiate_recovery()) lustre-MDT0000_UUID: starting recovery
+00000100:00080000:0.0:1579561646.708629:0:2279:0:(import.c:681:ptlrpc_connect_import()) ffff8f934ec8c000 lustre-MDT0000_UUID: changing import state from DISCONN to CONNECTING
+00000100:00080000:0.0:1579561646.708639:0:2279:0:(import.c:524:import_select_connection()) lustre-MDT0000-lwp-OST0001: connect to NID 10.29.161.11@tcp last attempt 4297005825
+00000100:00080000:0.0:1579561646.708643:0:2279:0:(import.c:568:import_select_connection()) lustre-MDT0000-lwp-OST0001: tried all connections, increasing latency to 21s
+00000100:00080000:0.0:1579561646.708650:0:2279:0:(import.c:602:import_select_connection()) lustre-MDT0000-lwp-OST0001: import ffff8f934ec8c000 using connection 10.29.161.11@tcp/10.29.161.11@tcp
+00000400:00000100:0.0:1579561646.710300:0:2271:0:(lib-socket.c:645:lnet_sock_connect()) Error -111 connecting 10.24.85.194/1023 -> 10.29.161.11/988
+00000400:00000100:0.0:1579561646.710326:0:2271:0:(acceptor.c:105:lnet_connect_console_error()) Connection to 10.29.161.11@tcp at host 10.29.161.11 on port 988 was refused: check that Lustre is running on that node.
+00000800:00000100:0.0:1579561646.710338:0:2271:0:(socklnd_cb.c:425:ksocknal_txlist_done()) Deleting packet type 1 len 520 10.24.85.194@tcp->10.29.161.11@tcp
+00000100:00000400:0.0:1579561646.710357:0:2276:0:(client.c:2116:ptlrpc_expire_one_request()) @@@ Request sent has failed due to network error: [sent 1579561646/real 1579561646]  req@ffff8f934329ec00 x1656288109935808/t0(0) o38->lustre-MDT0000-lwp-OST0001@10.29.161.11@tcp:12/10 lens 520/544 e 0 to 1 dl 1579561672 ref 1 fl Rpc:eXN/0/ffffffff rc 0/-1
+00000100:00080000:0.0:1579561646.710379:0:2276:0:(import.c:1284:ptlrpc_connect_interpret()) ffff8f934ec8c000 lustre-MDT0000_UUID: changing import state from CONNECTING to DISCONN
+00000100:00080000:0.0:1579561646.710383:0:2276:0:(import.c:1330:ptlrpc_connect_interpret()) recovery of lustre-MDT0000_UUID on 10.29.161.11@tcp failed (-110)
+00010000:02000400:0.0:1579561671.593221:0:2298:0:(ldlm_lib.c:1155:target_handle_connect()) lustre-OST0001: Received new MDS connection from 10.29.161.11@tcp, removing former export from same NID
+00000020:00080000:0.0:1579561671.593227:0:2298:0:(genops.c:1625:class_fail_export()) disconnecting export ffff8f934f971c00/lustre-MDT0000-mdtlov_UUID
+00000020:00000080:0.0:1579561671.593230:0:2298:0:(genops.c:1463:class_disconnect()) disconnect: cookie 0x279ba1d2c72eaa91
+00000100:00080000:0.0:1579561671.593232:0:2298:0:(import.c:1650:ptlrpc_cleanup_imp()) ffff8f934ec8d800 X3: changing import state from FULL to CLOSED
+00000001:00020000:0.0:1579561671.593259:0:2298:0:(osd_io.c:1755:osd_ldiskfs_write_record()) sdb: error reading offset 0 (block 0, size 512, offs 0), credits 11/11: rc = -5
+00000001:00020000:0.0:1579561671.593265:0:2298:0:(tgt_lastrcvd.c:1122:tgt_client_del()) lustre-OST0001: failed to update server data, skip client lustre-MDT0000-mdtlov_UUID zeroing, rc -5
+00000020:00080000:0.0:1579561671.593272:0:2298:0:(genops.c:1642:class_fail_export()) disconnected export ffff8f934f971c00/lustre-MDT0000-mdtlov_UUID
+00000020:00000080:0.0:1579561671.593272:0:2298:0:(genops.c:987:class_export_put()) final put ffff8f934f971c00/lustre-MDT0000-mdtlov_UUID
+00010000:00080000:0.0:1579561671.593275:0:2298:0:(ldlm_lib.c:1231:target_handle_connect()) lustre-OST0001: connection from lustre-MDT0000-mdtlov_UUID@10.29.161.11@tcp t0 exp           (null) cur 1579561671 last 0
+00000020:00000080:0.0:1579561671.593282:0:2298:0:(genops.c:1379:class_connect()) connect: client lustre-MDT0000-mdtlov_UUID, cookie 0x279ba1d2c72ec445
+00002000:00080000:0.0:1579561671.593284:0:2298:0:(ofd_obd.c:180:ofd_parse_connect_data()) lustre-OST0001: Received MDS connection for group 0
+00000001:00020000:0.0:1579561671.593288:0:2298:0:(osd_io.c:1755:osd_ldiskfs_write_record()) sdb: error reading offset 8448 (block 2, size 128, offs 8448), credits 11/11: rc = -5
+00000001:00020000:0.0:1579561671.593290:0:2298:0:(tgt_lastrcvd.c:1016:tgt_client_new()) lustre-OST0001: Failed to write client lcd at idx 2, rc -5
+00000020:00000080:0.0:1579561671.593292:0:2298:0:(genops.c:1463:class_disconnect()) disconnect: cookie 0x279ba1d2c72ec445
+00000020:00000080:0.0:1579561671.593309:0:2259:0:(genops.c:937:class_export_destroy()) destroying export ffff8f934f971c00/lustre-MDT0000-mdtlov_UUID for lustre-OST0001
+00000020:00000080:0.0:1579561671.593314:0:2259:0:(genops.c:1177:class_import_destroy()) destroying import ffff8f934ec8d800 for lustre-OST0001
+00010000:00080000:0.0:1579561671.595764:0:2298:0:(ldlm_lib.c:1231:target_handle_connect()) lustre-OST0001: connection from lustre-MDT0000-mdtlov_UUID@10.29.161.11@tcp t0 exp           (null) cur 1579561671 last 0
+00000020:00000080:0.0:1579561671.595773:0:2298:0:(genops.c:1379:class_connect()) connect: client lustre-MDT0000-mdtlov_UUID, cookie 0x279ba1d2c72ec44c
+00002000:00080000:0.0:1579561671.595775:0:2298:0:(ofd_obd.c:180:ofd_parse_connect_data()) lustre-OST0001: Received MDS connection for group 0
+00000001:00020000:0.0:1579561671.595786:0:2298:0:(osd_io.c:1755:osd_ldiskfs_write_record()) sdb: error reading offset 8192 (block 2, size 128, offs 8192), credits 11/11: rc = -5
+00000001:00020000:0.0:1579561671.595788:0:2298:0:(tgt_lastrcvd.c:1016:tgt_client_new()) lustre-OST0001: Failed to write client lcd at idx 0, rc -5
+00000020:00000080:0.0:1579561671.595789:0:2298:0:(genops.c:1463:class_disconnect()) disconnect: cookie 0x279ba1d2c72ec44c
+00000100:00080000:0.0:1579561671.711885:0:2279:0:(pinger.c:217:ptlrpc_pinger_process_import()) lustre-MDT0000-lwp-OST0001_UUID->lustre-MDT0000_UUID: level DISCONN/3 force 0 force_next 0 deactive 0 pingable 1 suppress 0
+00000100:00080000:0.0:1579561671.711894:0:2279:0:(recover.c:58:ptlrpc_initiate_recovery()) lustre-MDT0000_UUID: starting recovery
+00000100:00080000:0.0:1579561671.711897:0:2279:0:(import.c:681:ptlrpc_connect_import()) ffff8f934ec8c000 lustre-MDT0000_UUID: changing import state from DISCONN to CONNECTING
+00000100:00080000:0.0:1579561671.711907:0:2279:0:(import.c:524:import_select_connection()) lustre-MDT0000-lwp-OST0001: connect to NID 10.29.161.11@tcp last attempt 4297030825
+00000100:00080000:0.0:1579561671.711911:0:2279:0:(import.c:568:import_select_connection()) lustre-MDT0000-lwp-OST0001: tried all connections, increasing latency to 26s
+00000100:00080000:0.0:1579561671.711918:0:2279:0:(import.c:602:import_select_connection()) lustre-MDT0000-lwp-OST0001: import ffff8f934ec8c000 using connection 10.29.161.11@tcp/10.29.161.11@tcp
+00010000:00080000:0.0:1579561671.714153:0:2276:0:(ldlm_request.c:1329:ldlm_cli_update_pool()) @@@ Zero SLV or Limit found (SLV: 0, Limit: 0)  req@ffff8f934329f800 x1656288109935840/t0(0) o38->lustre-MDT0000-lwp-OST0001@10.29.161.11@tcp:12/10 lens 520/384 e 0 to 0 dl 1579561702 ref 1 fl Rpc:RN/0/0 rc 0/0
+00000100:00080000:0.0:1579561671.714174:0:2276:0:(import.c:1035:ptlrpc_connect_interpret()) lustre-MDT0000-lwp-OST0001: connect to target with instance 2
+00000100:00080000:0.0:1579561671.714185:0:2276:0:(import.c:1235:ptlrpc_connect_interpret()) @@@ lustre-MDT0000-lwp-OST0001: evicting (reconnect/recover flags not set: 4)  req@ffff8f934329f800 x1656288109935840/t0(0) o38->lustre-MDT0000-lwp-OST0001@10.29.161.11@tcp:12/10 lens 520/384 e 0 to 0 dl 1579561702 ref 1 fl Interpret:RN/0/0 rc 0/0
+00000100:00080000:0.0:1579561671.714199:0:2276:0:(import.c:1238:ptlrpc_connect_interpret()) ffff8f934ec8c000 lustre-MDT0000_UUID: changing import state from CONNECTING to EVICTED
+00000100:02020000:0.0:1579561671.714204:0:2276:0:(import.c:1470:ptlrpc_import_recovery_state_machine()) 167-0: lustre-MDT0000-lwp-OST0001: This client was evicted by lustre-MDT0000; in progress operations using this service will fail.
+00000100:00080000:0.0:1579561671.714225:0:2276:0:(import.c:1474:ptlrpc_import_recovery_state_machine()) evicted from lustre-MDT0000_UUID@10.29.161.11@tcp; invalidating
+00000100:00080000:0.0:1579561671.714287:0:3888:0:(import.c:1416:ptlrpc_invalidate_import_thread()) thread invalidate import lustre-MDT0000-lwp-OST0001 to lustre-MDT0000_UUID@10.29.161.11@tcp
+00000100:00080000:0.0:1579561671.714290:0:3888:0:(import.c:215:ptlrpc_deactivate_and_unlock_import()) setting import lustre-MDT0000_UUID INVALID
+00000100:00080000:0.0:1579561671.721452:0:3888:0:(import.c:1425:ptlrpc_invalidate_import_thread()) ffff8f934ec8c000 lustre-MDT0000_UUID: changing import state from EVICTED to RECOVER
+00000100:00080000:0.0:1579561671.721460:0:3888:0:(import.c:1535:ptlrpc_import_recovery_state_machine()) ffff8f934ec8c000 lustre-MDT0000_UUID: changing import state from RECOVER to FULL
+00000100:02000000:0.0:1579561671.721467:0:3888:0:(import.c:1541:ptlrpc_import_recovery_state_machine()) lustre-MDT0000-lwp-OST0001: Connection restored to 10.29.161.11@tcp (at 10.29.161.11@tcp)
+00080000:00020000:0.0:1579561676.891673:0:2281:0:(osd_handler.c:1588:osd_trans_commit_cb()) transaction @0xffff8f93359ccc00 commit error: 2
+00000020:00000080:0.0:1579561676.891690:0:2281:0:(genops.c:987:class_export_put()) final put ffff8f931fffd000/lustre-MDT0000-mdtlov_UUID
+00080000:00020000:0.0:1579561676.891701:0:2281:0:(osd_handler.c:1588:osd_trans_commit_cb()) transaction @0xffff8f9347e603c0 commit error: 2
+00000020:00000080:0.0:1579561676.891704:0:2281:0:(genops.c:987:class_export_put()) final put ffff8f931fffc800/lustre-MDT0000-mdtlov_UUID
+00080000:00020000:0.0:1579561676.891707:0:2281:0:(osd_handler.c:1588:osd_trans_commit_cb()) transaction @0xffff8f9379f89480 commit error: 2
+00000020:00000080:0.0:1579561676.891983:0:2259:0:(genops.c:937:class_export_destroy()) destroying export ffff8f931fffc800/lustre-MDT0000-mdtlov_UUID for lustre-OST0001
+00000020:00000080:0.0:1579561676.892008:0:2259:0:(genops.c:937:class_export_destroy()) destroying export ffff8f931fffd000/lustre-MDT0000-mdtlov_UUID for lustre-OST0001
+00010000:00080000:0.0:1579561696.610283:0:2298:0:(ldlm_lib.c:1231:target_handle_connect()) lustre-OST0001: connection from lustre-MDT0000-mdtlov_UUID@10.29.161.11@tcp t0 exp           (null) cur 1579561696 last 0
+00000020:00000080:0.0:1579561696.610315:0:2298:0:(genops.c:1379:class_connect()) connect: client lustre-MDT0000-mdtlov_UUID, cookie 0x279ba1d2c72ec453
+00002000:00080000:0.0:1579561696.610323:0:2298:0:(ofd_obd.c:180:ofd_parse_connect_data()) lustre-OST0001: Received MDS connection for group 0
+00000001:00020000:0.0:1579561696.610370:0:2298:0:(tgt_lastrcvd.c:1016:tgt_client_new()) lustre-OST0001: Failed to write client lcd at idx 0, rc -30
+00000020:00000080:0.0:1579561696.610391:0:2298:0:(genops.c:1463:class_disconnect()) disconnect: cookie 0x279ba1d2c72ec453
+00000020:00000080:0.0:1579561696.610396:0:2298:0:(genops.c:987:class_export_put()) final put ffff8f931fffc800/lustre-MDT0000-mdtlov_UUID
+00000020:00000080:0.0:1579561696.610450:0:2259:0:(genops.c:937:class_export_destroy()) destroying export ffff8f931fffc800/lustre-MDT0000-mdtlov_UUID for lustre-OST0001
+00010000:00080000:0.0:1579561696.714451:0:2278:0:(ldlm_request.c:1329:ldlm_cli_update_pool()) @@@ Zero SLV or Limit found (SLV: 0, Limit: 91900)  req@ffff8f934329ec00 x1656288109935872/t0(0) o400->lustre-MDT0000-lwp-OST0001@10.29.161.11@tcp:12/10 lens 224/192 e 0 to 0 dl 1579561703 ref 1 fl Rpc:RN/0/0 rc 0/0
+00010000:00080000:0.0:1579561721.609103:0:2298:0:(ldlm_lib.c:1231:target_handle_connect()) lustre-OST0001: connection from lustre-MDT0000-mdtlov_UUID@10.29.161.11@tcp t0 exp           (null) cur 1579561721 last 0
+00000020:00000080:0.0:1579561721.609114:0:2298:0:(genops.c:1379:class_connect()) connect: client lustre-MDT0000-mdtlov_UUID, cookie 0x279ba1d2c72ec45a
+00002000:00080000:0.0:1579561721.609117:0:2298:0:(ofd_obd.c:180:ofd_parse_connect_data()) lustre-OST0001: Received MDS connection for group 0
+00000001:00020000:0.0:1579561721.609124:0:2298:0:(tgt_lastrcvd.c:1016:tgt_client_new()) lustre-OST0001: Failed to write client lcd at idx 0, rc -30
+00000020:00000080:0.0:1579561721.609132:0:2298:0:(genops.c:1463:class_disconnect()) disconnect: cookie 0x279ba1d2c72ec45a
+00000020:00000080:0.0:1579561721.609133:0:2298:0:(genops.c:987:class_export_put()) final put ffff8f93376aec00/lustre-MDT0000-mdtlov_UUID
+00000020:00000080:0.0:1579561721.609151:0:2259:0:(genops.c:937:class_export_destroy()) destroying export ffff8f93376aec00/lustre-MDT0000-mdtlov_UUID for lustre-OST0001
+00010000:00080000:0.0:1579561721.713670:0:2278:0:(ldlm_request.c:1329:ldlm_cli_update_pool()) @@@ Zero SLV or Limit found (SLV: 0, Limit: 91900)  req@ffff8f934329f800 x1656288109935904/t0(0) o400->lustre-MDT0000-lwp-OST0001@10.29.161.11@tcp:12/10 lens 224/192 e 0 to 0 dl 1579561728 ref 1 fl Rpc:RN/0/0 rc 0/0
+00010000:00080000:0.0:1579561746.610297:0:2298:0:(ldlm_lib.c:1231:target_handle_connect()) lustre-OST0001: connection from lustre-MDT0000-mdtlov_UUID@10.29.161.11@tcp t0 exp           (null) cur 1579561746 last 0
+00000020:00000080:0.0:1579561746.610328:0:2298:0:(genops.c:1379:class_connect()) connect: client lustre-MDT0000-mdtlov_UUID, cookie 0x279ba1d2c72ec461
+00002000:00080000:0.0:1579561746.610337:0:2298:0:(ofd_obd.c:180:ofd_parse_connect_data()) lustre-OST0001: Received MDS connection for group 0
+00000001:00020000:0.0:1579561746.610354:0:2298:0:(tgt_lastrcvd.c:1016:tgt_client_new()) lustre-OST0001: Failed to write client lcd at idx 0, rc -30
+00000020:00000080:0.0:1579561746.610373:0:2298:0:(genops.c:1463:class_disconnect()) disconnect: cookie 0x279ba1d2c72ec461
+00000020:00000080:0.0:1579561746.610379:0:2298:0:(genops.c:987:class_export_put()) final put ffff8f93376aec00/lustre-MDT0000-mdtlov_UUID
+00000020:00000080:0.0:1579561746.610432:0:2259:0:(genops.c:937:class_export_destroy()) destroying export ffff8f93376aec00/lustre-MDT0000-mdtlov_UUID for lustre-OST0001
+00010000:00080000:0.0:1579561746.713297:0:2278:0:(ldlm_request.c:1329:ldlm_cli_update_pool()) @@@ Zero SLV or Limit found (SLV: 0, Limit: 91900)  req@ffff8f934329ec00 x1656288109935936/t0(0) o400->lustre-MDT0000-lwp-OST0001@10.29.161.11@tcp:12/10 lens 224/192 e 0 to 0 dl 1579561753 ref 1 fl Rpc:RN/0/0 rc 0/0
+00010000:00080000:0.0:1579561771.610521:0:2298:0:(ldlm_lib.c:1231:target_handle_connect()) lustre-OST0001: connection from lustre-MDT0000-mdtlov_UUID@10.29.161.11@tcp t0 exp           (null) cur 1579561771 last 0
+00000020:00000080:0.0:1579561771.610553:0:2298:0:(genops.c:1379:class_connect()) connect: client lustre-MDT0000-mdtlov_UUID, cookie 0x279ba1d2c72ec468
+00002000:00080000:0.0:1579561771.610561:0:2298:0:(ofd_obd.c:180:ofd_parse_connect_data()) lustre-OST0001: Received MDS connection for group 0
+00000001:00020000:0.0:1579561771.610580:0:2298:0:(tgt_lastrcvd.c:1016:tgt_client_new()) lustre-OST0001: Failed to write client lcd at idx 0, rc -30
+00000020:00000080:0.0:1579561771.610599:0:2298:0:(genops.c:1463:class_disconnect()) disconnect: cookie 0x279ba1d2c72ec468
+00000020:00000080:0.0:1579561771.610604:0:2298:0:(genops.c:987:class_export_put()) final put ffff8f931fffd400/lustre-MDT0000-mdtlov_UUID
+00000020:00000080:0.0:1579561771.610655:0:2259:0:(genops.c:937:class_export_destroy()) destroying export ffff8f931fffd400/lustre-MDT0000-mdtlov_UUID for lustre-OST0001
+00010000:00080000:0.0:1579561771.716489:0:2278:0:(ldlm_request.c:1329:ldlm_cli_update_pool()) @@@ Zero SLV or Limit found (SLV: 0, Limit: 91900)  req@ffff8f934329ec00 x1656288109935968/t0(0) o400->lustre-MDT0000-lwp-OST0001@10.29.161.11@tcp:12/10 lens 224/192 e 0 to 0 dl 1579561778 ref 1 fl Rpc:RN/0/0 rc 0/0
+00010000:00080000:0.0:1579561796.610384:0:2298:0:(ldlm_lib.c:1231:target_handle_connect()) lustre-OST0001: connection from lustre-MDT0000-mdtlov_UUID@10.29.161.11@tcp t0 exp           (null) cur 1579561796 last 0
+00000020:00000080:0.0:1579561796.610415:0:2298:0:(genops.c:1379:class_connect()) connect: client lustre-MDT0000-mdtlov_UUID, cookie 0x279ba1d2c72ec46f
+00002000:00080000:0.0:1579561796.610424:0:2298:0:(ofd_obd.c:180:ofd_parse_connect_data()) lustre-OST0001: Received MDS connection for group 0
+00000001:00020000:0.0:1579561796.610443:0:2298:0:(tgt_lastrcvd.c:1016:tgt_client_new()) lustre-OST0001: Failed to write client lcd at idx 0, rc -30
+00000020:00000080:0.0:1579561796.610466:0:2298:0:(genops.c:1463:class_disconnect()) disconnect: cookie 0x279ba1d2c72ec46f
+00000020:00000080:0.0:1579561796.610472:0:2298:0:(genops.c:987:class_export_put()) final put ffff8f931fffc400/lustre-MDT0000-mdtlov_UUID
+00000020:00000080:0.0:1579561796.610524:0:2259:0:(genops.c:937:class_export_destroy()) destroying export ffff8f931fffc400/lustre-MDT0000-mdtlov_UUID for lustre-OST0001
+00010000:00080000:0.0:1579561796.715537:0:2278:0:(ldlm_request.c:1329:ldlm_cli_update_pool()) @@@ Zero SLV or Limit found (SLV: 0, Limit: 91900)  req@ffff8f934329f800 x1656288109936000/t0(0) o400->lustre-MDT0000-lwp-OST0001@10.29.161.11@tcp:12/10 lens 224/192 e 0 to 0 dl 1579561803 ref 1 fl Rpc:RN/0/0 rc 0/0

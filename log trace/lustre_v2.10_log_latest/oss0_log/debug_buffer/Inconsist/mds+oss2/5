@@ -1,0 +1,116 @@
+00000020:00000080:0.0F:1574703915.589482:0:18111:0:(genops.c:1463:class_disconnect()) disconnect: cookie 0x508ce934939a3104
+00000100:00080000:0.0:1574703915.589487:0:18111:0:(import.c:1650:ptlrpc_cleanup_imp()) ffff965a6232c000 ÐBGdZ–ÿÿÐBGdZ–ÿÿ: changing import state from FULL to CLOSED
+00000020:00000080:0.0:1574703921.563683:0:18064:0:(genops.c:987:class_export_put()) final put ffff965a4b7a9800/lustre-MDT0000-mdtlov_UUID
+00000020:00000080:0.0:1574703921.563704:0:3359:0:(genops.c:937:class_export_destroy()) destroying export ffff965a4b7a9800/lustre-MDT0000-mdtlov_UUID for lustre-OST0000
+00000020:00000080:0.0:1574703921.563730:0:3359:0:(genops.c:1177:class_import_destroy()) destroying import ffff965a6232c000 for lustre-OST0000
+00000100:00000400:0.0:1574703944.502989:0:3377:0:(client.c:2116:ptlrpc_expire_one_request()) @@@ Request sent has timed out for slow reply: [sent 1574703937/real 1574703937]  req@ffff965a63b66900 x1650925178805952/t0(0) o400->lustre-MDT0000-lwp-OST0000@10.24.85.134@tcp:12/10 lens 224/224 e 0 to 1 dl 1574703944 ref 1 fl Rpc:XN/0/ffffffff rc 0/-1
+00000100:02000400:0.0:1574703944.503041:0:3377:0:(import.c:179:ptlrpc_set_import_discon()) lustre-MDT0000-lwp-OST0000: Connection to lustre-MDT0000 (at 10.24.85.134@tcp) was lost; in progress operations using this service will wait for recovery to complete
+00000100:00080000:0.0:1574703944.503050:0:3377:0:(import.c:188:ptlrpc_set_import_discon()) ffff965a8cc7e000 lustre-MDT0000_UUID: changing import state from FULL to DISCONN
+00000100:00080000:0.0:1574703944.503056:0:3377:0:(import.c:418:ptlrpc_pinger_force()) lustre-MDT0000_UUID: waking up pinger s:DISCONN
+00000100:00080000:0.0:1574703944.503090:0:3379:0:(pinger.c:217:ptlrpc_pinger_process_import()) lustre-MDT0000-lwp-OST0000_UUID->lustre-MDT0000_UUID: level DISCONN/3 force 1 force_next 0 deactive 0 pingable 1 suppress 0
+00000100:00080000:0.0:1574703944.503096:0:3379:0:(recover.c:58:ptlrpc_initiate_recovery()) lustre-MDT0000_UUID: starting recovery
+00000100:00080000:0.0:1574703944.503098:0:3379:0:(import.c:681:ptlrpc_connect_import()) ffff965a8cc7e000 lustre-MDT0000_UUID: changing import state from DISCONN to CONNECTING
+00000100:00080000:0.0:1574703944.503104:0:3379:0:(import.c:524:import_select_connection()) lustre-MDT0000-lwp-OST0000: connect to NID 10.24.85.134@tcp last attempt 4553070935
+00000100:00080000:0.0:1574703944.503111:0:3379:0:(import.c:602:import_select_connection()) lustre-MDT0000-lwp-OST0000: import ffff965a8cc7e000 using connection 10.24.85.134@tcp/10.24.85.134@tcp
+00000100:00000400:0.0:1574703950.502961:0:3376:0:(client.c:2116:ptlrpc_expire_one_request()) @@@ Request sent has timed out for slow reply: [sent 1574703944/real 1574703944]  req@ffff965a63b66900 x1650925178805968/t0(0) o38->lustre-MDT0000-lwp-OST0000@10.24.85.134@tcp:12/10 lens 520/544 e 0 to 1 dl 1574703950 ref 1 fl Rpc:XN/0/ffffffff rc 0/-1
+00000100:00080000:0.0:1574703950.503022:0:3376:0:(import.c:1284:ptlrpc_connect_interpret()) ffff965a8cc7e000 lustre-MDT0000_UUID: changing import state from CONNECTING to DISCONN
+00000100:00080000:0.0:1574703950.503027:0:3376:0:(import.c:1330:ptlrpc_connect_interpret()) recovery of lustre-MDT0000_UUID on 10.24.85.134@tcp failed (-110)
+00000100:00080000:0.0:1574703969.502854:0:3379:0:(pinger.c:217:ptlrpc_pinger_process_import()) lustre-MDT0000-lwp-OST0000_UUID->lustre-MDT0000_UUID: level DISCONN/3 force 0 force_next 0 deactive 0 pingable 1 suppress 0
+00000100:00080000:0.0:1574703969.502857:0:3379:0:(recover.c:58:ptlrpc_initiate_recovery()) lustre-MDT0000_UUID: starting recovery
+00000100:00080000:0.0:1574703969.502858:0:3379:0:(import.c:681:ptlrpc_connect_import()) ffff965a8cc7e000 lustre-MDT0000_UUID: changing import state from DISCONN to CONNECTING
+00000100:00080000:0.0:1574703969.502861:0:3379:0:(import.c:524:import_select_connection()) lustre-MDT0000-lwp-OST0000: connect to NID 10.24.85.134@tcp last attempt 4554327970
+00000100:00080000:0.0:1574703969.502862:0:3379:0:(import.c:568:import_select_connection()) lustre-MDT0000-lwp-OST0000: tried all connections, increasing latency to 6s
+00000100:00080000:0.0:1574703969.502864:0:3379:0:(import.c:602:import_select_connection()) lustre-MDT0000-lwp-OST0000: import ffff965a8cc7e000 using connection 10.24.85.134@tcp/10.24.85.134@tcp
+00000100:00000400:0.0:1574703980.502986:0:3376:0:(client.c:2116:ptlrpc_expire_one_request()) @@@ Request sent has timed out for slow reply: [sent 1574703969/real 1574703969]  req@ffff965a63b67200 x1650925178806000/t0(0) o38->lustre-MDT0000-lwp-OST0000@10.24.85.134@tcp:12/10 lens 520/544 e 0 to 1 dl 1574703980 ref 1 fl Rpc:XN/0/ffffffff rc 0/-1
+00000100:00080000:0.0:1574703980.503046:0:3376:0:(import.c:1284:ptlrpc_connect_interpret()) ffff965a8cc7e000 lustre-MDT0000_UUID: changing import state from CONNECTING to DISCONN
+00000100:00080000:0.0:1574703980.503051:0:3376:0:(import.c:1330:ptlrpc_connect_interpret()) recovery of lustre-MDT0000_UUID on 10.24.85.134@tcp failed (-110)
+00000100:00080000:0.0:1574703994.503017:0:3379:0:(pinger.c:217:ptlrpc_pinger_process_import()) lustre-MDT0000-lwp-OST0000_UUID->lustre-MDT0000_UUID: level DISCONN/3 force 0 force_next 0 deactive 0 pingable 1 suppress 0
+00000100:00080000:0.0:1574703994.503026:0:3379:0:(recover.c:58:ptlrpc_initiate_recovery()) lustre-MDT0000_UUID: starting recovery
+00000100:00080000:0.0:1574703994.503029:0:3379:0:(import.c:681:ptlrpc_connect_import()) ffff965a8cc7e000 lustre-MDT0000_UUID: changing import state from DISCONN to CONNECTING
+00000100:00080000:0.0:1574703994.503038:0:3379:0:(import.c:524:import_select_connection()) lustre-MDT0000-lwp-OST0000: connect to NID 10.24.85.134@tcp last attempt 4554352970
+00000100:00080000:0.0:1574703994.503042:0:3379:0:(import.c:568:import_select_connection()) lustre-MDT0000-lwp-OST0000: tried all connections, increasing latency to 11s
+00000100:00080000:0.0:1574703994.503049:0:3379:0:(import.c:602:import_select_connection()) lustre-MDT0000-lwp-OST0000: import ffff965a8cc7e000 using connection 10.24.85.134@tcp/10.24.85.134@tcp
+00000100:00000400:0.0:1574704010.505096:0:3376:0:(client.c:2116:ptlrpc_expire_one_request()) @@@ Request sent has timed out for slow reply: [sent 1574703994/real 1574703994]  req@ffff965a63b66900 x1650925178806032/t0(0) o38->lustre-MDT0000-lwp-OST0000@10.24.85.134@tcp:12/10 lens 520/544 e 0 to 1 dl 1574704010 ref 1 fl Rpc:XN/0/ffffffff rc 0/-1
+00000100:00080000:0.0:1574704010.505154:0:3376:0:(import.c:1284:ptlrpc_connect_interpret()) ffff965a8cc7e000 lustre-MDT0000_UUID: changing import state from CONNECTING to DISCONN
+00000100:00080000:0.0:1574704010.505159:0:3376:0:(import.c:1330:ptlrpc_connect_interpret()) recovery of lustre-MDT0000_UUID on 10.24.85.134@tcp failed (-110)
+00000100:00080000:0.0:1574704019.502918:0:3379:0:(pinger.c:217:ptlrpc_pinger_process_import()) lustre-MDT0000-lwp-OST0000_UUID->lustre-MDT0000_UUID: level DISCONN/3 force 0 force_next 0 deactive 0 pingable 1 suppress 0
+00000100:00080000:0.0:1574704019.502921:0:3379:0:(recover.c:58:ptlrpc_initiate_recovery()) lustre-MDT0000_UUID: starting recovery
+00000100:00080000:0.0:1574704019.502922:0:3379:0:(import.c:681:ptlrpc_connect_import()) ffff965a8cc7e000 lustre-MDT0000_UUID: changing import state from DISCONN to CONNECTING
+00000100:00080000:0.0:1574704019.502925:0:3379:0:(import.c:524:import_select_connection()) lustre-MDT0000-lwp-OST0000: connect to NID 10.24.85.134@tcp last attempt 4554377970
+00000100:00080000:0.0:1574704019.502927:0:3379:0:(import.c:568:import_select_connection()) lustre-MDT0000-lwp-OST0000: tried all connections, increasing latency to 16s
+00000100:00080000:0.0:1574704019.502929:0:3379:0:(import.c:602:import_select_connection()) lustre-MDT0000-lwp-OST0000: import ffff965a8cc7e000 using connection 10.24.85.134@tcp/10.24.85.134@tcp
+00000100:00000400:0.0:1574704040.506980:0:3376:0:(client.c:2116:ptlrpc_expire_one_request()) @@@ Request sent has timed out for slow reply: [sent 1574704019/real 1574704019]  req@ffff965a63b67200 x1650925178806064/t0(0) o38->lustre-MDT0000-lwp-OST0000@10.24.85.134@tcp:12/10 lens 520/544 e 0 to 1 dl 1574704040 ref 1 fl Rpc:XN/0/ffffffff rc 0/-1
+00000100:00080000:0.0:1574704040.507037:0:3376:0:(import.c:1284:ptlrpc_connect_interpret()) ffff965a8cc7e000 lustre-MDT0000_UUID: changing import state from CONNECTING to DISCONN
+00000100:00080000:0.0:1574704040.507042:0:3376:0:(import.c:1330:ptlrpc_connect_interpret()) recovery of lustre-MDT0000_UUID on 10.24.85.134@tcp failed (-110)
+00000100:00080000:0.0:1574704044.503016:0:3379:0:(pinger.c:217:ptlrpc_pinger_process_import()) lustre-MDT0000-lwp-OST0000_UUID->lustre-MDT0000_UUID: level DISCONN/3 force 0 force_next 0 deactive 0 pingable 1 suppress 0
+00000100:00080000:0.0:1574704044.503030:0:3379:0:(recover.c:58:ptlrpc_initiate_recovery()) lustre-MDT0000_UUID: starting recovery
+00000100:00080000:0.0:1574704044.503032:0:3379:0:(import.c:681:ptlrpc_connect_import()) ffff965a8cc7e000 lustre-MDT0000_UUID: changing import state from DISCONN to CONNECTING
+00000100:00080000:0.0:1574704044.503041:0:3379:0:(import.c:524:import_select_connection()) lustre-MDT0000-lwp-OST0000: connect to NID 10.24.85.134@tcp last attempt 4554402970
+00000100:00080000:0.0:1574704044.503045:0:3379:0:(import.c:568:import_select_connection()) lustre-MDT0000-lwp-OST0000: tried all connections, increasing latency to 21s
+00000100:00080000:0.0:1574704044.503052:0:3379:0:(import.c:602:import_select_connection()) lustre-MDT0000-lwp-OST0000: import ffff965a8cc7e000 using connection 10.24.85.134@tcp/10.24.85.134@tcp
+00010000:00080000:0.0:1574704063.989398:0:18111:0:(ldlm_lib.c:1231:target_handle_connect()) lustre-OST0000: connection from lustre-MDT0000-mdtlov_UUID@10.24.85.134@tcp t0 exp           (null) cur 1574704063 last 0
+00000020:00000080:0.0:1574704063.989409:0:18111:0:(genops.c:1379:class_connect()) connect: client lustre-MDT0000-mdtlov_UUID, cookie 0x508ce934939a411f
+00002000:00080000:0.0:1574704063.989411:0:18111:0:(ofd_obd.c:180:ofd_parse_connect_data()) lustre-OST0000: Received MDS connection for group 0
+00000020:01000000:0.0:1574704063.989428:0:18111:0:(lprocfs_status_server.c:342:lprocfs_exp_setup()) using hash ffff965ab963a000
+00002000:00080000:0.0:1574704063.989430:0:18111:0:(ofd_obd.c:397:ofd_obd_connect()) lustre-OST0000: get connection from MDS 0
+00000100:00080000:0.0:1574704063.989434:0:18111:0:(import.c:105:ptlrpc_import_enter_resend()) ffff965a963dc000 ÐBGdZ–ÿÿÐBGdZ–ÿÿ: changing import state from NEW to RECOVER
+00000100:00080000:0.0:1574704063.989437:0:18111:0:(import.c:1535:ptlrpc_import_recovery_state_machine()) ffff965a963dc000 ÐBGdZ–ÿÿÐBGdZ–ÿÿ: changing import state from RECOVER to FULL
+00000100:02000000:0.0:1574704063.989438:0:18111:0:(import.c:1541:ptlrpc_import_recovery_state_machine()) lustre-OST0000: Connection restored to lustre-MDT0000-mdtlov_UUID (at 10.24.85.134@tcp)
+00000100:00080000:0.0:1574704069.502998:0:3379:0:(pinger.c:217:ptlrpc_pinger_process_import()) lustre-MDT0000-lwp-OST0000_UUID->lustre-MDT0000_UUID: level CONNECTING/4 force 0 force_next 0 deactive 0 pingable 1 suppress 0
+00000100:00080000:0.0:1574704069.503007:0:3379:0:(pinger.c:230:ptlrpc_pinger_process_import()) lustre-MDT0000-lwp-OST0000_UUID->lustre-MDT0000_UUID: not pinging (in recovery or recovery disabled: CONNECTING)
+00002000:00080000:0.0:1574704069.684292:0:18111:0:(ofd_dev.c:1635:ofd_create_hdl()) ofd_last_id() = 865 -> diff = -37
+00002000:02000040:0.0:1574704069.684295:0:18111:0:(ofd_dev.c:1495:ofd_orphans_destroy()) lustre-OST0000: deleting orphan objects from 0x0:829 to 0x0:865
+00002000:00080000:0.0:1574704069.684811:0:18111:0:(ofd_dev.c:1522:ofd_orphans_destroy()) lustre-OST0000: after destroy: set last_id to 0x0:828
+00002000:00080000:0.0:1574704069.686611:0:18111:0:(ofd_dev.c:1752:ofd_create_hdl()) lustre-OST0000: reserve 8 objects in group 0x0 at 866
+00002000:00080000:0.0:1574704069.686704:0:18111:0:(ofd_dev.c:1752:ofd_create_hdl()) lustre-OST0000: reserve 8 objects in group 0x0 at 874
+00002000:00080000:0.0:1574704069.686770:0:18111:0:(ofd_dev.c:1752:ofd_create_hdl()) lustre-OST0000: reserve 8 objects in group 0x0 at 882
+00002000:00080000:0.0:1574704069.686822:0:18111:0:(ofd_dev.c:1752:ofd_create_hdl()) lustre-OST0000: reserve 8 objects in group 0x0 at 890
+00000100:00000400:0.0:1574704070.504927:0:3376:0:(client.c:2116:ptlrpc_expire_one_request()) @@@ Request sent has timed out for slow reply: [sent 1574704044/real 1574704044]  req@ffff965a63b66900 x1650925178806096/t0(0) o38->lustre-MDT0000-lwp-OST0000@10.24.85.134@tcp:12/10 lens 520/544 e 0 to 1 dl 1574704070 ref 1 fl Rpc:XN/0/ffffffff rc 0/-1
+00000100:00080000:0.0:1574704070.504972:0:3376:0:(import.c:1284:ptlrpc_connect_interpret()) ffff965a8cc7e000 lustre-MDT0000_UUID: changing import state from CONNECTING to DISCONN
+00000100:00080000:0.0:1574704070.504977:0:3376:0:(import.c:1330:ptlrpc_connect_interpret()) recovery of lustre-MDT0000_UUID on 10.24.85.134@tcp failed (-110)
+00100000:10000000:0.0:1574704085.337306:0:18111:0:(lfsck_layout.c:4964:lfsck_layout_reset()) lustre-OST0000-osd: layout LFSCK reset: rc = 0
+00100000:10000000:0.0:1574704085.338525:0:18364:0:(osd_scrub.c:669:osd_scrub_prep()) sdb: OI scrub prep, flags = 0x46
+00100000:10000000:0.0:1574704085.338530:0:18364:0:(osd_scrub.c:279:osd_scrub_file_reset()) sdb: reset OI scrub file, old flags = 0x0, add flags = 0x0
+00100000:10000000:0.0:1574704085.338551:0:18363:0:(lfsck_layout.c:5156:lfsck_layout_slave_prep()) lustre-OST0000-osd: layout LFSCK slave prep done, start pos [1]
+00100000:10000000:0.0:1574704085.338557:0:18364:0:(osd_scrub.c:1541:osd_scrub_main()) sdb: OI scrub start, flags = 0x46, pos = 12
+00100000:10000000:0.0:1574704085.340422:0:18363:0:(lfsck_layout.c:5047:lfsck_layout_slave_checkpoint()) lustre-OST0000-osd: layout LFSCK slave checkpoint at the pos [12], status = 1: rc = 0
+00100000:10000000:0.0:1574704085.340428:0:18363:0:(lfsck_engine.c:1060:lfsck_master_engine()) LFSCK entry: oit_flags = 0x60003, dir_flags = 0x8006, oit_cookie = 12, dir_cookie = 0x0, parent = [0x0:0x0:0x0], pid = 18363
+00100000:10000000:0.0:1574704085.342084:0:18364:0:(osd_scrub.c:767:osd_scrub_post()) sdb: OI scrub post, result = 1
+00100000:10000000:0.0:1574704085.342095:0:18364:0:(osd_scrub.c:1551:osd_scrub_main()) sdb: OI scrub: stop, pos = 128001: rc = 1
+00100000:10000000:0.0:1574704085.342240:0:18363:0:(lfsck_engine.c:1092:lfsck_master_engine()) LFSCK exit: oit_flags = 0x60003, dir_flags = 0x8006, oit_cookie = 64038, dir_cookie = 0x0, parent = [0x0:0x0:0x0], pid = 18363, rc = 1
+00100000:10000000:0.0:1574704085.342262:0:18363:0:(lfsck_layout.c:4657:lfsck_layout_slave_notify_master()) lustre-OST0000-osd: layout LFSCK slave notifies master
+00000020:01000004:0.0:1574704085.342270:0:18363:0:(obd_mount_server.c:170:server_get_mount()) get mount ffff965a63a54000 from lustre-OST0000, refs=3
+00000020:01000004:0.0:1574704085.342278:0:18363:0:(obd_mount_server.c:204:server_put_mount()) put mount ffff965a63a54000 from lustre-OST0000, refs=3
+00000020:01000004:0.0:1574704085.342281:0:18363:0:(obd_mount.c:662:lustre_put_lsi()) put ffff965a63a54000 3
+00100000:10000000:0.0:1574704085.342303:0:18363:0:(lfsck_layout.c:5819:lfsck_layout_slave_post()) lustre-OST0000-osd: layout LFSCK slave post done: rc = 0
+00100000:10000000:0.0:1574704085.342307:0:18363:0:(lfsck_layout.c:6043:lfsck_layout_slave_double_scan()) lustre-OST0000-osd: layout LFSCK slave phase2 scan start
+00000020:01000004:0.0:1574704085.342310:0:18363:0:(obd_mount_server.c:170:server_get_mount()) get mount ffff965a63a54000 from lustre-OST0000, refs=3
+00000020:01000004:0.0:1574704085.342314:0:18363:0:(obd_mount_server.c:204:server_put_mount()) put mount ffff965a63a54000 from lustre-OST0000, refs=3
+00000020:01000004:0.0:1574704085.342316:0:18363:0:(obd_mount.c:662:lustre_put_lsi()) put ffff965a63a54000 3
+00100000:10000000:0.0:1574704085.342322:0:18363:0:(lfsck_layout.c:4487:lfsck_layout_slave_async_interpret()) lustre-OST0000-osd: layout LFSCK slave gets the MDT 0 status -11, failures_try 0
+00100000:10000000:0.0:1574704085.342328:0:18363:0:(lfsck_layout.c:4636:lfsck_layout_slave_query_master()) lustre-OST0000-osd: layout LFSCK slave queries master: rc = 0
+00100000:10000000:0.0:1574704085.342330:0:18363:0:(lfsck_layout.c:1445:lfsck_layout_double_scan_result()) lustre-OST0000-osd: layout LFSCK double scan: rc = 1
+00100000:10000000:0.0:1574704085.342336:0:18363:0:(lfsck_layout.c:1486:lfsck_layout_double_scan_result()) lustre-OST0000-osd: layout LFSCK double scan result 3: rc = 0
+00100000:10000000:0.0:1574704085.342338:0:18363:0:(lfsck_layout.c:4657:lfsck_layout_slave_notify_master()) lustre-OST0000-osd: layout LFSCK slave notifies master
+00100000:10000000:0.0:1574704085.342343:0:18363:0:(lfsck_layout.c:680:lfsck_rbtree_cleanup()) lustre-OST0000-osd: layout LFSCK fini OST-objects accessing bitmap
+00100000:10000000:0.0:1574704085.342344:0:18363:0:(lfsck_layout.c:6100:lfsck_layout_slave_double_scan()) lustre-OST0000-osd: layout LFSCK slave phase2 scan finished, status 3: rc = 0
+00000100:00080000:0.0:1574704094.502989:0:3379:0:(pinger.c:217:ptlrpc_pinger_process_import()) lustre-MDT0000-lwp-OST0000_UUID->lustre-MDT0000_UUID: level DISCONN/3 force 0 force_next 0 deactive 0 pingable 1 suppress 0
+00000100:00080000:0.0:1574704094.503003:0:3379:0:(recover.c:58:ptlrpc_initiate_recovery()) lustre-MDT0000_UUID: starting recovery
+00000100:00080000:0.0:1574704094.503006:0:3379:0:(import.c:681:ptlrpc_connect_import()) ffff965a8cc7e000 lustre-MDT0000_UUID: changing import state from DISCONN to CONNECTING
+00000100:00080000:0.0:1574704094.503015:0:3379:0:(import.c:524:import_select_connection()) lustre-MDT0000-lwp-OST0000: connect to NID 10.24.85.134@tcp last attempt 4554427970
+00000100:00080000:0.0:1574704094.503018:0:3379:0:(import.c:568:import_select_connection()) lustre-MDT0000-lwp-OST0000: tried all connections, increasing latency to 26s
+00000100:00080000:0.0:1574704094.503026:0:3379:0:(import.c:602:import_select_connection()) lustre-MDT0000-lwp-OST0000: import ffff965a8cc7e000 using connection 10.24.85.134@tcp/10.24.85.134@tcp
+00010000:00080000:0.0:1574704094.505581:0:3376:0:(ldlm_request.c:1329:ldlm_cli_update_pool()) @@@ Zero SLV or Limit found (SLV: 0, Limit: 91900)  req@ffff965a63b67200 x1650925178806176/t0(0) o38->lustre-MDT0000-lwp-OST0000@10.24.85.134@tcp:12/10 lens 520/384 e 0 to 0 dl 1574704125 ref 1 fl Rpc:RN/0/0 rc 0/0
+00000100:00080000:0.0:1574704094.505601:0:3376:0:(import.c:1035:ptlrpc_connect_interpret()) lustre-MDT0000-lwp-OST0000: connect to target with instance 9
+00000100:00080000:0.0:1574704094.505613:0:3376:0:(import.c:1235:ptlrpc_connect_interpret()) @@@ lustre-MDT0000-lwp-OST0000: evicting (reconnect/recover flags not set: 4)  req@ffff965a63b67200 x1650925178806176/t0(0) o38->lustre-MDT0000-lwp-OST0000@10.24.85.134@tcp:12/10 lens 520/384 e 0 to 0 dl 1574704125 ref 1 fl Interpret:RN/0/0 rc 0/0
+00000100:00080000:0.0:1574704094.505626:0:3376:0:(import.c:1238:ptlrpc_connect_interpret()) ffff965a8cc7e000 lustre-MDT0000_UUID: changing import state from CONNECTING to EVICTED
+00000100:02020000:0.0:1574704094.505631:0:3376:0:(import.c:1470:ptlrpc_import_recovery_state_machine()) 167-0: lustre-MDT0000-lwp-OST0000: This client was evicted by lustre-MDT0000; in progress operations using this service will fail.
+00000100:00080000:0.0:1574704094.505647:0:3376:0:(import.c:1474:ptlrpc_import_recovery_state_machine()) evicted from lustre-MDT0000_UUID@10.24.85.134@tcp; invalidating
+00000100:00080000:0.0:1574704094.505713:0:18365:0:(import.c:1416:ptlrpc_invalidate_import_thread()) thread invalidate import lustre-MDT0000-lwp-OST0000 to lustre-MDT0000_UUID@10.24.85.134@tcp
+00000100:00080000:0.0:1574704094.505717:0:18365:0:(import.c:215:ptlrpc_deactivate_and_unlock_import()) setting import lustre-MDT0000_UUID INVALID
+00000100:00080000:0.0:1574704094.512588:0:18365:0:(import.c:1425:ptlrpc_invalidate_import_thread()) ffff965a8cc7e000 lustre-MDT0000_UUID: changing import state from EVICTED to RECOVER
+00000100:00080000:0.0:1574704094.512596:0:18365:0:(import.c:1535:ptlrpc_import_recovery_state_machine()) ffff965a8cc7e000 lustre-MDT0000_UUID: changing import state from RECOVER to FULL
+00000100:02000000:0.0:1574704094.512604:0:18365:0:(import.c:1541:ptlrpc_import_recovery_state_machine()) lustre-MDT0000-lwp-OST0000: Connection restored to 10.24.85.134@tcp (at 10.24.85.134@tcp)
+00010000:00080000:0.0:1574704119.550829:0:3377:0:(ldlm_request.c:1329:ldlm_cli_update_pool()) @@@ Zero SLV or Limit found (SLV: 0, Limit: 91900)  req@ffff965a63b66900 x1650925178806208/t0(0) o400->lustre-MDT0000-lwp-OST0000@10.24.85.134@tcp:12/10 lens 224/192 e 0 to 0 dl 1574704126 ref 1 fl Rpc:RN/0/0 rc 0/0
+00010000:00080000:0.0:1574704144.528881:0:3377:0:(ldlm_request.c:1329:ldlm_cli_update_pool()) @@@ Zero SLV or Limit found (SLV: 0, Limit: 91900)  req@ffff965a63b66900 x1650925178806240/t0(0) o400->lustre-MDT0000-lwp-OST0000@10.24.85.134@tcp:12/10 lens 224/192 e 0 to 0 dl 1574704151 ref 1 fl Rpc:RN/0/0 rc 0/0
+00010000:00080000:0.0:1574704169.531045:0:3377:0:(ldlm_request.c:1329:ldlm_cli_update_pool()) @@@ Zero SLV or Limit found (SLV: 0, Limit: 91900)  req@ffff965a63b66900 x1650925178806272/t0(0) o400->lustre-MDT0000-lwp-OST0000@10.24.85.134@tcp:12/10 lens 224/192 e 0 to 0 dl 1574704176 ref 1 fl Rpc:RN/0/0 rc 0/0

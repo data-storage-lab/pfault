@@ -1,0 +1,76 @@
+00000100:00080000:0.0F:1574199708.600402:0:2246:0:(pinger.c:217:ptlrpc_pinger_process_import()) aca9e26f-1a2c-05f9-96c2-6c9562f8f53b->MGS: level DISCONN/3 force 0 force_next 0 deactive 0 pingable 1 suppress 0
+00000100:00080000:0.0:1574199708.600417:0:2246:0:(recover.c:58:ptlrpc_initiate_recovery()) MGS: starting recovery
+00000100:00080000:0.0:1574199708.600420:0:2246:0:(import.c:681:ptlrpc_connect_import()) ffff9ed479fee800 MGS: changing import state from DISCONN to CONNECTING
+00000100:00080000:0.0:1574199708.600430:0:2246:0:(import.c:524:import_select_connection()) MGC10.24.85.218@tcp: connect to NID 10.24.85.218@tcp last attempt 4550606407
+00000100:00080000:0.0:1574199708.600434:0:2246:0:(import.c:568:import_select_connection()) MGC10.24.85.218@tcp: tried all connections, increasing latency to 50s
+00000100:00080000:0.0:1574199708.600441:0:2246:0:(import.c:602:import_select_connection()) MGC10.24.85.218@tcp: import ffff9ed479fee800 using connection MGC10.24.85.218@tcp_0/10.24.85.218@tcp
+00000100:00080000:0.0:1574199708.600470:0:2246:0:(pinger.c:217:ptlrpc_pinger_process_import()) lustre-MDT0000-lwp-OST0002_UUID->lustre-MDT0000_UUID: level DISCONN/3 force 0 force_next 0 deactive 0 pingable 1 suppress 0
+00000100:00080000:0.0:1574199708.600476:0:2246:0:(recover.c:58:ptlrpc_initiate_recovery()) lustre-MDT0000_UUID: starting recovery
+00000100:00080000:0.0:1574199708.600477:0:2246:0:(import.c:681:ptlrpc_connect_import()) ffff9ed44b85c000 lustre-MDT0000_UUID: changing import state from DISCONN to CONNECTING
+00000100:00080000:0.0:1574199708.600483:0:2246:0:(import.c:524:import_select_connection()) lustre-MDT0000-lwp-OST0002: connect to NID 10.24.85.134@tcp last attempt 4550606407
+00000100:00080000:0.0:1574199708.600485:0:2246:0:(import.c:568:import_select_connection()) lustre-MDT0000-lwp-OST0002: tried all connections, increasing latency to 50s
+00000100:00080000:0.0:1574199708.600490:0:2246:0:(import.c:602:import_select_connection()) lustre-MDT0000-lwp-OST0002: import ffff9ed44b85c000 using connection 10.24.85.134@tcp/10.24.85.134@tcp
+00000100:00080000:0.0:1574199708.605535:0:12993:0:(service.c:1104:ptlrpc_update_export_timer()) lustre-OST0002: Think about evicting 10.24.86.108@tcp from 1574198961
+00010000:02000400:0.0:1574199708.605579:0:12993:0:(ldlm_lib.c:779:target_handle_reconnect()) lustre-OST0002: Client lustre-MDT0000-mdtlov_UUID (at 10.24.85.134@tcp) reconnecting
+00010000:00080000:0.0:1574199708.605597:0:12993:0:(ldlm_lib.c:1231:target_handle_connect()) lustre-OST0002: connection from lustre-MDT0000-mdtlov_UUID@10.24.85.134@tcp t0 exp ffff9ed44a52e400 cur 1574199708 last 1574199708
+00002000:00080000:0.0:1574199708.605609:0:12993:0:(ofd_obd.c:180:ofd_parse_connect_data()) lustre-OST0002: Received MDS connection for group 0
+00000100:00080000:0.0:1574199708.605621:0:12993:0:(import.c:105:ptlrpc_import_enter_resend()) ffff9ed4424b8000 X³¥yÔžÿÿX³¥yÔžÿÿ: changing import state from FULL to RECOVER
+00000100:00080000:0.0:1574199708.605628:0:12993:0:(import.c:1535:ptlrpc_import_recovery_state_machine()) ffff9ed4424b8000 X³¥yÔžÿÿX³¥yÔžÿÿ: changing import state from RECOVER to FULL
+00000100:02000000:0.0:1574199708.605634:0:12993:0:(import.c:1541:ptlrpc_import_recovery_state_machine()) lustre-OST0002: Connection restored to  (at 10.24.85.134@tcp)
+00000100:00080000:0.0:1574199708.609556:0:2243:0:(import.c:1035:ptlrpc_connect_interpret()) MGC10.24.85.218@tcp: connect to target with instance 0
+10000000:01000000:0.0:1574199708.609568:0:2243:0:(mgc_request.c:1367:mgc_import_event()) import event 0x808005
+00000100:02000400:0.0:1574199708.609572:0:2243:0:(import.c:1191:ptlrpc_connect_interpret()) Evicted from MGS (at MGC10.24.85.218@tcp_0) after server handle changed from 0x2a371519dfb01d56 to 0x2a371519dfb01ea6
+00000100:00080000:0.0:1574199708.609588:0:2243:0:(import.c:1199:ptlrpc_connect_interpret()) ffff9ed479fee800 MGS: changing import state from CONNECTING to EVICTED
+00000100:00080000:0.0:1574199708.609592:0:2243:0:(import.c:1474:ptlrpc_import_recovery_state_machine()) evicted from MGS@MGC10.24.85.218@tcp_0; invalidating
+00000100:00080000:0.0:1574199708.611553:0:2243:0:(import.c:1035:ptlrpc_connect_interpret()) lustre-MDT0000-lwp-OST0002: connect to target with instance 4
+00000100:00080000:0.0:1574199708.611567:0:2243:0:(import.c:1235:ptlrpc_connect_interpret()) @@@ lustre-MDT0000-lwp-OST0002: evicting (reconnect/recover flags not set: 4)  req@ffff9ed445d9e000 x1650399683884144/t0(0) o38->lustre-MDT0000-lwp-OST0002@10.24.85.134@tcp:12/10 lens 520/384 e 0 to 0 dl 1574199763 ref 1 fl Interpret:RN/0/0 rc 0/0
+00000100:00080000:0.0:1574199708.611587:0:2243:0:(import.c:1238:ptlrpc_connect_interpret()) ffff9ed44b85c000 lustre-MDT0000_UUID: changing import state from CONNECTING to EVICTED
+00000100:02020000:0.0:1574199708.611592:0:2243:0:(import.c:1470:ptlrpc_import_recovery_state_machine()) 167-0: lustre-MDT0000-lwp-OST0002: This client was evicted by lustre-MDT0000; in progress operations using this service will fail.
+00000100:00080000:0.0:1574199708.611607:0:2243:0:(import.c:1474:ptlrpc_import_recovery_state_machine()) evicted from lustre-MDT0000_UUID@10.24.85.134@tcp; invalidating
+00000100:00080000:0.0:1574199708.612452:0:15175:0:(import.c:1416:ptlrpc_invalidate_import_thread()) thread invalidate import MGC10.24.85.218@tcp to MGS@MGC10.24.85.218@tcp_0
+10000000:01000000:0.0:1574199708.612460:0:15175:0:(mgc_request.c:1367:mgc_import_event()) import event 0x808003
+10000000:01000000:0.0:1574199708.612472:0:15175:0:(mgc_request.c:1025:mgc_blocking_ast()) Lock res [0x70616d65646f6e:0x4:0x0].0x0 (nodemap)
+10000000:01000000:0.0:1574199708.612488:0:15175:0:(mgc_request.c:1025:mgc_blocking_ast()) Lock res [0x736d61726170:0x3:0x0].0x0 (params)
+10000000:01000000:0.0:1574199708.612496:0:15175:0:(mgc_request.c:1025:mgc_blocking_ast()) Lock res [0x65727473756c:0x0:0x0].0x0 (lustre)
+10000000:01000000:0.0:1574199708.612501:0:15175:0:(mgc_request.c:1025:mgc_blocking_ast()) Lock res [0x65727473756c:0x0:0x0].0x0 (lustre)
+10000000:01000000:0.0:1574199708.612506:0:15175:0:(mgc_request.c:1025:mgc_blocking_ast()) Lock res [0x65727473756c:0x0:0x0].0x0 (lustre)
+00000100:00080000:0.0:1574199708.612514:0:15175:0:(import.c:1425:ptlrpc_invalidate_import_thread()) ffff9ed479fee800 MGS: changing import state from EVICTED to RECOVER
+00000100:00080000:0.0:1574199708.612519:0:15175:0:(import.c:1535:ptlrpc_import_recovery_state_machine()) ffff9ed479fee800 MGS: changing import state from RECOVER to FULL
+10000000:01000000:0.0:1574199708.612522:0:15175:0:(mgc_request.c:1367:mgc_import_event()) import event 0x808004
+00000100:00080000:0.0:1574199708.612524:0:15175:0:(pinger.c:171:ptlrpc_pinger_ir_up()) IR up
+00000100:02000000:0.0:1574199708.612529:0:15175:0:(import.c:1541:ptlrpc_import_recovery_state_machine()) MGC10.24.85.218@tcp: Connection restored to MGC10.24.85.218@tcp_0 (at 10.24.85.218@tcp)
+00000100:00080000:0.0:1574199708.612603:0:15176:0:(import.c:1416:ptlrpc_invalidate_import_thread()) thread invalidate import lustre-MDT0000-lwp-OST0002 to lustre-MDT0000_UUID@10.24.85.134@tcp
+00000100:00080000:0.0:1574199708.612606:0:15176:0:(import.c:215:ptlrpc_deactivate_and_unlock_import()) setting import lustre-MDT0000_UUID INVALID
+00000100:00080000:0.0:1574199708.624512:0:15176:0:(import.c:1425:ptlrpc_invalidate_import_thread()) ffff9ed44b85c000 lustre-MDT0000_UUID: changing import state from EVICTED to RECOVER
+00000100:00080000:0.0:1574199708.624520:0:15176:0:(import.c:1535:ptlrpc_import_recovery_state_machine()) ffff9ed44b85c000 lustre-MDT0000_UUID: changing import state from RECOVER to FULL
+00000100:02000000:0.0:1574199708.624530:0:15176:0:(import.c:1541:ptlrpc_import_recovery_state_machine()) lustre-MDT0000-lwp-OST0002: Connection restored to 10.24.85.134@tcp (at 10.24.85.134@tcp)
+00002000:00080000:0.0:1574199708.625836:0:12993:0:(ofd_dev.c:1635:ofd_create_hdl()) ofd_last_id() = 1569 -> diff = -38
+00002000:02000040:0.0:1574199708.625841:0:12993:0:(ofd_dev.c:1495:ofd_orphans_destroy()) lustre-OST0002: deleting orphan objects from 0x0:1532 to 0x0:1569
+00002000:00080000:0.0:1574199708.628543:0:12993:0:(ofd_dev.c:1522:ofd_orphans_destroy()) lustre-OST0002: after destroy: set last_id to 0x0:1531
+00002000:00080000:0.0:1574199713.670320:0:12993:0:(ofd_dev.c:1752:ofd_create_hdl()) lustre-OST0002: reserve 8 objects in group 0x0 at 1570
+00002000:00080000:0.0:1574199713.670654:0:12993:0:(ofd_dev.c:1752:ofd_create_hdl()) lustre-OST0002: reserve 8 objects in group 0x0 at 1578
+00002000:00080000:0.0:1574199713.670871:0:12993:0:(ofd_dev.c:1752:ofd_create_hdl()) lustre-OST0002: reserve 8 objects in group 0x0 at 1586
+00002000:00080000:0.0:1574199713.671088:0:12993:0:(ofd_dev.c:1752:ofd_create_hdl()) lustre-OST0002: reserve 8 objects in group 0x0 at 1594
+10000000:01000000:0.0:1574199718.382174:0:2262:0:(mgc_request.c:600:do_requeue()) updating log lustre-client
+10000000:01000000:0.0:1574199718.382179:0:2262:0:(mgc_request.c:2076:mgc_process_log()) Process log lustre-client:ffff9ed4770ce800 from 45
+10000000:01000000:0.0:1574199718.382184:0:2262:0:(mgc_request.c:1133:mgc_enqueue()) Enqueue for lustre-client (res 0x65727473756c)
+00000020:01000000:0.0:1574199718.389721:0:2262:0:(obd_config.c:1723:class_config_parse_llog()) Processed log lustre-client gen 45-44 (rc=0)
+10000000:01000000:0.0:1574199718.389736:0:2262:0:(mgc_request.c:2151:mgc_process_log()) MGC10.24.85.218@tcp: configuration from log 'lustre-client' succeeded (0).
+10000000:01000000:0.0:1574199718.389744:0:2262:0:(mgc_request.c:600:do_requeue()) updating log lustre-OST0002
+10000000:01000000:0.0:1574199718.389746:0:2262:0:(mgc_request.c:2076:mgc_process_log()) Process log lustre-OST0002:          (null) from 5
+10000000:01000000:0.0:1574199718.389749:0:2262:0:(mgc_request.c:1133:mgc_enqueue()) Enqueue for lustre-OST0002 (res 0x65727473756c)
+00000020:01000000:0.0:1574199718.403801:0:2262:0:(obd_config.c:1723:class_config_parse_llog()) Processed log lustre-OST0002 gen 5-4 (rc=0)
+10000000:01000000:0.0:1574199718.403814:0:2262:0:(mgc_request.c:2151:mgc_process_log()) MGC10.24.85.218@tcp: configuration from log 'lustre-OST0002' succeeded (0).
+10000000:01000000:0.0:1574199718.403822:0:2262:0:(mgc_request.c:600:do_requeue()) updating log params
+10000000:01000000:0.0:1574199718.403824:0:2262:0:(mgc_request.c:2076:mgc_process_log()) Process log params:ffff9ed4770ce800 from 1
+10000000:01000000:0.0:1574199718.403827:0:2262:0:(mgc_request.c:1133:mgc_enqueue()) Enqueue for params (res 0x736d61726170)
+00000020:01000000:0.0:1574199718.410829:0:2262:0:(obd_config.c:1723:class_config_parse_llog()) Processed log params gen 1-0 (rc=0)
+10000000:01000000:0.0:1574199718.410843:0:2262:0:(mgc_request.c:2151:mgc_process_log()) MGC10.24.85.218@tcp: configuration from log 'params' succeeded (0).
+10000000:01000000:0.0:1574199718.410852:0:2262:0:(mgc_request.c:600:do_requeue()) updating log nodemap
+10000000:01000000:0.0:1574199718.410854:0:2262:0:(mgc_request.c:2076:mgc_process_log()) Process log nodemap:ffff9ed479a58f78 from 1
+10000000:01000000:0.0:1574199718.410857:0:2262:0:(mgc_request.c:1133:mgc_enqueue()) Enqueue for nodemap (res 0x70616d65646f6e)
+10000000:01000000:0.0:1574199718.418112:0:2262:0:(mgc_request.c:2151:mgc_process_log()) MGC10.24.85.218@tcp: configuration from log 'nodemap' succeeded (0).
+10000000:01000000:0.0:1574199718.418122:0:2262:0:(mgc_request.c:600:do_requeue()) updating log lustre-sptlrpc
+10000000:01000000:0.0:1574199718.418125:0:2262:0:(mgc_request.c:2076:mgc_process_log()) Process log lustre-sptlrpc:          (null) from 1
+10000000:01000000:0.0:1574199718.418128:0:2262:0:(mgc_request.c:1133:mgc_enqueue()) Enqueue for lustre-sptlrpc (res 0x65727473756c)
+10000000:01000000:0.0:1574199718.421803:0:2262:0:(mgc_request.c:2151:mgc_process_log()) MGC10.24.85.218@tcp: configuration from log 'lustre-sptlrpc' failed (-2).
