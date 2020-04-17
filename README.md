@@ -53,6 +53,7 @@ Steps to initiate the tool:
   
   7.  The user may select the various failure models in "Failure State Emulator"
 
+PFault log trace has been uploaded. Log description is contained in the README.md file under folder '/log trace'.
+
 ## Contact ##
-NOTE: The current version is unstable and it is still being updated. 
-Contact: ogatla@iastate.edu 
+Contact: hanrz@iastate.edu ogatla@iastate.edu 
