@@ -16,7 +16,7 @@ Logs are collected from different Lustre nodes: 1 client node, 1 MGS node, 1 MDS
 
 In each failure scenario, 5 different failure case are discussed: MGS failure, MDS failure, OSS#2 failure, 3 OSSes failure, MDS&OSS#2 failure.
 
-Under each failure case, log is seperated into 7 phases:
+Under /debug_buffer, log is seperated into 7 phases:
 
 1. Log after Lustre mount
 2. Log after garbage removing and aging workload*
@@ -25,6 +25,21 @@ Under each failure case, log is seperated into 7 phases:
 5. Log after fault injection and run lfsck under abnormal situation
 6. Log after running check workload*
 7. Log after Lustre system recovery
+
+Under /debug_buffer_1, log is seperated into 3 phases:
+
+1. Log after files after lfsck, before fault injection
+2. Log after ault injection, before recovery
+3. Log after recovery
+
+Under lfsck_status, log is seperated into 3 phases:
+1. lfsck OI scrub status 
+2. lfsck layout status 
+3. lfsck namespace status
+
+Under change_log, log is seperated into 2 phases:
+1. Log before fault injection 
+2. Log after check workloads
 
 * workloads are defined in PFault (J. Cao, ICS 18)
 
