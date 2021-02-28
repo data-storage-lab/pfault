@@ -9,9 +9,11 @@ The description of each component is as follows:
 **Failure State Emulator**:
 
 Including the Virtual Device Manager and Fault Models.
+
 - *Virtual Device Manager*:
   - Source code in "pf_virtual_device_manager" folder
   - Manages the persistent state of the target Parallel File System (PFS)
+
 
 - *Fault Models*:
   - Source code in "pf_failure_state_emulator" folder
@@ -19,6 +21,7 @@ Including the Virtual Device Manager and Fault Models.
         - Whole Device Failure
         - Network Partitioning
         - Global Inconsistency
+
 
 **PFS worker**:
   - Source code in "pf_pfs_worker"
