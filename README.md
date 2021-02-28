@@ -48,6 +48,7 @@ Steps to initiate the tool:
   2.  Make tgtd first:
  
       ```cd /path/to/pfault/pf_virtual_device_manager/iscsi```
+      
       ```make```
 
   3.  Set password-less ssh for all the servers and clients
