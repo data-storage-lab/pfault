@@ -55,15 +55,16 @@ Steps to initiate the tool:
   
   4.  Copy configuration template:
 
-      cd /path/to/pfault/configuration
-      cp configuration_template.sh configuration.sh
+      ```cd /path/to/pfault/configuration```
+      
+      ```cp configuration_template.sh configuration.sh```
 
       Fill the configuration.sh with the required Lustre setup
 
   5.  Run "Virtual Device Manager" to build the Lustre Cluster 
 
-      cd /path/to/pfault/pf_virtual_device_manager/
-      ./vdm.sh
+      ```cd /path/to/pfault/pf_virtual_device_manager/
+      ./vdm.sh```
 
   6.  Run any workloads on the cluster. For example, there are few workloads in the folder:
       /path/to/pfault/workload_example
