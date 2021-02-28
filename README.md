@@ -18,9 +18,9 @@ Including the Virtual Device Manager and Fault Models.
 - *Fault Models*:
   - Source code in "pf_failure_state_emulator" folder
   - Injects faults based on the following fault models (Please refer to the paper for their description):
-        - Whole Device Failure
-        - Network Partitioning
-        - Global Inconsistency
+    - Whole Device Failure
+    - Network Partitioning
+    - Global Inconsistency
 
 
 **PFS worker**:
