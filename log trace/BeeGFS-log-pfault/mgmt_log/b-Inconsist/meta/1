@@ -1,0 +1,23 @@
+(0) Feb07 22:05:56 Main [StoragePoolStoreEx.cpp:141] >> Could not open storage pool mappings file. storePath: storagePools; sysErr: No such file or directory (2)
+(0) Feb07 22:05:56 Main [MgmtdTargetStateStore.cpp:446] >> Could not read states. nodeType: beegfs-storage; Error: Path does not exist
+(0) Feb07 22:05:56 Main [MgmtdTargetStateStore.cpp:446] >> Could not read states. nodeType: beegfs-meta; Error: Path does not exist
+(1) Feb07 22:05:56 Main [App] >> Version: 7.2
+(2) Feb07 22:05:56 Main [App] >> LocalNode: beegfs-mgmtd mgs [ID: 1]
+(2) Feb07 22:05:56 Main [App] >> Usable NICs: virbr0(TCP) enp0s3(TCP) 
+(1) Feb07 22:06:02 DGramLis [HBeatMgr] >> New root directory metadata node: beegfs-meta mds [ID: 2]
+(2) Feb07 22:06:02 DGramLis [Node registration] >> New node: beegfs-meta mds [ID: 2]; Source: 10.0.0.123
+(2) Feb07 22:06:05 DGramLis [Node registration] >> New node: beegfs-storage oss0 [ID: 3]; Source: 10.0.0.8
+(2) Feb07 22:06:05 DirectWorker1 [Change consistency states] >> Metadata node is coming online. ID: 2
+(2) Feb07 22:06:06 XNodeSync [Assign node to capacity pool] >> Metadata node capacity pool assignment updated. NodeID: 2; Pool: Normal; Reason: Free capacity threshold
+(2) Feb07 22:06:06 XNodeSync [Assign target to capacity pool] >> Storage target capacity pool assignment updated. NodeID: 3; TargetID: 301; Pool: Emergency;  Reason: No capacity report received.
+(2) Feb07 22:06:08 Worker2 [Change consistency states] >> Storage target is coming online. ID: 301
+(2) Feb07 22:06:09 DGramLis [Node registration] >> New node: beegfs-storage worker0 [ID: 4]; Source: 10.0.0.108
+(2) Feb07 22:06:11 XNodeSync [Assign target to capacity pool] >> Storage target capacity pool assignment updated. NodeID: 4; TargetID: 401; Pool: Emergency;  Reason: No capacity report received.
+(2) Feb07 22:06:11 XNodeSync [Assign target to capacity pool] >> Storage target capacity pool assignment updated. NodeID: 3; TargetID: 301; Pool: Low;  Reason: Free capacity threshold
+(2) Feb07 22:06:12 Worker3 [Change consistency states] >> Storage target is coming online. ID: 401
+(2) Feb07 22:06:14 DGramLis [Node registration] >> New node: beegfs-storage worker [ID: 5]; Source: 10.0.0.203
+(2) Feb07 22:06:16 XNodeSync [Assign target to capacity pool] >> Storage target capacity pool assignment updated. NodeID: 5; TargetID: 501; Pool: Emergency;  Reason: No capacity report received.
+(2) Feb07 22:06:16 XNodeSync [Assign target to capacity pool] >> Storage target capacity pool assignment updated. NodeID: 4; TargetID: 401; Pool: Low;  Reason: Free capacity threshold
+(2) Feb07 22:06:17 Worker1 [Change consistency states] >> Storage target is coming online. ID: 501
+(2) Feb07 22:06:21 XNodeSync [Assign target to capacity pool] >> Storage target capacity pool assignment updated. NodeID: 5; TargetID: 501; Pool: Low;  Reason: Free capacity threshold
+(2) Feb07 22:06:46 DGramLis [Node registration] >> New node: beegfs-client F1F-6020A779-osboxes [ID: 3]; Source: 10.0.0.121

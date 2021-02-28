@@ -1,0 +1,172 @@
+
+
+BeeGFS File System Check Version : 7.2
+----
+
+--------------------------------------------------------------------
+Started BeeGFS fsck in forward check mode [Sun Feb  7 22:12:47 2021]
+Log will be written to /var/log/beegfs-fsck.log
+Database will be saved in /var/lib/beegfs/
+--------------------------------------------------------------------
+
+Step 1: Check reachability of nodes: Finished
+The database path already exists: /var/lib/beegfs/fsckdb
+If you continue now any existing database files in that path will be deleted.
+Do you want to continue? (Y/N)
+Step 2: Delete unused files from disposal: Some files could not be deleted.
+
+-----
+Waiting for metadata servers to start modification logging. This might take some time.
+-----
+
+Step 3: Gather data from nodes: 
+
+Fetched data > Directory entries: 0 | Inodes: 0 | Chunks: 205
+
+
+-----
+Waiting for metadata servers to stop modification logging. This might take some time.
+-----
+
+Step 4: Check for errors... 
+
+* Checking: Duplicated inode IDs ... 
+>>> None found
+* Checking: Duplicated chunks ...
+>>> None found
+* Checking: Duplicated content directores ...
+>>> None found
+* Checking: Bad target mirror information in dentry ...
+>>> None found
+* Checking: Bad content mirror information in dir inode ...
+>>> None found
+* Checking: Bad content mirror information in file inode ...
+>>> None found
+* Checking: Malformed chunk ...
+>>> None found
+* Checking: File has a missing target in stripe pattern ...
+>>> None found
+* Checking: Dentry-by-ID file is present, but no corresponding dentry ...
+>>> None found
+* Checking: Dentry-by-ID file is broken or missing ...
+>>> None found
+* Checking: Chunk without an inode pointing to it (orphaned chunk) ...
+> Chunk ID: 0-6020AB12-2 on target 401 - [ra: DeleteChunk]
+> Chunk ID: 2-6020AB12-2 on target 301 - [ra: DeleteChunk]
+> Chunk ID: 3-6020AAD6-2 on target 301 - [ra: DeleteChunk]
+> Chunk ID: 3-6020AB12-2 on target 301 - [ra: DeleteChunk]
+> Chunk ID: 4-6020AAD6-2 on target 301 - [ra: DeleteChunk]
+> Chunk ID: 4-6020AB12-2 on target 301 - [ra: DeleteChunk]
+> Chunk ID: 5-6020AAD6-2 on target 301 - [ra: DeleteChunk]
+> Chunk ID: 5-6020AB12-2 on target 301 - [ra: DeleteChunk]
+> Chunk ID: 6-6020AAD6-2 on target 301 - [ra: DeleteChunk]
+> Chunk ID: 6-6020AB12-2 on target 301 - [ra: DeleteChunk]
+> Chunk ID: 7-6020AAD6-2 on target 301 - [ra: DeleteChunk]
+> Chunk ID: 7-6020AB12-2 on target 301 - [ra: DeleteChunk]
+> Chunk ID: 8-6020AAD6-2 on target 301 - [ra: DeleteChunk]
+> Chunk ID: 8-6020AB12-2 on target 501 - [ra: DeleteChunk]
+> Chunk ID: 9-6020AAD6-2 on target 301 - [ra: DeleteChunk]
+> Chunk ID: 9-6020AB12-2 on target 301 - [ra: DeleteChunk]
+> Chunk ID: A-6020AAD6-2 on target 301 - [ra: DeleteChunk]
+> Chunk ID: A-6020AB12-2 on target 401 - [ra: DeleteChunk]
+> Chunk ID: B-6020AAD6-2 on target 301 - [ra: DeleteChunk]
+> Chunk ID: B-6020AB12-2 on target 401 - [ra: DeleteChunk]
+> Chunk ID: C-6020AAD6-2 on target 301 - [ra: DeleteChunk]
+> Chunk ID: C-6020AB12-2 on target 401 - [ra: DeleteChunk]
+> Chunk ID: D-6020AAD6-2 on target 501 - [ra: DeleteChunk]
+> Chunk ID: D-6020AB12-2 on target 501 - [ra: DeleteChunk]
+> Chunk ID: E-6020AB12-2 on target 301 - [ra: DeleteChunk]
+> Chunk ID: F-6020AB12-2 on target 501 - [ra: DeleteChunk]
+> Chunk ID: 10-6020AB12-2 on target 501 - [ra: DeleteChunk]
+> Chunk ID: 11-6020AB12-2 on target 301 - [ra: DeleteChunk]
+> Chunk ID: 12-6020AAD6-2 on target 501 - [ra: DeleteChunk]
+> Chunk ID: 12-6020AB12-2 on target 301 - [ra: DeleteChunk]
+> Chunk ID: 13-6020AB12-2 on target 301 - [ra: DeleteChunk]
+> Chunk ID: 14-6020AAD6-2 on target 401 - [ra: DeleteChunk]
+> Chunk ID: 14-6020AB12-2 on target 401 - [ra: DeleteChunk]
+> Chunk ID: 15-6020AAD6-2 on target 301 - [ra: DeleteChunk]
+> Chunk ID: 15-6020AB12-2 on target 501 - [ra: DeleteChunk]
+> Chunk ID: 16-6020AAD6-2 on target 301 - [ra: DeleteChunk]
+> Chunk ID: 16-6020AB12-2 on target 301 - [ra: DeleteChunk]
+> Chunk ID: 17-6020AAD6-2 on target 301 - [ra: DeleteChunk]
+> Chunk ID: 17-6020AB12-2 on target 401 - [ra: DeleteChunk]
+> Chunk ID: 18-6020AAD6-2 on target 301 - [ra: DeleteChunk]
+> Chunk ID: 18-6020AB12-2 on target 501 - [ra: DeleteChunk]
+> Chunk ID: 19-6020AAD6-2 on target 301 - [ra: DeleteChunk]
+> Chunk ID: 19-6020AB12-2 on target 401 - [ra: DeleteChunk]
+> Chunk ID: 1A-6020AAD6-2 on target 301 - [ra: DeleteChunk]
+> Chunk ID: 1A-6020AB12-2 on target 501 - [ra: DeleteChunk]
+> Chunk ID: 1B-6020AAD6-2 on target 301 - [ra: DeleteChunk]
+> Chunk ID: 1B-6020AB12-2 on target 401 - [ra: DeleteChunk]
+> Chunk ID: 1C-6020AAD6-2 on target 301 - [ra: DeleteChunk]
+> Chunk ID: 1C-6020AB12-2 on target 501 - [ra: DeleteChunk]
+> Chunk ID: 1D-6020AAD6-2 on target 301 - [ra: DeleteChunk]
+> Chunk ID: 1D-6020AB12-2 on target 401 - [ra: DeleteChunk]
+> Chunk ID: 1E-6020AAD6-2 on target 301 - [ra: DeleteChunk]
+> Chunk ID: 1E-6020AB12-2 on target 301 - [ra: DeleteChunk]
+> Chunk ID: 1F-6020AAD6-2 on target 301 - [ra: DeleteChunk]
+> Chunk ID: 1F-6020AB12-2 on target 301 - [ra: DeleteChunk]
+> Chunk ID: 20-6020AAD6-2 on target 301 - [ra: DeleteChunk]
+> Chunk ID: 20-6020AB12-2 on target 501 - [ra: DeleteChunk]
+> Chunk ID: 21-6020AAD6-2 on target 301 - [ra: DeleteChunk]
+> Chunk ID: 21-6020AB12-2 on target 401 - [ra: DeleteChunk]
+> Chunk ID: 22-6020AAD6-2 on target 301 - [ra: DeleteChunk]
+> Chunk ID: 22-6020AB12-2 on target 501 - [ra: DeleteChunk]
+> Chunk ID: 23-6020AAD6-2 on target 301 - [ra: DeleteChunk]
+> Chunk ID: 23-6020AB12-2 on target 301 - [ra: DeleteChunk]
+> Chunk ID: 24-6020AAD6-2 on target 301 - [ra: DeleteChunk]
+> Chunk ID: 24-6020AB12-2 on target 401 - [ra: DeleteChunk]
+> Chunk ID: 25-6020AAD6-2 on target 301 - [ra: DeleteChunk]
+> Chunk ID: 25-6020AB12-2 on target 301 - [ra: DeleteChunk]
+> Chunk ID: 26-6020AAD6-2 on target 301 - [ra: DeleteChunk]
+> Chunk ID: 26-6020AB12-2 on target 301 - [ra: DeleteChunk]
+> Chunk ID: 27-6020AAD6-2 on target 301 - [ra: DeleteChunk]
+> Chunk ID: 27-6020AB12-2 on target 501 - [ra: DeleteChunk]
+> Chunk ID: 28-6020AAD6-2 on target 301 - [ra: DeleteChunk]
+> Chunk ID: 28-6020AB12-2 on target 501 - [ra: DeleteChunk]
+> Chunk ID: 29-6020AB12-2 on target 301 - [ra: DeleteChunk]
+> Chunk ID: 2A-6020AB12-2 on target 301 - [ra: DeleteChunk]
+> Chunk ID: 2B-6020AB12-2 on target 301 - [ra: DeleteChunk]
+> Chunk ID: 2C-6020AB12-2 on target 301 - [ra: DeleteChunk]
+> Chunk ID: 2D-6020AB12-2 on target 301 - [ra: DeleteChunk]
+> Chunk ID: 2E-6020AB12-2 on target 301 - [ra: DeleteChunk]
+> Chunk ID: 2F-6020AB12-2 on target 301 - [ra: DeleteChunk]
+> Chunk ID: 30-6020AB12-2 on target 301 - [ra: DeleteChunk]
+> Chunk ID: 31-6020AB12-2 on target 301 - [ra: DeleteChunk]
+> Chunk ID: 32-6020AB12-2 on target 301 - [ra: DeleteChunk]
+> Chunk ID: 33-6020AB12-2 on target 301 - [ra: DeleteChunk]
+> Chunk ID: 34-6020AB12-2 on target 301 - [ra: DeleteChunk]
+> Chunk ID: 35-6020AB12-2 on target 301 - [ra: DeleteChunk]
+> Chunk ID: 36-6020AB12-2 on target 301 - [ra: DeleteChunk]
+> Chunk ID: 37-6020AB12-2 on target 301 - [ra: DeleteChunk]
+> Chunk ID: 38-6020AB12-2 on target 301 - [ra: DeleteChunk]
+> Chunk ID: 39-6020AB12-2 on target 301 - [ra: DeleteChunk]
+> Chunk ID: 3A-6020AB12-2 on target 301 - [ra: DeleteChunk]
+> Chunk ID: 3B-6020AB12-2 on target 301 - [ra: DeleteChunk]
+> Chunk ID: 3C-6020AB12-2 on target 301 - [ra: DeleteChunk]
+> Chunk ID: 3D-6020AB12-2 on target 301 - [ra: DeleteChunk]
+> Chunk ID: 3E-6020AB12-2 on target 301 - [ra: DeleteChunk]
+>>> Found 205 errors. Detailed information can also be found in /var/log/beegfs-fsck.out.
+
+* Checking: Chunk is saved in wrong path ...
+>>> None found
+* Checking: Wrong owner node saved in inode ...
+>>> None found
+* Checking: Dentry points to inode on wrong node ...
+>>> None found
+* Checking: Content directory without an inode ...
+>>> None found
+* Checking: Dir inode without a dentry pointing to it (orphaned inode) ...
+>>> None found
+* Checking: File inode without a dentry pointing to it (orphaned inode) ...
+>>> None found
+* Checking: Dangling directory entry ...
+>>> None found
+* Checking: Directory inode without a content directory ...
+>>> None found
+* Checking: Attributes of file inode are wrong ...
+>>> None found
+* Checking: Attributes of dir inode are wrong ...
+>>> None found
+
+>>> Found 205 errors <<< 

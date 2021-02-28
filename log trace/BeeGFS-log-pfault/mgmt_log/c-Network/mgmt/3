@@ -1,0 +1,33 @@
+(1) Feb07 19:40:09 Main [App] >> Version: 7.2
+(2) Feb07 19:40:09 Main [App] >> LocalNode: beegfs-mgmtd mgs [ID: 1]
+(2) Feb07 19:40:09 Main [App] >> Usable NICs: virbr0(TCP) enp0s3(TCP) 
+(2) Feb07 19:40:15 Worker1 [Change consistency states] >> Metadata node is coming online. ID: 2
+(2) Feb07 19:40:17 Worker1 [Change consistency states] >> Storage target is coming online. ID: 501
+(2) Feb07 19:40:18 DirectWorker1 [Change consistency states] >> Storage target is coming online. ID: 301
+(2) Feb07 19:40:19 XNodeSync [Assign node to capacity pool] >> Metadata node capacity pool assignment updated. NodeID: 2; Pool: Normal; Reason: Free capacity threshold
+(2) Feb07 19:40:19 XNodeSync [Assign target to capacity pool] >> Storage target capacity pool assignment updated. NodeID: 4; TargetID: 401; Pool: Emergency;  Reason: No capacity report received.
+(2) Feb07 19:40:21 Worker3 [Change consistency states] >> Storage target is coming online. ID: 401
+(2) Feb07 19:40:22 Worker3 [RemoveNodeMsgEx.cpp:66] >> Node removed. node: beegfs-client 7CF5-60208767-osboxes [ID: 3]
+(2) Feb07 19:40:24 XNodeSync [Assign target to capacity pool] >> Storage target capacity pool assignment updated. NodeID: 4; TargetID: 401; Pool: Low;  Reason: Free capacity threshold
+(2) Feb07 19:40:27 Worker2 [Node registration] >> New node: beegfs-client B11-6020887B-osboxes [ID: 4]; Source: 10.0.0.121:49756
+(2) Feb07 19:42:24 XNodeSync [Auto-offline] >> No state report received from storage target for 90 seconds. Setting storage target to probably-offline. Storage target ID: 301
+(2) Feb07 19:42:24 XNodeSync [Auto-offline] >> No state report received from storage target for 90 seconds. Setting storage target to probably-offline. Storage target ID: 401
+(2) Feb07 19:42:24 XNodeSync [Auto-offline] >> No state report received from storage target for 90 seconds. Setting storage target to probably-offline. Storage target ID: 501
+(2) Feb07 19:42:24 XNodeSync [Auto-offline] >> No state report received from metadata node for 90 seconds. Setting metadata node to probably-offline. Metadata node ID: 2
+(2) Feb07 19:42:26 HBeatMgr [StandardSocket::sendto] >> Attempted to send message to unreachable network: 192.168.90.192:8004; peername: Listen(Port: 8008); (This error message will be logged only once.)
+(2) Feb07 19:43:24 XNodeSync [Assign node to capacity pool] >> Metadata node capacity pool assignment updated. NodeID: 2; Pool: Emergency; Reason: No capacity report received.
+(2) Feb07 19:43:24 XNodeSync [Assign target to capacity pool] >> Storage target capacity pool assignment updated. NodeID: 3; TargetID: 301; Pool: Emergency;  Reason: No capacity report received.
+(2) Feb07 19:43:24 XNodeSync [Assign target to capacity pool] >> Storage target capacity pool assignment updated. NodeID: 4; TargetID: 401; Pool: Emergency;  Reason: No capacity report received.
+(2) Feb07 19:43:24 XNodeSync [Assign target to capacity pool] >> Storage target capacity pool assignment updated. NodeID: 5; TargetID: 501; Pool: Emergency;  Reason: No capacity report received.
+(2) Feb07 19:43:54 XNodeSync [Auto-offline] >> No state report received from storage target for 180 seconds. Setting storage target to offline. Storage target ID: 301
+(2) Feb07 19:43:54 XNodeSync [Auto-offline] >> No state report received from storage target for 180 seconds. Setting storage target to offline. Storage target ID: 401
+(2) Feb07 19:43:54 XNodeSync [Auto-offline] >> No state report received from storage target for 180 seconds. Setting storage target to offline. Storage target ID: 501
+(2) Feb07 19:43:54 XNodeSync [Auto-offline] >> No state report received from metadata node for 180 seconds. Setting metadata node to offline. Metadata node ID: 2
+(2) Feb07 19:48:03 Worker2 [Change consistency states] >> Storage target is coming online. ID: 401
+(2) Feb07 19:48:04 Worker1 [Change consistency states] >> Storage target is coming online. ID: 301
+(2) Feb07 19:48:04 XNodeSync [Assign target to capacity pool] >> Storage target capacity pool assignment updated. NodeID: 3; TargetID: 301; Pool: Low;  Reason: Free capacity threshold
+(2) Feb07 19:48:04 XNodeSync [Assign target to capacity pool] >> Storage target capacity pool assignment updated. NodeID: 4; TargetID: 401; Pool: Low;  Reason: Free capacity threshold
+(2) Feb07 19:48:08 DirectWorker1 [Change consistency states] >> Storage target is coming online. ID: 501
+(2) Feb07 19:48:08 Worker3 [Change consistency states] >> Metadata node is coming online. ID: 2
+(2) Feb07 19:48:09 XNodeSync [Assign node to capacity pool] >> Metadata node capacity pool assignment updated. NodeID: 2; Pool: Normal; Reason: Free capacity threshold
+(2) Feb07 19:48:09 XNodeSync [Assign target to capacity pool] >> Storage target capacity pool assignment updated. NodeID: 5; TargetID: 501; Pool: Low;  Reason: Free capacity threshold

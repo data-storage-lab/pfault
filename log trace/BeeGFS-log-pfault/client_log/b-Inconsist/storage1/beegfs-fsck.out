@@ -1,0 +1,31 @@
+
+
+BeeGFS File System Check Version : 7.2
+----
+
+--------------------------------------------------------------------
+Started BeeGFS fsck in forward check mode [Sun Feb  7 22:23:49 2021]
+Log will be written to /var/log/beegfs-fsck.log
+Database will be saved in /var/lib/beegfs/
+--------------------------------------------------------------------
+
+Step 1: Check reachability of nodes: Finished
+The database path already exists: /var/lib/beegfs/fsckdb
+If you continue now any existing database files in that path will be deleted.
+Do you want to continue? (Y/N)
+Step 2: Delete unused files from disposal: Finished.
+
+-----
+Waiting for metadata servers to start modification logging. This might take some time.
+-----
+
+Step 3: Gather data from nodes: 
+
+Fetched data > Directory entries: 0 | Inodes: 0 | Chunks: 0
+
+
+-----
+Waiting for metadata servers to stop modification logging. This might take some time.
+-----
+
+An error occured while fetching data from servers. Fsck cannot proceed. Please see log file for more information.

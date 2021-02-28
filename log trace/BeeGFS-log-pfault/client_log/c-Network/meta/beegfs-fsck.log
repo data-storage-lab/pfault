@@ -1,0 +1,23 @@
+(3) Feb07 19:52:10 Main [RegDGramLis] >> Listening for UDP datagrams: Port 36850
+(1) Feb07 19:52:10 Main [App] >> Waiting for beegfs-mgmtd@10.0.0.137:8008...
+(2) Feb07 19:52:10 RegDGramLis [Heartbeat incoming] >> New node: beegfs-mgmtd mgs [ID: 1]; Source: 10.0.0.137
+(3) Feb07 19:52:10 Main [DGramLis] >> Listening for UDP datagrams: Port 59387
+(3) Feb07 19:52:10 Main [App] >> Version: 7.2
+(3) Feb07 19:52:10 Main [App] >> LocalNode: osboxes [ID: 0]
+(3) Feb07 19:52:10 Main [App] >> Usable NICs: virbr0(TCP) vxlan.calico(TCP) docker0(TCP) enp0s3(TCP) 
+(3) Feb07 19:52:10 XNodeSync [NodeConn (acquire stream)] >> Connect failed: beegfs-mgmtd@192.168.122.1:8008 (protocol: TCP); Error: Unable to establish connection: 192.168.122.1:8008
+(3) Feb07 19:52:10 XNodeSync [NodeConn (acquire stream)] >> Connected: beegfs-mgmtd@10.0.0.137:8008 (protocol: TCP; fallback route)
+(2) Feb07 19:52:10 XNodeSync [Sync results] >> Nodes added: 3 (Type: beegfs-storage)
+(1) Feb07 19:52:10 XNodeSync [Nodes sync] >> Root NodeID (from sync results): 2
+(2) Feb07 19:52:10 XNodeSync [Sync results] >> Nodes added: 1 (Type: beegfs-meta)
+(3) Feb07 19:52:10 Main [NodeConn (acquire stream)] >> Connect failed: beegfs-meta@192.168.122.1:8005 (protocol: TCP); Error: Unable to establish connection: 192.168.122.1:8005
+(3) Feb07 19:52:15 Main [NodeConn (acquire stream)] >> Connect failed: beegfs-meta@10.0.0.123:8005 (protocol: TCP); Error: Timeout connecting to: 10.0.0.123:8005
+(1) Feb07 19:52:15 Main [NodeConn (acquire stream)] >> Connect failed on all available routes: beegfs-meta mds [ID: 2]
+(2) Feb07 19:52:15 Main [MessagingTk.cpp:445] >> Unable to connect, is the node offline? node: beegfs-meta mds [ID: 2]; Message type: HeartbeatRequest (1019)
+(2) Feb07 19:52:15 Main [MessagingTk.cpp:29] >> Retrying communication. peer: beegfs-meta mds [ID: 2]; message type: HeartbeatRequest (1019)
+(2) Feb07 19:52:20 Main [MessagingTk.cpp:445] >> Unable to connect, is the node offline? node: beegfs-meta mds [ID: 2]; Message type: HeartbeatRequest (1019)
+(3) Feb07 19:52:20 Main [NodeConn (acquire stream)] >> Connect failed: beegfs-storage@192.168.122.1:8003 (protocol: TCP); Error: Unable to establish connection: 192.168.122.1:8003
+(3) Feb07 19:52:20 Main [NodeConn (acquire stream)] >> Connected: beegfs-storage@10.0.0.8:8003 (protocol: TCP; fallback route)
+(3) Feb07 19:52:20 Main [NodeConn (acquire stream)] >> Connect failed: beegfs-storage@192.168.122.1:8003 (protocol: TCP); Error: Unable to establish connection: 192.168.122.1:8003
+(3) Feb07 19:52:20 Main [NodeConn (acquire stream)] >> Connected: beegfs-storage@10.0.0.108:8003 (protocol: TCP; fallback route)
+(3) Feb07 19:52:20 Main [NodeConn (acquire stream)] >> Connected: beegfs-storage@192.168.171.64:8003 (protocol: TCP)

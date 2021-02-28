@@ -1,0 +1,34 @@
+(3) Feb07 20:17:47 Main [RegDGramLis] >> Listening for UDP datagrams: Port 46443
+(1) Feb07 20:17:47 Main [App] >> Waiting for beegfs-mgmtd@10.0.0.137:8008...
+(2) Feb07 20:17:47 RegDGramLis [Heartbeat incoming] >> New node: beegfs-mgmtd mgs [ID: 1]; Source: 10.0.0.137
+(3) Feb07 20:17:47 Main [DGramLis] >> Listening for UDP datagrams: Port 48630
+(3) Feb07 20:17:47 Main [App] >> Version: 7.2
+(3) Feb07 20:17:47 Main [App] >> LocalNode: osboxes [ID: 0]
+(3) Feb07 20:17:47 Main [App] >> Usable NICs: virbr0(TCP) vxlan.calico(TCP) docker0(TCP) enp0s3(TCP) 
+(3) Feb07 20:17:47 XNodeSync [NodeConn (acquire stream)] >> Connect failed: beegfs-mgmtd@192.168.122.1:8008 (protocol: TCP); Error: Unable to establish connection: 192.168.122.1:8008
+(3) Feb07 20:17:47 XNodeSync [NodeConn (acquire stream)] >> Connected: beegfs-mgmtd@10.0.0.137:8008 (protocol: TCP; fallback route)
+(2) Feb07 20:17:47 XNodeSync [Sync results] >> Nodes added: 3 (Type: beegfs-storage)
+(1) Feb07 20:17:47 XNodeSync [Nodes sync] >> Root NodeID (from sync results): 2
+(2) Feb07 20:17:47 XNodeSync [Sync results] >> Nodes added: 1 (Type: beegfs-meta)
+(3) Feb07 20:17:47 Main [NodeConn (acquire stream)] >> Connect failed: beegfs-meta@192.168.122.1:8005 (protocol: TCP); Error: Unable to establish connection: 192.168.122.1:8005
+(3) Feb07 20:17:47 Main [NodeConn (acquire stream)] >> Connected: beegfs-meta@10.0.0.123:8005 (protocol: TCP; fallback route)
+(3) Feb07 20:17:47 Main [NodeConn (acquire stream)] >> Connect failed: beegfs-storage@192.168.122.1:8003 (protocol: TCP); Error: Unable to establish connection: 192.168.122.1:8003
+(3) Feb07 20:17:52 Main [NodeConn (acquire stream)] >> Connect failed: beegfs-storage@10.0.0.8:8003 (protocol: TCP); Error: Timeout connecting to: 10.0.0.8:8003
+(1) Feb07 20:17:52 Main [NodeConn (acquire stream)] >> Connect failed on all available routes: beegfs-storage oss0 [ID: 3]
+(2) Feb07 20:17:52 Main [MessagingTk.cpp:445] >> Unable to connect, is the node offline? node: beegfs-storage oss0 [ID: 3]; Message type: HeartbeatRequest (1019)
+(2) Feb07 20:17:52 Main [MessagingTk.cpp:29] >> Retrying communication. peer: beegfs-storage oss0 [ID: 3]; message type: HeartbeatRequest (1019)
+(2) Feb07 20:17:57 Main [MessagingTk.cpp:445] >> Unable to connect, is the node offline? node: beegfs-storage oss0 [ID: 3]; Message type: HeartbeatRequest (1019)
+(3) Feb07 20:17:57 Main [NodeConn (acquire stream)] >> Connect failed: beegfs-storage@192.168.122.1:8003 (protocol: TCP); Error: Unable to establish connection: 192.168.122.1:8003
+(3) Feb07 20:18:02 Main [NodeConn (acquire stream)] >> Connect failed: beegfs-storage@10.0.0.108:8003 (protocol: TCP); Error: Timeout connecting to: 10.0.0.108:8003
+(1) Feb07 20:18:02 Main [NodeConn (acquire stream)] >> Connect failed on all available routes: beegfs-storage worker0 [ID: 4]
+(2) Feb07 20:18:02 Main [MessagingTk.cpp:445] >> Unable to connect, is the node offline? node: beegfs-storage worker0 [ID: 4]; Message type: HeartbeatRequest (1019)
+(2) Feb07 20:18:02 Main [MessagingTk.cpp:29] >> Retrying communication. peer: beegfs-storage worker0 [ID: 4]; message type: HeartbeatRequest (1019)
+(2) Feb07 20:18:07 Main [MessagingTk.cpp:445] >> Unable to connect, is the node offline? node: beegfs-storage worker0 [ID: 4]; Message type: HeartbeatRequest (1019)
+(3) Feb07 20:18:12 Main [NodeConn (acquire stream)] >> Connect failed: beegfs-storage@192.168.171.64:8003 (protocol: TCP); Error: Timeout connecting to: 192.168.171.64:8003
+(3) Feb07 20:18:12 Main [NodeConn (acquire stream)] >> Connect failed: beegfs-storage@192.168.122.1:8003 (protocol: TCP); Error: Unable to establish connection: 192.168.122.1:8003
+(3) Feb07 20:18:12 Main [NodeConn (acquire stream)] >> Connect failed: beegfs-storage@172.17.0.1:8003 (protocol: TCP); Error: Unable to establish connection: 172.17.0.1:8003
+(3) Feb07 20:18:17 Main [NodeConn (acquire stream)] >> Connect failed: beegfs-storage@10.0.0.203:8003 (protocol: TCP); Error: Timeout connecting to: 10.0.0.203:8003
+(1) Feb07 20:18:17 Main [NodeConn (acquire stream)] >> Connect failed on all available routes: beegfs-storage worker [ID: 5]
+(2) Feb07 20:18:17 Main [MessagingTk.cpp:445] >> Unable to connect, is the node offline? node: beegfs-storage worker [ID: 5]; Message type: HeartbeatRequest (1019)
+(2) Feb07 20:18:17 Main [MessagingTk.cpp:29] >> Retrying communication. peer: beegfs-storage worker [ID: 5]; message type: HeartbeatRequest (1019)
+(2) Feb07 20:18:27 Main [MessagingTk.cpp:445] >> Unable to connect, is the node offline? node: beegfs-storage worker [ID: 5]; Message type: HeartbeatRequest (1019)

@@ -1,0 +1,39 @@
+(1) Feb07 22:48:13 Main [App] >> BeeGFS Helper Daemon Version: 7.2
+(1) Feb07 22:48:13 Main [App] >> Client log messages will be prefixed with an asterisk (*) symbol.
+(3) Feb07 22:48:13 *mount(8327) [DatagramListener (init sock)] >> Listening for UDP datagrams: Port 8004
+(1) Feb07 22:48:13 *mount(8327) [App_logInfos] >> BeeGFS Client Version: 7.2
+(2) Feb07 22:48:13 *mount(8327) [App_logInfos] >> ClientID: 2087-6020B47D-osboxes
+(2) Feb07 22:48:13 *mount(8327) [App_logInfos] >> Usable NICs: virbr0(TCP) vxlan.calico(TCP) docker0(TCP) enp0s3(TCP) 
+(3) Feb07 22:48:13 *beegfs_XNodeSyn(8329) [NodeConn (acquire stream)] >> Connected: beegfs-helperd@127.0.0.1:8006 (protocol: TCP)
+(2) Feb07 22:48:13 *beegfs_DGramLis(8328) [Heartbeat incoming] >> New node: beegfs-mgmtd mgs [ID: 1]; 
+(3) Feb07 22:48:13 *beegfs_XNodeSyn(8329) [Init] >> Management node found. Downloading node groups...
+(3) Feb07 22:48:13 *beegfs_XNodeSyn(8329) [NodeConn (acquire stream)] >> Connect failed: beegfs-mgmtd@192.168.122.1:8008 (protocol: TCP)
+(3) Feb07 22:48:13 *beegfs_XNodeSyn(8329) [NodeConn (acquire stream)] >> Connected: beegfs-mgmtd@10.0.0.137:8008 (protocol: TCP; fallback route)
+(2) Feb07 22:48:13 *beegfs_XNodeSyn(8329) [Sync] >> Nodes added (sync results): 1 (Type: beegfs-meta)
+(2) Feb07 22:48:13 *beegfs_XNodeSyn(8329) [Sync] >> Nodes added (sync results): 3 (Type: beegfs-storage)
+(3) Feb07 22:48:13 *beegfs_XNodeSyn(8329) [Init] >> Node registration...
+(2) Feb07 22:48:13 *beegfs_XNodeSyn(8329) [Registration] >> Node registration successful.
+(3) Feb07 22:48:13 *beegfs_XNodeSyn(8329) [Init] >> Init complete.
+(3) Feb07 22:48:23 *mount(8327) [NodeConn (acquire stream)] >> Connect failed: beegfs-meta@192.168.122.1:8005 (protocol: TCP)
+(3) Feb07 22:48:23 *mount(8327) [NodeConn (acquire stream)] >> Connected: beegfs-meta@10.0.0.123:8005 (protocol: TCP; fallback route)
+(3) Feb07 22:48:23 *mount(8327) [NodeConn (acquire stream)] >> Connect failed: beegfs-storage@192.168.122.1:8003 (protocol: TCP)
+(3) Feb07 22:48:23 *mount(8327) [NodeConn (acquire stream)] >> Connect failed: beegfs-storage@10.0.0.8:8003 (protocol: TCP)
+(1) Feb07 22:48:23 *mount(8327) [NodeConn (acquire stream)] >> Connect failed on all available routes: beegfs-storage oss0 [ID: 3]
+(2) Feb07 22:48:23 *mount(8327) [stat storage (communication)] >> Unable to connect to server: beegfs-storage oss0 [ID: 3]
+(3) Feb07 22:48:23 *mount(8327) [NodeConn (acquire stream)] >> Connect failed: beegfs-storage@192.168.122.1:8003 (protocol: TCP)
+(3) Feb07 22:48:23 *mount(8327) [NodeConn (acquire stream)] >> Connect failed: beegfs-storage@10.0.0.108:8003 (protocol: TCP)
+(1) Feb07 22:48:23 *mount(8327) [NodeConn (acquire stream)] >> Connect failed on all available routes: beegfs-storage worker0 [ID: 4]
+(3) Feb07 22:48:23 *mount(8327) [NodeConn (acquire stream)] >> Connect failed: beegfs-storage@192.168.171.64:8003 (protocol: TCP)
+(3) Feb07 22:48:23 *mount(8327) [NodeConn (acquire stream)] >> Connect failed: beegfs-storage@192.168.122.1:8003 (protocol: TCP)
+(3) Feb07 22:48:23 *mount(8327) [NodeConn (acquire stream)] >> Connect failed: beegfs-storage@172.17.0.1:8003 (protocol: TCP)
+(3) Feb07 22:48:23 *mount(8327) [NodeConn (acquire stream)] >> Connect failed: beegfs-storage@10.0.0.203:8003 (protocol: TCP)
+(1) Feb07 22:48:23 *mount(8327) [NodeConn (acquire stream)] >> Connect failed on all available routes: beegfs-storage worker [ID: 5]
+(2) Feb07 22:48:23 *mount(8327) [Remoting (stat storage targets)] >> Error target (storage): 301; Msg: Communication error
+(0) Feb07 22:48:23 *mount(8327) [Mount sanity check] >> Retrieval of storage server free space info failed. Are the storage servers running and registered at the management daemon? Did you remove a storage target directory on a server? (Error: Communication error)
+(2) Feb07 22:48:23 *mount(8327) [App (stop components)] >> Stopping components...
+(2) Feb07 22:48:23 *beegfs_XNodeSyn(8329) [Deregistration] >> Node deregistration successful.
+(2) Feb07 22:48:25 *mount(8327) [App (wait for component termination)] >> Still waiting for this component to stop: beegfs_AckMgr
+(2) Feb07 22:48:26 *mount(8327) [App (wait for component termination)] >> Component stopped: beegfs_AckMgr
+(1) Feb07 22:48:26 *mount(8327) [App (stop)] >> All components stopped.
+(1) Feb07 22:49:15 Main [App::signalHandler] >> Received a SIGTERM. Shutting down...
+(1) Feb07 22:49:17 Main [App] >> All components stopped. Exiting now!

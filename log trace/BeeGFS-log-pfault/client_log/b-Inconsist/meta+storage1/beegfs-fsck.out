@@ -1,0 +1,105 @@
+
+
+BeeGFS File System Check Version : 7.2
+----
+
+--------------------------------------------------------------------
+Started BeeGFS fsck in forward check mode [Sun Feb  7 22:56:43 2021]
+Log will be written to /var/log/beegfs-fsck.log
+Database will be saved in /var/lib/beegfs/
+--------------------------------------------------------------------
+
+Step 1: Check reachability of nodes: Finished
+The database path already exists: /var/lib/beegfs/fsckdb
+If you continue now any existing database files in that path will be deleted.
+Do you want to continue? (Y/N)
+Step 2: Delete unused files from disposal: Some files could not be deleted.
+
+-----
+Waiting for metadata servers to start modification logging. This might take some time.
+-----
+
+Step 3: Gather data from nodes: 
+
+Fetched data > Directory entries: 0 | Inodes: 0 | Chunks: 0
+
+
+-----
+Waiting for metadata servers to stop modification logging. This might take some time.
+-----
+
+Step 4: Check for errors... 
+
+* Checking: Duplicated inode IDs ... 
+>>> None found
+* Checking: Duplicated chunks ...
+>>> None found
+* Checking: Duplicated content directores ...
+>>> None found
+* Checking: Bad target mirror information in dentry ...
+>>> None found
+* Checking: Bad content mirror information in dir inode ...
+>>> None found
+* Checking: Bad content mirror information in file inode ...
+>>> None found
+* Checking: Malformed chunk ...
+>>> None found
+* Checking: File has a missing target in stripe pattern ...
+>>> None found
+* Checking: Dentry-by-ID file is present, but no corresponding dentry ...
+>>> None found
+* Checking: Dentry-by-ID file is broken or missing ...
+>>> None found
+* Checking: Chunk without an inode pointing to it (orphaned chunk) ...
+>>> None found
+* Checking: Chunk is saved in wrong path ...
+>>> None found
+* Checking: Wrong owner node saved in inode ...
+>>> None found
+* Checking: Dentry points to inode on wrong node ...
+>>> None found
+* Checking: Content directory without an inode ...
+>>> None found
+* Checking: Dir inode without a dentry pointing to it (orphaned inode) ...
+>>> None found
+* Checking: File inode without a dentry pointing to it (orphaned inode) ...
+>>> None found
+* Checking: Dangling directory entry ...
+>>> None found
+* Checking: Directory inode without a content directory ...
+>>> None found
+* Checking: Attributes of file inode are wrong ...
+>>> None found
+* Checking: Attributes of dir inode are wrong ...
+>>> None found
+
+
+BeeGFS File System Check Version : 7.2
+----
+
+--------------------------------------------------------------------
+Started BeeGFS fsck in forward check mode [Sun Feb  7 22:57:02 2021]
+Log will be written to /var/log/beegfs-fsck.log
+Database will be saved in /var/lib/beegfs/
+--------------------------------------------------------------------
+
+Step 1: Check reachability of nodes: Finished
+The database path already exists: /var/lib/beegfs/fsckdb
+If you continue now any existing database files in that path will be deleted.
+Do you want to continue? (Y/N)
+Step 2: Delete unused files from disposal: Some files could not be deleted.
+
+-----
+Waiting for metadata servers to start modification logging. This might take some time.
+-----
+
+Step 3: Gather data from nodes: 
+
+Fetched data > Directory entries: 0 | Inodes: 0 | Chunks: 0
+
+
+-----
+Waiting for metadata servers to stop modification logging. This might take some time.
+-----
+
+Another instance of beegfs-fsck is still running or was aborted. Cannot start a new one unless --forceRestart command line switch is used. Do this only after making sure there is no other instance of beefs-fsck running.

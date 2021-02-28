@@ -1,0 +1,21 @@
+(3) Feb07 22:23:49 Main [RegDGramLis] >> Listening for UDP datagrams: Port 51476
+(1) Feb07 22:23:49 Main [App] >> Waiting for beegfs-mgmtd@10.0.0.137:8008...
+(2) Feb07 22:23:49 RegDGramLis [Heartbeat incoming] >> New node: beegfs-mgmtd mgs [ID: 1]; Source: 10.0.0.137
+(3) Feb07 22:23:49 Main [DGramLis] >> Listening for UDP datagrams: Port 40501
+(3) Feb07 22:23:49 Main [App] >> Version: 7.2
+(3) Feb07 22:23:49 Main [App] >> LocalNode: osboxes [ID: 0]
+(3) Feb07 22:23:49 Main [App] >> Usable NICs: virbr0(TCP) vxlan.calico(TCP) docker0(TCP) enp0s3(TCP) 
+(3) Feb07 22:23:49 XNodeSync [NodeConn (acquire stream)] >> Connect failed: beegfs-mgmtd@192.168.122.1:8008 (protocol: TCP); Error: Unable to establish connection: 192.168.122.1:8008
+(3) Feb07 22:23:49 XNodeSync [NodeConn (acquire stream)] >> Connected: beegfs-mgmtd@10.0.0.137:8008 (protocol: TCP; fallback route)
+(2) Feb07 22:23:49 XNodeSync [Sync results] >> Nodes added: 3 (Type: beegfs-storage)
+(1) Feb07 22:23:49 XNodeSync [Nodes sync] >> Root NodeID (from sync results): 2
+(2) Feb07 22:23:49 XNodeSync [Sync results] >> Nodes added: 1 (Type: beegfs-meta)
+(3) Feb07 22:23:49 Main [NodeConn (acquire stream)] >> Connect failed: beegfs-meta@192.168.122.1:8005 (protocol: TCP); Error: Unable to establish connection: 192.168.122.1:8005
+(3) Feb07 22:23:49 Main [NodeConn (acquire stream)] >> Connected: beegfs-meta@10.0.0.123:8005 (protocol: TCP; fallback route)
+(3) Feb07 22:23:49 Main [NodeConn (acquire stream)] >> Connect failed: beegfs-storage@192.168.122.1:8003 (protocol: TCP); Error: Unable to establish connection: 192.168.122.1:8003
+(3) Feb07 22:23:49 Main [NodeConn (acquire stream)] >> Connected: beegfs-storage@10.0.0.8:8003 (protocol: TCP; fallback route)
+(3) Feb07 22:23:49 Main [NodeConn (acquire stream)] >> Connect failed: beegfs-storage@192.168.122.1:8003 (protocol: TCP); Error: Unable to establish connection: 192.168.122.1:8003
+(3) Feb07 22:23:49 Main [NodeConn (acquire stream)] >> Connected: beegfs-storage@10.0.0.108:8003 (protocol: TCP; fallback route)
+(3) Feb07 22:23:49 Main [NodeConn (acquire stream)] >> Connected: beegfs-storage@192.168.171.64:8003 (protocol: TCP)
+(0) Feb07 22:23:51 Worker1 [App (component exception handler)] >> The component [Worker1] encountered an unrecoverable error. [SysErr: Success] Exception message: Read error occured while fetching chunks from node; nodeID: oss0
+(2) Feb07 22:23:51 Worker1 [App (component exception handler)] >> Shutting down...

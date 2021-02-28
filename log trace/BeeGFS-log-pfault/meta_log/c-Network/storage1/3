@@ -1,0 +1,25 @@
+(3) Feb07 20:07:40 Main [App] >> Root directory loaded.
+(1) Feb07 20:07:40 Main [App] >> I got root (by possession of root directory)
+(3) Feb07 20:07:40 Main [RegDGramLis] >> Listening for UDP datagrams: Port 8005
+(1) Feb07 20:07:40 Main [App] >> Waiting for beegfs-mgmtd@10.0.0.137:8008...
+(2) Feb07 20:07:40 RegDGramLis [Heartbeat incoming] >> New node: beegfs-mgmtd mgs [ID: 1]
+(3) Feb07 20:07:40 Main [RegDGramLis] >> Listening for UDP datagrams: Port 8005
+(2) Feb07 20:07:40 Main [Register node] >> Node registration successful.
+(3) Feb07 20:07:40 Main [NodeConn (acquire stream)] >> Connect failed: beegfs-mgmtd@192.168.122.1:8008 (protocol: TCP); Error: Unable to establish connection: 192.168.122.1:8008
+(3) Feb07 20:07:40 Main [NodeConn (acquire stream)] >> Connected: beegfs-mgmtd@10.0.0.137:8008 (protocol: TCP; fallback route)
+(2) Feb07 20:07:40 Main [printSyncResults] >> Nodes added (sync results): 3 (Type: beegfs-storage)
+(3) Feb07 20:07:40 Main [App] >> Registration and management info download complete.
+(3) Feb07 20:07:40 Main [DGramLis] >> Listening for UDP datagrams: Port 8005
+(3) Feb07 20:07:40 Main [ConnAccept] >> Listening for TCP connections: Port 8005
+(3) Feb07 20:07:40 Main [App] >> Restored 1 sessions and 0 mirrored sessions
+(1) Feb07 20:07:40 Main [App] >> Version: 7.2
+(2) Feb07 20:07:40 Main [App] >> LocalNode: beegfs-meta mds [ID: 2]
+(2) Feb07 20:07:40 Main [App] >> Usable NICs: virbr0(TCP) enp0s3(TCP)
+(0) Feb07 20:10:19 XNodeSync [Messaging (RPC)] >> Communication error: Recv(): Hard disconnect from 10.0.0.137:8008. SysErr: Connection reset by peer; Peer: beegfs-mgmtd mgs [ID: 1]. (Message type: GetStatesAndBuddyGroups (1053))
+(2) Feb07 20:10:19 XNodeSync [MessagingTk.cpp:29] >> Retrying communication. peer: beegfs-mgmtd mgs [ID: 1]; message type: GetStatesAndBuddyGroups (1053)
+(3) Feb07 20:10:19 XNodeSync [NodeConn (acquire stream)] >> Connect failed: beegfs-mgmtd@10.0.0.137:8008 (protocol: TCP); Error: Unable to establish connection: 10.0.0.137:8008
+(1) Feb07 20:10:19 XNodeSync [NodeConn (acquire stream)] >> Connect failed on all available routes: beegfs-mgmtd mgs [ID: 1]
+(2) Feb07 20:10:19 XNodeSync [InternodeSyncer.cpp:418] >> Downloading target states from management node failed. Setting all target states to probably-offline.
+(2) Feb07 20:10:19 XNodeSync [InternodeSyncer.cpp:474] >> Pushing local state to management node failed.
+(2) Feb07 20:10:19 XNodeSync [MessagingTk.cpp:29] >> Retrying communication. peer: beegfs-mgmtd mgs [ID: 1]; message type: GetStatesAndBuddyGroups (1053)
+(2) Feb07 20:10:19 XNodeSync [InternodeSyncer.cpp:784] >> Download from management node failed. Setting all targets to probably-offline.
