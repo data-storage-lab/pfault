@@ -33,7 +33,7 @@ Including the Virtual Device Manager and Fault Models.
   - Invokes the default FSCK component of the target PFS
   
 **Orchestrator**:
-  - Source code in "pf_pfs_orchestrator" folder
+  - Source code in "pf_orchestrator" folder
   - Controls and coordinates the overall workflow of PFault automatically
 
 For more information you could refer to our research paper 
