@@ -2,7 +2,7 @@
 This repository contains the source code for "PFault: A General Framework for Analyzing the 
 Reliability of High-Performance Parallel File Systems", which is published in the 
 32nd ACM/SIGARCH International Conference on Supercomputing (ICS'18, http://ics2018.ict.ac.cn/)
- and its' follow-up journal version.
+ and it's follow-up journal version.
 
 ## Introduction to PFault ##
 The description of each component is as follows:
