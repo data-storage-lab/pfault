@@ -74,7 +74,7 @@ Steps to initiate the tool:
 
 
 
-User may also use the orchestrator to run the experiments automatically with following steps:
+Users may also use the orchestrator to run the experiments automatically with following steps:
   - In configuration.sh, select a fault model by setting the variable "FAULT_MODEL" and set up other orchestrator variables as well
   - ```/path/to/pfault/pf_orchestrator/orchestrator```
 
