@@ -13,7 +13,7 @@ Including the Virtual Device Manager and Fault Models.
   - Source code in "pf_virtual_device_manager" folder
   - Manages the persistent state of the target Parallel File System (PFS)
 
-- **Fault Models**:
+- *Fault Models*:
   - Source code in "pf_failure_state_emulator" folder
   - Injects faults based on the following fault models (Please refer to the paper for their description):
         - Whole Device Failure
