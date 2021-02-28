@@ -6,7 +6,8 @@ Reliability of High-Performance Parallel File Systems", which is published in th
 The description of each component is as follows:
 
 **Failure State Emulator**:
-Includes the Virtual Device Manager and Fault Models
+
+Including the Virtual Device Manager and Fault Models
 - **Virtual Device Manager**:
   - Source code in "pf_virtual_device_manager" folder
   - Manages the persistent state of the target Parallel File System (PFS)
