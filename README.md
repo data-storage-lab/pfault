@@ -4,6 +4,7 @@ Reliability of High-Performance Parallel File Systems", which is published in th
 32nd ACM/SIGARCH International Conference on Supercomputing (ICS'18, http://ics2018.ict.ac.cn/)
  and its' follow-up journal version.
 
+## Introduction to PFault ##
 The description of each component is as follows:
 
 **Failure State Emulator**:
@@ -38,6 +39,7 @@ Including the Virtual Device Manager and Fault Models.
 For more information you could refer to our research paper 
 at http://ics2018.ict.ac.cn/essay/ics18-cameraready-submitted.pdf
 
+## PFault Initiation Guidance ##
 
 Steps to initiate the tool:
 
