@@ -10,6 +10,8 @@ export VERIFIABLE_WORKLOAD_CNT=1
 export VERIFIABLE_WORKLOAD=(/pfault/workload_example/verifiable_workload/wikiw_init.sh)
 export CHECK_WORKLOAD_CNT=1
 export CHECK_WORKLOAD=(/pfault/workload_example/check_workload/wikir.sh /pfault/workload_example/check_workload/wikiw-async.sh /pfault/workload_example/check_workload/wikiw-sync.sh)
+export PFS_CHECKER=lfsck.sh
+export FAULT_MODEL=network
 ################## Configure ISCSI ##################
 export ISCSI_SERVER_USER=root
 export ISCSI_SERVER_IP=192.168.56.102
