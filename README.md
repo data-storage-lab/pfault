@@ -4,6 +4,7 @@ Reliability of High-Performance Parallel File Systems", which is published in th
 32nd ACM/SIGARCH International Conference on Supercomputing (ICS'18, http://ics2018.ict.ac.cn/)
 
 The description of each component is as follows:
+
 **Failure State Emulator**:
 Includes the Virtual Device Manager and Fault Models
 - **Virtual Device Manager**:
