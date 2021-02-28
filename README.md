@@ -63,8 +63,9 @@ Steps to initiate the tool:
 
   5.  Run "Virtual Device Manager" to build the Lustre Cluster 
 
-      ```cd /path/to/pfault/pf_virtual_device_manager/
-      ./vdm.sh```
+      ```cd /path/to/pfault/pf_virtual_device_manager/```
+      
+      ```./vdm.sh```
 
   6.  Run any workloads on the cluster. For example, there are few workloads in the folder:
       /path/to/pfault/workload_example
