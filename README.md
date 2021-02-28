@@ -7,7 +7,7 @@ The description of each component is as follows:
 
 **Failure State Emulator**:
 
-Including the Virtual Device Manager and Fault Models
+Including the Virtual Device Manager and Fault Models.
 - **Virtual Device Manager**:
   - Source code in "pf_virtual_device_manager" folder
   - Manages the persistent state of the target Parallel File System (PFS)
@@ -19,10 +19,13 @@ Including the Virtual Device Manager and Fault Models
         - Global Inconsistency
 **PFS worker**:
   - Source code in "pf_pfs_worker"
-
-**Workload Generator and Checker**:
-  -  and "pf_pfs_checker" folders
-  - Generates I/O operations and checks correctness of the recovery
+  - Generates I/O operations for aging purpose and checks correctness of the recovery
+**PFS Checker**:
+  - Source code in "pf_pfs_checker" folder
+  - Invokes the default FSCK component of the target PFS
+**Orchestrator**:
+  - Source code in "pf_pfs_orchestrator" folder
+  - Controls and coordinates the overall workflow of PFault automatically
 
 For more information you could refer to our research paper 
 at http://ics2018.ict.ac.cn/essay/ics18-cameraready-submitted.pdf
