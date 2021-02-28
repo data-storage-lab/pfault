@@ -4,21 +4,22 @@ Reliability of High-Performance Parallel File Systems", which is published in th
 32nd ACM/SIGARCH International Conference on Supercomputing (ICS'18, http://ics2018.ict.ac.cn/)
 
 The description of each component is as follows:
-
-**Virtual Device Manager**:
+**Failure State Emulator**:
+Includes the Virtual Device Manager and Fault Models
+- **Virtual Device Manager**:
   - Source code in "pf_virtual_device_manager" folder
   - Manages the persistent state of the target Parallel File System (PFS)
-
-**Failure State Emulator**:
+- **Fault Models**:
   - Source code in "pf_failure_state_emulator" folder
-  - Injects faults based on the following fault models (Please refer to the paper 
-    for their description):
+  - Injects faults based on the following fault models (Please refer to the paper for their description):
         - Whole Device Failure
         - Network Partitioning
         - Global Inconsistency
+**PFS worker**:
+  - Source code in "pf_pfs_worker"
 
 **Workload Generator and Checker**:
-  - Source code in "pf_pfs_worker" and "pf_pfs_checker" folders
+  -  and "pf_pfs_checker" folders
   - Generates I/O operations and checks correctness of the recovery
 
 For more information you could refer to our research paper 
