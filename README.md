@@ -1,6 +1,6 @@
 # README #
 This repository contains the source code for "PFault: A General Framework for Analyzing the 
-Reliability of High-Performance Parallel File Systems", which is published in the 
+Reliability of High-Performance Parallel File Systems" published in the 
 32nd ACM/SIGARCH International Conference on Supercomputing (ICS'18, http://ics2018.ict.ac.cn/)
  and it's follow-up journal version.
 
