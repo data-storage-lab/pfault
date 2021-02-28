@@ -80,7 +80,7 @@ User may also use the orchestrator to run the experiments automatically with fol
 
 The orchestrator will first run the aging workload on client node, and then do fault injection correspondingly, and finally run the checking workload. Three log files will be created during each run. 
 
-We also provide log trace generated during our experiments. Log files along with their description are provided in the README.md file under folders in '/log trace'.
+We also provide log trace generated during our experiments. Log files along with their description are provided in folders under '/log trace'.
 
 ## Contact ##
 Contact: hanrz@iastate.edu ogatla@iastate.edu 
