@@ -1,15 +1,15 @@
 # README #
 This repository contains the research prototype for the PFault project and the following publications: 
 
-"[A Study of Failure Recovery and Logging of High-Performance Parallel File Systems](https://dl.acm.org/doi/10.1145/3483447)",
+- "[A Study of Failure Recovery and Logging of High-Performance Parallel File Systems](https://dl.acm.org/doi/10.1145/3483447)",
 Runzhou Han, Om R. Gatla, Mai Zheng, Jinrui Cao, Di Zhang, Dong Dai, Yong Chen, and Jonathan Cook.
 ACM Transactions on Storage ([TOS](https://dl.acm.org/journal/tos)), Volume 18, Issue 2, 2022.
 
-"[PFault: A General Framework for Analyzing the Reliability of High-Performance Parallel File Systems](https://dl.acm.org/doi/10.1145/3205289.3205302)", 
+- "[PFault: A General Framework for Analyzing the Reliability of High-Performance Parallel File Systems](https://dl.acm.org/doi/10.1145/3205289.3205302)", 
 Jinrui Cao, Om Rameshwar Gatla, Mai Zheng, Dong Dai, Vidya Eswarappa, Yan Mu, and Yong Chen. 
 Proceedings of the 32nd ACM/SIGARCH International Conference on Supercomputing ([ICS](https://www.ics-conference.org/index.html)), 2018.
 
-"[A Generic Framework for Testing Parallel File Systems](https://ieeexplore.ieee.org/document/7836568)",
+- "[A Generic Framework for Testing Parallel File Systems](https://ieeexplore.ieee.org/document/7836568)",
 Jinrui Cao, Simeng Wang, Dong Dai, Mai Zheng, and Yong Chen.
 Proceedings of the 1st ACM/IEEE Joint International Workshop on Parallel Data Storage and Data Intensive Scalable Computing Systems ([PDSW](http://www.pdsw.org/index.shtml)) at ACM/IEEE Supercomputing (SC), 2016.
 
