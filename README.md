@@ -1,5 +1,5 @@
 # README #
-This repository contains the research prototype for the PFault project and the following publications: 
+This repository contains the research prototype for the PFault project which has been used in the following publications: 
 
 - "[A Study of Failure Recovery and Logging of High-Performance Parallel File Systems](https://dl.acm.org/doi/10.1145/3483447)",
 Runzhou Han, Om R. Gatla, Mai Zheng, Jinrui Cao, Di Zhang, Dong Dai, Yong Chen, and Jonathan Cook.
