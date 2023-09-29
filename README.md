@@ -5,6 +5,10 @@ This repository contains the research prototype of PFault  which has been used f
 Runzhou Han, Om R. Gatla, Mai Zheng, Jinrui Cao, Di Zhang, Dong Dai, Yong Chen, and Jonathan Cook.
 ACM Transactions on Storage ([TOS](https://dl.acm.org/journal/tos)), Volume 18, Issue 2, 2022.
 
+- "[SentiLog: Anomaly Detection on Parallel File Systems via Log-based Sentiment Analysis](https://dl.acm.org/doi/10.1145/3465332.3470873)",
+Di Zhang, Dong Dai, Runzhou Han, and Mai Zheng,
+Proceedings of the 13th ACM Workshop on Hot Topics in Storage and File Systems ([HotStorage](https://www.hotstorage.org/2021/)), 2021.
+
 - "[Fingerprinting the Checker Policies of Parallel File Systems](https://ieeexplore.ieee.org/document/9307050)",
 Runzhou Han, Duo Zhang, and Mai Zheng,
 Proceedings of the 5th ACM/IEEE International Parallel Data Systems Workshop ([PDSW](http://www.pdsw.org/index.shtml)) at ACM/IEEE Supercomputing (SC), 2020
