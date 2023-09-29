@@ -7,7 +7,7 @@ ACM Transactions on Storage ([TOS](https://dl.acm.org/journal/tos)), Volume 18, 
 
 - "[SentiLog: Anomaly Detection on Parallel File Systems via Log-based Sentiment Analysis](https://dl.acm.org/doi/10.1145/3465332.3470873)",
 Di Zhang, Dong Dai, Runzhou Han, and Mai Zheng,
-Proceedings of the 13th ACM Workshop on Hot Topics in Storage and File Systems ([HotStorage](https://www.hotstorage.org/2021/)), 2021.
+Proceedings of the 13th ACM Workshop on Hot Topics in Storage and File Systems ([HotStorage](https://www.hotstorage.org/2021/)), 2021. [**Best Paper Nominee**] 
 
 - "[Fingerprinting the Checker Policies of Parallel File Systems](https://ieeexplore.ieee.org/document/9307050)",
 Runzhou Han, Duo Zhang, and Mai Zheng,
